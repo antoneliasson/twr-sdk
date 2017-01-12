@@ -57,5 +57,9 @@ var searchData=
   ['bc_5fspi_5fspeed_5f1_5fmhz',['BC_SPI_SPEED_1_MHZ',['../group__bc__spi.html#gga15f700524ef3ae920c419f4198a32676a0fb280b39783af321eebfd27a9447ffe',1,'bc_spi.h']]],
   ['bc_5fspi_5fspeed_5f2_5fmhz',['BC_SPI_SPEED_2_MHZ',['../group__bc__spi.html#gga15f700524ef3ae920c419f4198a32676a5e54ca1e7fb7dac67707988e2c2b192c',1,'bc_spi.h']]],
   ['bc_5fspi_5fspeed_5f4_5fmhz',['BC_SPI_SPEED_4_MHZ',['../group__bc__spi.html#gga15f700524ef3ae920c419f4198a32676a382ff1e7700342f6ac59c051dcad65d9',1,'bc_spi.h']]],
-  ['bc_5fspi_5fspeed_5f8_5fmhz',['BC_SPI_SPEED_8_MHZ',['../group__bc__spi.html#gga15f700524ef3ae920c419f4198a32676a27cd9626c28c24fae45566a33a7864d3',1,'bc_spi.h']]]
+  ['bc_5fspi_5fspeed_5f8_5fmhz',['BC_SPI_SPEED_8_MHZ',['../group__bc__spi.html#gga15f700524ef3ae920c419f4198a32676a27cd9626c28c24fae45566a33a7864d3',1,'bc_spi.h']]],
+  ['bc_5ftemperature_5ftag_5fi2c_5faddress_5falternate',['BC_TEMPERATURE_TAG_I2C_ADDRESS_ALTERNATE',['../group__bc__temperature__tag.html#gga2186330dc3b1bb7661ed1ac55154a0b5ab680f5d36e03967de3ee410b29f9abb3',1,'bc_temperature_tag.h']]],
+  ['bc_5ftemperature_5ftag_5fi2c_5faddress_5fdefault',['BC_TEMPERATURE_TAG_I2C_ADDRESS_DEFAULT',['../group__bc__temperature__tag.html#gga2186330dc3b1bb7661ed1ac55154a0b5ad421c141798d94a5a30e4723face9bf9',1,'bc_temperature_tag.h']]],
+  ['bc_5ftmp112_5fevent_5ferror',['BC_TMP112_EVENT_ERROR',['../group__bc__tmp112.html#gga0f3f2d66b8fa03f44b26592fbfc95087a582b8397de6631d5375a4b327b247db3',1,'bc_tmp112.h']]],
+  ['bc_5ftmp112_5fevent_5fupdate',['BC_TMP112_EVENT_UPDATE',['../group__bc__tmp112.html#gga0f3f2d66b8fa03f44b26592fbfc95087a3d1328d2df88d39300cfe192cbeac8ae',1,'bc_tmp112.h']]]
 ];

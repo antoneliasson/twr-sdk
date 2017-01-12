@@ -13,7 +13,8 @@ var indexSectionsWithContent =
   3: "bdhlmst",
   4: "b",
   5: "b",
-  6: "b"
+  6: "b",
+  7: "b"
 };
 
 var indexSectionNames =
@@ -22,9 +23,10 @@ var indexSectionNames =
   1: "classes",
   2: "functions",
   3: "variables",
-  4: "enums",
-  5: "enumvalues",
-  6: "groups"
+  4: "typedefs",
+  5: "enums",
+  6: "enumvalues",
+  7: "groups"
 };
 
 function convertToId(search)

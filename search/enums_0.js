@@ -11,5 +11,8 @@ var searchData=
   ['bc_5fi2c_5fchannel_5ft',['bc_i2c_channel_t',['../group__bc__i2c.html#ga5f7217e6558c54ac6920e5dabb777fef',1,'bc_i2c.h']]],
   ['bc_5fi2c_5fspeed_5ft',['bc_i2c_speed_t',['../group__bc__i2c.html#ga219721504620df6336373d3e827bb517',1,'bc_i2c.h']]],
   ['bc_5fspi_5fmode_5ft',['bc_spi_mode_t',['../group__bc__spi.html#gabc91b706ba04834451a2bf5faa178112',1,'bc_spi.h']]],
-  ['bc_5fspi_5fspeed_5ft',['bc_spi_speed_t',['../group__bc__spi.html#ga15f700524ef3ae920c419f4198a32676',1,'bc_spi.h']]]
+  ['bc_5fspi_5fspeed_5ft',['bc_spi_speed_t',['../group__bc__spi.html#ga15f700524ef3ae920c419f4198a32676',1,'bc_spi.h']]],
+  ['bc_5ftemperature_5ftag_5fi2c_5faddress_5ft',['bc_temperature_tag_i2c_address_t',['../group__bc__temperature__tag.html#ga2186330dc3b1bb7661ed1ac55154a0b5',1,'bc_temperature_tag.h']]],
+  ['bc_5ftmp112_5fevent_5ft',['bc_tmp112_event_t',['../group__bc__tmp112.html#ga0f3f2d66b8fa03f44b26592fbfc95087',1,'bc_tmp112.h']]],
+  ['bc_5ftmp112_5fstate_5ft',['bc_tmp112_state_t',['../group__bc__tmp112.html#gaf282e797af7a59b532b8ed78c74b2113',1,'bc_tmp112.h']]]
 ];
