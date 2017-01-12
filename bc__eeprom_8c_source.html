@@ -121,14 +121,14 @@ $(document).ready(function(){initNavTree('bc__eeprom_8c_source.html','');});
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    }</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="comment">// Disable interrupts</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    bc_irq_disable();</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <a class="code" href="group__bc__irq.html#ga83398e8b1c443f7bf1b1980959d3cc63">bc_irq_disable</a>();</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="comment">// Unlock FLASH_PECR register</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    FLASH-&gt;PEKEYR = FLASH_PEKEY1;</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    FLASH-&gt;PEKEYR = FLASH_PEKEY2;</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="comment">// Enable interrupts</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    bc_irq_enable();</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="code" href="group__bc__irq.html#ga6bd1e6c1589c97558d14e8f3d648e656">bc_irq_enable</a>();</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="comment">// For every byte in buffer</span></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0UL; i &lt; length; i++)</div>
@@ -144,13 +144,13 @@ $(document).ready(function(){initNavTree('bc__eeprom_8c_source.html','');});
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    }</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="comment">// Disable interrupts</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    bc_irq_disable();</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <a class="code" href="group__bc__irq.html#ga83398e8b1c443f7bf1b1980959d3cc63">bc_irq_disable</a>();</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="comment">// Lock FLASH_PECR register</span></div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    FLASH-&gt;PECR |= FLASH_PECR_PELOCK;</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="comment">// Enable interrupts</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    bc_irq_enable();</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="code" href="group__bc__irq.html#ga6bd1e6c1589c97558d14e8f3d648e656">bc_irq_enable</a>();</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="comment">// If we do not read what we wrote...</span></div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordflow">if</span> (memcmp(buffer, (<span class="keywordtype">void</span> *) address, length) != 0UL)</div>
@@ -187,9 +187,11 @@ $(document).ready(function(){initNavTree('bc__eeprom_8c_source.html','');});
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="comment">// Return EEPROM memory size</span></div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordflow">return</span> DATA_EEPROM_BANK2_END - DATA_EEPROM_BASE + 1UL;</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;}</div>
+<div class="ttc" id="group__bc__irq_html_ga6bd1e6c1589c97558d14e8f3d648e656"><div class="ttname"><a href="group__bc__irq.html#ga6bd1e6c1589c97558d14e8f3d648e656">bc_irq_enable</a></div><div class="ttdeci">void bc_irq_enable(void)</div><div class="ttdoc">Enable global IRQs. </div><div class="ttdef"><b>Definition:</b> <a href="bc__irq_8c_source.html#l00009">bc_irq.c:9</a></div></div>
 <div class="ttc" id="group__bc__eeprom_html_ga4dc192047b12c71dd8538868f639d47d"><div class="ttname"><a href="group__bc__eeprom.html#ga4dc192047b12c71dd8538868f639d47d">bc_eeprom_write</a></div><div class="ttdeci">bool bc_eeprom_write(uint32_t address, const void *buffer, size_t length)</div><div class="ttdoc">Write buffer to EEPROM area and verify them. </div><div class="ttdef"><b>Definition:</b> <a href="bc__eeprom_8c_source.html#l00005">bc_eeprom.c:5</a></div></div>
 <div class="ttc" id="group__bc__eeprom_html_gadfb6944121613068cbc543176bad0abf"><div class="ttname"><a href="group__bc__eeprom.html#gadfb6944121613068cbc543176bad0abf">bc_eeprom_read</a></div><div class="ttdeci">bool bc_eeprom_read(uint32_t address, void *buffer, size_t length)</div><div class="ttdoc">Read buffer from EEPROM area. </div><div class="ttdef"><b>Definition:</b> <a href="bc__eeprom_8c_source.html#l00060">bc_eeprom.c:60</a></div></div>
 <div class="ttc" id="group__bc__eeprom_html_ga6a6d09d39e57e2ffb475de10ca4ef3d5"><div class="ttname"><a href="group__bc__eeprom.html#ga6a6d09d39e57e2ffb475de10ca4ef3d5">bc_eeprom_get_size</a></div><div class="ttdeci">size_t bc_eeprom_get_size(void)</div><div class="ttdoc">Return size of EEPROM area. </div><div class="ttdef"><b>Definition:</b> <a href="bc__eeprom_8c_source.html#l00079">bc_eeprom.c:79</a></div></div>
+<div class="ttc" id="group__bc__irq_html_ga83398e8b1c443f7bf1b1980959d3cc63"><div class="ttname"><a href="group__bc__irq.html#ga83398e8b1c443f7bf1b1980959d3cc63">bc_irq_disable</a></div><div class="ttdeci">void bc_irq_disable(void)</div><div class="ttdoc">Disable global IRQs. </div><div class="ttdef"><b>Definition:</b> <a href="bc__irq_8c_source.html#l00004">bc_irq.c:4</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

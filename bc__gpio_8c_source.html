@@ -391,19 +391,19 @@ $(document).ready(function(){initNavTree('bc__gpio_8c_source.html','');});
 <div class="line"><a name="l00285"></a><span class="lineno"><a class="line" href="group__bc__gpio.html#ga06db16c5cd7f6ffff7e297970814221d">  285</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__bc__gpio.html#ga06db16c5cd7f6ffff7e297970814221d">bc_gpio_init</a>(<a class="code" href="group__bc__gpio.html#ga5a8d8aed85b7bb7f5b219fc6a4cd5b8e">bc_gpio_channel_t</a> channel)</div>
 <div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;{</div>
 <div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;    <span class="comment">// Disable interrupts</span></div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;    bc_irq_disable();</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;    <a class="code" href="group__bc__irq.html#ga83398e8b1c443f7bf1b1980959d3cc63">bc_irq_disable</a>();</div>
 <div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;</div>
 <div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;    <span class="comment">// Enable GPIO clock</span></div>
 <div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;    RCC-&gt;IOPENR |= bc_gpio_iopenr_mask[channel];</div>
 <div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;</div>
 <div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;    <span class="comment">// Enable interrupts</span></div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;    bc_irq_enable();</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;    <a class="code" href="group__bc__irq.html#ga6bd1e6c1589c97558d14e8f3d648e656">bc_irq_enable</a>();</div>
 <div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;}</div>
 <div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;</div>
 <div class="line"><a name="l00297"></a><span class="lineno"><a class="line" href="group__bc__gpio.html#ga39141debc333424326e1d448f3f81b6d">  297</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__bc__gpio.html#ga39141debc333424326e1d448f3f81b6d">bc_gpio_set_pull</a>(<a class="code" href="group__bc__gpio.html#ga5a8d8aed85b7bb7f5b219fc6a4cd5b8e">bc_gpio_channel_t</a> channel, <a class="code" href="group__bc__gpio.html#ga04280a82f9ae57f8d71b6ac697a139f5">bc_gpio_pull_t</a> pull)</div>
 <div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;{</div>
 <div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;    <span class="comment">// Disable interrupts</span></div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;    bc_irq_disable();</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;    <a class="code" href="group__bc__irq.html#ga83398e8b1c443f7bf1b1980959d3cc63">bc_irq_disable</a>();</div>
 <div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;</div>
 <div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;    <span class="comment">// Read PUPDR register</span></div>
 <div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;    uint32_t pupdr = bc_gpio_port[channel]-&gt;PUPDR;</div>
@@ -418,7 +418,7 @@ $(document).ready(function(){initNavTree('bc__gpio_8c_source.html','');});
 <div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;    bc_gpio_port[channel]-&gt;PUPDR = pupdr;</div>
 <div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;</div>
 <div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;    <span class="comment">// Enable interrupts</span></div>
-<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;    bc_irq_enable();</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;    <a class="code" href="group__bc__irq.html#ga6bd1e6c1589c97558d14e8f3d648e656">bc_irq_enable</a>();</div>
 <div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;}</div>
 <div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;</div>
 <div class="line"><a name="l00318"></a><span class="lineno"><a class="line" href="group__bc__gpio.html#ga03e0144f0e202d18adb63f7e5c0a2b61">  318</a></span>&#160;<a class="code" href="group__bc__gpio.html#ga04280a82f9ae57f8d71b6ac697a139f5">bc_gpio_pull_t</a> <a class="code" href="group__bc__gpio.html#ga03e0144f0e202d18adb63f7e5c0a2b61">bc_gpio_get_pull</a>(<a class="code" href="group__bc__gpio.html#ga5a8d8aed85b7bb7f5b219fc6a4cd5b8e">bc_gpio_channel_t</a> channel)</div>
@@ -430,7 +430,7 @@ $(document).ready(function(){initNavTree('bc__gpio_8c_source.html','');});
 <div class="line"><a name="l00324"></a><span class="lineno"><a class="line" href="group__bc__gpio.html#ga63a3ad86dfef88c7c940a2a34945d853">  324</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__bc__gpio.html#ga63a3ad86dfef88c7c940a2a34945d853">bc_gpio_set_mode</a>(<a class="code" href="group__bc__gpio.html#ga5a8d8aed85b7bb7f5b219fc6a4cd5b8e">bc_gpio_channel_t</a> channel, <a class="code" href="group__bc__gpio.html#ga95188c2afa0f36cb97ebd6c5bc6eab6c">bc_gpio_mode_t</a> mode)</div>
 <div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;{</div>
 <div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;    <span class="comment">// Disable interrupts</span></div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;    bc_irq_disable();</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;    <a class="code" href="group__bc__irq.html#ga83398e8b1c443f7bf1b1980959d3cc63">bc_irq_disable</a>();</div>
 <div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;</div>
 <div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;    <span class="comment">// Read OTYPER register</span></div>
 <div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;    uint32_t otyper = bc_gpio_port[channel]-&gt;OTYPER;</div>
@@ -466,7 +466,7 @@ $(document).ready(function(){initNavTree('bc__gpio_8c_source.html','');});
 <div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;    bc_gpio_port[channel]-&gt;MODER = moder;</div>
 <div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;</div>
 <div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;    <span class="comment">// Enable interrupts</span></div>
-<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;    bc_irq_enable();</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;    <a class="code" href="group__bc__irq.html#ga6bd1e6c1589c97558d14e8f3d648e656">bc_irq_enable</a>();</div>
 <div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;}</div>
 <div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;</div>
 <div class="line"><a name="l00366"></a><span class="lineno"><a class="line" href="group__bc__gpio.html#gae6beb97029cb4cd845e987f3780f0c11">  366</a></span>&#160;<a class="code" href="group__bc__gpio.html#ga95188c2afa0f36cb97ebd6c5bc6eab6c">bc_gpio_mode_t</a> <a class="code" href="group__bc__gpio.html#gae6beb97029cb4cd845e987f3780f0c11">bc_gpio_get_mode</a>(<a class="code" href="group__bc__gpio.html#ga5a8d8aed85b7bb7f5b219fc6a4cd5b8e">bc_gpio_channel_t</a> channel)</div>
@@ -510,14 +510,15 @@ $(document).ready(function(){initNavTree('bc__gpio_8c_source.html','');});
 <div class="line"><a name="l00404"></a><span class="lineno"><a class="line" href="group__bc__gpio.html#gac3726d1184678159614d9c5296579534">  404</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__bc__gpio.html#gac3726d1184678159614d9c5296579534">bc_gpio_toggle_output</a>(<a class="code" href="group__bc__gpio.html#ga5a8d8aed85b7bb7f5b219fc6a4cd5b8e">bc_gpio_channel_t</a> channel)</div>
 <div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;{</div>
 <div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;    <span class="comment">// Disable interrupts</span></div>
-<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;    bc_irq_disable();</div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;    <a class="code" href="group__bc__irq.html#ga83398e8b1c443f7bf1b1980959d3cc63">bc_irq_disable</a>();</div>
 <div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;</div>
 <div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;    <span class="comment">// Write ODR register with inverted bit</span></div>
 <div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;    bc_gpio_port[channel]-&gt;ODR ^= bc_gpio_16_bit_mask[channel];</div>
 <div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;</div>
 <div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;    <span class="comment">// Enable interrupts</span></div>
-<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;    bc_irq_enable();</div>
+<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;    <a class="code" href="group__bc__irq.html#ga6bd1e6c1589c97558d14e8f3d648e656">bc_irq_enable</a>();</div>
 <div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;}</div>
+<div class="ttc" id="group__bc__irq_html_ga6bd1e6c1589c97558d14e8f3d648e656"><div class="ttname"><a href="group__bc__irq.html#ga6bd1e6c1589c97558d14e8f3d648e656">bc_irq_enable</a></div><div class="ttdeci">void bc_irq_enable(void)</div><div class="ttdoc">Enable global IRQs. </div><div class="ttdef"><b>Definition:</b> <a href="bc__irq_8c_source.html#l00009">bc_irq.c:9</a></div></div>
 <div class="ttc" id="group__bc__gpio_html_gae6beb97029cb4cd845e987f3780f0c11"><div class="ttname"><a href="group__bc__gpio.html#gae6beb97029cb4cd845e987f3780f0c11">bc_gpio_get_mode</a></div><div class="ttdeci">bc_gpio_mode_t bc_gpio_get_mode(bc_gpio_channel_t channel)</div><div class="ttdoc">Get mode of operation for GPIO channel. </div><div class="ttdef"><b>Definition:</b> <a href="bc__gpio_8c_source.html#l00366">bc_gpio.c:366</a></div></div>
 <div class="ttc" id="group__bc__gpio_html_ga03e0144f0e202d18adb63f7e5c0a2b61"><div class="ttname"><a href="group__bc__gpio.html#ga03e0144f0e202d18adb63f7e5c0a2b61">bc_gpio_get_pull</a></div><div class="ttdeci">bc_gpio_pull_t bc_gpio_get_pull(bc_gpio_channel_t channel)</div><div class="ttdoc">Get pull-up/pull-down configuration for GPIO channel. </div><div class="ttdef"><b>Definition:</b> <a href="bc__gpio_8c_source.html#l00318">bc_gpio.c:318</a></div></div>
 <div class="ttc" id="group__bc__gpio_html_ga63a3ad86dfef88c7c940a2a34945d853"><div class="ttname"><a href="group__bc__gpio.html#ga63a3ad86dfef88c7c940a2a34945d853">bc_gpio_set_mode</a></div><div class="ttdeci">void bc_gpio_set_mode(bc_gpio_channel_t channel, bc_gpio_mode_t mode)</div><div class="ttdoc">Set mode of operation for GPIO channel. </div><div class="ttdef"><b>Definition:</b> <a href="bc__gpio_8c_source.html#l00324">bc_gpio.c:324</a></div></div>
@@ -528,6 +529,7 @@ $(document).ready(function(){initNavTree('bc__gpio_8c_source.html','');});
 <div class="ttc" id="group__bc__gpio_html_gac3726d1184678159614d9c5296579534"><div class="ttname"><a href="group__bc__gpio.html#gac3726d1184678159614d9c5296579534">bc_gpio_toggle_output</a></div><div class="ttdeci">void bc_gpio_toggle_output(bc_gpio_channel_t channel)</div><div class="ttdoc">Toggle output state for GPIO channel. </div><div class="ttdef"><b>Definition:</b> <a href="bc__gpio_8c_source.html#l00404">bc_gpio.c:404</a></div></div>
 <div class="ttc" id="group__bc__gpio_html_ga2403cbaba160a3f146a0090cb16c330b"><div class="ttname"><a href="group__bc__gpio.html#ga2403cbaba160a3f146a0090cb16c330b">bc_gpio_get_input</a></div><div class="ttdeci">bool bc_gpio_get_input(bc_gpio_channel_t channel)</div><div class="ttdoc">Get input state for GPIO channel. </div><div class="ttdef"><b>Definition:</b> <a href="bc__gpio_8c_source.html#l00386">bc_gpio.c:386</a></div></div>
 <div class="ttc" id="group__bc__gpio_html_ga5a8d8aed85b7bb7f5b219fc6a4cd5b8e"><div class="ttname"><a href="group__bc__gpio.html#ga5a8d8aed85b7bb7f5b219fc6a4cd5b8e">bc_gpio_channel_t</a></div><div class="ttdeci">bc_gpio_channel_t</div><div class="ttdoc">GPIO channels. </div><div class="ttdef"><b>Definition:</b> <a href="bc__gpio_8h_source.html#l00012">bc_gpio.h:12</a></div></div>
+<div class="ttc" id="group__bc__irq_html_ga83398e8b1c443f7bf1b1980959d3cc63"><div class="ttname"><a href="group__bc__irq.html#ga83398e8b1c443f7bf1b1980959d3cc63">bc_irq_disable</a></div><div class="ttdeci">void bc_irq_disable(void)</div><div class="ttdoc">Disable global IRQs. </div><div class="ttdef"><b>Definition:</b> <a href="bc__irq_8c_source.html#l00004">bc_irq.c:4</a></div></div>
 <div class="ttc" id="group__bc__gpio_html_gga95188c2afa0f36cb97ebd6c5bc6eab6ca93c6ded3c30018c1008fc51601d54ace"><div class="ttname"><a href="group__bc__gpio.html#gga95188c2afa0f36cb97ebd6c5bc6eab6ca93c6ded3c30018c1008fc51601d54ace">BC_GPIO_MODE_OUTPUT_OD</a></div><div class="ttdoc">GPIO channel operates as open-drain output. </div><div class="ttdef"><b>Definition:</b> <a href="bc__gpio_8h_source.html#l00055">bc_gpio.h:55</a></div></div>
 <div class="ttc" id="group__bc__gpio_html_ga06db16c5cd7f6ffff7e297970814221d"><div class="ttname"><a href="group__bc__gpio.html#ga06db16c5cd7f6ffff7e297970814221d">bc_gpio_init</a></div><div class="ttdeci">void bc_gpio_init(bc_gpio_channel_t channel)</div><div class="ttdoc">Initialize GPIO channel. </div><div class="ttdef"><b>Definition:</b> <a href="bc__gpio_8c_source.html#l00285">bc_gpio.c:285</a></div></div>
 <div class="ttc" id="group__bc__gpio_html_gga95188c2afa0f36cb97ebd6c5bc6eab6ca92cf3f1d89c43c735e756479890cd608"><div class="ttname"><a href="group__bc__gpio.html#gga95188c2afa0f36cb97ebd6c5bc6eab6ca92cf3f1d89c43c735e756479890cd608">BC_GPIO_MODE_OUTPUT</a></div><div class="ttdoc">GPIO channel operates as output. </div><div class="ttdef"><b>Definition:</b> <a href="bc__gpio_8h_source.html#l00052">bc_gpio.h:52</a></div></div>

@@ -110,31 +110,43 @@ $(document).ready(function(){initNavTree('bc__led_8h_source.html','');});
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;bc_common.h&gt;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;bc_gpio.h&gt;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    BC_LED_MODE_OFF = 0,</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    BC_LED_MODE_ON = 1,</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    BC_LED_MODE_BLINK = 2</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;} bc_led_mode_t;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structbc__led__t.html">bc_led_t</a> <a class="code" href="structbc__led__t.html">bc_led_t</a>;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
-<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="structbc__led__t.html">   17</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structbc__led__t.html">bc_led_t</a></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <a class="code" href="group__bc__gpio.html#ga5a8d8aed85b7bb7f5b219fc6a4cd5b8e">bc_gpio_channel_t</a> _gpio_channel;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordtype">bool</span> _open_drain_output;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordtype">bool</span> _idle_state;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    uint32_t _pattern;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    uint32_t _selector;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;};</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keywordtype">void</span> bc_led_init(<a class="code" href="structbc__led__t.html">bc_led_t</a> *<span class="keyword">self</span>, <a class="code" href="group__bc__gpio.html#ga5a8d8aed85b7bb7f5b219fc6a4cd5b8e">bc_gpio_channel_t</a> gpio_channel, <span class="keywordtype">bool</span> open_drain_output, <span class="keywordtype">bool</span> idle_state);</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keywordtype">void</span> bc_led_set_mode(<a class="code" href="structbc__led__t.html">bc_led_t</a> *<span class="keyword">self</span>, bc_led_mode_t mode);</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="group__bc__led.html#gae9ea7763b55ff27ec63b6f9a5069a9c1">   21</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;{</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="group__bc__led.html#ggae9ea7763b55ff27ec63b6f9a5069a9c1ac62ebddc21c20866b200ef345db1bb77">   23</a></span>&#160;    <a class="code" href="group__bc__led.html#ggae9ea7763b55ff27ec63b6f9a5069a9c1ac62ebddc21c20866b200ef345db1bb77">BC_LED_MODE_OFF</a> = 0,    </div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="group__bc__led.html#ggae9ea7763b55ff27ec63b6f9a5069a9c1aef86aa16ff540c4653431ced4c25dfd3">   24</a></span>&#160;    <a class="code" href="group__bc__led.html#ggae9ea7763b55ff27ec63b6f9a5069a9c1aef86aa16ff540c4653431ced4c25dfd3">BC_LED_MODE_ON</a> = 1,     </div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="group__bc__led.html#ggae9ea7763b55ff27ec63b6f9a5069a9c1a728d7bdceb47d519a899ccf7882e13d1">   25</a></span>&#160;    <a class="code" href="group__bc__led.html#ggae9ea7763b55ff27ec63b6f9a5069a9c1a728d7bdceb47d519a899ccf7882e13d1">BC_LED_MODE_BLINK</a> = 2   </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;} <a class="code" href="group__bc__led.html#gae9ea7763b55ff27ec63b6f9a5069a9c1">bc_led_mode_t</a>;</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* _BC_LED_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structbc__led__t.html">bc_led_t</a> <a class="code" href="structbc__led__t.html">bc_led_t</a>;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="structbc__led__t.html">   33</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structbc__led__t.html">bc_led_t</a></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;{</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <a class="code" href="group__bc__gpio.html#ga5a8d8aed85b7bb7f5b219fc6a4cd5b8e">bc_gpio_channel_t</a> _gpio_channel;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">bool</span> _open_drain_output;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">bool</span> _idle_state;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    uint32_t _pattern;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    uint32_t _selector;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;};</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__bc__led.html#ga822e72175b9bc2557ad7c989f98c7068">bc_led_init</a>(<a class="code" href="structbc__led__t.html">bc_led_t</a> *<span class="keyword">self</span>, <a class="code" href="group__bc__gpio.html#ga5a8d8aed85b7bb7f5b219fc6a4cd5b8e">bc_gpio_channel_t</a> gpio_channel, <span class="keywordtype">bool</span> open_drain_output, <span class="keywordtype">bool</span> idle_state);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__bc__led.html#ga6ffe61a0edb14fbf3847203068cf4715">bc_led_set_mode</a>(<a class="code" href="structbc__led__t.html">bc_led_t</a> *<span class="keyword">self</span>, <a class="code" href="group__bc__led.html#gae9ea7763b55ff27ec63b6f9a5069a9c1">bc_led_mode_t</a> mode);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* _BC_LED_H */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="group__bc__led_html_gae9ea7763b55ff27ec63b6f9a5069a9c1"><div class="ttname"><a href="group__bc__led.html#gae9ea7763b55ff27ec63b6f9a5069a9c1">bc_led_mode_t</a></div><div class="ttdeci">bc_led_mode_t</div><div class="ttdoc">LED modes. </div><div class="ttdef"><b>Definition:</b> <a href="bc__led_8h_source.html#l00021">bc_led.h:21</a></div></div>
+<div class="ttc" id="group__bc__led_html_ggae9ea7763b55ff27ec63b6f9a5069a9c1ac62ebddc21c20866b200ef345db1bb77"><div class="ttname"><a href="group__bc__led.html#ggae9ea7763b55ff27ec63b6f9a5069a9c1ac62ebddc21c20866b200ef345db1bb77">BC_LED_MODE_OFF</a></div><div class="ttdoc">Turn LED off. </div><div class="ttdef"><b>Definition:</b> <a href="bc__led_8h_source.html#l00023">bc_led.h:23</a></div></div>
+<div class="ttc" id="group__bc__led_html_ga6ffe61a0edb14fbf3847203068cf4715"><div class="ttname"><a href="group__bc__led.html#ga6ffe61a0edb14fbf3847203068cf4715">bc_led_set_mode</a></div><div class="ttdeci">void bc_led_set_mode(bc_led_t *self, bc_led_mode_t mode)</div><div class="ttdoc">Set LED mode. </div><div class="ttdef"><b>Definition:</b> <a href="bc__led_8c_source.html#l00056">bc_led.c:56</a></div></div>
+<div class="ttc" id="group__bc__led_html_ggae9ea7763b55ff27ec63b6f9a5069a9c1a728d7bdceb47d519a899ccf7882e13d1"><div class="ttname"><a href="group__bc__led.html#ggae9ea7763b55ff27ec63b6f9a5069a9c1a728d7bdceb47d519a899ccf7882e13d1">BC_LED_MODE_BLINK</a></div><div class="ttdoc">Blink the LED. </div><div class="ttdef"><b>Definition:</b> <a href="bc__led_8h_source.html#l00025">bc_led.h:25</a></div></div>
+<div class="ttc" id="group__bc__led_html_ga822e72175b9bc2557ad7c989f98c7068"><div class="ttname"><a href="group__bc__led.html#ga822e72175b9bc2557ad7c989f98c7068">bc_led_init</a></div><div class="ttdeci">void bc_led_init(bc_led_t *self, bc_gpio_channel_t gpio_channel, bool open_drain_output, bool idle_state)</div><div class="ttdoc">LED init function. </div><div class="ttdef"><b>Definition:</b> <a href="bc__led_8c_source.html#l00009">bc_led.c:9</a></div></div>
 <div class="ttc" id="group__bc__gpio_html_ga5a8d8aed85b7bb7f5b219fc6a4cd5b8e"><div class="ttname"><a href="group__bc__gpio.html#ga5a8d8aed85b7bb7f5b219fc6a4cd5b8e">bc_gpio_channel_t</a></div><div class="ttdeci">bc_gpio_channel_t</div><div class="ttdoc">GPIO channels. </div><div class="ttdef"><b>Definition:</b> <a href="bc__gpio_8h_source.html#l00012">bc_gpio.h:12</a></div></div>
-<div class="ttc" id="structbc__led__t_html"><div class="ttname"><a href="structbc__led__t.html">bc_led_t</a></div><div class="ttdef"><b>Definition:</b> <a href="bc__led_8h_source.html#l00017">bc_led.h:17</a></div></div>
+<div class="ttc" id="group__bc__led_html_ggae9ea7763b55ff27ec63b6f9a5069a9c1aef86aa16ff540c4653431ced4c25dfd3"><div class="ttname"><a href="group__bc__led.html#ggae9ea7763b55ff27ec63b6f9a5069a9c1aef86aa16ff540c4653431ced4c25dfd3">BC_LED_MODE_ON</a></div><div class="ttdoc">Turn LED on. </div><div class="ttdef"><b>Definition:</b> <a href="bc__led_8h_source.html#l00024">bc_led.h:24</a></div></div>
+<div class="ttc" id="structbc__led__t_html"><div class="ttname"><a href="structbc__led__t.html">bc_led_t</a></div><div class="ttdoc">LED instance. </div><div class="ttdef"><b>Definition:</b> <a href="bc__led_8h_source.html#l00033">bc_led.h:33</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

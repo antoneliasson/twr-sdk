@@ -1,0 +1,4 @@
+<map id="bc_lux_meter_tag_init" name="bc_lux_meter_tag_init">
+<area shape="rect" id="node2" href="$group__bc__opt3001.html#ga3db4ea45d7c7b4cb5e63fda04802e1ba" title="Initialize OPT3001 driver. " alt="" coords="203,5,317,32"/>
+<area shape="rect" id="node3" href="$group__bc__scheduler.html#ga606d11774aa3a42489d343f75c3f5e3d" title="Register new task to the scheduler. " alt="" coords="365,5,515,32"/>
+</map>

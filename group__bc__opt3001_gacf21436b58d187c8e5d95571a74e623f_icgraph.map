@@ -1,0 +1,5 @@
+<map id="bc_opt3001_get_luminosity_raw" name="bc_opt3001_get_luminosity_raw">
+<area shape="rect" id="node2" href="$group__bc__lux__meter__tag.html#ga932c6ac2ac3699b307eb75fe8c0df357" title="Get measured luminosity in raw values. " alt="" coords="289,5,439,46"/>
+<area shape="rect" id="node3" href="$group__bc__opt3001.html#gafba93b22c9d067ecaa5ea8d7462fe4b5" title="Get measured luminosity in lux. " alt="" coords="262,71,466,97"/>
+<area shape="rect" id="node4" href="$group__bc__lux__meter__tag.html#ga52b17d82cf2c0c6ba3c6eb77f1bcc4b5" title="Get measured luminosity in lux. " alt="" coords="515,63,666,105"/>
+</map>
