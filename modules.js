@@ -9,6 +9,7 @@ var modules =
     [ "bc_irq", "group__bc__irq.html", "group__bc__irq" ],
     [ "bc_led", "group__bc__led.html", "group__bc__led" ],
     [ "bc_lux_meter_tag", "group__bc__lux__meter__tag.html", "group__bc__lux__meter__tag" ],
+    [ "bc_module_power", "group__bc__module__power.html", "group__bc__module__power" ],
     [ "bc_opt3001", "group__bc__opt3001.html", "group__bc__opt3001" ],
     [ "bc_rtc", "group__bc__rtc.html", "group__bc__rtc" ],
     [ "bc_scheduler", "group__bc__scheduler.html", "group__bc__scheduler" ],

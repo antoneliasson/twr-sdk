@@ -9,6 +9,7 @@ var dir_68267d1309a1af8e8297ef4c3efbcdba =
     [ "bc_i2c.c", "bc__i2c_8c_source.html", null ],
     [ "bc_irq.c", "bc__irq_8c_source.html", null ],
     [ "bc_led.c", "bc__led_8c_source.html", null ],
+    [ "bc_module_power.c", "bc__module__power_8c_source.html", null ],
     [ "bc_mpl3115a2.c", "bc__mpl3115a2_8c_source.html", null ],
     [ "bc_opt3001.c", "bc__opt3001_8c_source.html", null ],
     [ "bc_rtc.c", "bc__rtc_8c_source.html", null ],

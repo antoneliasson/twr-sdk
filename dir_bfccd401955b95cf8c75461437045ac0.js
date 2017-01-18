@@ -15,6 +15,7 @@ var dir_bfccd401955b95cf8c75461437045ac0 =
     [ "bc_irq.h", "bc__irq_8h_source.html", null ],
     [ "bc_led.h", "bc__led_8h_source.html", null ],
     [ "bc_lux_meter_tag.h", "bc__lux__meter__tag_8h_source.html", null ],
+    [ "bc_module_power.h", "bc__module__power_8h_source.html", null ],
     [ "bc_mpl3115a2.h", "bc__mpl3115a2_8h_source.html", null ],
     [ "bc_opt3001.h", "bc__opt3001_8h_source.html", null ],
     [ "bc_rtc.h", "bc__rtc_8h_source.html", null ],

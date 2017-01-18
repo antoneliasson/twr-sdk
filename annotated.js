@@ -5,9 +5,12 @@ var annotated =
     [ "bc_hdc2080_t", "structbc__hdc2080__t.html", "structbc__hdc2080__t" ],
     [ "bc_i2c_tranfer_t", "structbc__i2c__tranfer__t.html", "structbc__i2c__tranfer__t" ],
     [ "bc_led_t", "structbc__led__t.html", "structbc__led__t" ],
+    [ "bc_module_power_t", "structbc__module__power__t.html", "structbc__module__power__t" ],
     [ "bc_mpl3115a2_t", "structbc__mpl3115a2__t.html", "structbc__mpl3115a2__t" ],
     [ "bc_opt3001_t", "structbc__opt3001__t.html", "structbc__opt3001__t" ],
     [ "bc_tmp112_t", "structbc__tmp112__t.html", "structbc__tmp112__t" ],
     [ "jsmn_parser", "structjsmn__parser.html", "structjsmn__parser" ],
-    [ "jsmntok_t", "structjsmntok__t.html", "structjsmntok__t" ]
+    [ "jsmntok_t", "structjsmntok__t.html", "structjsmntok__t" ],
+    [ "ws2812b_buffer_item_t", "structws2812b__buffer__item__t.html", "structws2812b__buffer__item__t" ],
+    [ "ws2812b_t", "structws2812b__t.html", "structws2812b__t" ]
 ];

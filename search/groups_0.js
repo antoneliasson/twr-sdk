@@ -9,6 +9,7 @@ var searchData=
   ['bc_5firq',['bc_irq',['../group__bc__irq.html',1,'']]],
   ['bc_5fled',['bc_led',['../group__bc__led.html',1,'']]],
   ['bc_5flux_5fmeter_5ftag',['bc_lux_meter_tag',['../group__bc__lux__meter__tag.html',1,'']]],
+  ['bc_5fmodule_5fpower',['bc_module_power',['../group__bc__module__power.html',1,'']]],
   ['bc_5fopt3001',['bc_opt3001',['../group__bc__opt3001.html',1,'']]],
   ['bc_5frtc',['bc_rtc',['../group__bc__rtc.html',1,'']]],
   ['bc_5fscheduler',['bc_scheduler',['../group__bc__scheduler.html',1,'']]],
