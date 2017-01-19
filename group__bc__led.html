@@ -127,7 +127,13 @@ Enumerations</h2></td></tr>
 <br/>
 &#160;&#160;<a class="el" href="group__bc__led.html#ggae9ea7763b55ff27ec63b6f9a5069a9c1aef86aa16ff540c4653431ced4c25dfd3">BC_LED_MODE_ON</a> = 1, 
 <br/>
-&#160;&#160;<a class="el" href="group__bc__led.html#ggae9ea7763b55ff27ec63b6f9a5069a9c1a728d7bdceb47d519a899ccf7882e13d1">BC_LED_MODE_BLINK</a> = 2
+&#160;&#160;<a class="el" href="group__bc__led.html#ggae9ea7763b55ff27ec63b6f9a5069a9c1a728d7bdceb47d519a899ccf7882e13d1">BC_LED_MODE_BLINK</a> = 2, 
+<br/>
+&#160;&#160;<a class="el" href="group__bc__led.html#ggae9ea7763b55ff27ec63b6f9a5069a9c1a9566d63a071b070b30272b85c919824f">BC_LED_MODE_BLINK_SLOW</a> = 3, 
+<br/>
+&#160;&#160;<a class="el" href="group__bc__led.html#ggae9ea7763b55ff27ec63b6f9a5069a9c1abceeffe3c6e9de4c8f8b6a9fbcda3918">BC_LED_MODE_BLINK_FAST</a> = 4, 
+<br/>
+&#160;&#160;<a class="el" href="group__bc__led.html#ggae9ea7763b55ff27ec63b6f9a5069a9c1a98556b0e6dc4939ed6020c45086f3872">BC_LED_MODE_FLASH</a> = 5
 <br/>
  }</td></tr>
 <tr class="memdesc:gae9ea7763b55ff27ec63b6f9a5069a9c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">LED modes.  <a href="group__bc__led.html#gae9ea7763b55ff27ec63b6f9a5069a9c1">More...</a><br/></td></tr>
@@ -138,9 +144,18 @@ Functions</h2></td></tr>
 <tr class="memitem:ga822e72175b9bc2557ad7c989f98c7068"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bc__led.html#ga822e72175b9bc2557ad7c989f98c7068">bc_led_init</a> (<a class="el" href="structbc__led__t.html">bc_led_t</a> *self, <a class="el" href="group__bc__gpio.html#ga5a8d8aed85b7bb7f5b219fc6a4cd5b8e">bc_gpio_channel_t</a> gpio_channel, bool open_drain_output, bool idle_state)</td></tr>
 <tr class="memdesc:ga822e72175b9bc2557ad7c989f98c7068"><td class="mdescLeft">&#160;</td><td class="mdescRight">LED init function.  <a href="#ga822e72175b9bc2557ad7c989f98c7068">More...</a><br/></td></tr>
 <tr class="separator:ga822e72175b9bc2557ad7c989f98c7068"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafc579801a777bb5fe3318e2bd0397279"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bc__led.html#gafc579801a777bb5fe3318e2bd0397279">bc_led_set_slot_interval</a> (<a class="el" href="structbc__led__t.html">bc_led_t</a> *self, <a class="el" href="group__bc__tick.html#gabd224c28866c49d86f5d33cae606bbe0">bc_tick_t</a> interval)</td></tr>
+<tr class="memdesc:gafc579801a777bb5fe3318e2bd0397279"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set LED slot interval for pattern.  <a href="#gafc579801a777bb5fe3318e2bd0397279">More...</a><br/></td></tr>
+<tr class="separator:gafc579801a777bb5fe3318e2bd0397279"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga6ffe61a0edb14fbf3847203068cf4715"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bc__led.html#ga6ffe61a0edb14fbf3847203068cf4715">bc_led_set_mode</a> (<a class="el" href="structbc__led__t.html">bc_led_t</a> *self, <a class="el" href="group__bc__led.html#gae9ea7763b55ff27ec63b6f9a5069a9c1">bc_led_mode_t</a> mode)</td></tr>
 <tr class="memdesc:ga6ffe61a0edb14fbf3847203068cf4715"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set LED mode.  <a href="#ga6ffe61a0edb14fbf3847203068cf4715">More...</a><br/></td></tr>
 <tr class="separator:ga6ffe61a0edb14fbf3847203068cf4715"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5599ece47811e27512bad8e7b1670818"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bc__led.html#ga5599ece47811e27512bad8e7b1670818">bc_led_set_pattern</a> (<a class="el" href="structbc__led__t.html">bc_led_t</a> *self, uint32_t pattern)</td></tr>
+<tr class="memdesc:ga5599ece47811e27512bad8e7b1670818"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set custom blinking pattern.  <a href="#ga5599ece47811e27512bad8e7b1670818">More...</a><br/></td></tr>
+<tr class="separator:ga5599ece47811e27512bad8e7b1670818"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga70430d42b18f282381a8c8044c8adf94"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bc__led.html#ga70430d42b18f282381a8c8044c8adf94">bc_led_pulse</a> (<a class="el" href="structbc__led__t.html">bc_led_t</a> *self, <a class="el" href="group__bc__tick.html#gabd224c28866c49d86f5d33cae606bbe0">bc_tick_t</a> duration)</td></tr>
+<tr class="memdesc:ga70430d42b18f282381a8c8044c8adf94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Turn on LED for the specified duration of time.  <a href="#ga70430d42b18f282381a8c8044c8adf94">More...</a><br/></td></tr>
+<tr class="separator:ga70430d42b18f282381a8c8044c8adf94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Driver for pcb LED. </p>
@@ -164,17 +179,26 @@ Init and framebuffer example</h1>
 <p>LED modes. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="ggae9ea7763b55ff27ec63b6f9a5069a9c1ac62ebddc21c20866b200ef345db1bb77"></a>BC_LED_MODE_OFF</em>&#160;</td><td class="fielddoc">
-<p>Turn LED off. </p>
+<p>Keep LED off. </p>
 </td></tr>
 <tr><td class="fieldname"><em><a class="anchor" id="ggae9ea7763b55ff27ec63b6f9a5069a9c1aef86aa16ff540c4653431ced4c25dfd3"></a>BC_LED_MODE_ON</em>&#160;</td><td class="fielddoc">
-<p>Turn LED on. </p>
+<p>Keep LED on. </p>
 </td></tr>
 <tr><td class="fieldname"><em><a class="anchor" id="ggae9ea7763b55ff27ec63b6f9a5069a9c1a728d7bdceb47d519a899ccf7882e13d1"></a>BC_LED_MODE_BLINK</em>&#160;</td><td class="fielddoc">
-<p>Blink the LED. </p>
+<p>Blink LED. </p>
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ggae9ea7763b55ff27ec63b6f9a5069a9c1a9566d63a071b070b30272b85c919824f"></a>BC_LED_MODE_BLINK_SLOW</em>&#160;</td><td class="fielddoc">
+<p>Blink LED slow. </p>
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ggae9ea7763b55ff27ec63b6f9a5069a9c1abceeffe3c6e9de4c8f8b6a9fbcda3918"></a>BC_LED_MODE_BLINK_FAST</em>&#160;</td><td class="fielddoc">
+<p>Blink LED fast. </p>
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ggae9ea7763b55ff27ec63b6f9a5069a9c1a98556b0e6dc4939ed6020c45086f3872"></a>BC_LED_MODE_FLASH</em>&#160;</td><td class="fielddoc">
+<p>Repeatedly flash LED. </p>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="bc__led_8h_source.html#l00021">21</a> of file <a class="el" href="bc__led_8h_source.html">bc_led.h</a>.</p>
+<p>Definition at line <a class="el" href="bc__led_8h_source.html#l00022">22</a> of file <a class="el" href="bc__led_8h_source.html">bc_led.h</a>.</p>
 
 </div>
 </div>
@@ -233,7 +257,53 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="group__bc__led_ga822e72175b9bc2557ad7c989f98c7068_cgraph.png" border="0" usemap="#group__bc__led_ga822e72175b9bc2557ad7c989f98c7068_cgraph" alt=""/></div>
 <map name="group__bc__led_ga822e72175b9bc2557ad7c989f98c7068_cgraph" id="group__bc__led_ga822e72175b9bc2557ad7c989f98c7068_cgraph">
-<area shape="rect" id="node2" href="group__bc__gpio.html#ga06db16c5cd7f6ffff7e297970814221d" title="Initialize GPIO channel. " alt="" coords="168,5,259,32"/><area shape="rect" id="node5" href="group__bc__gpio.html#ga509a65d13103db1a636c7ba082336cdd" title="Set output state for GPIO channel. " alt="" coords="146,107,281,133"/><area shape="rect" id="node6" href="group__bc__gpio.html#ga63a3ad86dfef88c7c940a2a34945d853" title="Set mode of operation for GPIO channel. " alt="" coords="148,56,279,83"/><area shape="rect" id="node7" href="group__bc__scheduler.html#ga606d11774aa3a42489d343f75c3f5e3d" title="Register new task to the scheduler. " alt="" coords="139,157,288,184"/><area shape="rect" id="node3" href="group__bc__irq.html#ga83398e8b1c443f7bf1b1980959d3cc63" title="Disable global IRQs. " alt="" coords="337,5,442,32"/><area shape="rect" id="node4" href="group__bc__irq.html#ga6bd1e6c1589c97558d14e8f3d648e656" title="Enable global IRQs. " alt="" coords="338,56,441,83"/></map>
+<area shape="rect" id="node2" href="group__bc__gpio.html#ga06db16c5cd7f6ffff7e297970814221d" title="Initialize GPIO channel. " alt="" coords="168,5,259,32"/><area shape="rect" id="node5" href="group__bc__gpio.html#ga509a65d13103db1a636c7ba082336cdd" title="Set output state for GPIO channel. " alt="" coords="146,107,281,133"/><area shape="rect" id="node6" href="group__bc__gpio.html#ga63a3ad86dfef88c7c940a2a34945d853" title="Set mode of operation for GPIO channel. " alt="" coords="148,56,279,83"/><area shape="rect" id="node7" href="group__bc__scheduler.html#ga6eed97126e4433cf73dcf7adec765105" title="Register new task to the scheduler. " alt="" coords="139,157,288,184"/><area shape="rect" id="node3" href="group__bc__irq.html#ga83398e8b1c443f7bf1b1980959d3cc63" title="Disable global IRQs. " alt="" coords="337,5,442,32"/><area shape="rect" id="node4" href="group__bc__irq.html#ga6bd1e6c1589c97558d14e8f3d648e656" title="Enable global IRQs. " alt="" coords="338,56,441,83"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ga70430d42b18f282381a8c8044c8adf94"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void bc_led_pulse </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structbc__led__t.html">bc_led_t</a> *&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__bc__tick.html#gabd224c28866c49d86f5d33cae606bbe0">bc_tick_t</a>&#160;</td>
+          <td class="paramname"><em>duration</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Turn on LED for the specified duration of time. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">self</td><td>LED instance </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">duration</td><td>Number of ticks for which LED will be turned on </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="bc__led_8c_source.html#l00101">101</a> of file <a class="el" href="bc__led_8c_source.html">bc_led.c</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="group__bc__led_ga70430d42b18f282381a8c8044c8adf94_cgraph.png" border="0" usemap="#group__bc__led_ga70430d42b18f282381a8c8044c8adf94_cgraph" alt=""/></div>
+<map name="group__bc__led_ga70430d42b18f282381a8c8044c8adf94_cgraph" id="group__bc__led_ga70430d42b18f282381a8c8044c8adf94_cgraph">
+<area shape="rect" id="node2" href="group__bc__scheduler.html#ga55f4cdf03900e30d78cdfbe92190d116" title="Plan previously registered task to a given time. " alt="" coords="161,5,292,32"/><area shape="rect" id="node3" href="group__bc__tick.html#ga5291d354b48d9599d185969d53f2bf8a" title="Get timestamp since the code started. " alt="" coords="182,56,271,83"/><area shape="rect" id="node4" href="group__bc__gpio.html#ga509a65d13103db1a636c7ba082336cdd" title="Set output state for GPIO channel. " alt="" coords="159,107,294,133"/><area shape="rect" id="node5" href="group__bc__scheduler.html#ga6eed97126e4433cf73dcf7adec765105" title="Register new task to the scheduler. " alt="" coords="152,157,301,184"/></map>
 </div>
 </p>
 
@@ -266,13 +336,87 @@ Here is the call graph for this function:</div>
 <p>Set LED mode. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">self</td><td>Instance </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td>LED mode </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">self</td><td>LED instance </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td>Desired LED mode </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="bc__led_8c_source.html#l00056">56</a> of file <a class="el" href="bc__led_8c_source.html">bc_led.c</a>.</p>
+<p>Definition at line <a class="el" href="bc__led_8c_source.html#l00042">42</a> of file <a class="el" href="bc__led_8c_source.html">bc_led.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga5599ece47811e27512bad8e7b1670818"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void bc_led_set_pattern </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structbc__led__t.html">bc_led_t</a> *&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>pattern</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set custom blinking pattern. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">self</td><td>LED instance </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pattern</td><td>Blinking pattern (bits with log. 1 represent active slot) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="bc__led_8c_source.html#l00091">91</a> of file <a class="el" href="bc__led_8c_source.html">bc_led.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gafc579801a777bb5fe3318e2bd0397279"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void bc_led_set_slot_interval </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structbc__led__t.html">bc_led_t</a> *&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__bc__tick.html#gabd224c28866c49d86f5d33cae606bbe0">bc_tick_t</a>&#160;</td>
+          <td class="paramname"><em>interval</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set LED slot interval for pattern. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">self</td><td>LED instance </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">interval</td><td>Desired slot interval in ticks </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="bc__led_8c_source.html#l00037">37</a> of file <a class="el" href="bc__led_8c_source.html">bc_led.c</a>.</p>
 
 </div>
 </div>

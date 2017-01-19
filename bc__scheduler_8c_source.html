@@ -116,7 +116,7 @@ $(document).ready(function(){initNavTree('bc__scheduler_8c_source.html','');});
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    } pool[<a class="code" href="group__bc__scheduler.html#ga2940011c306bba0793d7ec1915385292">BC_SCHEDULER_MAX_TASKS</a>];</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keywordtype">size_t</span> count;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    bc_scheduler_task_id_t max_task_id;</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;} bc_scheduler;</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
@@ -133,7 +133,7 @@ $(document).ready(function(){initNavTree('bc__scheduler_8c_source.html','');});
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <a class="code" href="group__bc__tick.html#gabd224c28866c49d86f5d33cae606bbe0">bc_tick_t</a> max_tick = 0;</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; bc_scheduler.count; i++)</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="keywordflow">for</span> (bc_scheduler_task_id_t i = 0; i &lt;= bc_scheduler.max_task_id; i++)</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        {</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;            <span class="keywordflow">if</span> (bc_scheduler.pool[i].task != NULL)</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;            {</div>
@@ -153,35 +153,60 @@ $(document).ready(function(){initNavTree('bc__scheduler_8c_source.html','');});
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    }</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;}</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
-<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="group__bc__scheduler.html#ga606d11774aa3a42489d343f75c3f5e3d">   50</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__bc__scheduler.html#ga606d11774aa3a42489d343f75c3f5e3d">bc_scheduler_register</a>(<a class="code" href="group__bc__tick.html#gabd224c28866c49d86f5d33cae606bbe0">bc_tick_t</a> (*task)(<span class="keywordtype">void</span> *), <span class="keywordtype">void</span> *param, <a class="code" href="group__bc__tick.html#gabd224c28866c49d86f5d33cae606bbe0">bc_tick_t</a> tick)</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="group__bc__scheduler.html#ga6eed97126e4433cf73dcf7adec765105">   50</a></span>&#160;bc_scheduler_task_id_t <a class="code" href="group__bc__scheduler.html#ga6eed97126e4433cf73dcf7adec765105">bc_scheduler_register</a>(<a class="code" href="group__bc__tick.html#gabd224c28866c49d86f5d33cae606bbe0">bc_tick_t</a> (*task)(<span class="keywordtype">void</span> *), <span class="keywordtype">void</span> *param, <a class="code" href="group__bc__tick.html#gabd224c28866c49d86f5d33cae606bbe0">bc_tick_t</a> tick)</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;{</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordflow">if</span> (bc_scheduler.count &gt;= <a class="code" href="group__bc__scheduler.html#ga2940011c306bba0793d7ec1915385292">BC_SCHEDULER_MAX_TASKS</a>)</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordflow">for</span> (bc_scheduler_task_id_t i = 0; i &lt; <a class="code" href="group__bc__scheduler.html#ga2940011c306bba0793d7ec1915385292">BC_SCHEDULER_MAX_TASKS</a>; i++)</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    {</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="comment">// TODO Replace</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keywordflow">for</span> (;;);</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    }</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    bc_scheduler.pool[bc_scheduler.count].tick = tick;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    bc_scheduler.pool[bc_scheduler.count].task = task;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    bc_scheduler.pool[bc_scheduler.count].param = param;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    bc_scheduler.count++;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;}</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="keywordflow">if</span> (bc_scheduler.pool[i].task == NULL)</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        {</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            bc_scheduler.pool[i].tick = tick;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            bc_scheduler.pool[i].task = task;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            bc_scheduler.pool[i].param = param;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            <span class="keywordflow">if</span> (bc_scheduler.max_task_id &lt; i)</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            {</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                bc_scheduler.max_task_id = i;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            }</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
-<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="group__bc__scheduler.html#gae4a1e941e1f09a12cc3a4ef69373136b">   65</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__bc__scheduler.html#gae4a1e941e1f09a12cc3a4ef69373136b">bc_scheduler_unregister</a>(<a class="code" href="group__bc__tick.html#gabd224c28866c49d86f5d33cae606bbe0">bc_tick_t</a> (*task)(<span class="keywordtype">void</span> *), <span class="keywordtype">void</span> *param)</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;{</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  (void) task;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  (void) param;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="comment">// TODO Implement this</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            <span class="keywordflow">return</span> i;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        }</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    }</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="comment">// TODO Indicate no more tasks available</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordflow">for</span> (;;);</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;}</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="group__bc__scheduler.html#gae1d865cf578e9994cd50a972af54fc20">   73</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__bc__scheduler.html#gae1d865cf578e9994cd50a972af54fc20">bc_scheduler_unregister</a>(bc_scheduler_task_id_t task_id)</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;{</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    bc_scheduler.pool[task_id].task = NULL;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordflow">if</span> (bc_scheduler.max_task_id == task_id)</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    {</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <span class="keywordflow">do</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        {</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            <span class="keywordflow">if</span> (bc_scheduler.max_task_id == 0)</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            {</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;            }</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            bc_scheduler.max_task_id--;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        } <span class="keywordflow">while</span> (bc_scheduler.pool[bc_scheduler.max_task_id].task == NULL);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    }</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;}</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
+<div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="group__bc__scheduler.html#ga55f4cdf03900e30d78cdfbe92190d116">   92</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__bc__scheduler.html#ga55f4cdf03900e30d78cdfbe92190d116">bc_scheduler_plan</a>(bc_scheduler_task_id_t task_id, <a class="code" href="group__bc__tick.html#gabd224c28866c49d86f5d33cae606bbe0">bc_tick_t</a> tick)</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;{</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    bc_scheduler.pool[task_id].tick = tick;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;}</div>
 <div class="ttc" id="group__bc__tick_html_gabd224c28866c49d86f5d33cae606bbe0"><div class="ttname"><a href="group__bc__tick.html#gabd224c28866c49d86f5d33cae606bbe0">bc_tick_t</a></div><div class="ttdeci">uint64_t bc_tick_t</div><div class="ttdoc">Timestamp data type. </div><div class="ttdef"><b>Definition:</b> <a href="bc__tick_8h_source.html#l00014">bc_tick.h:14</a></div></div>
-<div class="ttc" id="group__bc__scheduler_html_ga606d11774aa3a42489d343f75c3f5e3d"><div class="ttname"><a href="group__bc__scheduler.html#ga606d11774aa3a42489d343f75c3f5e3d">bc_scheduler_register</a></div><div class="ttdeci">void bc_scheduler_register(bc_tick_t(*task)(void *), void *param, bc_tick_t tick)</div><div class="ttdoc">Register new task to the scheduler. </div><div class="ttdef"><b>Definition:</b> <a href="bc__scheduler_8c_source.html#l00050">bc_scheduler.c:50</a></div></div>
+<div class="ttc" id="group__bc__scheduler_html_ga55f4cdf03900e30d78cdfbe92190d116"><div class="ttname"><a href="group__bc__scheduler.html#ga55f4cdf03900e30d78cdfbe92190d116">bc_scheduler_plan</a></div><div class="ttdeci">void bc_scheduler_plan(bc_scheduler_task_id_t task_id, bc_tick_t tick)</div><div class="ttdoc">Plan previously registered task to a given time. </div><div class="ttdef"><b>Definition:</b> <a href="bc__scheduler_8c_source.html#l00092">bc_scheduler.c:92</a></div></div>
 <div class="ttc" id="group__bc__scheduler_html_gae127d7da60ea52a5801bafc4e987cfa1"><div class="ttname"><a href="group__bc__scheduler.html#gae127d7da60ea52a5801bafc4e987cfa1">bc_scheduler_run</a></div><div class="ttdeci">void bc_scheduler_run(void)</div><div class="ttdoc">Run task scheduler. </div><div class="ttdef"><b>Definition:</b> <a href="bc__scheduler_8c_source.html#l00022">bc_scheduler.c:22</a></div></div>
 <div class="ttc" id="group__bc__tick_html_ga5291d354b48d9599d185969d53f2bf8a"><div class="ttname"><a href="group__bc__tick.html#ga5291d354b48d9599d185969d53f2bf8a">bc_tick_get</a></div><div class="ttdeci">bc_tick_t bc_tick_get(void)</div><div class="ttdoc">Get timestamp since the code started. </div><div class="ttdef"><b>Definition:</b> <a href="bc__tick_8c_source.html#l00004">bc_tick.c:4</a></div></div>
 <div class="ttc" id="group__bc__scheduler_html_ga2940011c306bba0793d7ec1915385292"><div class="ttname"><a href="group__bc__scheduler.html#ga2940011c306bba0793d7ec1915385292">BC_SCHEDULER_MAX_TASKS</a></div><div class="ttdeci">#define BC_SCHEDULER_MAX_TASKS</div><div class="ttdoc">Maximum number of tasks. </div><div class="ttdef"><b>Definition:</b> <a href="bc__scheduler_8h_source.html#l00012">bc_scheduler.h:12</a></div></div>
-<div class="ttc" id="group__bc__scheduler_html_gae4a1e941e1f09a12cc3a4ef69373136b"><div class="ttname"><a href="group__bc__scheduler.html#gae4a1e941e1f09a12cc3a4ef69373136b">bc_scheduler_unregister</a></div><div class="ttdeci">void bc_scheduler_unregister(bc_tick_t(*task)(void *), void *param)</div><div class="ttdoc">Unregister previously registered task. </div><div class="ttdef"><b>Definition:</b> <a href="bc__scheduler_8c_source.html#l00065">bc_scheduler.c:65</a></div></div>
+<div class="ttc" id="group__bc__scheduler_html_ga6eed97126e4433cf73dcf7adec765105"><div class="ttname"><a href="group__bc__scheduler.html#ga6eed97126e4433cf73dcf7adec765105">bc_scheduler_register</a></div><div class="ttdeci">bc_scheduler_task_id_t bc_scheduler_register(bc_tick_t(*task)(void *), void *param, bc_tick_t tick)</div><div class="ttdoc">Register new task to the scheduler. </div><div class="ttdef"><b>Definition:</b> <a href="bc__scheduler_8c_source.html#l00050">bc_scheduler.c:50</a></div></div>
 <div class="ttc" id="group__bc__scheduler_html_gafd46883b1205451e4d307679cc586034"><div class="ttname"><a href="group__bc__scheduler.html#gafd46883b1205451e4d307679cc586034">bc_scheduler_init</a></div><div class="ttdeci">void bc_scheduler_init(void)</div><div class="ttdoc">Initialize task scheduler. </div><div class="ttdef"><b>Definition:</b> <a href="bc__scheduler_8c_source.html#l00017">bc_scheduler.c:17</a></div></div>
+<div class="ttc" id="group__bc__scheduler_html_gae1d865cf578e9994cd50a972af54fc20"><div class="ttname"><a href="group__bc__scheduler.html#gae1d865cf578e9994cd50a972af54fc20">bc_scheduler_unregister</a></div><div class="ttdeci">void bc_scheduler_unregister(bc_scheduler_task_id_t task_id)</div><div class="ttdoc">Unregister previously registered task. </div><div class="ttdef"><b>Definition:</b> <a href="bc__scheduler_8c_source.html#l00073">bc_scheduler.c:73</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

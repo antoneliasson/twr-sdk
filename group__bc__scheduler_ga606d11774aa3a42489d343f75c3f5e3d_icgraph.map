@@ -1,7 +1,0 @@
-<map id="bc_scheduler_register" name="bc_scheduler_register">
-<area shape="rect" id="node2" href="$group__bc__led.html#ga822e72175b9bc2557ad7c989f98c7068" title="LED init function. " alt="" coords="218,5,302,32"/>
-<area shape="rect" id="node3" href="$group__bc__opt3001.html#ga3db4ea45d7c7b4cb5e63fda04802e1ba" title="Initialize OPT3001 driver. " alt="" coords="203,56,317,83"/>
-<area shape="rect" id="node5" href="$group__bc__tmp112.html#gafa5c6541860450a84023c16293d977ac" title="Initialize TMP112 driver. " alt="" coords="205,107,315,133"/>
-<area shape="rect" id="node4" href="$group__bc__lux__meter__tag.html#ga8e3e08183a2819a4c5518bc6ed413b7d" title="Initialize lux meter tag. " alt="" coords="372,56,521,83"/>
-<area shape="rect" id="node6" href="$group__bc__temperature__tag.html#ga85c6d61a7171a8183dbdb1f14cf31a0c" title="Initialize temperature tag. " alt="" coords="366,107,527,133"/>
-</map>

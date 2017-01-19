@@ -2,7 +2,7 @@
 <area shape="rect" id="node2" href="$group__bc__gpio.html#ga06db16c5cd7f6ffff7e297970814221d" title="Initialize GPIO channel. " alt="" coords="168,5,259,32"/>
 <area shape="rect" id="node5" href="$group__bc__gpio.html#ga509a65d13103db1a636c7ba082336cdd" title="Set output state for GPIO channel. " alt="" coords="146,107,281,133"/>
 <area shape="rect" id="node6" href="$group__bc__gpio.html#ga63a3ad86dfef88c7c940a2a34945d853" title="Set mode of operation for GPIO channel. " alt="" coords="148,56,279,83"/>
-<area shape="rect" id="node7" href="$group__bc__scheduler.html#ga606d11774aa3a42489d343f75c3f5e3d" title="Register new task to the scheduler. " alt="" coords="139,157,288,184"/>
+<area shape="rect" id="node7" href="$group__bc__scheduler.html#ga6eed97126e4433cf73dcf7adec765105" title="Register new task to the scheduler. " alt="" coords="139,157,288,184"/>
 <area shape="rect" id="node3" href="$group__bc__irq.html#ga83398e8b1c443f7bf1b1980959d3cc63" title="Disable global IRQs. " alt="" coords="337,5,442,32"/>
 <area shape="rect" id="node4" href="$group__bc__irq.html#ga6bd1e6c1589c97558d14e8f3d648e656" title="Enable global IRQs. " alt="" coords="338,56,441,83"/>
 </map>
