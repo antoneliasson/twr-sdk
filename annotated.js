@@ -8,6 +8,7 @@ var annotated =
     [ "bc_module_power_t", "structbc__module__power__t.html", "structbc__module__power__t" ],
     [ "bc_mpl3115a2_t", "structbc__mpl3115a2__t.html", "structbc__mpl3115a2__t" ],
     [ "bc_opt3001_t", "structbc__opt3001__t.html", "structbc__opt3001__t" ],
+    [ "bc_pyq1648_t", "structbc__pyq1648__t.html", "structbc__pyq1648__t" ],
     [ "bc_tmp112_t", "structbc__tmp112__t.html", "structbc__tmp112__t" ],
     [ "jsmn_parser", "structjsmn__parser.html", "structjsmn__parser" ],
     [ "jsmntok_t", "structjsmntok__t.html", "structjsmntok__t" ],

@@ -18,6 +18,8 @@ var dir_bfccd401955b95cf8c75461437045ac0 =
     [ "bc_module_power.h", "bc__module__power_8h_source.html", null ],
     [ "bc_mpl3115a2.h", "bc__mpl3115a2_8h_source.html", null ],
     [ "bc_opt3001.h", "bc__opt3001_8h_source.html", null ],
+    [ "bc_pir_module.h", "bc__pir__module_8h_source.html", null ],
+    [ "bc_pyq1648.h", "bc__pyq1648_8h_source.html", null ],
     [ "bc_rtc.h", "bc__rtc_8h_source.html", null ],
     [ "bc_scheduler.h", "bc__scheduler_8h_source.html", null ],
     [ "bc_spi.h", "bc__spi_8h_source.html", null ],

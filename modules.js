@@ -11,6 +11,8 @@ var modules =
     [ "bc_lux_meter_tag", "group__bc__lux__meter__tag.html", "group__bc__lux__meter__tag" ],
     [ "bc_module_power", "group__bc__module__power.html", "group__bc__module__power" ],
     [ "bc_opt3001", "group__bc__opt3001.html", "group__bc__opt3001" ],
+    [ "bc_pir_module", "group__bc__pir__module.html", "group__bc__pir__module" ],
+    [ "bc_pyq1648", "group__bc__pyq1648.html", "group__bc__pyq1648" ],
     [ "bc_rtc", "group__bc__rtc.html", "group__bc__rtc" ],
     [ "bc_scheduler", "group__bc__scheduler.html", "group__bc__scheduler" ],
     [ "bc_spi", "group__bc__spi.html", "group__bc__spi" ],

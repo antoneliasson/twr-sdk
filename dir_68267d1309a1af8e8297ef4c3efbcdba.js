@@ -12,6 +12,7 @@ var dir_68267d1309a1af8e8297ef4c3efbcdba =
     [ "bc_module_power.c", "bc__module__power_8c_source.html", null ],
     [ "bc_mpl3115a2.c", "bc__mpl3115a2_8c_source.html", null ],
     [ "bc_opt3001.c", "bc__opt3001_8c_source.html", null ],
+    [ "bc_pyq1648.c", "bc__pyq1648_8c_source.html", null ],
     [ "bc_rtc.c", "bc__rtc_8c_source.html", null ],
     [ "bc_scheduler.c", "bc__scheduler_8c_source.html", null ],
     [ "bc_tick.c", "bc__tick_8c_source.html", null ],
