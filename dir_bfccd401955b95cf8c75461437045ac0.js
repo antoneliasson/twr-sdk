@@ -10,6 +10,7 @@ var dir_bfccd401955b95cf8c75461437045ac0 =
     [ "bc_fifo.h", "bc__fifo_8h_source.html", null ],
     [ "bc_gpio.h", "bc__gpio_8h_source.html", null ],
     [ "bc_hdc2080.h", "bc__hdc2080_8h_source.html", null ],
+    [ "bc_hts221.h", "bc__hts221_8h_source.html", null ],
     [ "bc_humidity_tag.h", "bc__humidity__tag_8h_source.html", null ],
     [ "bc_i2c.h", "bc__i2c_8h_source.html", null ],
     [ "bc_irq.h", "bc__irq_8h_source.html", null ],

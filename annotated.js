@@ -3,6 +3,8 @@ var annotated =
     [ "bc_button_t", "structbc__button__t.html", "structbc__button__t" ],
     [ "bc_fifo_t", "structbc__fifo__t.html", "structbc__fifo__t" ],
     [ "bc_hdc2080_t", "structbc__hdc2080__t.html", "structbc__hdc2080__t" ],
+    [ "bc_hts221_t", "structbc__hts221__t.html", "structbc__hts221__t" ],
+    [ "bc_humidity_tag_t", "structbc__humidity__tag__t.html", "structbc__humidity__tag__t" ],
     [ "bc_i2c_tranfer_t", "structbc__i2c__tranfer__t.html", "structbc__i2c__tranfer__t" ],
     [ "bc_led_t", "structbc__led__t.html", "structbc__led__t" ],
     [ "bc_module_power_t", "structbc__module__power__t.html", "structbc__module__power__t" ],

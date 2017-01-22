@@ -89,6 +89,8 @@ var searchData=
   ['bc_5fgpio_5fset_5fpull',['bc_gpio_set_pull',['../group__bc__gpio.html#ga39141debc333424326e1d448f3f81b6d',1,'bc_gpio_set_pull(bc_gpio_channel_t channel, bc_gpio_pull_t pull):&#160;bc_gpio.c'],['../group__bc__gpio.html#ga39141debc333424326e1d448f3f81b6d',1,'bc_gpio_set_pull(bc_gpio_channel_t channel, bc_gpio_pull_t pull):&#160;bc_gpio.c']]],
   ['bc_5fgpio_5ftoggle_5foutput',['bc_gpio_toggle_output',['../group__bc__gpio.html#gac3726d1184678159614d9c5296579534',1,'bc_gpio_toggle_output(bc_gpio_channel_t channel):&#160;bc_gpio.c'],['../group__bc__gpio.html#gac3726d1184678159614d9c5296579534',1,'bc_gpio_toggle_output(bc_gpio_channel_t channel):&#160;bc_gpio.c']]],
   ['bc_5fhdc2080_5ft',['bc_hdc2080_t',['../structbc__hdc2080__t.html',1,'']]],
+  ['bc_5fhts221_5ft',['bc_hts221_t',['../structbc__hts221__t.html',1,'']]],
+  ['bc_5fhumidity_5ftag_5ft',['bc_humidity_tag_t',['../structbc__humidity__tag__t.html',1,'']]],
   ['bc_5fi2c',['bc_i2c',['../group__bc__i2c.html',1,'']]],
   ['bc_5fi2c_5fchannel_5ft',['bc_i2c_channel_t',['../group__bc__i2c.html#ga5f7217e6558c54ac6920e5dabb777fef',1,'bc_i2c.h']]],
   ['bc_5fi2c_5fi2c0',['BC_I2C_I2C0',['../group__bc__i2c.html#gga5f7217e6558c54ac6920e5dabb777fefad92d62203a039aac618ffc4ef92d7498',1,'bc_i2c.h']]],
