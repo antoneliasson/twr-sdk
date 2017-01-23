@@ -12,6 +12,8 @@ var searchData=
   ['bc_5fi2c_5fspeed_5ft',['bc_i2c_speed_t',['../group__bc__i2c.html#ga219721504620df6336373d3e827bb517',1,'bc_i2c.h']]],
   ['bc_5fled_5fmode_5ft',['bc_led_mode_t',['../group__bc__led.html#gae9ea7763b55ff27ec63b6f9a5069a9c1',1,'bc_led.h']]],
   ['bc_5flux_5fmeter_5ftag_5fi2c_5faddress_5ft',['bc_lux_meter_tag_i2c_address_t',['../group__bc__lux__meter__tag.html#gac8b84dea81b3a421dbcba06e4731af8c',1,'bc_lux_meter_tag.h']]],
+  ['bc_5fmodule_5frelay_5fstate_5ft',['bc_module_relay_state_t',['../group__bc__module__relay.html#ga3252af413b59ca9bfc8a94afddec804f',1,'bc_module_relay.h']]],
+  ['bc_5fmodule_5frelay_5ftask_5fstate_5ft',['bc_module_relay_task_state_t',['../group__bc__module__relay.html#gad138b7ed462e11d64f7380730c72bfc8',1,'bc_module_relay.h']]],
   ['bc_5fopt3001_5fevent_5ft',['bc_opt3001_event_t',['../group__bc__opt3001.html#gaabef7058f5bd9bcf5474d86c05e85c29',1,'bc_opt3001.h']]],
   ['bc_5fopt3001_5fstate_5ft',['bc_opt3001_state_t',['../group__bc__opt3001.html#gae4af0af6296014e618ddbfb5216fb8fb',1,'bc_opt3001.h']]],
   ['bc_5fspi_5fmode_5ft',['bc_spi_mode_t',['../group__bc__spi.html#gabc91b706ba04834451a2bf5faa178112',1,'bc_spi.h']]],

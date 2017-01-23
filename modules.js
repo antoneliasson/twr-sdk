@@ -10,6 +10,7 @@ var modules =
     [ "bc_led", "group__bc__led.html", "group__bc__led" ],
     [ "bc_lux_meter_tag", "group__bc__lux__meter__tag.html", "group__bc__lux__meter__tag" ],
     [ "bc_module_power", "group__bc__module__power.html", "group__bc__module__power" ],
+    [ "bc_module_relay", "group__bc__module__relay.html", "group__bc__module__relay" ],
     [ "bc_opt3001", "group__bc__opt3001.html", "group__bc__opt3001" ],
     [ "bc_pir_module", "group__bc__pir__module.html", "group__bc__pir__module" ],
     [ "bc_pyq1648", "group__bc__pyq1648.html", "group__bc__pyq1648" ],

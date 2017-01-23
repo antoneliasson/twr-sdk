@@ -1,0 +1,4 @@
+<map id="bc_module_relay_set" name="bc_module_relay_set">
+<area shape="rect" id="node2" href="$group__bc__module__relay.html#ga2d63107aa6864b9db39b6b8a54add4a7" title="Creates an output pulse on Relay Module. " alt="" coords="202,5,361,32"/>
+<area shape="rect" id="node3" href="$group__bc__module__relay.html#ga07108bde368d035224ff0cb7e70eb16d" title="Toggle the relay state to another. " alt="" coords="200,56,363,83"/>
+</map>

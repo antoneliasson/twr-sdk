@@ -10,6 +10,7 @@ var searchData=
   ['bc_5fled',['bc_led',['../group__bc__led.html',1,'']]],
   ['bc_5flux_5fmeter_5ftag',['bc_lux_meter_tag',['../group__bc__lux__meter__tag.html',1,'']]],
   ['bc_5fmodule_5fpower',['bc_module_power',['../group__bc__module__power.html',1,'']]],
+  ['bc_5fmodule_5frelay',['bc_module_relay',['../group__bc__module__relay.html',1,'']]],
   ['bc_5fopt3001',['bc_opt3001',['../group__bc__opt3001.html',1,'']]],
   ['bc_5fpir_5fmodule',['bc_pir_module',['../group__bc__pir__module.html',1,'']]],
   ['bc_5fpyq1648',['bc_pyq1648',['../group__bc__pyq1648.html',1,'']]],
