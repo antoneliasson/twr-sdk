@@ -114,57 +114,75 @@ $(document).ready(function(){initNavTree('bc__module__relay_8h_source.html','');
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
 <div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="group__bc__module__relay.html#ga3252af413b59ca9bfc8a94afddec804f">   32</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span></div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;{</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    BC_MODULE_RELAY_STATE_FALSE = 0x00,</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    BC_MODULE_RELAY_STATE_TRUE = 0x01,</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    BC_MODULE_RELAY_STATE_UNKNOWN = 0x02</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    BC_MODULE_RELAY_STATE_UNKNOWN = -1,</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    BC_MODULE_RELAY_STATE_FALSE = 0,</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    BC_MODULE_RELAY_STATE_TRUE = 1</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;} <a class="code" href="group__bc__module__relay.html#ga3252af413b59ca9bfc8a94afddec804f">bc_module_relay_state_t</a>;</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
 <div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="group__bc__module__relay.html#gad138b7ed462e11d64f7380730c72bfc8">   41</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span></div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;{</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    BC_MODULE_RELAY_TASK_STATE_DEMAGNETIZE = 0x00,</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    BC_MODULE_RELAY_TASK_STATE_DEMAGNETIZE_PULSE = 0x01,</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    BC_MODULE_RELAY_TASK_STATE_REVERSE_PULSE = 0x02,</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;} <a class="code" href="group__bc__module__relay.html#gad138b7ed462e11d64f7380730c72bfc8">bc_module_relay_task_state_t</a>;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structbc__module__relay__t.html">bc_module_relay_t</a> <a class="code" href="structbc__module__relay__t.html">bc_module_relay_t</a>;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="structbc__module__relay__t.html">   53</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structbc__module__relay__t.html">bc_module_relay_t</a></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;{</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <a class="code" href="structbc__tca9534a__t.html">bc_tca9534a_t</a> _tca9534a;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <a class="code" href="group__bc__module__relay.html#ga3252af413b59ca9bfc8a94afddec804f">bc_module_relay_state_t</a> _relay_state;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <a class="code" href="group__bc__tick.html#gabd224c28866c49d86f5d33cae606bbe0">bc_tick_t</a> _timestamp;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    bc_scheduler_task_id_t _task_id;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <a class="code" href="group__bc__module__relay.html#gad138b7ed462e11d64f7380730c72bfc8">bc_module_relay_task_state_t</a> _state;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <a class="code" href="group__bc__tick.html#gabd224c28866c49d86f5d33cae606bbe0">bc_tick_t</a> _pulse_length;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;};</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__bc__module__relay.html#gacbc20e1b34cc0c927e92af7849db3e44">bc_module_relay_init</a>(<a class="code" href="structbc__module__relay__t.html">bc_module_relay_t</a> *<span class="keyword">self</span>);</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__bc__module__relay.html#gae6de266d71722f7fd4ceb2b8a6754794">bc_module_relay_set</a>(<a class="code" href="structbc__module__relay__t.html">bc_module_relay_t</a> *<span class="keyword">self</span>, <a class="code" href="group__bc__module__relay.html#ga3252af413b59ca9bfc8a94afddec804f">bc_module_relay_state_t</a> state);</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__bc__module__relay.html#ga2d63107aa6864b9db39b6b8a54add4a7">bc_module_relay_pulse</a>(<a class="code" href="structbc__module__relay__t.html">bc_module_relay_t</a> *<span class="keyword">self</span>, <a class="code" href="group__bc__tick.html#gabd224c28866c49d86f5d33cae606bbe0">bc_tick_t</a> duration);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    BC_MODULE_RELAY_TASK_STATE_IDLE,</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    BC_MODULE_RELAY_TASK_STATE_SET,</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    BC_MODULE_RELAY_TASK_STATE_SET_DEMAGNETIZE,</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    BC_MODULE_RELAY_TASK_STATE_PULSE,</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    BC_MODULE_RELAY_TASK_STATE_PULSE_DEMAGNETIZE,</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    BC_MODULE_RELAY_TASK_STATE_PULSE_REVERSE,</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    BC_MODULE_RELAY_TASK_STATE_PULSE_DEMAGNETIZE_2</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;} <a class="code" href="group__bc__module__relay.html#gad138b7ed462e11d64f7380730c72bfc8">bc_module_relay_task_state_t</a>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;{</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    BC_MODULE_RELAY_COMMAND_NONE = 0x00,</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    BC_MODULE_RELAY_COMMAND_SET = 0x01,</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    BC_MODULE_RELAY_COMMAND_PULSE = 0x02</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;} bc_module_relay_command_t;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structbc__module__relay__t.html">bc_module_relay_t</a> <a class="code" href="structbc__module__relay__t.html">bc_module_relay_t</a>;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="structbc__module__relay__t.html">   63</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structbc__module__relay__t.html">bc_module_relay_t</a></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;{</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <a class="code" href="structbc__tca9534a__t.html">bc_tca9534a_t</a> _tca9534a;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <a class="code" href="group__bc__module__relay.html#ga3252af413b59ca9bfc8a94afddec804f">bc_module_relay_state_t</a> _relay_state;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <a class="code" href="group__bc__tick.html#gabd224c28866c49d86f5d33cae606bbe0">bc_tick_t</a> _timestamp;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    bc_scheduler_task_id_t _task_id;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <a class="code" href="group__bc__module__relay.html#gad138b7ed462e11d64f7380730c72bfc8">bc_module_relay_task_state_t</a> _state;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    bc_module_relay_command_t _command;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <a class="code" href="group__bc__module__relay.html#ga3252af413b59ca9bfc8a94afddec804f">bc_module_relay_state_t</a> _desired_state;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <a class="code" href="group__bc__tick.html#gabd224c28866c49d86f5d33cae606bbe0">bc_tick_t</a> _pulse_duration;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordtype">bool</span> _task_is_active;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">bool</span> _error;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;};</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="group__bc__module__relay.html#ga07108bde368d035224ff0cb7e70eb16d">bc_module_relay_toggle</a>(<a class="code" href="structbc__module__relay__t.html">bc_module_relay_t</a> *<span class="keyword">self</span>);</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* _BC_MODULE_RELAY_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="group__bc__module__relay.html#ga0427fb94a68fdcd760443e3cbed4d20c">bc_module_relay_init</a>(<a class="code" href="structbc__module__relay__t.html">bc_module_relay_t</a> *<span class="keyword">self</span>);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__bc__module__relay.html#ga5160a03a480acd83defaa000ccdb5228">bc_module_relay_set_state</a>(<a class="code" href="structbc__module__relay__t.html">bc_module_relay_t</a> *<span class="keyword">self</span>, <span class="keywordtype">bool</span> state);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<a class="code" href="group__bc__module__relay.html#ga3252af413b59ca9bfc8a94afddec804f">bc_module_relay_state_t</a> <a class="code" href="group__bc__module__relay.html#gab7a2c28a2d5049343771dfd17f1c1c0d">bc_module_relay_get_state</a>(<a class="code" href="structbc__module__relay__t.html">bc_module_relay_t</a> *<span class="keyword">self</span>);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__bc__module__relay.html#ga09f53fc93003e4aa7200366e032c363b">bc_module_relay_pulse</a>(<a class="code" href="structbc__module__relay__t.html">bc_module_relay_t</a> *<span class="keyword">self</span>, <span class="keywordtype">bool</span> direction, <a class="code" href="group__bc__tick.html#gabd224c28866c49d86f5d33cae606bbe0">bc_tick_t</a> duration);</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__bc__module__relay.html#ga15e04204001dc9a04db3b78be7b34460">bc_module_relay_toggle</a>(<a class="code" href="structbc__module__relay__t.html">bc_module_relay_t</a> *<span class="keyword">self</span>);</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* _BC_MODULE_RELAY_H */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="group__bc__module__relay_html_ga3252af413b59ca9bfc8a94afddec804f"><div class="ttname"><a href="group__bc__module__relay.html#ga3252af413b59ca9bfc8a94afddec804f">bc_module_relay_state_t</a></div><div class="ttdeci">bc_module_relay_state_t</div><div class="ttdoc">Relay state. </div><div class="ttdef"><b>Definition:</b> <a href="bc__module__relay_8h_source.html#l00032">bc_module_relay.h:32</a></div></div>
 <div class="ttc" id="group__bc__tick_html_gabd224c28866c49d86f5d33cae606bbe0"><div class="ttname"><a href="group__bc__tick.html#gabd224c28866c49d86f5d33cae606bbe0">bc_tick_t</a></div><div class="ttdeci">uint64_t bc_tick_t</div><div class="ttdoc">Timestamp data type. </div><div class="ttdef"><b>Definition:</b> <a href="bc__tick_8h_source.html#l00014">bc_tick.h:14</a></div></div>
+<div class="ttc" id="group__bc__module__relay_html_gab7a2c28a2d5049343771dfd17f1c1c0d"><div class="ttname"><a href="group__bc__module__relay.html#gab7a2c28a2d5049343771dfd17f1c1c0d">bc_module_relay_get_state</a></div><div class="ttdeci">bc_module_relay_state_t bc_module_relay_get_state(bc_module_relay_t *self)</div><div class="ttdoc">Get the relay state. </div><div class="ttdef"><b>Definition:</b> <a href="bc__module__relay_8c_source.html#l00233">bc_module_relay.c:233</a></div></div>
 <div class="ttc" id="structbc__tca9534a__t_html"><div class="ttname"><a href="structbc__tca9534a__t.html">bc_tca9534a_t</a></div><div class="ttdef"><b>Definition:</b> <a href="bc__tca9534a_8h_source.html#l00043">bc_tca9534a.h:43</a></div></div>
-<div class="ttc" id="group__bc__module__relay_html_ga2d63107aa6864b9db39b6b8a54add4a7"><div class="ttname"><a href="group__bc__module__relay.html#ga2d63107aa6864b9db39b6b8a54add4a7">bc_module_relay_pulse</a></div><div class="ttdeci">void bc_module_relay_pulse(bc_module_relay_t *self, bc_tick_t duration)</div><div class="ttdoc">Creates an output pulse on Relay Module. </div><div class="ttdef"><b>Definition:</b> <a href="bc__module__relay_8c_source.html#l00123">bc_module_relay.c:123</a></div></div>
-<div class="ttc" id="group__bc__module__relay_html_ga07108bde368d035224ff0cb7e70eb16d"><div class="ttname"><a href="group__bc__module__relay.html#ga07108bde368d035224ff0cb7e70eb16d">bc_module_relay_toggle</a></div><div class="ttdeci">bool bc_module_relay_toggle(bc_module_relay_t *self)</div><div class="ttdoc">Toggle the relay state to another. </div><div class="ttdef"><b>Definition:</b> <a href="bc__module__relay_8c_source.html#l00104">bc_module_relay.c:104</a></div></div>
+<div class="ttc" id="group__bc__module__relay_html_ga09f53fc93003e4aa7200366e032c363b"><div class="ttname"><a href="group__bc__module__relay.html#ga09f53fc93003e4aa7200366e032c363b">bc_module_relay_pulse</a></div><div class="ttdeci">void bc_module_relay_pulse(bc_module_relay_t *self, bool direction, bc_tick_t duration)</div><div class="ttdoc">Creates an output pulse on Relay Module. </div><div class="ttdef"><b>Definition:</b> <a href="bc__module__relay_8c_source.html#l00223">bc_module_relay.c:223</a></div></div>
 <div class="ttc" id="group__bc__module__relay_html_gad138b7ed462e11d64f7380730c72bfc8"><div class="ttname"><a href="group__bc__module__relay.html#gad138b7ed462e11d64f7380730c72bfc8">bc_module_relay_task_state_t</a></div><div class="ttdeci">bc_module_relay_task_state_t</div><div class="ttdoc">Internal state machine states. </div><div class="ttdef"><b>Definition:</b> <a href="bc__module__relay_8h_source.html#l00041">bc_module_relay.h:41</a></div></div>
-<div class="ttc" id="structbc__module__relay__t_html"><div class="ttname"><a href="structbc__module__relay__t.html">bc_module_relay_t</a></div><div class="ttdoc">Structure of Relay Module instance. </div><div class="ttdef"><b>Definition:</b> <a href="bc__module__relay_8h_source.html#l00053">bc_module_relay.h:53</a></div></div>
-<div class="ttc" id="group__bc__module__relay_html_gacbc20e1b34cc0c927e92af7849db3e44"><div class="ttname"><a href="group__bc__module__relay.html#gacbc20e1b34cc0c927e92af7849db3e44">bc_module_relay_init</a></div><div class="ttdeci">void bc_module_relay_init(bc_module_relay_t *self)</div><div class="ttdoc">Initialize Relay Module driver. </div><div class="ttdef"><b>Definition:</b> <a href="bc__module__relay_8c_source.html#l00011">bc_module_relay.c:11</a></div></div>
-<div class="ttc" id="group__bc__module__relay_html_gae6de266d71722f7fd4ceb2b8a6754794"><div class="ttname"><a href="group__bc__module__relay.html#gae6de266d71722f7fd4ceb2b8a6754794">bc_module_relay_set</a></div><div class="ttdeci">void bc_module_relay_set(bc_module_relay_t *self, bc_module_relay_state_t state)</div><div class="ttdoc">Set the relay on Relay Module. </div><div class="ttdef"><b>Definition:</b> <a href="bc__module__relay_8c_source.html#l00087">bc_module_relay.c:87</a></div></div>
+<div class="ttc" id="group__bc__module__relay_html_ga5160a03a480acd83defaa000ccdb5228"><div class="ttname"><a href="group__bc__module__relay.html#ga5160a03a480acd83defaa000ccdb5228">bc_module_relay_set_state</a></div><div class="ttdeci">void bc_module_relay_set_state(bc_module_relay_t *self, bool state)</div><div class="ttdoc">Set the relay on Relay Module. </div><div class="ttdef"><b>Definition:</b> <a href="bc__module__relay_8c_source.html#l00202">bc_module_relay.c:202</a></div></div>
+<div class="ttc" id="structbc__module__relay__t_html"><div class="ttname"><a href="structbc__module__relay__t.html">bc_module_relay_t</a></div><div class="ttdoc">Structure of Relay Module instance. </div><div class="ttdef"><b>Definition:</b> <a href="bc__module__relay_8h_source.html#l00063">bc_module_relay.h:63</a></div></div>
+<div class="ttc" id="group__bc__module__relay_html_ga15e04204001dc9a04db3b78be7b34460"><div class="ttname"><a href="group__bc__module__relay.html#ga15e04204001dc9a04db3b78be7b34460">bc_module_relay_toggle</a></div><div class="ttdeci">void bc_module_relay_toggle(bc_module_relay_t *self)</div><div class="ttdoc">Toggle the relay state to another. </div><div class="ttdef"><b>Definition:</b> <a href="bc__module__relay_8c_source.html#l00211">bc_module_relay.c:211</a></div></div>
+<div class="ttc" id="group__bc__module__relay_html_ga0427fb94a68fdcd760443e3cbed4d20c"><div class="ttname"><a href="group__bc__module__relay.html#ga0427fb94a68fdcd760443e3cbed4d20c">bc_module_relay_init</a></div><div class="ttdeci">bool bc_module_relay_init(bc_module_relay_t *self)</div><div class="ttdoc">Initialize Relay Module driver. </div><div class="ttdef"><b>Definition:</b> <a href="bc__module__relay_8c_source.html#l00033">bc_module_relay.c:33</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
