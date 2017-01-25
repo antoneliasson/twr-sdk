@@ -24,6 +24,7 @@ var dir_bfccd401955b95cf8c75461437045ac0 =
     [ "bc_rtc.h", "bc__rtc_8h_source.html", null ],
     [ "bc_scheduler.h", "bc__scheduler_8h_source.html", null ],
     [ "bc_spi.h", "bc__spi_8h_source.html", null ],
+    [ "bc_spirit1.h", "bc__spirit1_8h_source.html", null ],
     [ "bc_tca9534a.h", "bc__tca9534a_8h_source.html", null ],
     [ "bc_temperature_tag.h", "bc__temperature__tag_8h_source.html", null ],
     [ "bc_tick.h", "bc__tick_8h_source.html", null ],

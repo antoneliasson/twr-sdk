@@ -111,7 +111,7 @@ $(document).ready(function(){initNavTree('bc__mpl3115a2_8c_source.html','');});
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define BC_MPL3115A2_DELAY_RESET 1500</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define BC_MPL3115A2_DELAY_MEASUREMENT 1500</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">static</span> <a class="code" href="group__bc__tick.html#gabd224c28866c49d86f5d33cae606bbe0">bc_tick_t</a> _bc_mpl3115a2_task(<span class="keywordtype">void</span> *param);</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">static</span> <a class="code" href="group__bc__tick.html#gabd224c28866c49d86f5d33cae606bbe0">bc_tick_t</a> _bc_mpl3115a2_task(<span class="keywordtype">void</span> *param, <a class="code" href="group__bc__tick.html#gabd224c28866c49d86f5d33cae606bbe0">bc_tick_t</a> tick_now);</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keywordtype">void</span> bc_mpl3115a2_init(<a class="code" href="structbc__mpl3115a2__t.html">bc_mpl3115a2_t</a> *<span class="keyword">self</span>, <a class="code" href="group__bc__i2c.html#ga5f7217e6558c54ac6920e5dabb777fef">bc_i2c_channel_t</a> i2c_channel, uint8_t i2c_address)</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div>
@@ -120,7 +120,7 @@ $(document).ready(function(){initNavTree('bc__mpl3115a2_8c_source.html','');});
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keyword">self</span>-&gt;_i2c_channel = i2c_channel;</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keyword">self</span>-&gt;_i2c_address = i2c_address;</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="group__bc__scheduler.html#ga6eed97126e4433cf73dcf7adec765105">bc_scheduler_register</a>(_bc_mpl3115a2_task, <span class="keyword">self</span>, BC_MPL3115A2_DELAY_RUN);</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="group__bc__scheduler.html#gab4c901b213237276515265030f9aeef0">bc_scheduler_register</a>(_bc_mpl3115a2_task, <span class="keyword">self</span>, BC_MPL3115A2_DELAY_RUN);</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;}</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keywordtype">void</span> bc_mpl3115a2_set_event_handler(<a class="code" href="structbc__mpl3115a2__t.html">bc_mpl3115a2_t</a> *<span class="keyword">self</span>, <span class="keywordtype">void</span> (*event_handler)(<a class="code" href="structbc__mpl3115a2__t.html">bc_mpl3115a2_t</a> *, bc_mpl3115a2_event_t))</div>
@@ -161,7 +161,7 @@ $(document).ready(function(){initNavTree('bc__mpl3115a2_8c_source.html','');});
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;}</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keyword">static</span> <a class="code" href="group__bc__tick.html#gabd224c28866c49d86f5d33cae606bbe0">bc_tick_t</a> _bc_mpl3115a2_task(<span class="keywordtype">void</span> *param)</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keyword">static</span> <a class="code" href="group__bc__tick.html#gabd224c28866c49d86f5d33cae606bbe0">bc_tick_t</a> _bc_mpl3115a2_task(<span class="keywordtype">void</span> *param, <a class="code" href="group__bc__tick.html#gabd224c28866c49d86f5d33cae606bbe0">bc_tick_t</a> tick_now)</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;{</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <a class="code" href="structbc__mpl3115a2__t.html">bc_mpl3115a2_t</a> *<span class="keyword">self</span> = param;</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
@@ -181,7 +181,7 @@ $(document).ready(function(){initNavTree('bc__mpl3115a2_8c_source.html','');});
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;            <span class="keyword">self</span>-&gt;_state = BC_MPL3115A2_STATE_INITIALIZE;</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">self</span>-&gt;_update_interval;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            <span class="keywordflow">return</span> tick_now + <span class="keyword">self</span>-&gt;_update_interval;</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        }</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <span class="keywordflow">case</span> BC_MPL3115A2_STATE_INITIALIZE:</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        {</div>
@@ -189,7 +189,7 @@ $(document).ready(function(){initNavTree('bc__mpl3115a2_8c_source.html','');});
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;            <span class="keyword">self</span>-&gt;_state = BC_MPL3115A2_STATE_MEASURE_ALTITUDE;</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            <span class="keywordflow">return</span> BC_MPL3115A2_DELAY_RESET;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            <span class="keywordflow">return</span> tick_now + BC_MPL3115A2_DELAY_RESET;</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        }</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <span class="keywordflow">case</span> BC_MPL3115A2_STATE_MEASURE_ALTITUDE:</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        {</div>
@@ -212,7 +212,7 @@ $(document).ready(function(){initNavTree('bc__mpl3115a2_8c_source.html','');});
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;            <span class="keyword">self</span>-&gt;_state = BC_MPL3115A2_STATE_READ_ALTITUDE;</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;            <span class="keywordflow">return</span> BC_MPL3115A2_DELAY_MEASUREMENT;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;            <span class="keywordflow">return</span> tick_now + BC_MPL3115A2_DELAY_MEASUREMENT;</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        }</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        <span class="keywordflow">case</span> BC_MPL3115A2_STATE_READ_ALTITUDE:</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        {</div>
@@ -277,7 +277,7 @@ $(document).ready(function(){initNavTree('bc__mpl3115a2_8c_source.html','');});
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;</div>
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;            <span class="keyword">self</span>-&gt;_state = BC_MPL3115A2_STATE_READ_PRESSURE;</div>
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;            <span class="keywordflow">return</span> BC_MPL3115A2_DELAY_MEASUREMENT;</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;            <span class="keywordflow">return</span> tick_now + BC_MPL3115A2_DELAY_MEASUREMENT;</div>
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;        }</div>
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;        <span class="keywordflow">case</span> BC_MPL3115A2_STATE_READ_PRESSURE:</div>
 <div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;        {</div>
@@ -330,7 +330,7 @@ $(document).ready(function(){initNavTree('bc__mpl3115a2_8c_source.html','');});
 <div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;</div>
 <div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;            <span class="keyword">self</span>-&gt;_state = BC_MPL3115A2_STATE_MEASURE_ALTITUDE;</div>
 <div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;</div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">self</span>-&gt;_update_interval;</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;            <span class="keywordflow">return</span> tick_now + <span class="keyword">self</span>-&gt;_update_interval;</div>
 <div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;        }</div>
 <div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;        <span class="keywordflow">default</span>:</div>
 <div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;        {</div>
@@ -341,11 +341,11 @@ $(document).ready(function(){initNavTree('bc__mpl3115a2_8c_source.html','');});
 <div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;    }</div>
 <div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;}</div>
 <div class="ttc" id="group__bc__tick_html_gabd224c28866c49d86f5d33cae606bbe0"><div class="ttname"><a href="group__bc__tick.html#gabd224c28866c49d86f5d33cae606bbe0">bc_tick_t</a></div><div class="ttdeci">uint64_t bc_tick_t</div><div class="ttdoc">Timestamp data type. </div><div class="ttdef"><b>Definition:</b> <a href="bc__tick_8h_source.html#l00014">bc_tick.h:14</a></div></div>
+<div class="ttc" id="group__bc__scheduler_html_gab4c901b213237276515265030f9aeef0"><div class="ttname"><a href="group__bc__scheduler.html#gab4c901b213237276515265030f9aeef0">bc_scheduler_register</a></div><div class="ttdeci">bc_scheduler_task_id_t bc_scheduler_register(bc_tick_t(*task)(void *, bc_tick_t), void *param, bc_tick_t tick)</div><div class="ttdoc">Register new task to the scheduler. </div><div class="ttdef"><b>Definition:</b> <a href="bc__scheduler_8c_source.html#l00048">bc_scheduler.c:48</a></div></div>
 <div class="ttc" id="structbc__i2c__tranfer__t_html_a5c96741d235badc07549d1e71452e538"><div class="ttname"><a href="structbc__i2c__tranfer__t.html#a5c96741d235badc07549d1e71452e538">bc_i2c_tranfer_t::length</a></div><div class="ttdeci">size_t length</div><div class="ttdoc">Length of buffer which is being written or read. </div><div class="ttdef"><b>Definition:</b> <a href="bc__i2c_8h_source.html#l00045">bc_i2c.h:45</a></div></div>
 <div class="ttc" id="group__bc__i2c_html_ga67a958f1691787b61dae034f441513a3"><div class="ttname"><a href="group__bc__i2c.html#ga67a958f1691787b61dae034f441513a3">bc_i2c_write_8b</a></div><div class="ttdeci">bool bc_i2c_write_8b(bc_i2c_channel_t channel, uint8_t device_address, uint32_t memory_address, uint8_t data)</div><div class="ttdoc">Write 1 byte to I2C channel. </div><div class="ttdef"><b>Definition:</b> <a href="bc__i2c_8c_source.html#l00175">bc_i2c.c:175</a></div></div>
 <div class="ttc" id="group__bc__i2c_html_ga071d3d85ba25f77685909dd9712b34ea"><div class="ttname"><a href="group__bc__i2c.html#ga071d3d85ba25f77685909dd9712b34ea">bc_i2c_read</a></div><div class="ttdeci">bool bc_i2c_read(bc_i2c_channel_t channel, const bc_i2c_tranfer_t *transfer)</div><div class="ttdoc">Read from I2C channel. </div><div class="ttdef"><b>Definition:</b> <a href="bc__i2c_8c_source.html#l00143">bc_i2c.c:143</a></div></div>
 <div class="ttc" id="structbc__i2c__tranfer__t_html"><div class="ttname"><a href="structbc__i2c__tranfer__t.html">bc_i2c_tranfer_t</a></div><div class="ttdoc">I2C transfer parameters. </div><div class="ttdef"><b>Definition:</b> <a href="bc__i2c_8h_source.html#l00033">bc_i2c.h:33</a></div></div>
-<div class="ttc" id="group__bc__scheduler_html_ga6eed97126e4433cf73dcf7adec765105"><div class="ttname"><a href="group__bc__scheduler.html#ga6eed97126e4433cf73dcf7adec765105">bc_scheduler_register</a></div><div class="ttdeci">bc_scheduler_task_id_t bc_scheduler_register(bc_tick_t(*task)(void *), void *param, bc_tick_t tick)</div><div class="ttdoc">Register new task to the scheduler. </div><div class="ttdef"><b>Definition:</b> <a href="bc__scheduler_8c_source.html#l00050">bc_scheduler.c:50</a></div></div>
 <div class="ttc" id="structbc__i2c__tranfer__t_html_afa552b8d01f0a38acfa89b44d630fb15"><div class="ttname"><a href="structbc__i2c__tranfer__t.html#afa552b8d01f0a38acfa89b44d630fb15">bc_i2c_tranfer_t::device_address</a></div><div class="ttdeci">uint8_t device_address</div><div class="ttdoc">7-bit I2C device address </div><div class="ttdef"><b>Definition:</b> <a href="bc__i2c_8h_source.html#l00036">bc_i2c.h:36</a></div></div>
 <div class="ttc" id="structbc__i2c__tranfer__t_html_ae3701a88ed65ab6980fec4717d58fb62"><div class="ttname"><a href="structbc__i2c__tranfer__t.html#ae3701a88ed65ab6980fec4717d58fb62">bc_i2c_tranfer_t::buffer</a></div><div class="ttdeci">void * buffer</div><div class="ttdoc">Pointer to buffer which is being written or read. </div><div class="ttdef"><b>Definition:</b> <a href="bc__i2c_8h_source.html#l00042">bc_i2c.h:42</a></div></div>
 <div class="ttc" id="group__bc__i2c_html_ga5f7217e6558c54ac6920e5dabb777fef"><div class="ttname"><a href="group__bc__i2c.html#ga5f7217e6558c54ac6920e5dabb777fef">bc_i2c_channel_t</a></div><div class="ttdeci">bc_i2c_channel_t</div><div class="ttdoc">I2C channels. </div><div class="ttdef"><b>Definition:</b> <a href="bc__i2c_8h_source.html#l00015">bc_i2c.h:15</a></div></div>

@@ -126,7 +126,7 @@ $(document).ready(function(){initNavTree('bc__usb__cdc_8c_source.html','');});
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;USBD_HandleTypeDef hUsbDeviceFS;</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">static</span> <a class="code" href="group__bc__tick.html#gabd224c28866c49d86f5d33cae606bbe0">bc_tick_t</a> _bc_usb_cdc_task(<span class="keywordtype">void</span> *param);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">static</span> <a class="code" href="group__bc__tick.html#gabd224c28866c49d86f5d33cae606bbe0">bc_tick_t</a> _bc_usb_cdc_task(<span class="keywordtype">void</span> *param, <a class="code" href="group__bc__tick.html#gabd224c28866c49d86f5d33cae606bbe0">bc_tick_t</a> tick_now);</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keywordtype">void</span> bc_usb_cdc_init(<span class="keywordtype">void</span>)</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;{</div>
@@ -141,7 +141,7 @@ $(document).ready(function(){initNavTree('bc__usb__cdc_8c_source.html','');});
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    USBD_CDC_RegisterInterface(&amp;hUsbDeviceFS, &amp;USBD_Interface_fops_FS);</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    USBD_Start(&amp;hUsbDeviceFS);</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <a class="code" href="group__bc__scheduler.html#ga6eed97126e4433cf73dcf7adec765105">bc_scheduler_register</a>(_bc_usb_cdc_task, NULL, 0);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <a class="code" href="group__bc__scheduler.html#gab4c901b213237276515265030f9aeef0">bc_scheduler_register</a>(_bc_usb_cdc_task, NULL, 0);</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;}</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keywordtype">bool</span> bc_usb_cdc_write(<span class="keyword">const</span> <span class="keywordtype">void</span> *buffer, <span class="keywordtype">size_t</span> length)</div>
@@ -190,14 +190,14 @@ $(document).ready(function(){initNavTree('bc__usb__cdc_8c_source.html','');});
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <a class="code" href="group__bc__fifo.html#ga6890a8a644d5e4a1b2e0319197e3015b">bc_fifo_irq_write</a>(&amp;bc_usb_cdc.receive_fifo, (uint8_t *) buffer, length);</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;}</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="keyword">static</span> <a class="code" href="group__bc__tick.html#gabd224c28866c49d86f5d33cae606bbe0">bc_tick_t</a> _bc_usb_cdc_task(<span class="keywordtype">void</span> *param)</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="keyword">static</span> <a class="code" href="group__bc__tick.html#gabd224c28866c49d86f5d33cae606bbe0">bc_tick_t</a> _bc_usb_cdc_task(<span class="keywordtype">void</span> *param, <a class="code" href="group__bc__tick.html#gabd224c28866c49d86f5d33cae606bbe0">bc_tick_t</a> tick_now)</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;{</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    (void) param;</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordflow">if</span> (bc_usb_cdc.transmit_length == 0)</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    {</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        <span class="comment">// TODO</span></div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        <span class="keywordflow">return</span> tick_now;</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    }</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    HAL_NVIC_DisableIRQ(USB_IRQn);</div>
@@ -210,12 +210,12 @@ $(document).ready(function(){initNavTree('bc__usb__cdc_8c_source.html','');});
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    HAL_NVIC_EnableIRQ(USB_IRQn);</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="comment">// TODO</span></div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keywordflow">return</span> tick_now;</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;}</div>
 <div class="ttc" id="group__bc__tick_html_gabd224c28866c49d86f5d33cae606bbe0"><div class="ttname"><a href="group__bc__tick.html#gabd224c28866c49d86f5d33cae606bbe0">bc_tick_t</a></div><div class="ttdeci">uint64_t bc_tick_t</div><div class="ttdoc">Timestamp data type. </div><div class="ttdef"><b>Definition:</b> <a href="bc__tick_8h_source.html#l00014">bc_tick.h:14</a></div></div>
 <div class="ttc" id="structbc__fifo__t_html"><div class="ttname"><a href="structbc__fifo__t.html">bc_fifo_t</a></div><div class="ttdoc">Structure of FIFO instance. </div><div class="ttdef"><b>Definition:</b> <a href="bc__fifo_8h_source.html#l00012">bc_fifo.h:12</a></div></div>
+<div class="ttc" id="group__bc__scheduler_html_gab4c901b213237276515265030f9aeef0"><div class="ttname"><a href="group__bc__scheduler.html#gab4c901b213237276515265030f9aeef0">bc_scheduler_register</a></div><div class="ttdeci">bc_scheduler_task_id_t bc_scheduler_register(bc_tick_t(*task)(void *, bc_tick_t), void *param, bc_tick_t tick)</div><div class="ttdoc">Register new task to the scheduler. </div><div class="ttdef"><b>Definition:</b> <a href="bc__scheduler_8c_source.html#l00048">bc_scheduler.c:48</a></div></div>
 <div class="ttc" id="group__bc__fifo_html_ga6890a8a644d5e4a1b2e0319197e3015b"><div class="ttname"><a href="group__bc__fifo.html#ga6890a8a644d5e4a1b2e0319197e3015b">bc_fifo_irq_write</a></div><div class="ttdeci">size_t bc_fifo_irq_write(bc_fifo_t *fifo, const void *buffer, size_t length)</div><div class="ttdoc">Write data to FIFO from interrupt. </div><div class="ttdef"><b>Definition:</b> <a href="bc__fifo_8c_source.html#l00095">bc_fifo.c:95</a></div></div>
-<div class="ttc" id="group__bc__scheduler_html_ga6eed97126e4433cf73dcf7adec765105"><div class="ttname"><a href="group__bc__scheduler.html#ga6eed97126e4433cf73dcf7adec765105">bc_scheduler_register</a></div><div class="ttdeci">bc_scheduler_task_id_t bc_scheduler_register(bc_tick_t(*task)(void *), void *param, bc_tick_t tick)</div><div class="ttdoc">Register new task to the scheduler. </div><div class="ttdef"><b>Definition:</b> <a href="bc__scheduler_8c_source.html#l00050">bc_scheduler.c:50</a></div></div>
 <div class="ttc" id="group__bc__fifo_html_gaa7eed98919b150b8452698e5bc31ba1d"><div class="ttname"><a href="group__bc__fifo.html#gaa7eed98919b150b8452698e5bc31ba1d">bc_fifo_init</a></div><div class="ttdeci">void bc_fifo_init(bc_fifo_t *fifo, void *buffer, size_t size)</div><div class="ttdoc">Initialize FIFO buffer. </div><div class="ttdef"><b>Definition:</b> <a href="bc__fifo_8c_source.html#l00004">bc_fifo.c:4</a></div></div>
 <div class="ttc" id="group__bc__fifo_html_gaf11bdcef9b2a7f1457e52435d0d56aaf"><div class="ttname"><a href="group__bc__fifo.html#gaf11bdcef9b2a7f1457e52435d0d56aaf">bc_fifo_read</a></div><div class="ttdeci">size_t bc_fifo_read(bc_fifo_t *fifo, void *buffer, size_t length)</div><div class="ttdoc">Read data from FIFO. </div><div class="ttdef"><b>Definition:</b> <a href="bc__fifo_8c_source.html#l00057">bc_fifo.c:57</a></div></div>
 </div><!-- fragment --></div><!-- contents -->

@@ -10,6 +10,7 @@ var annotated =
     [ "bc_mpl3115a2_t", "structbc__mpl3115a2__t.html", "structbc__mpl3115a2__t" ],
     [ "bc_opt3001_t", "structbc__opt3001__t.html", "structbc__opt3001__t" ],
     [ "bc_pyq1648_t", "structbc__pyq1648__t.html", "structbc__pyq1648__t" ],
+    [ "bc_spirit1_t", "structbc__spirit1__t.html", "structbc__spirit1__t" ],
     [ "bc_tca9534a_t", "structbc__tca9534a__t.html", "structbc__tca9534a__t" ],
     [ "bc_tmp112_t", "structbc__tmp112__t.html", "structbc__tmp112__t" ],
     [ "jsmn_parser", "structjsmn__parser.html", "structjsmn__parser" ],

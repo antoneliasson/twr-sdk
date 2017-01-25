@@ -2,5 +2,5 @@
 <area shape="rect" id="node2" href="$group__bc__scheduler.html#ga55f4cdf03900e30d78cdfbe92190d116" title="Plan previously registered task to a given time. " alt="" coords="161,5,292,32"/>
 <area shape="rect" id="node3" href="$group__bc__tick.html#ga5291d354b48d9599d185969d53f2bf8a" title="Get timestamp since the code started. " alt="" coords="182,56,271,83"/>
 <area shape="rect" id="node4" href="$group__bc__gpio.html#ga509a65d13103db1a636c7ba082336cdd" title="Set output state for GPIO channel. " alt="" coords="159,107,294,133"/>
-<area shape="rect" id="node5" href="$group__bc__scheduler.html#ga6eed97126e4433cf73dcf7adec765105" title="Register new task to the scheduler. " alt="" coords="152,157,301,184"/>
+<area shape="rect" id="node5" href="$group__bc__scheduler.html#gab4c901b213237276515265030f9aeef0" title="Register new task to the scheduler. " alt="" coords="152,157,301,184"/>
 </map>

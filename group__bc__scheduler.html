@@ -130,15 +130,18 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bc__scheduler.html#gae127d7da60ea52a5801bafc4e987cfa1">bc_scheduler_run</a> (void)</td></tr>
 <tr class="memdesc:gae127d7da60ea52a5801bafc4e987cfa1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Run task scheduler. <br/></td></tr>
 <tr class="separator:gae127d7da60ea52a5801bafc4e987cfa1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6eed97126e4433cf73dcf7adec765105"><td class="memItemLeft" align="right" valign="top">bc_scheduler_task_id_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bc__scheduler.html#ga6eed97126e4433cf73dcf7adec765105">bc_scheduler_register</a> (<a class="el" href="group__bc__tick.html#gabd224c28866c49d86f5d33cae606bbe0">bc_tick_t</a>(*task)(void *), void *param, <a class="el" href="group__bc__tick.html#gabd224c28866c49d86f5d33cae606bbe0">bc_tick_t</a> tick)</td></tr>
-<tr class="memdesc:ga6eed97126e4433cf73dcf7adec765105"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register new task to the scheduler.  <a href="#ga6eed97126e4433cf73dcf7adec765105">More...</a><br/></td></tr>
-<tr class="separator:ga6eed97126e4433cf73dcf7adec765105"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab4c901b213237276515265030f9aeef0"><td class="memItemLeft" align="right" valign="top">bc_scheduler_task_id_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bc__scheduler.html#gab4c901b213237276515265030f9aeef0">bc_scheduler_register</a> (<a class="el" href="group__bc__tick.html#gabd224c28866c49d86f5d33cae606bbe0">bc_tick_t</a>(*task)(void *, <a class="el" href="group__bc__tick.html#gabd224c28866c49d86f5d33cae606bbe0">bc_tick_t</a>), void *param, <a class="el" href="group__bc__tick.html#gabd224c28866c49d86f5d33cae606bbe0">bc_tick_t</a> tick)</td></tr>
+<tr class="memdesc:gab4c901b213237276515265030f9aeef0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register new task to the scheduler.  <a href="#gab4c901b213237276515265030f9aeef0">More...</a><br/></td></tr>
+<tr class="separator:gab4c901b213237276515265030f9aeef0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae1d865cf578e9994cd50a972af54fc20"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bc__scheduler.html#gae1d865cf578e9994cd50a972af54fc20">bc_scheduler_unregister</a> (bc_scheduler_task_id_t task_id)</td></tr>
 <tr class="memdesc:gae1d865cf578e9994cd50a972af54fc20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unregister previously registered task.  <a href="#gae1d865cf578e9994cd50a972af54fc20">More...</a><br/></td></tr>
 <tr class="separator:gae1d865cf578e9994cd50a972af54fc20"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga55f4cdf03900e30d78cdfbe92190d116"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bc__scheduler.html#ga55f4cdf03900e30d78cdfbe92190d116">bc_scheduler_plan</a> (bc_scheduler_task_id_t task_id, <a class="el" href="group__bc__tick.html#gabd224c28866c49d86f5d33cae606bbe0">bc_tick_t</a> tick)</td></tr>
 <tr class="memdesc:ga55f4cdf03900e30d78cdfbe92190d116"><td class="mdescLeft">&#160;</td><td class="mdescRight">Plan previously registered task to a given time.  <a href="#ga55f4cdf03900e30d78cdfbe92190d116">More...</a><br/></td></tr>
 <tr class="separator:ga55f4cdf03900e30d78cdfbe92190d116"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga46c874e6f1b363cf6851cfa8f837c398"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bc__scheduler.html#ga46c874e6f1b363cf6851cfa8f837c398">bc_scheduler_plan_now</a> (bc_scheduler_task_id_t task_id)</td></tr>
+<tr class="memdesc:ga46c874e6f1b363cf6851cfa8f837c398"><td class="mdescLeft">&#160;</td><td class="mdescRight">Plan previously registered task for immediate execution.  <a href="#ga46c874e6f1b363cf6851cfa8f837c398">More...</a><br/></td></tr>
+<tr class="separator:ga46c874e6f1b363cf6851cfa8f837c398"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Task scheduler. </p>
@@ -176,7 +179,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="bc__scheduler_8c_source.html#l00092">92</a> of file <a class="el" href="bc__scheduler_8c_source.html">bc_scheduler.c</a>.</p>
+<p>Definition at line <a class="el" href="bc__scheduler_8c_source.html#l00090">90</a> of file <a class="el" href="bc__scheduler_8c_source.html">bc_scheduler.c</a>.</p>
 
 <p>Referenced by <a class="el" href="bc__led_8c_source.html#l00101">bc_led_pulse()</a>.</p>
 
@@ -191,14 +194,40 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="ga6eed97126e4433cf73dcf7adec765105"></a>
+<a class="anchor" id="ga46c874e6f1b363cf6851cfa8f837c398"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void bc_scheduler_plan_now </td>
+          <td>(</td>
+          <td class="paramtype">bc_scheduler_task_id_t&#160;</td>
+          <td class="paramname"><em>task_id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Plan previously registered task for immediate execution. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">task_id</td><td>Task ID of the registered task </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="bc__scheduler_8c_source.html#l00095">95</a> of file <a class="el" href="bc__scheduler_8c_source.html">bc_scheduler.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gab4c901b213237276515265030f9aeef0"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">bc_scheduler_task_id_t bc_scheduler_register </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__bc__tick.html#gabd224c28866c49d86f5d33cae606bbe0">bc_tick_t</a>(*)(void *)&#160;</td>
+          <td class="paramtype"><a class="el" href="group__bc__tick.html#gabd224c28866c49d86f5d33cae606bbe0">bc_tick_t</a>(*)(void *, <a class="el" href="group__bc__tick.html#gabd224c28866c49d86f5d33cae606bbe0">bc_tick_t</a>)&#160;</td>
           <td class="paramname"><em>task</em>, </td>
         </tr>
         <tr>
@@ -231,15 +260,15 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Assigned task ID </dd></dl>
 
-<p>Definition at line <a class="el" href="bc__scheduler_8c_source.html#l00050">50</a> of file <a class="el" href="bc__scheduler_8c_source.html">bc_scheduler.c</a>.</p>
+<p>Definition at line <a class="el" href="bc__scheduler_8c_source.html#l00048">48</a> of file <a class="el" href="bc__scheduler_8c_source.html">bc_scheduler.c</a>.</p>
 
 <p>Referenced by <a class="el" href="bc__led_8c_source.html#l00009">bc_led_init()</a>, <a class="el" href="bc__led_8c_source.html#l00101">bc_led_pulse()</a>, <a class="el" href="bc__opt3001_8c_source.html#l00010">bc_opt3001_init()</a>, <a class="el" href="bc__pyq1648_8c_source.html#l00073">bc_pyq1648_init()</a>, and <a class="el" href="bc__tmp112_8c_source.html#l00009">bc_tmp112_init()</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="group__bc__scheduler_ga6eed97126e4433cf73dcf7adec765105_icgraph.png" border="0" usemap="#group__bc__scheduler_ga6eed97126e4433cf73dcf7adec765105_icgraph" alt=""/></div>
-<map name="group__bc__scheduler_ga6eed97126e4433cf73dcf7adec765105_icgraph" id="group__bc__scheduler_ga6eed97126e4433cf73dcf7adec765105_icgraph">
+<div class="center"><img src="group__bc__scheduler_gab4c901b213237276515265030f9aeef0_icgraph.png" border="0" usemap="#group__bc__scheduler_gab4c901b213237276515265030f9aeef0_icgraph" alt=""/></div>
+<map name="group__bc__scheduler_gab4c901b213237276515265030f9aeef0_icgraph" id="group__bc__scheduler_gab4c901b213237276515265030f9aeef0_icgraph">
 <area shape="rect" id="node2" href="group__bc__led.html#ga822e72175b9bc2557ad7c989f98c7068" title="LED init function. " alt="" coords="219,5,303,32"/><area shape="rect" id="node3" href="group__bc__led.html#ga70430d42b18f282381a8c8044c8adf94" title="Turn on LED for the specified duration of time. " alt="" coords="212,56,311,83"/><area shape="rect" id="node4" href="group__bc__opt3001.html#ga3db4ea45d7c7b4cb5e63fda04802e1ba" title="Initialize OPT3001 driver. " alt="" coords="205,107,318,133"/><area shape="rect" id="node6" href="group__bc__pyq1648.html#gae1b159c9580dff6af770755e53d4e56b" title="Initialize pyq1648 on channels gpio_channel_serin and gpio_channel_dl. " alt="" coords="203,157,319,184"/><area shape="rect" id="node8" href="group__bc__tmp112.html#gafa5c6541860450a84023c16293d977ac" title="Initialize TMP112 driver. " alt="" coords="206,208,317,235"/><area shape="rect" id="node5" href="group__bc__lux__meter__tag.html#ga8e3e08183a2819a4c5518bc6ed413b7d" title="Initialize lux meter tag. " alt="" coords="375,107,524,133"/><area shape="rect" id="node7" href="group__bc__pir__module.html#ga3edf10eaa290e9c43fa8cafd114c92dc" title="Initialize PIR module on channels gpio_channel_setup and gpio_channel_event. " alt="" coords="384,157,515,184"/><area shape="rect" id="node9" href="group__bc__temperature__tag.html#ga85c6d61a7171a8183dbdb1f14cf31a0c" title="Initialize temperature tag. " alt="" coords="369,208,530,235"/></map>
 </div>
 </p>
@@ -268,7 +297,7 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="bc__scheduler_8c_source.html#l00073">73</a> of file <a class="el" href="bc__scheduler_8c_source.html">bc_scheduler.c</a>.</p>
+<p>Definition at line <a class="el" href="bc__scheduler_8c_source.html#l00071">71</a> of file <a class="el" href="bc__scheduler_8c_source.html">bc_scheduler.c</a>.</p>
 
 </div>
 </div>
