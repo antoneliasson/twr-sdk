@@ -1,5 +1,8 @@
 var annotated =
 [
+    [ "bc_accelerometer_result_g_t", "structbc__accelerometer__result__g__t.html", "structbc__accelerometer__result__g__t" ],
+    [ "bc_accelerometer_result_raw_t", "structbc__accelerometer__result__raw__t.html", "structbc__accelerometer__result__raw__t" ],
+    [ "bc_accelerometer_t", "structbc__accelerometer__t.html", "structbc__accelerometer__t" ],
     [ "bc_button_t", "structbc__button__t.html", "structbc__button__t" ],
     [ "bc_fifo_t", "structbc__fifo__t.html", "structbc__fifo__t" ],
     [ "bc_hdc2080_t", "structbc__hdc2080__t.html", "structbc__hdc2080__t" ],

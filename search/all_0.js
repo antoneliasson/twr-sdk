@@ -1,5 +1,8 @@
 var searchData=
 [
+  ['bc_5faccelerometer_5fresult_5fg_5ft',['bc_accelerometer_result_g_t',['../structbc__accelerometer__result__g__t.html',1,'']]],
+  ['bc_5faccelerometer_5fresult_5fraw_5ft',['bc_accelerometer_result_raw_t',['../structbc__accelerometer__result__raw__t.html',1,'']]],
+  ['bc_5faccelerometer_5ft',['bc_accelerometer_t',['../structbc__accelerometer__t.html',1,'']]],
   ['bc_5fadc',['bc_adc',['../group__bc__adc.html',1,'']]],
   ['bc_5fadc_5fa0',['BC_ADC_A0',['../group__bc__adc.html#gga36de67b89dc275ad2108cff743861612af831b707e477be564f3623032eb7e6e7',1,'bc_adc.h']]],
   ['bc_5fadc_5fa1',['BC_ADC_A1',['../group__bc__adc.html#gga36de67b89dc275ad2108cff743861612ab7d1f2ecf639682b68cc8ee1537d4a0a',1,'bc_adc.h']]],

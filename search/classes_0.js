@@ -1,5 +1,8 @@
 var searchData=
 [
+  ['bc_5faccelerometer_5fresult_5fg_5ft',['bc_accelerometer_result_g_t',['../structbc__accelerometer__result__g__t.html',1,'']]],
+  ['bc_5faccelerometer_5fresult_5fraw_5ft',['bc_accelerometer_result_raw_t',['../structbc__accelerometer__result__raw__t.html',1,'']]],
+  ['bc_5faccelerometer_5ft',['bc_accelerometer_t',['../structbc__accelerometer__t.html',1,'']]],
   ['bc_5fbutton_5ft',['bc_button_t',['../structbc__button__t.html',1,'']]],
   ['bc_5ffifo_5ft',['bc_fifo_t',['../structbc__fifo__t.html',1,'']]],
   ['bc_5fhdc2080_5ft',['bc_hdc2080_t',['../structbc__hdc2080__t.html',1,'']]],
