@@ -105,13 +105,13 @@ $(document).ready(function(){initNavTree('group__bc__module__relay.html','');});
 </div><!--header-->
 <div class="contents">
 
-<p>Driver for Relay Module.  
+<p>Driver for BigClown Relay Module.  
 <a href="#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbc__module__relay__t.html">bc_module_relay_t</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure of Relay Module instance.  <a href="structbc__module__relay__t.html#details">More...</a><br/></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">BigClown Relay Module instance.  <a href="structbc__module__relay__t.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
@@ -130,7 +130,7 @@ Enumerations</h2></td></tr>
 &#160;&#160;<b>BC_MODULE_RELAY_STATE_TRUE</b> = 1
 <br/>
  }</td></tr>
-<tr class="memdesc:ga3252af413b59ca9bfc8a94afddec804f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Relay state. <br/></td></tr>
+<tr class="memdesc:ga3252af413b59ca9bfc8a94afddec804f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reported relay states. <br/></td></tr>
 <tr class="separator:ga3252af413b59ca9bfc8a94afddec804f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad138b7ed462e11d64f7380730c72bfc8"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bc__module__relay.html#gad138b7ed462e11d64f7380730c72bfc8">bc_module_relay_task_state_t</a> { <br/>
 &#160;&#160;<b>BC_MODULE_RELAY_TASK_STATE_IDLE</b>, 
@@ -148,9 +148,9 @@ Enumerations</h2></td></tr>
 &#160;&#160;<b>BC_MODULE_RELAY_TASK_STATE_PULSE_DEMAGNETIZE_2</b>
 <br/>
  }</td></tr>
-<tr class="memdesc:gad138b7ed462e11d64f7380730c72bfc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internal state machine states. <br/></td></tr>
+<tr class="memdesc:gad138b7ed462e11d64f7380730c72bfc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internal states. <br/></td></tr>
 <tr class="separator:gad138b7ed462e11d64f7380730c72bfc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6ec8130f7a81c173e48e9622aea69936"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><b>bc_module_relay_command_t</b> { <br/>
+<tr class="memitem:ga6ec8130f7a81c173e48e9622aea69936"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bc__module__relay.html#ga6ec8130f7a81c173e48e9622aea69936">bc_module_relay_command_t</a> { <br/>
 &#160;&#160;<b>BC_MODULE_RELAY_COMMAND_NONE</b> = 0, 
 <br/>
 &#160;&#160;<b>BC_MODULE_RELAY_COMMAND_SET</b> = 1, 
@@ -158,30 +158,31 @@ Enumerations</h2></td></tr>
 &#160;&#160;<b>BC_MODULE_RELAY_COMMAND_PULSE</b> = 2
 <br/>
  }</td></tr>
+<tr class="memdesc:ga6ec8130f7a81c173e48e9622aea69936"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internal commands. <br/></td></tr>
 <tr class="separator:ga6ec8130f7a81c173e48e9622aea69936"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ga0427fb94a68fdcd760443e3cbed4d20c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bc__module__relay.html#ga0427fb94a68fdcd760443e3cbed4d20c">bc_module_relay_init</a> (<a class="el" href="structbc__module__relay__t.html">bc_module_relay_t</a> *self)</td></tr>
-<tr class="memdesc:ga0427fb94a68fdcd760443e3cbed4d20c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize Relay Module driver.  <a href="#ga0427fb94a68fdcd760443e3cbed4d20c">More...</a><br/></td></tr>
+<tr class="memdesc:ga0427fb94a68fdcd760443e3cbed4d20c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize BigClown Relay Module.  <a href="#ga0427fb94a68fdcd760443e3cbed4d20c">More...</a><br/></td></tr>
 <tr class="separator:ga0427fb94a68fdcd760443e3cbed4d20c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5160a03a480acd83defaa000ccdb5228"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bc__module__relay.html#ga5160a03a480acd83defaa000ccdb5228">bc_module_relay_set_state</a> (<a class="el" href="structbc__module__relay__t.html">bc_module_relay_t</a> *self, bool state)</td></tr>
-<tr class="memdesc:ga5160a03a480acd83defaa000ccdb5228"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the relay on Relay Module.  <a href="#ga5160a03a480acd83defaa000ccdb5228">More...</a><br/></td></tr>
+<tr class="memdesc:ga5160a03a480acd83defaa000ccdb5228"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set relay to specified state.  <a href="#ga5160a03a480acd83defaa000ccdb5228">More...</a><br/></td></tr>
 <tr class="separator:ga5160a03a480acd83defaa000ccdb5228"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab7a2c28a2d5049343771dfd17f1c1c0d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__bc__module__relay.html#ga3252af413b59ca9bfc8a94afddec804f">bc_module_relay_state_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bc__module__relay.html#gab7a2c28a2d5049343771dfd17f1c1c0d">bc_module_relay_get_state</a> (<a class="el" href="structbc__module__relay__t.html">bc_module_relay_t</a> *self)</td></tr>
-<tr class="memdesc:gab7a2c28a2d5049343771dfd17f1c1c0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the relay state.  <a href="#gab7a2c28a2d5049343771dfd17f1c1c0d">More...</a><br/></td></tr>
+<tr class="memdesc:gab7a2c28a2d5049343771dfd17f1c1c0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get current relay state.  <a href="#gab7a2c28a2d5049343771dfd17f1c1c0d">More...</a><br/></td></tr>
 <tr class="separator:gab7a2c28a2d5049343771dfd17f1c1c0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga09f53fc93003e4aa7200366e032c363b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bc__module__relay.html#ga09f53fc93003e4aa7200366e032c363b">bc_module_relay_pulse</a> (<a class="el" href="structbc__module__relay__t.html">bc_module_relay_t</a> *self, bool direction, <a class="el" href="group__bc__tick.html#gabd224c28866c49d86f5d33cae606bbe0">bc_tick_t</a> duration)</td></tr>
-<tr class="memdesc:ga09f53fc93003e4aa7200366e032c363b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an output pulse on Relay Module.  <a href="#ga09f53fc93003e4aa7200366e032c363b">More...</a><br/></td></tr>
+<tr class="memdesc:ga09f53fc93003e4aa7200366e032c363b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate pulse to specified state for given duration.  <a href="#ga09f53fc93003e4aa7200366e032c363b">More...</a><br/></td></tr>
 <tr class="separator:ga09f53fc93003e4aa7200366e032c363b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga15e04204001dc9a04db3b78be7b34460"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bc__module__relay.html#ga15e04204001dc9a04db3b78be7b34460">bc_module_relay_toggle</a> (<a class="el" href="structbc__module__relay__t.html">bc_module_relay_t</a> *self)</td></tr>
-<tr class="memdesc:ga15e04204001dc9a04db3b78be7b34460"><td class="mdescLeft">&#160;</td><td class="mdescRight">Toggle the relay state to another.  <a href="#ga15e04204001dc9a04db3b78be7b34460">More...</a><br/></td></tr>
+<tr class="memdesc:ga15e04204001dc9a04db3b78be7b34460"><td class="mdescLeft">&#160;</td><td class="mdescRight">Toggle relay to opposite state.  <a href="#ga15e04204001dc9a04db3b78be7b34460">More...</a><br/></td></tr>
 <tr class="separator:ga15e04204001dc9a04db3b78be7b34460"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Driver for Relay Module. </p>
+<p>Driver for BigClown Relay Module. </p>
 <h1><a class="anchor" id="example"></a>
-How to use Relay Module</h1>
+How to use this driver</h1>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &lt;bc_module_relay.h&gt;</span></div>
 <div class="line"></div>
 <div class="line"><a class="code" href="structbc__module__relay__t.html">bc_module_relay_t</a> relay;</div>
@@ -191,12 +192,14 @@ How to use Relay Module</h1>
 <div class="line">    <a class="code" href="group__bc__module__relay.html#ga0427fb94a68fdcd760443e3cbed4d20c">bc_module_relay_init</a>(&amp;relay);</div>
 <div class="line">}</div>
 <div class="line"></div>
-<div class="line"><span class="comment">// Then use the functions to set the relay</span></div>
-<div class="line">bc_module_relay_set(&amp;relay, BC_MODULE_RELAY_STATE_TRUE);</div>
-<div class="line"><span class="comment">// Toggle the relay</span></div>
+<div class="line"><span class="comment">// If you want to set relay to TRUE state...</span></div>
+<div class="line">bc_module_relay_set(&amp;relay, <span class="keyword">true</span>);</div>
+<div class="line"></div>
+<div class="line"><span class="comment">// If you want to toggle relay...</span></div>
 <div class="line"><a class="code" href="group__bc__module__relay.html#ga15e04204001dc9a04db3b78be7b34460">bc_module_relay_toggle</a>(&amp;relay);</div>
-<div class="line"><span class="comment">// Make a 1000ms long pulse</span></div>
-<div class="line"><a class="code" href="group__bc__module__relay.html#ga09f53fc93003e4aa7200366e032c363b">bc_module_relay_pulse</a>(&amp;relay, BC_MODULE_RELAY_STATE_TRUE, 1000);</div>
+<div class="line"></div>
+<div class="line"><span class="comment">// If you want to make 1 second pulse to TRUE state...</span></div>
+<div class="line"><a class="code" href="group__bc__module__relay.html#ga09f53fc93003e4aa7200366e032c363b">bc_module_relay_pulse</a>(&amp;relay, <span class="keyword">true</span>, 1000);</div>
 </div><!-- fragment --> <h2 class="groupheader">Function Documentation</h2>
 <a class="anchor" id="gab7a2c28a2d5049343771dfd17f1c1c0d"></a>
 <div class="memitem">
@@ -212,13 +215,14 @@ How to use Relay Module</h1>
       </table>
 </div><div class="memdoc">
 
-<p>Get the relay state. </p>
+<p>Get current relay state. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">self</td><td>Instance </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>Relay state </dd></dl>
 
 <p>Definition at line <a class="el" href="bc__module__relay_8c_source.html#l00226">226</a> of file <a class="el" href="bc__module__relay_8c_source.html">bc_module_relay.c</a>.</p>
 
@@ -238,7 +242,7 @@ How to use Relay Module</h1>
       </table>
 </div><div class="memdoc">
 
-<p>Initialize Relay Module driver. </p>
+<p>Initialize BigClown Relay Module. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">self</td><td>Instance </td></tr>
@@ -280,12 +284,12 @@ How to use Relay Module</h1>
       </table>
 </div><div class="memdoc">
 
-<p>Creates an output pulse on Relay Module. </p>
+<p>Generate pulse to specified state for given duration. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">self</td><td>Instance </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">duration</td><td>Desired pulse direction </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">duration</td><td>Duration of the output pulse </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">direction</td><td>Desired pulse state </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">duration</td><td>Desired pulse duration </td></tr>
   </table>
   </dd>
 </dl>
@@ -318,11 +322,11 @@ How to use Relay Module</h1>
       </table>
 </div><div class="memdoc">
 
-<p>Set the relay on Relay Module. </p>
+<p>Set relay to specified state. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">self</td><td>Instance </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">state</td><td>State to set or reset the relay </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">state</td><td>Desired relay state </td></tr>
   </table>
   </dd>
 </dl>
@@ -336,7 +340,7 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="group__bc__module__relay_ga5160a03a480acd83defaa000ccdb5228_icgraph.png" border="0" usemap="#group__bc__module__relay_ga5160a03a480acd83defaa000ccdb5228_icgraph" alt=""/></div>
 <map name="group__bc__module__relay_ga5160a03a480acd83defaa000ccdb5228_icgraph" id="group__bc__module__relay_ga5160a03a480acd83defaa000ccdb5228_icgraph">
-<area shape="rect" id="node2" href="group__bc__module__relay.html#ga15e04204001dc9a04db3b78be7b34460" title="Toggle the relay state to another. " alt="" coords="200,12,363,39"/></map>
+<area shape="rect" id="node2" href="group__bc__module__relay.html#ga15e04204001dc9a04db3b78be7b34460" title="Toggle relay to opposite state. " alt="" coords="200,12,363,39"/></map>
 </div>
 </p>
 
@@ -356,7 +360,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Toggle the relay state to another. </p>
+<p>Toggle relay to opposite state. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">self</td><td>Instance </td></tr>
@@ -371,7 +375,7 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="group__bc__module__relay_ga15e04204001dc9a04db3b78be7b34460_cgraph.png" border="0" usemap="#group__bc__module__relay_ga15e04204001dc9a04db3b78be7b34460_cgraph" alt=""/></div>
 <map name="group__bc__module__relay_ga15e04204001dc9a04db3b78be7b34460_cgraph" id="group__bc__module__relay_ga15e04204001dc9a04db3b78be7b34460_cgraph">
-<area shape="rect" id="node2" href="group__bc__module__relay.html#ga5160a03a480acd83defaa000ccdb5228" title="Set the relay on Relay Module. " alt="" coords="217,5,362,46"/></map>
+<area shape="rect" id="node2" href="group__bc__module__relay.html#ga5160a03a480acd83defaa000ccdb5228" title="Set relay to specified state. " alt="" coords="217,5,362,46"/></map>
 </div>
 </p>
 

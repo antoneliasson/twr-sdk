@@ -1,0 +1,5 @@
+<map id="bc_tca9534a_get_pin_direction" name="bc_tca9534a_get_pin_direction">
+<area shape="rect" id="node2" href="$group__bc__tca9534a.html#ga948c14930d963fa6fac78f9395ab830c" title="Get direction of all pins. " alt="" coords="201,5,351,46"/>
+<area shape="rect" id="node3" href="$group__bc__i2c.html#gac2eee84f73bb3bbd953be621f21eb0e1" title="Read 1 byte from I2C channel. " alt="" coords="401,12,514,39"/>
+<area shape="rect" id="node4" href="$group__bc__i2c.html#ga071d3d85ba25f77685909dd9712b34ea" title="Read from I2C channel. " alt="" coords="563,12,655,39"/>
+</map>

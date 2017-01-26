@@ -107,69 +107,91 @@ $(document).ready(function(){initNavTree('bc__tca9534a_8h_source.html','');});
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef _BC_TCA9534A_H</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define _BC_TCA9534A_H</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;bc_common.h&gt;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;bc_i2c.h&gt;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;bc_tick.h&gt;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#define BC_TCA9534A_DIRECTION_ALL_OUTPUT 0x00</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define BC_TCA9534A_DIRECTION_ALL_INPUT 0xFF</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#define BC_TCA9534A_REGISTER_INPUT_PORT         0x00</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define BC_TCA9534A_REGISTER_OUTPUT_PORT        0x01</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define BC_TCA9534A_REGISTER_POLARITY_INVERSION 0x02</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define BC_TCA9534A_REGISTER_CONFIGURATION      0x03</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    BC_TCA9534A_PIN_P0 = 0,</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    BC_TCA9534A_PIN_P1 = 1,</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    BC_TCA9534A_PIN_P2 = 2,</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    BC_TCA9534A_PIN_P3 = 3,</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    BC_TCA9534A_PIN_P4 = 4,</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    BC_TCA9534A_PIN_P5 = 5,</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    BC_TCA9534A_PIN_P6 = 6,</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    BC_TCA9534A_PIN_P7 = 7</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;} bc_tca9534a_pin_t;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;{</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    BC_TCA9534A_DIRECTION_OUTPUT = 0,</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    BC_TCA9534A_DIRECTION_INPUT = 1</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;} bc_tca9534a_direction_t;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;{</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    BC_TCA9534A_VALUE_LOW = 0,</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    BC_TCA9534A_VALUE_HIGH = 1</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;} bc_tca9534a_value_t;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
-<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="structbc__tca9534a__t.html">   43</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;{</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="group__bc__i2c.html#ga5f7217e6558c54ac6920e5dabb777fef">bc_i2c_channel_t</a> _i2c_channel;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    uint8_t _i2c_address;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;} <a class="code" href="structbc__tca9534a__t.html">bc_tca9534a_t</a>;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keywordtype">bool</span> bc_tca9534a_init(<a class="code" href="structbc__tca9534a__t.html">bc_tca9534a_t</a> *<span class="keyword">self</span>, <a class="code" href="group__bc__i2c.html#ga5f7217e6558c54ac6920e5dabb777fef">bc_i2c_channel_t</a> i2c_channel, uint8_t i2c_address);</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keywordtype">bool</span> bc_tca9534a_read_port(<a class="code" href="structbc__tca9534a__t.html">bc_tca9534a_t</a> *<span class="keyword">self</span>, uint8_t *value);</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keywordtype">bool</span> bc_tca9534a_write_port(<a class="code" href="structbc__tca9534a__t.html">bc_tca9534a_t</a> *<span class="keyword">self</span>, uint8_t value);</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keywordtype">bool</span> bc_tca9534a_read_pin(<a class="code" href="structbc__tca9534a__t.html">bc_tca9534a_t</a> *<span class="keyword">self</span>, bc_tca9534a_pin_t pin, bc_tca9534a_value_t *value);</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keywordtype">bool</span> bc_tca9534a_write_pin(<a class="code" href="structbc__tca9534a__t.html">bc_tca9534a_t</a> *<span class="keyword">self</span>, bc_tca9534a_pin_t pin, bc_tca9534a_value_t value);</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keywordtype">bool</span> bc_tca9534a_get_port_direction(<a class="code" href="structbc__tca9534a__t.html">bc_tca9534a_t</a> *<span class="keyword">self</span>, uint8_t *direction);</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keywordtype">bool</span> bc_tca9534a_set_port_direction(<a class="code" href="structbc__tca9534a__t.html">bc_tca9534a_t</a> *<span class="keyword">self</span>, uint8_t direction);</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keywordtype">bool</span> bc_tca9534a_get_pin_direction(<a class="code" href="structbc__tca9534a__t.html">bc_tca9534a_t</a> *<span class="keyword">self</span>, bc_tca9534a_pin_t pin,</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                                       bc_tca9534a_direction_t *direction);</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keywordtype">bool</span> bc_tca9534a_set_pin_direction(<a class="code" href="structbc__tca9534a__t.html">bc_tca9534a_t</a> *<span class="keyword">self</span>, bc_tca9534a_pin_t pin,</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                                       bc_tca9534a_direction_t direction);</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keywordtype">void</span> bc_tca9534a_test(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">#endif // _BC_TCA9534A_H</span></div>
-<div class="ttc" id="structbc__tca9534a__t_html"><div class="ttname"><a href="structbc__tca9534a__t.html">bc_tca9534a_t</a></div><div class="ttdef"><b>Definition:</b> <a href="bc__tca9534a_8h_source.html#l00043">bc_tca9534a.h:43</a></div></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;bc_i2c.h&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;bc_tick.h&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="group__bc__tca9534a.html#ga9b0181f873bff18d0e4833ab15a6813c">   13</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    BC_TCA9534A_PIN_P0 = 0,</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    BC_TCA9534A_PIN_P1 = 1,</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    BC_TCA9534A_PIN_P2 = 2,</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    BC_TCA9534A_PIN_P3 = 3,</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    BC_TCA9534A_PIN_P4 = 4,</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    BC_TCA9534A_PIN_P5 = 5,</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    BC_TCA9534A_PIN_P6 = 6,</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    BC_TCA9534A_PIN_P7 = 7</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;} <a class="code" href="group__bc__tca9534a.html#ga9b0181f873bff18d0e4833ab15a6813c">bc_tca9534a_pin_t</a>;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="group__bc__tca9534a.html#ga46d4f0b1a0c98629cbe48b30c06e342c">   28</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;{</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    BC_TCA9534A_PIN_DIRECTION_OUTPUT = 0,</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    BC_TCA9534A_PIN_DIRECTION_INPUT = 1</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;} <a class="code" href="group__bc__tca9534a.html#ga46d4f0b1a0c98629cbe48b30c06e342c">bc_tca9534a_pin_direction_t</a>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="group__bc__tca9534a.html#ga7aa4f08940f1ef2a0227d1ac9f06479f">   37</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;{</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    BC_TCA9534A_PIN_STATE_LOW = 0,</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    BC_TCA9534A_PIN_STATE_HIGH = 1</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;} <a class="code" href="group__bc__tca9534a.html#ga7aa4f08940f1ef2a0227d1ac9f06479f">bc_tca9534a_state_t</a>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="structbc__tca9534a__t.html">   46</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;{</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <a class="code" href="group__bc__i2c.html#ga5f7217e6558c54ac6920e5dabb777fef">bc_i2c_channel_t</a> _i2c_channel;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    uint8_t _i2c_address;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;} <a class="code" href="structbc__tca9534a__t.html">bc_tca9534a_t</a>;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="group__bc__tca9534a.html#gab392a5644d1d4ccab47c95f04b4786cf">bc_tca9534a_init</a>(<a class="code" href="structbc__tca9534a__t.html">bc_tca9534a_t</a> *<span class="keyword">self</span>, <a class="code" href="group__bc__i2c.html#ga5f7217e6558c54ac6920e5dabb777fef">bc_i2c_channel_t</a> i2c_channel, uint8_t i2c_address);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="group__bc__tca9534a.html#gafae0e31f827bddb3e47958a3656ea32b">bc_tca9534a_read_port</a>(<a class="code" href="structbc__tca9534a__t.html">bc_tca9534a_t</a> *<span class="keyword">self</span>, uint8_t *state);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="group__bc__tca9534a.html#ga4707e216045466f49d56e2fe58f9ec04">bc_tca9534a_write_port</a>(<a class="code" href="structbc__tca9534a__t.html">bc_tca9534a_t</a> *<span class="keyword">self</span>, uint8_t state);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="group__bc__tca9534a.html#gab804336ed8337fd4498a2f9fa83b917b">bc_tca9534a_read_pin</a>(<a class="code" href="structbc__tca9534a__t.html">bc_tca9534a_t</a> *<span class="keyword">self</span>, <a class="code" href="group__bc__tca9534a.html#ga9b0181f873bff18d0e4833ab15a6813c">bc_tca9534a_pin_t</a> pin, <a class="code" href="group__bc__tca9534a.html#ga7aa4f08940f1ef2a0227d1ac9f06479f">bc_tca9534a_state_t</a> *state);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="group__bc__tca9534a.html#ga9a611ff498af8f5e0145f2a21a6c662c">bc_tca9534a_write_pin</a>(<a class="code" href="structbc__tca9534a__t.html">bc_tca9534a_t</a> *<span class="keyword">self</span>, <a class="code" href="group__bc__tca9534a.html#ga9b0181f873bff18d0e4833ab15a6813c">bc_tca9534a_pin_t</a> pin, <a class="code" href="group__bc__tca9534a.html#ga7aa4f08940f1ef2a0227d1ac9f06479f">bc_tca9534a_state_t</a> state);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="group__bc__tca9534a.html#ga948c14930d963fa6fac78f9395ab830c">bc_tca9534a_get_port_direction</a>(<a class="code" href="structbc__tca9534a__t.html">bc_tca9534a_t</a> *<span class="keyword">self</span>, uint8_t *direction);</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="group__bc__tca9534a.html#ga3031df848b97bb621de3a2268af49b4e">bc_tca9534a_set_port_direction</a>(<a class="code" href="structbc__tca9534a__t.html">bc_tca9534a_t</a> *<span class="keyword">self</span>, uint8_t direction);</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="group__bc__tca9534a.html#ga3dbbb9f4dc9d0c218d10f5cd3c686e04">bc_tca9534a_get_pin_direction</a>(<a class="code" href="structbc__tca9534a__t.html">bc_tca9534a_t</a> *<span class="keyword">self</span>, <a class="code" href="group__bc__tca9534a.html#ga9b0181f873bff18d0e4833ab15a6813c">bc_tca9534a_pin_t</a> pin, <a class="code" href="group__bc__tca9534a.html#ga46d4f0b1a0c98629cbe48b30c06e342c">bc_tca9534a_pin_direction_t</a> *direction);</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="group__bc__tca9534a.html#gadc9fba4363f774f26ee745e92f7366a8">bc_tca9534a_set_pin_direction</a>(<a class="code" href="structbc__tca9534a__t.html">bc_tca9534a_t</a> *<span class="keyword">self</span>, <a class="code" href="group__bc__tca9534a.html#ga9b0181f873bff18d0e4833ab15a6813c">bc_tca9534a_pin_t</a> pin, <a class="code" href="group__bc__tca9534a.html#ga46d4f0b1a0c98629cbe48b30c06e342c">bc_tca9534a_pin_direction_t</a> direction);</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="preprocessor">#endif // _BC_TCA9534A_H</span></div>
+<div class="ttc" id="group__bc__tca9534a_html_ga3031df848b97bb621de3a2268af49b4e"><div class="ttname"><a href="group__bc__tca9534a.html#ga3031df848b97bb621de3a2268af49b4e">bc_tca9534a_set_port_direction</a></div><div class="ttdeci">bool bc_tca9534a_set_port_direction(bc_tca9534a_t *self, uint8_t direction)</div><div class="ttdoc">Set direction of all pins. </div><div class="ttdef"><b>Definition:</b> <a href="bc__tca9534a_8c_source.html#l00100">bc_tca9534a.c:100</a></div></div>
+<div class="ttc" id="structbc__tca9534a__t_html"><div class="ttname"><a href="structbc__tca9534a__t.html">bc_tca9534a_t</a></div><div class="ttdoc">TCA9534A instance. </div><div class="ttdef"><b>Definition:</b> <a href="bc__tca9534a_8h_source.html#l00046">bc_tca9534a.h:46</a></div></div>
+<div class="ttc" id="group__bc__tca9534a_html_ga4707e216045466f49d56e2fe58f9ec04"><div class="ttname"><a href="group__bc__tca9534a.html#ga4707e216045466f49d56e2fe58f9ec04">bc_tca9534a_write_port</a></div><div class="ttdeci">bool bc_tca9534a_write_port(bc_tca9534a_t *self, uint8_t state)</div><div class="ttdoc">Write state to all pins. </div><div class="ttdef"><b>Definition:</b> <a href="bc__tca9534a_8c_source.html#l00035">bc_tca9534a.c:35</a></div></div>
+<div class="ttc" id="group__bc__tca9534a_html_gafae0e31f827bddb3e47958a3656ea32b"><div class="ttname"><a href="group__bc__tca9534a.html#gafae0e31f827bddb3e47958a3656ea32b">bc_tca9534a_read_port</a></div><div class="ttdeci">bool bc_tca9534a_read_port(bc_tca9534a_t *self, uint8_t *state)</div><div class="ttdoc">Read state of all pins. </div><div class="ttdef"><b>Definition:</b> <a href="bc__tca9534a_8c_source.html#l00025">bc_tca9534a.c:25</a></div></div>
+<div class="ttc" id="group__bc__tca9534a_html_gab804336ed8337fd4498a2f9fa83b917b"><div class="ttname"><a href="group__bc__tca9534a.html#gab804336ed8337fd4498a2f9fa83b917b">bc_tca9534a_read_pin</a></div><div class="ttdeci">bool bc_tca9534a_read_pin(bc_tca9534a_t *self, bc_tca9534a_pin_t pin, bc_tca9534a_state_t *state)</div><div class="ttdoc">Read pin state. </div><div class="ttdef"><b>Definition:</b> <a href="bc__tca9534a_8c_source.html#l00045">bc_tca9534a.c:45</a></div></div>
+<div class="ttc" id="group__bc__tca9534a_html_ga948c14930d963fa6fac78f9395ab830c"><div class="ttname"><a href="group__bc__tca9534a.html#ga948c14930d963fa6fac78f9395ab830c">bc_tca9534a_get_port_direction</a></div><div class="ttdeci">bool bc_tca9534a_get_port_direction(bc_tca9534a_t *self, uint8_t *direction)</div><div class="ttdoc">Get direction of all pins. </div><div class="ttdef"><b>Definition:</b> <a href="bc__tca9534a_8c_source.html#l00090">bc_tca9534a.c:90</a></div></div>
+<div class="ttc" id="group__bc__tca9534a_html_gab392a5644d1d4ccab47c95f04b4786cf"><div class="ttname"><a href="group__bc__tca9534a.html#gab392a5644d1d4ccab47c95f04b4786cf">bc_tca9534a_init</a></div><div class="ttdeci">bool bc_tca9534a_init(bc_tca9534a_t *self, bc_i2c_channel_t i2c_channel, uint8_t i2c_address)</div><div class="ttdoc">Initialize TCA9534A. </div><div class="ttdef"><b>Definition:</b> <a href="bc__tca9534a_8c_source.html#l00008">bc_tca9534a.c:8</a></div></div>
+<div class="ttc" id="group__bc__tca9534a_html_ga7aa4f08940f1ef2a0227d1ac9f06479f"><div class="ttname"><a href="group__bc__tca9534a.html#ga7aa4f08940f1ef2a0227d1ac9f06479f">bc_tca9534a_state_t</a></div><div class="ttdeci">bc_tca9534a_state_t</div><div class="ttdoc">Pin state. </div><div class="ttdef"><b>Definition:</b> <a href="bc__tca9534a_8h_source.html#l00037">bc_tca9534a.h:37</a></div></div>
 <div class="ttc" id="group__bc__i2c_html_ga5f7217e6558c54ac6920e5dabb777fef"><div class="ttname"><a href="group__bc__i2c.html#ga5f7217e6558c54ac6920e5dabb777fef">bc_i2c_channel_t</a></div><div class="ttdeci">bc_i2c_channel_t</div><div class="ttdoc">I2C channels. </div><div class="ttdef"><b>Definition:</b> <a href="bc__i2c_8h_source.html#l00015">bc_i2c.h:15</a></div></div>
+<div class="ttc" id="group__bc__tca9534a_html_ga9b0181f873bff18d0e4833ab15a6813c"><div class="ttname"><a href="group__bc__tca9534a.html#ga9b0181f873bff18d0e4833ab15a6813c">bc_tca9534a_pin_t</a></div><div class="ttdeci">bc_tca9534a_pin_t</div><div class="ttdoc">Individual pin names. </div><div class="ttdef"><b>Definition:</b> <a href="bc__tca9534a_8h_source.html#l00013">bc_tca9534a.h:13</a></div></div>
+<div class="ttc" id="group__bc__tca9534a_html_ga3dbbb9f4dc9d0c218d10f5cd3c686e04"><div class="ttname"><a href="group__bc__tca9534a.html#ga3dbbb9f4dc9d0c218d10f5cd3c686e04">bc_tca9534a_get_pin_direction</a></div><div class="ttdeci">bool bc_tca9534a_get_pin_direction(bc_tca9534a_t *self, bc_tca9534a_pin_t pin, bc_tca9534a_pin_direction_t *direction)</div><div class="ttdoc">Get pin direction. </div><div class="ttdef"><b>Definition:</b> <a href="bc__tca9534a_8c_source.html#l00110">bc_tca9534a.c:110</a></div></div>
+<div class="ttc" id="group__bc__tca9534a_html_ga9a611ff498af8f5e0145f2a21a6c662c"><div class="ttname"><a href="group__bc__tca9534a.html#ga9a611ff498af8f5e0145f2a21a6c662c">bc_tca9534a_write_pin</a></div><div class="ttdeci">bool bc_tca9534a_write_pin(bc_tca9534a_t *self, bc_tca9534a_pin_t pin, bc_tca9534a_state_t state)</div><div class="ttdoc">Write pin state. </div><div class="ttdef"><b>Definition:</b> <a href="bc__tca9534a_8c_source.html#l00066">bc_tca9534a.c:66</a></div></div>
+<div class="ttc" id="group__bc__tca9534a_html_gadc9fba4363f774f26ee745e92f7366a8"><div class="ttname"><a href="group__bc__tca9534a.html#gadc9fba4363f774f26ee745e92f7366a8">bc_tca9534a_set_pin_direction</a></div><div class="ttdeci">bool bc_tca9534a_set_pin_direction(bc_tca9534a_t *self, bc_tca9534a_pin_t pin, bc_tca9534a_pin_direction_t direction)</div><div class="ttdoc">Set pin direction. </div><div class="ttdef"><b>Definition:</b> <a href="bc__tca9534a_8c_source.html#l00131">bc_tca9534a.c:131</a></div></div>
+<div class="ttc" id="group__bc__tca9534a_html_ga46d4f0b1a0c98629cbe48b30c06e342c"><div class="ttname"><a href="group__bc__tca9534a.html#ga46d4f0b1a0c98629cbe48b30c06e342c">bc_tca9534a_pin_direction_t</a></div><div class="ttdeci">bc_tca9534a_pin_direction_t</div><div class="ttdoc">Pin direction. </div><div class="ttdef"><b>Definition:</b> <a href="bc__tca9534a_8h_source.html#l00028">bc_tca9534a.h:28</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

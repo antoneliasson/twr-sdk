@@ -1,4 +1,4 @@
 <map id="bc_fifo_write" name="bc_fifo_write">
-<area shape="rect" id="node2" href="$group__bc__irq.html#ga83398e8b1c443f7bf1b1980959d3cc63" title="Disable global IRQs. " alt="" coords="150,5,255,32"/>
-<area shape="rect" id="node3" href="$group__bc__irq.html#ga6bd1e6c1589c97558d14e8f3d648e656" title="Enable global IRQs. " alt="" coords="151,56,254,83"/>
+<area shape="rect" id="node2" href="$group__bc__irq.html#ga83398e8b1c443f7bf1b1980959d3cc63" title="Deny all interrupt requests. " alt="" coords="150,5,255,32"/>
+<area shape="rect" id="node3" href="$group__bc__irq.html#ga6bd1e6c1589c97558d14e8f3d648e656" title="Allow all interrupt requests. " alt="" coords="151,56,254,83"/>
 </map>

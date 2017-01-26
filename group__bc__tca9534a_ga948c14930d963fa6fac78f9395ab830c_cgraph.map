@@ -1,0 +1,4 @@
+<map id="bc_tca9534a_get_port_direction" name="bc_tca9534a_get_port_direction">
+<area shape="rect" id="node2" href="$group__bc__i2c.html#gac2eee84f73bb3bbd953be621f21eb0e1" title="Read 1 byte from I2C channel. " alt="" coords="206,12,319,39"/>
+<area shape="rect" id="node3" href="$group__bc__i2c.html#ga071d3d85ba25f77685909dd9712b34ea" title="Read from I2C channel. " alt="" coords="369,12,461,39"/>
+</map>

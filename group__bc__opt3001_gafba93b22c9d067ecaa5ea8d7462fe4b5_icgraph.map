@@ -1,3 +1,3 @@
 <map id="bc_opt3001_get_luminosity_lux" name="bc_opt3001_get_luminosity_lux">
-<area shape="rect" id="node2" href="$group__bc__lux__meter__tag.html#ga52b17d82cf2c0c6ba3c6eb77f1bcc4b5" title="Get measured luminosity in lux. " alt="" coords="259,5,410,46"/>
+<area shape="rect" id="node2" href="$group__bc__tag__lux__meter.html#gac7a812d56dfd26feca94f7b8866979ed" title="Get measured luminosity in lux. " alt="" coords="259,5,410,46"/>
 </map>

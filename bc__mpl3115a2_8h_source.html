@@ -107,62 +107,80 @@ $(document).ready(function(){initNavTree('bc__mpl3115a2_8h_source.html','');});
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef _BC_MPL3115A2_H</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define _BC_MPL3115A2_H</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;bc_common.h&gt;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;bc_i2c.h&gt;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;bc_tick.h&gt;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    BC_MPL3115A2_EVENT_ERROR = 0,</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    BC_MPL3115A2_EVENT_UPDATE = 1</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;bc_i2c.h&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;bc_tick.h&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;} bc_mpl3115a2_event_t;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    BC_MPL3115A2_STATE_ERROR = -1,</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    BC_MPL3115A2_STATE_INITIALIZE = 0,</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    BC_MPL3115A2_STATE_MEASURE_ALTITUDE = 1,</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    BC_MPL3115A2_STATE_READ_ALTITUDE = 2,</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    BC_MPL3115A2_STATE_MEASURE_PRESSURE = 3,</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    BC_MPL3115A2_STATE_READ_PRESSURE = 4,</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    BC_MPL3115A2_STATE_UPDATE = 5</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;} bc_mpl3115a2_state_t;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structbc__mpl3115a2__t.html">bc_mpl3115a2_t</a> <a class="code" href="structbc__mpl3115a2__t.html">bc_mpl3115a2_t</a>;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
-<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="structbc__mpl3115a2__t.html">   29</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structbc__mpl3115a2__t.html">bc_mpl3115a2_t</a></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;{</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <a class="code" href="group__bc__i2c.html#ga5f7217e6558c54ac6920e5dabb777fef">bc_i2c_channel_t</a> _i2c_channel;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    uint8_t _i2c_address;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    void (*_event_handler)(<a class="code" href="structbc__mpl3115a2__t.html">bc_mpl3115a2_t</a> *, bc_mpl3115a2_event_t);</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <a class="code" href="group__bc__tick.html#gabd224c28866c49d86f5d33cae606bbe0">bc_tick_t</a> _update_interval;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    bc_mpl3115a2_state_t _state;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">bool</span> _altitude_valid;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">bool</span> _pressure_valid;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    uint8_t _reg_out_p_msb_altitude;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    uint8_t _reg_out_p_csb_altitude;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    uint8_t _reg_out_p_lsb_altitude;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    uint8_t _reg_out_t_msb_altitude;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    uint8_t _reg_out_t_lsb_altitude;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    uint8_t _reg_out_p_msb_pressure;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    uint8_t _reg_out_p_csb_pressure;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    uint8_t _reg_out_p_lsb_pressure;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    uint8_t _reg_out_t_msb_pressure;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    uint8_t _reg_out_t_lsb_pressure;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;};</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keywordtype">void</span> bc_mpl3115a2_init(<a class="code" href="structbc__mpl3115a2__t.html">bc_mpl3115a2_t</a> *<span class="keyword">self</span>, <a class="code" href="group__bc__i2c.html#ga5f7217e6558c54ac6920e5dabb777fef">bc_i2c_channel_t</a> i2c_channel, uint8_t i2c_address);</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keywordtype">void</span> bc_mpl3115a2_set_event_handler(<a class="code" href="structbc__mpl3115a2__t.html">bc_mpl3115a2_t</a> *<span class="keyword">self</span>, <span class="keywordtype">void</span> (*event_handler)(<a class="code" href="structbc__mpl3115a2__t.html">bc_mpl3115a2_t</a> *, bc_mpl3115a2_event_t));</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keywordtype">void</span> bc_mpl3115a2_set_update_interval(<a class="code" href="structbc__mpl3115a2__t.html">bc_mpl3115a2_t</a> *<span class="keyword">self</span>, <a class="code" href="group__bc__tick.html#gabd224c28866c49d86f5d33cae606bbe0">bc_tick_t</a> interval);</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keywordtype">bool</span> bc_mpl3115a2_get_altitude_meter(<a class="code" href="structbc__mpl3115a2__t.html">bc_mpl3115a2_t</a> *<span class="keyword">self</span>, <span class="keywordtype">float</span> *meter);</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keywordtype">bool</span> bc_mpl3115a2_get_pressure_pascal(<a class="code" href="structbc__mpl3115a2__t.html">bc_mpl3115a2_t</a> *<span class="keyword">self</span>, <span class="keywordtype">float</span> *pascal);</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">#endif // _BC_MPL3115A2_H</span></div>
-<div class="ttc" id="group__bc__tick_html_gabd224c28866c49d86f5d33cae606bbe0"><div class="ttname"><a href="group__bc__tick.html#gabd224c28866c49d86f5d33cae606bbe0">bc_tick_t</a></div><div class="ttdeci">uint64_t bc_tick_t</div><div class="ttdoc">Timestamp data type. </div><div class="ttdef"><b>Definition:</b> <a href="bc__tick_8h_source.html#l00014">bc_tick.h:14</a></div></div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="group__bc__mpl3115a2.html#ga668c89e25a55f82bc44bd30eff13d76c">   13</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    BC_MPL3115A2_EVENT_ERROR = 0,</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    BC_MPL3115A2_EVENT_UPDATE = 1</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;} <a class="code" href="group__bc__mpl3115a2.html#ga668c89e25a55f82bc44bd30eff13d76c">bc_mpl3115a2_event_t</a>;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;{</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    BC_MPL3115A2_STATE_ERROR = -1,</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    BC_MPL3115A2_STATE_INITIALIZE = 0,</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    BC_MPL3115A2_STATE_MEASURE_ALTITUDE = 1,</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    BC_MPL3115A2_STATE_READ_ALTITUDE = 2,</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    BC_MPL3115A2_STATE_MEASURE_PRESSURE = 3,</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    BC_MPL3115A2_STATE_READ_PRESSURE = 4,</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    BC_MPL3115A2_STATE_UPDATE = 5</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;} bc_mpl3115a2_state_t;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structbc__mpl3115a2__t.html">bc_mpl3115a2_t</a> <a class="code" href="structbc__mpl3115a2__t.html">bc_mpl3115a2_t</a>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="structbc__mpl3115a2__t.html">   36</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structbc__mpl3115a2__t.html">bc_mpl3115a2_t</a></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;{</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <a class="code" href="group__bc__i2c.html#ga5f7217e6558c54ac6920e5dabb777fef">bc_i2c_channel_t</a> _i2c_channel;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    uint8_t _i2c_address;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    void (*_event_handler)(<a class="code" href="structbc__mpl3115a2__t.html">bc_mpl3115a2_t</a> *, <a class="code" href="group__bc__mpl3115a2.html#ga668c89e25a55f82bc44bd30eff13d76c">bc_mpl3115a2_event_t</a>);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <a class="code" href="group__bc__tick.html#gabd224c28866c49d86f5d33cae606bbe0">bc_tick_t</a> _update_interval;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    bc_mpl3115a2_state_t _state;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">bool</span> _altitude_valid;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">bool</span> _pressure_valid;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    uint8_t _reg_out_p_msb_altitude;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    uint8_t _reg_out_p_csb_altitude;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    uint8_t _reg_out_p_lsb_altitude;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    uint8_t _reg_out_t_msb_altitude;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    uint8_t _reg_out_t_lsb_altitude;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    uint8_t _reg_out_p_msb_pressure;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    uint8_t _reg_out_p_csb_pressure;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    uint8_t _reg_out_p_lsb_pressure;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    uint8_t _reg_out_t_msb_pressure;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    uint8_t _reg_out_t_lsb_pressure;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;};</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__bc__mpl3115a2.html#ga634445e187612f04ed034c3f95ef006e">bc_mpl3115a2_init</a>(<a class="code" href="structbc__mpl3115a2__t.html">bc_mpl3115a2_t</a> *<span class="keyword">self</span>, <a class="code" href="group__bc__i2c.html#ga5f7217e6558c54ac6920e5dabb777fef">bc_i2c_channel_t</a> i2c_channel, uint8_t i2c_address);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__bc__mpl3115a2.html#ga5d271882313cb39e307e98498b62b30f">bc_mpl3115a2_set_event_handler</a>(<a class="code" href="structbc__mpl3115a2__t.html">bc_mpl3115a2_t</a> *<span class="keyword">self</span>, <span class="keywordtype">void</span> (*event_handler)(<a class="code" href="structbc__mpl3115a2__t.html">bc_mpl3115a2_t</a> *, <a class="code" href="group__bc__mpl3115a2.html#ga668c89e25a55f82bc44bd30eff13d76c">bc_mpl3115a2_event_t</a>));</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__bc__mpl3115a2.html#gaa976e072fb109951e3d170400a216bf7">bc_mpl3115a2_set_update_interval</a>(<a class="code" href="structbc__mpl3115a2__t.html">bc_mpl3115a2_t</a> *<span class="keyword">self</span>, <a class="code" href="group__bc__tick.html#gabd224c28866c49d86f5d33cae606bbe0">bc_tick_t</a> interval);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="group__bc__mpl3115a2.html#gaa4c2b06d0266ee2f018b3098a510f8b0">bc_mpl3115a2_get_altitude_meter</a>(<a class="code" href="structbc__mpl3115a2__t.html">bc_mpl3115a2_t</a> *<span class="keyword">self</span>, <span class="keywordtype">float</span> *meter);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="group__bc__mpl3115a2.html#ga2a44c24bb088dc765911ddbc0637cbc3">bc_mpl3115a2_get_pressure_pascal</a>(<a class="code" href="structbc__mpl3115a2__t.html">bc_mpl3115a2_t</a> *<span class="keyword">self</span>, <span class="keywordtype">float</span> *pascal);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="preprocessor">#endif // _BC_MPL3115A2_H</span></div>
+<div class="ttc" id="group__bc__tick_html_gabd224c28866c49d86f5d33cae606bbe0"><div class="ttname"><a href="group__bc__tick.html#gabd224c28866c49d86f5d33cae606bbe0">bc_tick_t</a></div><div class="ttdeci">uint64_t bc_tick_t</div><div class="ttdoc">Timestamp data type. </div><div class="ttdef"><b>Definition:</b> <a href="bc__tick_8h_source.html#l00016">bc_tick.h:16</a></div></div>
+<div class="ttc" id="group__bc__mpl3115a2_html_ga5d271882313cb39e307e98498b62b30f"><div class="ttname"><a href="group__bc__mpl3115a2.html#ga5d271882313cb39e307e98498b62b30f">bc_mpl3115a2_set_event_handler</a></div><div class="ttdeci">void bc_mpl3115a2_set_event_handler(bc_mpl3115a2_t *self, void(*event_handler)(bc_mpl3115a2_t *, bc_mpl3115a2_event_t))</div><div class="ttdoc">Set callback function. </div><div class="ttdef"><b>Definition:</b> <a href="bc__mpl3115a2_8c_source.html#l00020">bc_mpl3115a2.c:20</a></div></div>
+<div class="ttc" id="group__bc__mpl3115a2_html_ga2a44c24bb088dc765911ddbc0637cbc3"><div class="ttname"><a href="group__bc__mpl3115a2.html#ga2a44c24bb088dc765911ddbc0637cbc3">bc_mpl3115a2_get_pressure_pascal</a></div><div class="ttdeci">bool bc_mpl3115a2_get_pressure_pascal(bc_mpl3115a2_t *self, float *pascal)</div><div class="ttdoc">Get measured pressured in Pascal. </div><div class="ttdef"><b>Definition:</b> <a href="bc__mpl3115a2_8c_source.html#l00044">bc_mpl3115a2.c:44</a></div></div>
+<div class="ttc" id="group__bc__mpl3115a2_html_ga668c89e25a55f82bc44bd30eff13d76c"><div class="ttname"><a href="group__bc__mpl3115a2.html#ga668c89e25a55f82bc44bd30eff13d76c">bc_mpl3115a2_event_t</a></div><div class="ttdeci">bc_mpl3115a2_event_t</div><div class="ttdoc">Callback events. </div><div class="ttdef"><b>Definition:</b> <a href="bc__mpl3115a2_8h_source.html#l00013">bc_mpl3115a2.h:13</a></div></div>
+<div class="ttc" id="group__bc__mpl3115a2_html_ga634445e187612f04ed034c3f95ef006e"><div class="ttname"><a href="group__bc__mpl3115a2.html#ga634445e187612f04ed034c3f95ef006e">bc_mpl3115a2_init</a></div><div class="ttdeci">void bc_mpl3115a2_init(bc_mpl3115a2_t *self, bc_i2c_channel_t i2c_channel, uint8_t i2c_address)</div><div class="ttdoc">Initialize MPL3115A2. </div><div class="ttdef"><b>Definition:</b> <a href="bc__mpl3115a2_8c_source.html#l00010">bc_mpl3115a2.c:10</a></div></div>
+<div class="ttc" id="group__bc__mpl3115a2_html_gaa4c2b06d0266ee2f018b3098a510f8b0"><div class="ttname"><a href="group__bc__mpl3115a2.html#gaa4c2b06d0266ee2f018b3098a510f8b0">bc_mpl3115a2_get_altitude_meter</a></div><div class="ttdeci">bool bc_mpl3115a2_get_altitude_meter(bc_mpl3115a2_t *self, float *meter)</div><div class="ttdoc">Get measured altitude in meters. </div><div class="ttdef"><b>Definition:</b> <a href="bc__mpl3115a2_8c_source.html#l00030">bc_mpl3115a2.c:30</a></div></div>
 <div class="ttc" id="group__bc__i2c_html_ga5f7217e6558c54ac6920e5dabb777fef"><div class="ttname"><a href="group__bc__i2c.html#ga5f7217e6558c54ac6920e5dabb777fef">bc_i2c_channel_t</a></div><div class="ttdeci">bc_i2c_channel_t</div><div class="ttdoc">I2C channels. </div><div class="ttdef"><b>Definition:</b> <a href="bc__i2c_8h_source.html#l00015">bc_i2c.h:15</a></div></div>
-<div class="ttc" id="structbc__mpl3115a2__t_html"><div class="ttname"><a href="structbc__mpl3115a2__t.html">bc_mpl3115a2_t</a></div><div class="ttdef"><b>Definition:</b> <a href="bc__mpl3115a2_8h_source.html#l00029">bc_mpl3115a2.h:29</a></div></div>
+<div class="ttc" id="group__bc__mpl3115a2_html_gaa976e072fb109951e3d170400a216bf7"><div class="ttname"><a href="group__bc__mpl3115a2.html#gaa976e072fb109951e3d170400a216bf7">bc_mpl3115a2_set_update_interval</a></div><div class="ttdeci">void bc_mpl3115a2_set_update_interval(bc_mpl3115a2_t *self, bc_tick_t interval)</div><div class="ttdoc">Set measurement interval. </div><div class="ttdef"><b>Definition:</b> <a href="bc__mpl3115a2_8c_source.html#l00025">bc_mpl3115a2.c:25</a></div></div>
+<div class="ttc" id="structbc__mpl3115a2__t_html"><div class="ttname"><a href="structbc__mpl3115a2__t.html">bc_mpl3115a2_t</a></div><div class="ttdoc">MPL3115A2 instance. </div><div class="ttdef"><b>Definition:</b> <a href="bc__mpl3115a2_8h_source.html#l00036">bc_mpl3115a2.h:36</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

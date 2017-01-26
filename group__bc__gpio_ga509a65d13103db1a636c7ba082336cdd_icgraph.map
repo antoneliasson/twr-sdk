@@ -1,4 +1,4 @@
 <map id="bc_gpio_set_output" name="bc_gpio_set_output">
-<area shape="rect" id="node2" href="$group__bc__led.html#ga822e72175b9bc2557ad7c989f98c7068" title="LED init function. " alt="" coords="197,5,281,32"/>
+<area shape="rect" id="node2" href="$group__bc__led.html#ga822e72175b9bc2557ad7c989f98c7068" title="Initialize LED. " alt="" coords="197,5,281,32"/>
 <area shape="rect" id="node3" href="$group__bc__led.html#ga70430d42b18f282381a8c8044c8adf94" title="Turn on LED for the specified duration of time. " alt="" coords="189,56,288,83"/>
 </map>

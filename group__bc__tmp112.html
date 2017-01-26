@@ -96,7 +96,6 @@ $(document).ready(function(){initNavTree('group__bc__tmp112.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Data Structures</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
@@ -108,16 +107,11 @@ $(document).ready(function(){initNavTree('group__bc__tmp112.html','');});
 <p>Driver for TMP112 temperature sensor.  
 <a href="#details">More...</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Data Structures</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbc__tmp112__t.html">bc_tmp112_t</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure of TMP122 instance.  <a href="structbc__tmp112__t.html#details">More...</a><br/></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:gaf3f5f3f39d19ba5d648dc39c844e4ab5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gaf3f5f3f39d19ba5d648dc39c844e4ab5"></a>
-typedef struct <a class="el" href="structbc__tmp112__t.html">bc_tmp112_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>bc_tmp112_t</b></td></tr>
+typedef struct <a class="el" href="group__bc__tmp112.html#gaf3f5f3f39d19ba5d648dc39c844e4ab5">bc_tmp112_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bc__tmp112.html#gaf3f5f3f39d19ba5d648dc39c844e4ab5">bc_tmp112_t</a></td></tr>
+<tr class="memdesc:gaf3f5f3f39d19ba5d648dc39c844e4ab5"><td class="mdescLeft">&#160;</td><td class="mdescRight">TMP112 instance. <br/></td></tr>
 <tr class="separator:gaf3f5f3f39d19ba5d648dc39c844e4ab5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
@@ -130,40 +124,28 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:ga0f3f2d66b8fa03f44b26592fbfc95087"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback events.  <a href="group__bc__tmp112.html#ga0f3f2d66b8fa03f44b26592fbfc95087">More...</a><br/></td></tr>
 <tr class="separator:ga0f3f2d66b8fa03f44b26592fbfc95087"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf282e797af7a59b532b8ed78c74b2113"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bc__tmp112.html#gaf282e797af7a59b532b8ed78c74b2113">bc_tmp112_state_t</a> { <br/>
-&#160;&#160;<b>BC_TMP112_STATE_ERROR</b> = -1, 
-<br/>
-&#160;&#160;<b>BC_TMP112_STATE_MEASURE</b> = 0, 
-<br/>
-&#160;&#160;<b>BC_TMP112_STATE_READ</b> = 1, 
-<br/>
-&#160;&#160;<b>BC_TMP112_STATE_UPDATE</b> = 2
-<br/>
- }</td></tr>
-<tr class="memdesc:gaf282e797af7a59b532b8ed78c74b2113"><td class="mdescLeft">&#160;</td><td class="mdescRight">Library measuring states. <br/></td></tr>
-<tr class="separator:gaf282e797af7a59b532b8ed78c74b2113"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gafa5c6541860450a84023c16293d977ac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bc__tmp112.html#gafa5c6541860450a84023c16293d977ac">bc_tmp112_init</a> (<a class="el" href="structbc__tmp112__t.html">bc_tmp112_t</a> *self, <a class="el" href="group__bc__i2c.html#ga5f7217e6558c54ac6920e5dabb777fef">bc_i2c_channel_t</a> i2c_channel, uint8_t i2c_address)</td></tr>
-<tr class="memdesc:gafa5c6541860450a84023c16293d977ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize TMP112 driver.  <a href="#gafa5c6541860450a84023c16293d977ac">More...</a><br/></td></tr>
+<tr class="memitem:gafa5c6541860450a84023c16293d977ac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bc__tmp112.html#gafa5c6541860450a84023c16293d977ac">bc_tmp112_init</a> (<a class="el" href="group__bc__tmp112.html#gaf3f5f3f39d19ba5d648dc39c844e4ab5">bc_tmp112_t</a> *self, <a class="el" href="group__bc__i2c.html#ga5f7217e6558c54ac6920e5dabb777fef">bc_i2c_channel_t</a> i2c_channel, uint8_t i2c_address)</td></tr>
+<tr class="memdesc:gafa5c6541860450a84023c16293d977ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize TMP112.  <a href="#gafa5c6541860450a84023c16293d977ac">More...</a><br/></td></tr>
 <tr class="separator:gafa5c6541860450a84023c16293d977ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gabb3367166e4d8374d6e309724613fe23"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bc__tmp112.html#gabb3367166e4d8374d6e309724613fe23">bc_tmp112_set_event_handler</a> (<a class="el" href="structbc__tmp112__t.html">bc_tmp112_t</a> *self, void(*event_handler)(<a class="el" href="structbc__tmp112__t.html">bc_tmp112_t</a> *, <a class="el" href="group__bc__tmp112.html#ga0f3f2d66b8fa03f44b26592fbfc95087">bc_tmp112_event_t</a>))</td></tr>
+<tr class="memitem:gabb3367166e4d8374d6e309724613fe23"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bc__tmp112.html#gabb3367166e4d8374d6e309724613fe23">bc_tmp112_set_event_handler</a> (<a class="el" href="group__bc__tmp112.html#gaf3f5f3f39d19ba5d648dc39c844e4ab5">bc_tmp112_t</a> *self, void(*event_handler)(<a class="el" href="group__bc__tmp112.html#gaf3f5f3f39d19ba5d648dc39c844e4ab5">bc_tmp112_t</a> *, <a class="el" href="group__bc__tmp112.html#ga0f3f2d66b8fa03f44b26592fbfc95087">bc_tmp112_event_t</a>))</td></tr>
 <tr class="memdesc:gabb3367166e4d8374d6e309724613fe23"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set callback function.  <a href="#gabb3367166e4d8374d6e309724613fe23">More...</a><br/></td></tr>
 <tr class="separator:gabb3367166e4d8374d6e309724613fe23"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaab18b8b8625b2d4d4272f4c0b6666153"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bc__tmp112.html#gaab18b8b8625b2d4d4272f4c0b6666153">bc_tmp112_set_update_interval</a> (<a class="el" href="structbc__tmp112__t.html">bc_tmp112_t</a> *self, <a class="el" href="group__bc__tick.html#gabd224c28866c49d86f5d33cae606bbe0">bc_tick_t</a> interval)</td></tr>
-<tr class="memdesc:gaab18b8b8625b2d4d4272f4c0b6666153"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set update interval of the measurement.  <a href="#gaab18b8b8625b2d4d4272f4c0b6666153">More...</a><br/></td></tr>
+<tr class="memitem:gaab18b8b8625b2d4d4272f4c0b6666153"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bc__tmp112.html#gaab18b8b8625b2d4d4272f4c0b6666153">bc_tmp112_set_update_interval</a> (<a class="el" href="group__bc__tmp112.html#gaf3f5f3f39d19ba5d648dc39c844e4ab5">bc_tmp112_t</a> *self, <a class="el" href="group__bc__tick.html#gabd224c28866c49d86f5d33cae606bbe0">bc_tick_t</a> interval)</td></tr>
+<tr class="memdesc:gaab18b8b8625b2d4d4272f4c0b6666153"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set measurement interval.  <a href="#gaab18b8b8625b2d4d4272f4c0b6666153">More...</a><br/></td></tr>
 <tr class="separator:gaab18b8b8625b2d4d4272f4c0b6666153"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga93c96309f01b036202ba1694f545fd2f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bc__tmp112.html#ga93c96309f01b036202ba1694f545fd2f">bc_tmp112_get_temperature_raw</a> (<a class="el" href="structbc__tmp112__t.html">bc_tmp112_t</a> *self, int16_t *raw)</td></tr>
-<tr class="memdesc:ga93c96309f01b036202ba1694f545fd2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get measured temperature in raw values.  <a href="#ga93c96309f01b036202ba1694f545fd2f">More...</a><br/></td></tr>
+<tr class="memitem:ga93c96309f01b036202ba1694f545fd2f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bc__tmp112.html#ga93c96309f01b036202ba1694f545fd2f">bc_tmp112_get_temperature_raw</a> (<a class="el" href="group__bc__tmp112.html#gaf3f5f3f39d19ba5d648dc39c844e4ab5">bc_tmp112_t</a> *self, int16_t *raw)</td></tr>
+<tr class="memdesc:ga93c96309f01b036202ba1694f545fd2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get measured temperature as raw value.  <a href="#ga93c96309f01b036202ba1694f545fd2f">More...</a><br/></td></tr>
 <tr class="separator:ga93c96309f01b036202ba1694f545fd2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9d591221cfb0cbb55e5104ffd20ff0ec"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bc__tmp112.html#ga9d591221cfb0cbb55e5104ffd20ff0ec">bc_tmp112_get_temperature_celsius</a> (<a class="el" href="structbc__tmp112__t.html">bc_tmp112_t</a> *self, float *celsius)</td></tr>
-<tr class="memdesc:ga9d591221cfb0cbb55e5104ffd20ff0ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get measured temperature in degrees of celsius.  <a href="#ga9d591221cfb0cbb55e5104ffd20ff0ec">More...</a><br/></td></tr>
+<tr class="memitem:ga9d591221cfb0cbb55e5104ffd20ff0ec"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bc__tmp112.html#ga9d591221cfb0cbb55e5104ffd20ff0ec">bc_tmp112_get_temperature_celsius</a> (<a class="el" href="group__bc__tmp112.html#gaf3f5f3f39d19ba5d648dc39c844e4ab5">bc_tmp112_t</a> *self, float *celsius)</td></tr>
+<tr class="memdesc:ga9d591221cfb0cbb55e5104ffd20ff0ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get measured temperature in degrees of Celsius.  <a href="#ga9d591221cfb0cbb55e5104ffd20ff0ec">More...</a><br/></td></tr>
 <tr class="separator:ga9d591221cfb0cbb55e5104ffd20ff0ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab9f11bac41821cc261fb7d3cf58e0efb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bc__tmp112.html#gab9f11bac41821cc261fb7d3cf58e0efb">bc_tmp112_get_temperature_fahrenheit</a> (<a class="el" href="structbc__tmp112__t.html">bc_tmp112_t</a> *self, float *fahrenheit)</td></tr>
-<tr class="memdesc:gab9f11bac41821cc261fb7d3cf58e0efb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get measured temperature in fahrenheit.  <a href="#gab9f11bac41821cc261fb7d3cf58e0efb">More...</a><br/></td></tr>
+<tr class="memitem:gab9f11bac41821cc261fb7d3cf58e0efb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bc__tmp112.html#gab9f11bac41821cc261fb7d3cf58e0efb">bc_tmp112_get_temperature_fahrenheit</a> (<a class="el" href="group__bc__tmp112.html#gaf3f5f3f39d19ba5d648dc39c844e4ab5">bc_tmp112_t</a> *self, float *fahrenheit)</td></tr>
+<tr class="memdesc:gab9f11bac41821cc261fb7d3cf58e0efb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get measured temperature in degrees of Fahrenheit.  <a href="#gab9f11bac41821cc261fb7d3cf58e0efb">More...</a><br/></td></tr>
 <tr class="separator:gab9f11bac41821cc261fb7d3cf58e0efb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac438ff1d6f87792dd5899b44cda3f8fa"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bc__tmp112.html#gac438ff1d6f87792dd5899b44cda3f8fa">bc_tmp112_get_temperature_kelvin</a> (<a class="el" href="structbc__tmp112__t.html">bc_tmp112_t</a> *self, float *kelvin)</td></tr>
+<tr class="memitem:gac438ff1d6f87792dd5899b44cda3f8fa"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bc__tmp112.html#gac438ff1d6f87792dd5899b44cda3f8fa">bc_tmp112_get_temperature_kelvin</a> (<a class="el" href="group__bc__tmp112.html#gaf3f5f3f39d19ba5d648dc39c844e4ab5">bc_tmp112_t</a> *self, float *kelvin)</td></tr>
 <tr class="memdesc:gac438ff1d6f87792dd5899b44cda3f8fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get measured temperature in kelvin.  <a href="#gac438ff1d6f87792dd5899b44cda3f8fa">More...</a><br/></td></tr>
 <tr class="separator:gac438ff1d6f87792dd5899b44cda3f8fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -190,7 +172,7 @@ Functions</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="bc__tmp112_8h_source.html#l00014">14</a> of file <a class="el" href="bc__tmp112_8h_source.html">bc_tmp112.h</a>.</p>
+<p>Definition at line <a class="el" href="bc__tmp112_8h_source.html#l00013">13</a> of file <a class="el" href="bc__tmp112_8h_source.html">bc_tmp112.h</a>.</p>
 
 </div>
 </div>
@@ -202,7 +184,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">bool bc_tmp112_get_temperature_celsius </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structbc__tmp112__t.html">bc_tmp112_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="group__bc__tmp112.html#gaf3f5f3f39d19ba5d648dc39c844e4ab5">bc_tmp112_t</a> *&#160;</td>
           <td class="paramname"><em>self</em>, </td>
         </tr>
         <tr>
@@ -219,28 +201,28 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Get measured temperature in degrees of celsius. </p>
+<p>Get measured temperature in degrees of Celsius. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">self</td><td>Instance </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">celsius</td><td>pointer to the variable </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">celsius</td><td>Pointer to variable where result will be stored </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>true when value is valid </dd>
+<dl class="section return"><dt>Returns</dt><dd>true When value is valid </dd>
 <dd>
-false when value is invalid </dd></dl>
+false When value is invalid </dd></dl>
 
 <p>Definition at line <a class="el" href="bc__tmp112_8c_source.html#l00041">41</a> of file <a class="el" href="bc__tmp112_8c_source.html">bc_tmp112.c</a>.</p>
 
-<p>Referenced by <a class="el" href="bc__temperature__tag_8h_source.html#l00072">bc_temperature_tag_get_temperature_celsius()</a>, <a class="el" href="bc__tmp112_8c_source.html#l00055">bc_tmp112_get_temperature_fahrenheit()</a>, and <a class="el" href="bc__tmp112_8c_source.html#l00069">bc_tmp112_get_temperature_kelvin()</a>.</p>
+<p>Referenced by <a class="el" href="bc__tag__temperature_8c_source.html#l00023">bc_tag_temperature_get_temperature_celsius()</a>, <a class="el" href="bc__tmp112_8c_source.html#l00055">bc_tmp112_get_temperature_fahrenheit()</a>, and <a class="el" href="bc__tmp112_8c_source.html#l00069">bc_tmp112_get_temperature_kelvin()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="group__bc__tmp112_ga9d591221cfb0cbb55e5104ffd20ff0ec_cgraph.png" border="0" usemap="#group__bc__tmp112_ga9d591221cfb0cbb55e5104ffd20ff0ec_cgraph" alt=""/></div>
 <map name="group__bc__tmp112_ga9d591221cfb0cbb55e5104ffd20ff0ec_cgraph" id="group__bc__tmp112_ga9d591221cfb0cbb55e5104ffd20ff0ec_cgraph">
-<area shape="rect" id="node2" href="group__bc__tmp112.html#ga93c96309f01b036202ba1694f545fd2f" title="Get measured temperature in raw values. " alt="" coords="241,12,455,39"/></map>
+<area shape="rect" id="node2" href="group__bc__tmp112.html#ga93c96309f01b036202ba1694f545fd2f" title="Get measured temperature as raw value. " alt="" coords="241,12,455,39"/></map>
 </div>
 </p>
 
@@ -249,7 +231,7 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="group__bc__tmp112_ga9d591221cfb0cbb55e5104ffd20ff0ec_icgraph.png" border="0" usemap="#group__bc__tmp112_ga9d591221cfb0cbb55e5104ffd20ff0ec_icgraph" alt=""/></div>
 <map name="group__bc__tmp112_ga9d591221cfb0cbb55e5104ffd20ff0ec_icgraph" id="group__bc__tmp112_ga9d591221cfb0cbb55e5104ffd20ff0ec_icgraph">
-<area shape="rect" id="node2" href="group__bc__temperature__tag.html#gade3fac5f22eda99594356600ee4c82e9" title="Get measured temperature in degrees of celsius. " alt="" coords="248,5,419,46"/><area shape="rect" id="node3" href="group__bc__tmp112.html#gab9f11bac41821cc261fb7d3cf58e0efb" title="Get measured temperature in fahrenheit. " alt="" coords="240,70,427,111"/><area shape="rect" id="node5" href="group__bc__tmp112.html#gac438ff1d6f87792dd5899b44cda3f8fa" title="Get measured temperature in kelvin. " alt="" coords="240,135,427,177"/><area shape="rect" id="node4" href="group__bc__temperature__tag.html#ga2f3586606ac2eabd12896d576dfec691" title="Get measured temperature in fahrenheit. " alt="" coords="475,70,661,111"/><area shape="rect" id="node6" href="group__bc__temperature__tag.html#ga53ebc120d71c2655c9be5775126cf677" title="Get measured temperature in kelvin. " alt="" coords="486,135,650,177"/></map>
+<area shape="rect" id="node2" href="group__bc__tag__temperature.html#ga6df2d42735d92193f1da18b1078df39f" title="Get measured temperature in degrees of Celsius. " alt="" coords="248,5,419,46"/><area shape="rect" id="node3" href="group__bc__tmp112.html#gab9f11bac41821cc261fb7d3cf58e0efb" title="Get measured temperature in degrees of Fahrenheit. " alt="" coords="240,70,427,111"/><area shape="rect" id="node5" href="group__bc__tmp112.html#gac438ff1d6f87792dd5899b44cda3f8fa" title="Get measured temperature in kelvin. " alt="" coords="240,135,427,177"/><area shape="rect" id="node4" href="group__bc__tag__temperature.html#ga1b66af3d89e704e0bcf7e491be270b88" title="Get measured temperature in degrees of Fahrenheit. " alt="" coords="475,70,661,111"/><area shape="rect" id="node6" href="group__bc__tag__temperature.html#ga5d0c15faca9c4ea1c73ce79f772410c4" title="Get measured temperature in kelvin. " alt="" coords="486,135,650,177"/></map>
 </div>
 </p>
 
@@ -262,7 +244,7 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="memname">bool bc_tmp112_get_temperature_fahrenheit </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structbc__tmp112__t.html">bc_tmp112_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="group__bc__tmp112.html#gaf3f5f3f39d19ba5d648dc39c844e4ab5">bc_tmp112_t</a> *&#160;</td>
           <td class="paramname"><em>self</em>, </td>
         </tr>
         <tr>
@@ -279,28 +261,28 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Get measured temperature in fahrenheit. </p>
+<p>Get measured temperature in degrees of Fahrenheit. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">self</td><td>Instance </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">fahrenheit</td><td>pointer to the variable </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">fahrenheit</td><td>Pointer to variable where result will be stored </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>true when value is valid </dd>
+<dl class="section return"><dt>Returns</dt><dd>true When value is valid </dd>
 <dd>
-false when value is invalid </dd></dl>
+false When value is invalid </dd></dl>
 
 <p>Definition at line <a class="el" href="bc__tmp112_8c_source.html#l00055">55</a> of file <a class="el" href="bc__tmp112_8c_source.html">bc_tmp112.c</a>.</p>
 
-<p>Referenced by <a class="el" href="bc__temperature__tag_8h_source.html#l00083">bc_temperature_tag_get_temperature_fahrenheit()</a>.</p>
+<p>Referenced by <a class="el" href="bc__tag__temperature_8c_source.html#l00028">bc_tag_temperature_get_temperature_fahrenheit()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="group__bc__tmp112_gab9f11bac41821cc261fb7d3cf58e0efb_cgraph.png" border="0" usemap="#group__bc__tmp112_gab9f11bac41821cc261fb7d3cf58e0efb_cgraph" alt=""/></div>
 <map name="group__bc__tmp112_gab9f11bac41821cc261fb7d3cf58e0efb_cgraph" id="group__bc__tmp112_gab9f11bac41821cc261fb7d3cf58e0efb_cgraph">
-<area shape="rect" id="node2" href="group__bc__tmp112.html#ga9d591221cfb0cbb55e5104ffd20ff0ec" title="Get measured temperature in degrees of celsius. " alt="" coords="240,5,427,46"/><area shape="rect" id="node3" href="group__bc__tmp112.html#ga93c96309f01b036202ba1694f545fd2f" title="Get measured temperature in raw values. " alt="" coords="475,12,690,39"/></map>
+<area shape="rect" id="node2" href="group__bc__tmp112.html#ga9d591221cfb0cbb55e5104ffd20ff0ec" title="Get measured temperature in degrees of Celsius. " alt="" coords="240,5,427,46"/><area shape="rect" id="node3" href="group__bc__tmp112.html#ga93c96309f01b036202ba1694f545fd2f" title="Get measured temperature as raw value. " alt="" coords="475,12,690,39"/></map>
 </div>
 </p>
 
@@ -309,7 +291,7 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="group__bc__tmp112_gab9f11bac41821cc261fb7d3cf58e0efb_icgraph.png" border="0" usemap="#group__bc__tmp112_gab9f11bac41821cc261fb7d3cf58e0efb_icgraph" alt=""/></div>
 <map name="group__bc__tmp112_gab9f11bac41821cc261fb7d3cf58e0efb_icgraph" id="group__bc__tmp112_gab9f11bac41821cc261fb7d3cf58e0efb_icgraph">
-<area shape="rect" id="node2" href="group__bc__temperature__tag.html#ga2f3586606ac2eabd12896d576dfec691" title="Get measured temperature in fahrenheit. " alt="" coords="240,5,427,46"/></map>
+<area shape="rect" id="node2" href="group__bc__tag__temperature.html#ga1b66af3d89e704e0bcf7e491be270b88" title="Get measured temperature in degrees of Fahrenheit. " alt="" coords="240,5,427,46"/></map>
 </div>
 </p>
 
@@ -322,7 +304,7 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="memname">bool bc_tmp112_get_temperature_kelvin </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structbc__tmp112__t.html">bc_tmp112_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="group__bc__tmp112.html#gaf3f5f3f39d19ba5d648dc39c844e4ab5">bc_tmp112_t</a> *&#160;</td>
           <td class="paramname"><em>self</em>, </td>
         </tr>
         <tr>
@@ -343,24 +325,24 @@ Here is the caller graph for this function:</div>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">self</td><td>Instance </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">kelvin</td><td>pointer to the variable </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">kelvin</td><td>Pointer to variable where result will be stored </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>true when value is valid </dd>
+<dl class="section return"><dt>Returns</dt><dd>true When value is valid </dd>
 <dd>
-false when value is invalid </dd></dl>
+false When value is invalid </dd></dl>
 
 <p>Definition at line <a class="el" href="bc__tmp112_8c_source.html#l00069">69</a> of file <a class="el" href="bc__tmp112_8c_source.html">bc_tmp112.c</a>.</p>
 
-<p>Referenced by <a class="el" href="bc__temperature__tag_8h_source.html#l00094">bc_temperature_tag_get_temperature_kelvin()</a>.</p>
+<p>Referenced by <a class="el" href="bc__tag__temperature_8c_source.html#l00033">bc_tag_temperature_get_temperature_kelvin()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="group__bc__tmp112_gac438ff1d6f87792dd5899b44cda3f8fa_cgraph.png" border="0" usemap="#group__bc__tmp112_gac438ff1d6f87792dd5899b44cda3f8fa_cgraph" alt=""/></div>
 <map name="group__bc__tmp112_gac438ff1d6f87792dd5899b44cda3f8fa_cgraph" id="group__bc__tmp112_gac438ff1d6f87792dd5899b44cda3f8fa_cgraph">
-<area shape="rect" id="node2" href="group__bc__tmp112.html#ga9d591221cfb0cbb55e5104ffd20ff0ec" title="Get measured temperature in degrees of celsius. " alt="" coords="240,5,427,46"/><area shape="rect" id="node3" href="group__bc__tmp112.html#ga93c96309f01b036202ba1694f545fd2f" title="Get measured temperature in raw values. " alt="" coords="475,12,690,39"/></map>
+<area shape="rect" id="node2" href="group__bc__tmp112.html#ga9d591221cfb0cbb55e5104ffd20ff0ec" title="Get measured temperature in degrees of Celsius. " alt="" coords="240,5,427,46"/><area shape="rect" id="node3" href="group__bc__tmp112.html#ga93c96309f01b036202ba1694f545fd2f" title="Get measured temperature as raw value. " alt="" coords="475,12,690,39"/></map>
 </div>
 </p>
 
@@ -369,7 +351,7 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="group__bc__tmp112_gac438ff1d6f87792dd5899b44cda3f8fa_icgraph.png" border="0" usemap="#group__bc__tmp112_gac438ff1d6f87792dd5899b44cda3f8fa_icgraph" alt=""/></div>
 <map name="group__bc__tmp112_gac438ff1d6f87792dd5899b44cda3f8fa_icgraph" id="group__bc__tmp112_gac438ff1d6f87792dd5899b44cda3f8fa_icgraph">
-<area shape="rect" id="node2" href="group__bc__temperature__tag.html#ga53ebc120d71c2655c9be5775126cf677" title="Get measured temperature in kelvin. " alt="" coords="241,5,405,46"/></map>
+<area shape="rect" id="node2" href="group__bc__tag__temperature.html#ga5d0c15faca9c4ea1c73ce79f772410c4" title="Get measured temperature in kelvin. " alt="" coords="241,5,405,46"/></map>
 </div>
 </p>
 
@@ -382,7 +364,7 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="memname">bool bc_tmp112_get_temperature_raw </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structbc__tmp112__t.html">bc_tmp112_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="group__bc__tmp112.html#gaf3f5f3f39d19ba5d648dc39c844e4ab5">bc_tmp112_t</a> *&#160;</td>
           <td class="paramname"><em>self</em>, </td>
         </tr>
         <tr>
@@ -399,28 +381,28 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Get measured temperature in raw values. </p>
+<p>Get measured temperature as raw value. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">self</td><td>Instance </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">raw</td><td>pointer to the data buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">raw</td><td>Pointer to variable where result will be stored </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>true when value is valid </dd>
+<dl class="section return"><dt>Returns</dt><dd>true When value is valid </dd>
 <dd>
-false when value is invalid </dd></dl>
+false When value is invalid </dd></dl>
 
 <p>Definition at line <a class="el" href="bc__tmp112_8c_source.html#l00029">29</a> of file <a class="el" href="bc__tmp112_8c_source.html">bc_tmp112.c</a>.</p>
 
-<p>Referenced by <a class="el" href="bc__temperature__tag_8h_source.html#l00061">bc_temperature_tag_get_temperature_raw()</a>, and <a class="el" href="bc__tmp112_8c_source.html#l00041">bc_tmp112_get_temperature_celsius()</a>.</p>
+<p>Referenced by <a class="el" href="bc__tag__temperature_8c_source.html#l00018">bc_tag_temperature_get_temperature_raw()</a>, and <a class="el" href="bc__tmp112_8c_source.html#l00041">bc_tmp112_get_temperature_celsius()</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="group__bc__tmp112_ga93c96309f01b036202ba1694f545fd2f_icgraph.png" border="0" usemap="#group__bc__tmp112_ga93c96309f01b036202ba1694f545fd2f_icgraph" alt=""/></div>
 <map name="group__bc__tmp112_ga93c96309f01b036202ba1694f545fd2f_icgraph" id="group__bc__tmp112_ga93c96309f01b036202ba1694f545fd2f_icgraph">
-<area shape="rect" id="node2" href="group__bc__temperature__tag.html#ga971f08efe33c508875a47997546447b2" title="Get measured temperature in raw values. " alt="" coords="287,5,438,46"/><area shape="rect" id="node3" href="group__bc__tmp112.html#ga9d591221cfb0cbb55e5104ffd20ff0ec" title="Get measured temperature in degrees of celsius. " alt="" coords="269,70,456,111"/><area shape="rect" id="node4" href="group__bc__temperature__tag.html#gade3fac5f22eda99594356600ee4c82e9" title="Get measured temperature in degrees of celsius. " alt="" coords="512,5,683,46"/><area shape="rect" id="node5" href="group__bc__tmp112.html#gab9f11bac41821cc261fb7d3cf58e0efb" title="Get measured temperature in fahrenheit. " alt="" coords="504,70,691,111"/><area shape="rect" id="node7" href="group__bc__tmp112.html#gac438ff1d6f87792dd5899b44cda3f8fa" title="Get measured temperature in kelvin. " alt="" coords="504,135,691,177"/><area shape="rect" id="node6" href="group__bc__temperature__tag.html#ga2f3586606ac2eabd12896d576dfec691" title="Get measured temperature in fahrenheit. " alt="" coords="739,70,925,111"/><area shape="rect" id="node8" href="group__bc__temperature__tag.html#ga53ebc120d71c2655c9be5775126cf677" title="Get measured temperature in kelvin. " alt="" coords="750,135,914,177"/></map>
+<area shape="rect" id="node2" href="group__bc__tag__temperature.html#ga717da6197f3d30f8ee39e1682459f108" title="Get measured temperature as raw value. " alt="" coords="287,5,438,46"/><area shape="rect" id="node3" href="group__bc__tmp112.html#ga9d591221cfb0cbb55e5104ffd20ff0ec" title="Get measured temperature in degrees of Celsius. " alt="" coords="269,70,456,111"/><area shape="rect" id="node4" href="group__bc__tag__temperature.html#ga6df2d42735d92193f1da18b1078df39f" title="Get measured temperature in degrees of Celsius. " alt="" coords="512,5,683,46"/><area shape="rect" id="node5" href="group__bc__tmp112.html#gab9f11bac41821cc261fb7d3cf58e0efb" title="Get measured temperature in degrees of Fahrenheit. " alt="" coords="504,70,691,111"/><area shape="rect" id="node7" href="group__bc__tmp112.html#gac438ff1d6f87792dd5899b44cda3f8fa" title="Get measured temperature in kelvin. " alt="" coords="504,135,691,177"/><area shape="rect" id="node6" href="group__bc__tag__temperature.html#ga1b66af3d89e704e0bcf7e491be270b88" title="Get measured temperature in degrees of Fahrenheit. " alt="" coords="739,70,925,111"/><area shape="rect" id="node8" href="group__bc__tag__temperature.html#ga5d0c15faca9c4ea1c73ce79f772410c4" title="Get measured temperature in kelvin. " alt="" coords="750,135,914,177"/></map>
 </div>
 </p>
 
@@ -433,7 +415,7 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="memname">void bc_tmp112_init </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structbc__tmp112__t.html">bc_tmp112_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="group__bc__tmp112.html#gaf3f5f3f39d19ba5d648dc39c844e4ab5">bc_tmp112_t</a> *&#160;</td>
           <td class="paramname"><em>self</em>, </td>
         </tr>
         <tr>
@@ -456,19 +438,19 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Initialize TMP112 driver. </p>
+<p>Initialize TMP112. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">self</td><td>Instance </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">i2c_channel</td><td>I2C channel </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">i2c_address</td><td>Address of the I2C device </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">i2c_address</td><td>I2C device address </td></tr>
   </table>
   </dd>
 </dl>
 
 <p>Definition at line <a class="el" href="bc__tmp112_8c_source.html#l00009">9</a> of file <a class="el" href="bc__tmp112_8c_source.html">bc_tmp112.c</a>.</p>
 
-<p>Referenced by <a class="el" href="bc__temperature__tag_8h_source.html#l00032">bc_temperature_tag_init()</a>.</p>
+<p>Referenced by <a class="el" href="bc__tag__temperature_8c_source.html#l00003">bc_tag_temperature_init()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -484,7 +466,7 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="group__bc__tmp112_gafa5c6541860450a84023c16293d977ac_icgraph.png" border="0" usemap="#group__bc__tmp112_gafa5c6541860450a84023c16293d977ac_icgraph" alt=""/></div>
 <map name="group__bc__tmp112_gafa5c6541860450a84023c16293d977ac_icgraph" id="group__bc__tmp112_gafa5c6541860450a84023c16293d977ac_icgraph">
-<area shape="rect" id="node2" href="group__bc__temperature__tag.html#ga85c6d61a7171a8183dbdb1f14cf31a0c" title="Initialize temperature tag. " alt="" coords="166,5,327,32"/></map>
+<area shape="rect" id="node2" href="group__bc__tag__temperature.html#gad01d8bc1a7320cb8dbb0f1306d333783" title="Initialize BigClown Temperature Tag. " alt="" coords="166,5,327,32"/></map>
 </div>
 </p>
 
@@ -497,13 +479,13 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="memname">void bc_tmp112_set_event_handler </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structbc__tmp112__t.html">bc_tmp112_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="group__bc__tmp112.html#gaf3f5f3f39d19ba5d648dc39c844e4ab5">bc_tmp112_t</a> *&#160;</td>
           <td class="paramname"><em>self</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">void(*)(<a class="el" href="structbc__tmp112__t.html">bc_tmp112_t</a> *, <a class="el" href="group__bc__tmp112.html#ga0f3f2d66b8fa03f44b26592fbfc95087">bc_tmp112_event_t</a>)&#160;</td>
+          <td class="paramtype">void(*)(<a class="el" href="group__bc__tmp112.html#gaf3f5f3f39d19ba5d648dc39c844e4ab5">bc_tmp112_t</a> *, <a class="el" href="group__bc__tmp112.html#ga0f3f2d66b8fa03f44b26592fbfc95087">bc_tmp112_event_t</a>)&#160;</td>
           <td class="paramname"><em>event_handler</em>&#160;</td>
         </tr>
         <tr>
@@ -518,21 +500,21 @@ Here is the caller graph for this function:</div>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">self</td><td>Instance </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">event_handler</td><td>Pointer to the function </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">event_handler</td><td>Function address </td></tr>
   </table>
   </dd>
 </dl>
 
 <p>Definition at line <a class="el" href="bc__tmp112_8c_source.html#l00019">19</a> of file <a class="el" href="bc__tmp112_8c_source.html">bc_tmp112.c</a>.</p>
 
-<p>Referenced by <a class="el" href="bc__temperature__tag_8h_source.html#l00041">bc_temperature_tag_set_event_handler()</a>.</p>
+<p>Referenced by <a class="el" href="bc__tag__temperature_8c_source.html#l00008">bc_tag_temperature_set_event_handler()</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="group__bc__tmp112_gabb3367166e4d8374d6e309724613fe23_icgraph.png" border="0" usemap="#group__bc__tmp112_gabb3367166e4d8374d6e309724613fe23_icgraph" alt=""/></div>
 <map name="group__bc__tmp112_gabb3367166e4d8374d6e309724613fe23_icgraph" id="group__bc__tmp112_gabb3367166e4d8374d6e309724613fe23_icgraph">
-<area shape="rect" id="node2" href="group__bc__temperature__tag.html#ga7328676757d15d7fa97ff5d0a3cb94bb" title="Set callback function. " alt="" coords="206,5,343,46"/></map>
+<area shape="rect" id="node2" href="group__bc__tag__temperature.html#ga8c8384f630b648f0e96320fef9945eff" title="Set callback function. " alt="" coords="206,5,343,46"/></map>
 </div>
 </p>
 
@@ -545,7 +527,7 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="memname">void bc_tmp112_set_update_interval </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structbc__tmp112__t.html">bc_tmp112_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="group__bc__tmp112.html#gaf3f5f3f39d19ba5d648dc39c844e4ab5">bc_tmp112_t</a> *&#160;</td>
           <td class="paramname"><em>self</em>, </td>
         </tr>
         <tr>
@@ -562,25 +544,25 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Set update interval of the measurement. </p>
+<p>Set measurement interval. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">self</td><td>Instance </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">interval</td><td>Measuring interval </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">interval</td><td>Measurement interval </td></tr>
   </table>
   </dd>
 </dl>
 
 <p>Definition at line <a class="el" href="bc__tmp112_8c_source.html#l00024">24</a> of file <a class="el" href="bc__tmp112_8c_source.html">bc_tmp112.c</a>.</p>
 
-<p>Referenced by <a class="el" href="bc__temperature__tag_8h_source.html#l00050">bc_temperature_tag_set_update_interval()</a>.</p>
+<p>Referenced by <a class="el" href="bc__tag__temperature_8c_source.html#l00013">bc_tag_temperature_set_update_interval()</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="group__bc__tmp112_gaab18b8b8625b2d4d4272f4c0b6666153_icgraph.png" border="0" usemap="#group__bc__tmp112_gaab18b8b8625b2d4d4272f4c0b6666153_icgraph" alt=""/></div>
 <map name="group__bc__tmp112_gaab18b8b8625b2d4d4272f4c0b6666153_icgraph" id="group__bc__tmp112_gaab18b8b8625b2d4d4272f4c0b6666153_icgraph">
-<area shape="rect" id="node2" href="group__bc__temperature__tag.html#ga653fe829ba78d77c8e5c1aa217eced84" title="Set update interval of the measurement. " alt="" coords="211,5,354,46"/></map>
+<area shape="rect" id="node2" href="group__bc__tag__temperature.html#ga4be4786f6804ac04a6b6519fac9328f0" title="Set measurement interval. " alt="" coords="211,5,354,46"/></map>
 </div>
 </p>
 

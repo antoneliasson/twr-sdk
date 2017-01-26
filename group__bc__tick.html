@@ -104,13 +104,13 @@ $(document).ready(function(){initNavTree('group__bc__tick.html','');});
 </div><!--header-->
 <div class="contents">
 
-<p>Time measuring function.  
+<p>Timestamp functions.  
 <a href="#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:ga10fe98e494047210139cedae950539cb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga10fe98e494047210139cedae950539cb"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bc__tick.html#ga10fe98e494047210139cedae950539cb">BC_TICK_INFINITY</a>&#160;&#160;&#160;0xffffffff</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bc__tick.html#ga10fe98e494047210139cedae950539cb">BC_TICK_INFINITY</a>&#160;&#160;&#160;UINT64_C(0xffffffffffffffff)</td></tr>
 <tr class="memdesc:ga10fe98e494047210139cedae950539cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum timestamp value. <br/></td></tr>
 <tr class="separator:ga10fe98e494047210139cedae950539cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -124,11 +124,11 @@ typedef uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ga5291d354b48d9599d185969d53f2bf8a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__bc__tick.html#gabd224c28866c49d86f5d33cae606bbe0">bc_tick_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bc__tick.html#ga5291d354b48d9599d185969d53f2bf8a">bc_tick_get</a> (void)</td></tr>
-<tr class="memdesc:ga5291d354b48d9599d185969d53f2bf8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get timestamp since the code started.  <a href="#ga5291d354b48d9599d185969d53f2bf8a">More...</a><br/></td></tr>
+<tr class="memdesc:ga5291d354b48d9599d185969d53f2bf8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get absolute timestamp since start of program.  <a href="#ga5291d354b48d9599d185969d53f2bf8a">More...</a><br/></td></tr>
 <tr class="separator:ga5291d354b48d9599d185969d53f2bf8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Time measuring function. </p>
+<p>Timestamp functions. </p>
 <h2 class="groupheader">Function Documentation</h2>
 <a class="anchor" id="ga5291d354b48d9599d185969d53f2bf8a"></a>
 <div class="memitem">
@@ -144,8 +144,8 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Get timestamp since the code started. </p>
-<dl class="section return"><dt>Returns</dt><dd>time in milliseconds </dd></dl>
+<p>Get absolute timestamp since start of program. </p>
+<dl class="section return"><dt>Returns</dt><dd>Timestamp in milliseconds </dd></dl>
 
 <p>Definition at line <a class="el" href="bc__tick_8c_source.html#l00004">4</a> of file <a class="el" href="bc__tick_8c_source.html">bc_tick.c</a>.</p>
 

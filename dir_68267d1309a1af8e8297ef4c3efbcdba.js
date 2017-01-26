@@ -1,7 +1,6 @@
 var dir_68267d1309a1af8e8297ef4c3efbcdba =
 [
     [ "base64.c", "base64_8c_source.html", null ],
-    [ "bc_accelerometer.c", "bc__accelerometer_8c_source.html", null ],
     [ "bc_button.c", "bc__button_8c_source.html", null ],
     [ "bc_eeprom.c", "bc__eeprom_8c_source.html", null ],
     [ "bc_fifo.c", "bc__fifo_8c_source.html", null ],
@@ -10,6 +9,7 @@ var dir_68267d1309a1af8e8297ef4c3efbcdba =
     [ "bc_i2c.c", "bc__i2c_8c_source.html", null ],
     [ "bc_irq.c", "bc__irq_8c_source.html", null ],
     [ "bc_led.c", "bc__led_8c_source.html", null ],
+    [ "bc_lis2dh12.c", "bc__lis2dh12_8c_source.html", null ],
     [ "bc_module_power.c", "bc__module__power_8c_source.html", null ],
     [ "bc_module_relay.c", "bc__module__relay_8c_source.html", null ],
     [ "bc_mpl3115a2.c", "bc__mpl3115a2_8c_source.html", null ],
@@ -18,6 +18,10 @@ var dir_68267d1309a1af8e8297ef4c3efbcdba =
     [ "bc_rtc.c", "bc__rtc_8c_source.html", null ],
     [ "bc_scheduler.c", "bc__scheduler_8c_source.html", null ],
     [ "bc_spirit1.c", "bc__spirit1_8c_source.html", null ],
+    [ "bc_tag_barometer.c", "bc__tag__barometer_8c_source.html", null ],
+    [ "bc_tag_humidity.c", "bc__tag__humidity_8c_source.html", null ],
+    [ "bc_tag_lux_meter.c", "bc__tag__lux__meter_8c_source.html", null ],
+    [ "bc_tag_temperature.c", "bc__tag__temperature_8c_source.html", null ],
     [ "bc_tca9534a.c", "bc__tca9534a_8c_source.html", null ],
     [ "bc_tick.c", "bc__tick_8c_source.html", null ],
     [ "bc_tmp112.c", "bc__tmp112_8c_source.html", null ],

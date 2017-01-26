@@ -1,4 +1,11 @@
 <map id="bc_i2c_read" name="bc_i2c_read">
 <area shape="rect" id="node2" href="$group__bc__i2c.html#ga24e64fdccaf5a35f647f65cf21a7a5c1" title="Read 2 bytes from I2C channel. " alt="" coords="147,5,267,32"/>
 <area shape="rect" id="node3" href="$group__bc__i2c.html#gac2eee84f73bb3bbd953be621f21eb0e1" title="Read 1 byte from I2C channel. " alt="" coords="150,56,263,83"/>
+<area shape="rect" id="node4" href="$group__bc__tca9534a.html#gab392a5644d1d4ccab47c95f04b4786cf" title="Initialize TCA9534A. " alt="" coords="333,5,453,32"/>
+<area shape="rect" id="node5" href="$group__bc__tca9534a.html#gafae0e31f827bddb3e47958a3656ea32b" title="Read state of all pins. " alt="" coords="315,56,472,83"/>
+<area shape="rect" id="node8" href="$group__bc__tca9534a.html#ga948c14930d963fa6fac78f9395ab830c" title="Get direction of all pins. " alt="" coords="318,107,469,149"/>
+<area shape="rect" id="node6" href="$group__bc__tca9534a.html#gab804336ed8337fd4498a2f9fa83b917b" title="Read pin state. " alt="" coords="521,5,673,32"/>
+<area shape="rect" id="node7" href="$group__bc__tca9534a.html#ga9a611ff498af8f5e0145f2a21a6c662c" title="Write pin state. " alt="" coords="520,56,675,83"/>
+<area shape="rect" id="node9" href="$group__bc__tca9534a.html#ga3dbbb9f4dc9d0c218d10f5cd3c686e04" title="Get pin direction. " alt="" coords="525,107,670,149"/>
+<area shape="rect" id="node10" href="$group__bc__tca9534a.html#gadc9fba4363f774f26ee745e92f7366a8" title="Set pin direction. " alt="" coords="525,173,670,214"/>
 </map>

@@ -107,7 +107,7 @@ $(document).ready(function(){initNavTree('bc__irq_8h_source.html','');});
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef _BC_IRQ_H</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define _BC_IRQ_H</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;bc_common.h&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;bc_common.h&gt;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
@@ -117,9 +117,9 @@ $(document).ready(function(){initNavTree('bc__irq_8h_source.html','');});
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__bc__irq.html#ga6bd1e6c1589c97558d14e8f3d648e656">bc_irq_enable</a>(<span class="keywordtype">void</span>);</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* _BC_IRQ_H */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="group__bc__irq_html_ga6bd1e6c1589c97558d14e8f3d648e656"><div class="ttname"><a href="group__bc__irq.html#ga6bd1e6c1589c97558d14e8f3d648e656">bc_irq_enable</a></div><div class="ttdeci">void bc_irq_enable(void)</div><div class="ttdoc">Enable global IRQs. </div><div class="ttdef"><b>Definition:</b> <a href="bc__irq_8c_source.html#l00009">bc_irq.c:9</a></div></div>
-<div class="ttc" id="group__bc__irq_html_ga83398e8b1c443f7bf1b1980959d3cc63"><div class="ttname"><a href="group__bc__irq.html#ga83398e8b1c443f7bf1b1980959d3cc63">bc_irq_disable</a></div><div class="ttdeci">void bc_irq_disable(void)</div><div class="ttdoc">Disable global IRQs. </div><div class="ttdef"><b>Definition:</b> <a href="bc__irq_8c_source.html#l00004">bc_irq.c:4</a></div></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#endif // _BC_IRQ_H</span></div>
+<div class="ttc" id="group__bc__irq_html_ga6bd1e6c1589c97558d14e8f3d648e656"><div class="ttname"><a href="group__bc__irq.html#ga6bd1e6c1589c97558d14e8f3d648e656">bc_irq_enable</a></div><div class="ttdeci">void bc_irq_enable(void)</div><div class="ttdoc">Allow all interrupt requests. </div><div class="ttdef"><b>Definition:</b> <a href="bc__irq_8c_source.html#l00009">bc_irq.c:9</a></div></div>
+<div class="ttc" id="group__bc__irq_html_ga83398e8b1c443f7bf1b1980959d3cc63"><div class="ttname"><a href="group__bc__irq.html#ga83398e8b1c443f7bf1b1980959d3cc63">bc_irq_disable</a></div><div class="ttdeci">void bc_irq_disable(void)</div><div class="ttdoc">Deny all interrupt requests. </div><div class="ttdef"><b>Definition:</b> <a href="bc__irq_8c_source.html#l00004">bc_irq.c:4</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

@@ -12,6 +12,7 @@ var group__bc__module__relay =
       [ "_tca9534a", "structbc__module__relay__t.html#af402e2b3941f52a42cf03cb9361a77ba", null ],
       [ "_timestamp", "structbc__module__relay__t.html#aa87874c68fcd8f8fb971cd1df3064747", null ]
     ] ],
+    [ "bc_module_relay_command_t", "group__bc__module__relay.html#ga6ec8130f7a81c173e48e9622aea69936", null ],
     [ "bc_module_relay_state_t", "group__bc__module__relay.html#ga3252af413b59ca9bfc8a94afddec804f", null ],
     [ "bc_module_relay_task_state_t", "group__bc__module__relay.html#gad138b7ed462e11d64f7380730c72bfc8", null ],
     [ "bc_module_relay_get_state", "group__bc__module__relay.html#gab7a2c28a2d5049343771dfd17f1c1c0d", null ],
