@@ -109,7 +109,7 @@ $(document).ready(function(){initNavTree('bc__hdc2080_8h_source.html','');});
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;bc_common.h&gt;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;bc_i2c.h&gt;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;bc_tick.h&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;bc_scheduler.h&gt;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div>
@@ -134,20 +134,22 @@ $(document).ready(function(){initNavTree('bc__hdc2080_8h_source.html','');});
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;{</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="code" href="group__bc__i2c.html#ga5f7217e6558c54ac6920e5dabb777fef">bc_i2c_channel_t</a> _i2c_channel;</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    uint8_t _i2c_address;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    void (*_event_handler)(<a class="code" href="structbc__hdc2080__t.html">bc_hdc2080_t</a> *, bc_hdc2080_event_t);</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <a class="code" href="group__bc__tick.html#gabd224c28866c49d86f5d33cae606bbe0">bc_tick_t</a> _update_interval;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    bc_hdc2080_state_t _state;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">bool</span> _humidity_valid;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    uint16_t _reg_humidity;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;};</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keywordtype">void</span> bc_hdc2080_init(<a class="code" href="structbc__hdc2080__t.html">bc_hdc2080_t</a> *<span class="keyword">self</span>, <a class="code" href="group__bc__i2c.html#ga5f7217e6558c54ac6920e5dabb777fef">bc_i2c_channel_t</a> i2c_channel, uint8_t i2c_address);</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keywordtype">void</span> bc_hdc2080_set_event_handler(<a class="code" href="structbc__hdc2080__t.html">bc_hdc2080_t</a> *<span class="keyword">self</span>, <span class="keywordtype">void</span> (*event_handler)(<a class="code" href="structbc__hdc2080__t.html">bc_hdc2080_t</a> *, bc_hdc2080_event_t));</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keywordtype">void</span> bc_hdc2080_set_update_interval(<a class="code" href="structbc__hdc2080__t.html">bc_hdc2080_t</a> *<span class="keyword">self</span>, <a class="code" href="group__bc__tick.html#gabd224c28866c49d86f5d33cae606bbe0">bc_tick_t</a> interval);</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keywordtype">bool</span> bc_hdc2080_get_humidity_raw(<a class="code" href="structbc__hdc2080__t.html">bc_hdc2080_t</a> *<span class="keyword">self</span>, uint16_t *raw);</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keywordtype">bool</span> bc_hdc2080_get_humidity_percentage(<a class="code" href="structbc__hdc2080__t.html">bc_hdc2080_t</a> *<span class="keyword">self</span>, <span class="keywordtype">float</span> *percentage);</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#endif // _BC_HDC2080_H</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    void (*_event_handler)(<a class="code" href="structbc__hdc2080__t.html">bc_hdc2080_t</a> *, bc_hdc2080_event_t, <span class="keywordtype">void</span> *);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordtype">void</span> *_event_param;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    bc_scheduler_task_id_t _task_id;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <a class="code" href="group__bc__tick.html#gabd224c28866c49d86f5d33cae606bbe0">bc_tick_t</a> _update_interval;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    bc_hdc2080_state_t _state;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">bool</span> _humidity_valid;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    uint16_t _reg_humidity;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;};</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keywordtype">void</span> bc_hdc2080_init(<a class="code" href="structbc__hdc2080__t.html">bc_hdc2080_t</a> *<span class="keyword">self</span>, <a class="code" href="group__bc__i2c.html#ga5f7217e6558c54ac6920e5dabb777fef">bc_i2c_channel_t</a> i2c_channel, uint8_t i2c_address);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keywordtype">void</span> bc_hdc2080_set_event_handler(<a class="code" href="structbc__hdc2080__t.html">bc_hdc2080_t</a> *<span class="keyword">self</span>, <span class="keywordtype">void</span> (*event_handler)(<a class="code" href="structbc__hdc2080__t.html">bc_hdc2080_t</a> *, bc_hdc2080_event_t, <span class="keywordtype">void</span> *), <span class="keywordtype">void</span> *event_param);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keywordtype">void</span> bc_hdc2080_set_update_interval(<a class="code" href="structbc__hdc2080__t.html">bc_hdc2080_t</a> *<span class="keyword">self</span>, <a class="code" href="group__bc__tick.html#gabd224c28866c49d86f5d33cae606bbe0">bc_tick_t</a> interval);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keywordtype">bool</span> bc_hdc2080_get_humidity_raw(<a class="code" href="structbc__hdc2080__t.html">bc_hdc2080_t</a> *<span class="keyword">self</span>, uint16_t *raw);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keywordtype">bool</span> bc_hdc2080_get_humidity_percentage(<a class="code" href="structbc__hdc2080__t.html">bc_hdc2080_t</a> *<span class="keyword">self</span>, <span class="keywordtype">float</span> *percentage);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#endif // _BC_HDC2080_H</span></div>
 <div class="ttc" id="group__bc__tick_html_gabd224c28866c49d86f5d33cae606bbe0"><div class="ttname"><a href="group__bc__tick.html#gabd224c28866c49d86f5d33cae606bbe0">bc_tick_t</a></div><div class="ttdeci">uint64_t bc_tick_t</div><div class="ttdoc">Timestamp data type. </div><div class="ttdef"><b>Definition:</b> <a href="bc__tick_8h_source.html#l00016">bc_tick.h:16</a></div></div>
 <div class="ttc" id="group__bc__i2c_html_ga5f7217e6558c54ac6920e5dabb777fef"><div class="ttname"><a href="group__bc__i2c.html#ga5f7217e6558c54ac6920e5dabb777fef">bc_i2c_channel_t</a></div><div class="ttdeci">bc_i2c_channel_t</div><div class="ttdoc">I2C channels. </div><div class="ttdef"><b>Definition:</b> <a href="bc__i2c_8h_source.html#l00015">bc_i2c.h:15</a></div></div>
 <div class="ttc" id="structbc__hdc2080__t_html"><div class="ttname"><a href="structbc__hdc2080__t.html">bc_hdc2080_t</a></div><div class="ttdef"><b>Definition:</b> <a href="bc__hdc2080_8h_source.html#l00027">bc_hdc2080.h:27</a></div></div>
