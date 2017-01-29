@@ -5,6 +5,7 @@ var searchData=
   ['bc_5fhdc2080_5ft',['bc_hdc2080_t',['../structbc__hdc2080__t.html',1,'']]],
   ['bc_5fhts221_5ft',['bc_hts221_t',['../structbc__hts221__t.html',1,'']]],
   ['bc_5fi2c_5ftranfer_5ft',['bc_i2c_tranfer_t',['../structbc__i2c__tranfer__t.html',1,'']]],
+  ['bc_5flis2dh12_5falarm_5ft',['bc_lis2dh12_alarm_t',['../structbc__lis2dh12__alarm__t.html',1,'']]],
   ['bc_5flis2dh12_5fresult_5fg_5ft',['bc_lis2dh12_result_g_t',['../structbc__lis2dh12__result__g__t.html',1,'']]],
   ['bc_5flis2dh12_5fresult_5fraw_5ft',['bc_lis2dh12_result_raw_t',['../structbc__lis2dh12__result__raw__t.html',1,'']]],
   ['bc_5flis2dh12_5ft',['bc_lis2dh12_t',['../structbc__lis2dh12__t.html',1,'']]],

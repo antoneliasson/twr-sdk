@@ -123,6 +123,7 @@ var searchData=
   ['bc_5fled_5fset_5fpattern',['bc_led_set_pattern',['../group__bc__led.html#ga5599ece47811e27512bad8e7b1670818',1,'bc_led_set_pattern(bc_led_t *self, uint32_t pattern):&#160;bc_led.c'],['../group__bc__led.html#ga5599ece47811e27512bad8e7b1670818',1,'bc_led_set_pattern(bc_led_t *self, uint32_t pattern):&#160;bc_led.c']]],
   ['bc_5fled_5fset_5fslot_5finterval',['bc_led_set_slot_interval',['../group__bc__led.html#gafc579801a777bb5fe3318e2bd0397279',1,'bc_led_set_slot_interval(bc_led_t *self, bc_tick_t interval):&#160;bc_led.c'],['../group__bc__led.html#gafc579801a777bb5fe3318e2bd0397279',1,'bc_led_set_slot_interval(bc_led_t *self, bc_tick_t interval):&#160;bc_led.c']]],
   ['bc_5fled_5ft',['bc_led_t',['../group__bc__led.html#gad08c12a4324e33141d1ab7cd444024e0',1,'bc_led.h']]],
+  ['bc_5flis2dh12_5falarm_5ft',['bc_lis2dh12_alarm_t',['../structbc__lis2dh12__alarm__t.html',1,'']]],
   ['bc_5flis2dh12_5fresult_5fg_5ft',['bc_lis2dh12_result_g_t',['../structbc__lis2dh12__result__g__t.html',1,'']]],
   ['bc_5flis2dh12_5fresult_5fraw_5ft',['bc_lis2dh12_result_raw_t',['../structbc__lis2dh12__result__raw__t.html',1,'']]],
   ['bc_5flis2dh12_5ft',['bc_lis2dh12_t',['../structbc__lis2dh12__t.html',1,'']]],

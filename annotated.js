@@ -5,6 +5,7 @@ var annotated =
     [ "bc_hdc2080_t", "structbc__hdc2080__t.html", "structbc__hdc2080__t" ],
     [ "bc_hts221_t", "structbc__hts221__t.html", "structbc__hts221__t" ],
     [ "bc_i2c_tranfer_t", "structbc__i2c__tranfer__t.html", "structbc__i2c__tranfer__t" ],
+    [ "bc_lis2dh12_alarm_t", "structbc__lis2dh12__alarm__t.html", "structbc__lis2dh12__alarm__t" ],
     [ "bc_lis2dh12_result_g_t", "structbc__lis2dh12__result__g__t.html", "structbc__lis2dh12__result__g__t" ],
     [ "bc_lis2dh12_result_raw_t", "structbc__lis2dh12__result__raw__t.html", "structbc__lis2dh12__result__raw__t" ],
     [ "bc_lis2dh12_t", "structbc__lis2dh12__t.html", "structbc__lis2dh12__t" ],

@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>BigClown Core Module Library: bc_lis2dh12_result_g_t Struct Reference</title>
+<title>BigClown Core Module Library: bc_lis2dh12_alarm_t Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -84,7 +84,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('structbc__lis2dh12__result__g__t.html','');});
+$(document).ready(function(){initNavTree('structbc__lis2dh12__alarm__t.html','');});
 </script>
 <div id="doc-content">
 <!-- window showing the filter options -->
@@ -105,25 +105,40 @@ $(document).ready(function(){initNavTree('structbc__lis2dh12__result__g__t.html'
   <div class="summary">
 <a href="#pub-attribs">Data Fields</a>  </div>
   <div class="headertitle">
-<div class="title">bc_lis2dh12_result_g_t Struct Reference</div>  </div>
+<div class="title">bc_lis2dh12_alarm_t Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:add00c49c646171c22c57731b0e38cc44"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="add00c49c646171c22c57731b0e38cc44"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>x_axis</b></td></tr>
-<tr class="separator:add00c49c646171c22c57731b0e38cc44"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab632feb3865e52c04f75a6ef3999ccc9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab632feb3865e52c04f75a6ef3999ccc9"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>y_axis</b></td></tr>
-<tr class="separator:ab632feb3865e52c04f75a6ef3999ccc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a520f97ac86f4bc6a5dada672d8dfcd4e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a520f97ac86f4bc6a5dada672d8dfcd4e"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>z_axis</b></td></tr>
-<tr class="separator:a520f97ac86f4bc6a5dada672d8dfcd4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a394e82415ad3302e6a15e5bd0683216e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a394e82415ad3302e6a15e5bd0683216e"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>treshold</b></td></tr>
+<tr class="separator:a394e82415ad3302e6a15e5bd0683216e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe592610c4ed1f3ca1f434a68d26377d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abe592610c4ed1f3ca1f434a68d26377d"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>duration</b></td></tr>
+<tr class="separator:abe592610c4ed1f3ca1f434a68d26377d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b728cb9e4869d8274cc38c5094efd4c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0b728cb9e4869d8274cc38c5094efd4c"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>x_low</b></td></tr>
+<tr class="separator:a0b728cb9e4869d8274cc38c5094efd4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a172169a4495e634df8432efd2310da42"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a172169a4495e634df8432efd2310da42"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>x_high</b></td></tr>
+<tr class="separator:a172169a4495e634df8432efd2310da42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0bf044e5c1d58a5214961ca158344473"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0bf044e5c1d58a5214961ca158344473"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>y_low</b></td></tr>
+<tr class="separator:a0bf044e5c1d58a5214961ca158344473"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb343996261b5542fd85ab8075f52142"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adb343996261b5542fd85ab8075f52142"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>y_high</b></td></tr>
+<tr class="separator:adb343996261b5542fd85ab8075f52142"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1fbca18efa413c44e532d2d7a2784f3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad1fbca18efa413c44e532d2d7a2784f3"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>z_low</b></td></tr>
+<tr class="separator:ad1fbca18efa413c44e532d2d7a2784f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a12faaff633929f781579e0005521c4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0a12faaff633929f781579e0005521c4"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>z_high</b></td></tr>
+<tr class="separator:a0a12faaff633929f781579e0005521c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p>Definition at line <a class="el" href="bc__lis2dh12_8h_source.html#l00035">35</a> of file <a class="el" href="bc__lis2dh12_8h_source.html">bc_lis2dh12.h</a>.</p>
+<p>Definition at line <a class="el" href="bc__lis2dh12_8h_source.html#l00043">43</a> of file <a class="el" href="bc__lis2dh12_8h_source.html">bc_lis2dh12.h</a>.</p>
 </div><hr/>The documentation for this struct was generated from the following file:<ul>
 <li>inc/<a class="el" href="bc__lis2dh12_8h_source.html">bc_lis2dh12.h</a></li>
 </ul>
@@ -132,7 +147,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>z_axis</b></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="structbc__lis2dh12__result__g__t.html">bc_lis2dh12_result_g_t</a></li>
+    <li class="navelem"><a class="el" href="structbc__lis2dh12__alarm__t.html">bc_lis2dh12_alarm_t</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
