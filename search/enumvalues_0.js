@@ -56,6 +56,9 @@ var searchData=
   ['bc_5fled_5fmode_5fflash',['BC_LED_MODE_FLASH',['../group__bc__led.html#ggae9ea7763b55ff27ec63b6f9a5069a9c1a98556b0e6dc4939ed6020c45086f3872',1,'bc_led.h']]],
   ['bc_5fled_5fmode_5foff',['BC_LED_MODE_OFF',['../group__bc__led.html#ggae9ea7763b55ff27ec63b6f9a5069a9c1ac62ebddc21c20866b200ef345db1bb77',1,'bc_led.h']]],
   ['bc_5fled_5fmode_5fon',['BC_LED_MODE_ON',['../group__bc__led.html#ggae9ea7763b55ff27ec63b6f9a5069a9c1aef86aa16ff540c4653431ced4c25dfd3',1,'bc_led.h']]],
+  ['bc_5fmodule_5fsigfox_5fevent_5ferror',['BC_MODULE_SIGFOX_EVENT_ERROR',['../group__bc__module__sigfox.html#gga2df4600a924ed19152325147a97a9ac7a3df4cd76d109c009e853723a905ce180',1,'bc_module_sigfox.h']]],
+  ['bc_5fmodule_5fsigfox_5fevent_5fsend_5frf_5fframe_5fdone',['BC_MODULE_SIGFOX_EVENT_SEND_RF_FRAME_DONE',['../group__bc__module__sigfox.html#gga2df4600a924ed19152325147a97a9ac7adbf1a2f83e63d823d6adf7b43799fd65',1,'bc_module_sigfox.h']]],
+  ['bc_5fmodule_5fsigfox_5fevent_5fsend_5frf_5fframe_5fstart',['BC_MODULE_SIGFOX_EVENT_SEND_RF_FRAME_START',['../group__bc__module__sigfox.html#gga2df4600a924ed19152325147a97a9ac7ae3f6416df05872588e30002a56e81ac7',1,'bc_module_sigfox.h']]],
   ['bc_5fopt3001_5fevent_5ferror',['BC_OPT3001_EVENT_ERROR',['../group__bc__opt3001.html#ggaabef7058f5bd9bcf5474d86c05e85c29aa61c2522920e16e3091f73a88324d3ef',1,'bc_opt3001.h']]],
   ['bc_5fopt3001_5fevent_5fupdate',['BC_OPT3001_EVENT_UPDATE',['../group__bc__opt3001.html#ggaabef7058f5bd9bcf5474d86c05e85c29ad8854f88eadcd9f69416d888eb1ace8f',1,'bc_opt3001.h']]],
   ['bc_5fspi_5fmode_5f0',['BC_SPI_MODE_0',['../group__bc__spi.html#ggabc91b706ba04834451a2bf5faa178112ad8a14e5b10c8286d10a596940c12414c',1,'bc_spi.h']]],
@@ -76,6 +79,13 @@ var searchData=
   ['bc_5ftag_5ftemperature_5fevent_5fupdate',['BC_TAG_TEMPERATURE_EVENT_UPDATE',['../group__bc__tag__temperature.html#ggaccf3e52f72f0e7893cc7893de0e3cd14add49ae2d206bf6752f7e16e0650f4e7f',1,'bc_tag_temperature.h']]],
   ['bc_5ftag_5ftemperature_5fi2c_5faddress_5falternate',['BC_TAG_TEMPERATURE_I2C_ADDRESS_ALTERNATE',['../group__bc__tag__temperature.html#gga91462f2362a0209787e60a5181d49ae4a472da38ebe61df94bfef3a277154a3d7',1,'bc_tag_temperature.h']]],
   ['bc_5ftag_5ftemperature_5fi2c_5faddress_5fdefault',['BC_TAG_TEMPERATURE_I2C_ADDRESS_DEFAULT',['../group__bc__tag__temperature.html#gga91462f2362a0209787e60a5181d49ae4aaa28f5cfd232d670c4f161136e1c6ddd',1,'bc_tag_temperature.h']]],
+  ['bc_5ftd1207r_5fevent_5ferror',['BC_TD1207R_EVENT_ERROR',['../group__bc__td1207r.html#gga76dcaa6d24a22b5ffe5ec15aa338cd5cae9d13d86240fe7db989365f069441db2',1,'bc_td1207r.h']]],
+  ['bc_5ftd1207r_5fevent_5fsend_5frf_5fframe_5fdone',['BC_TD1207R_EVENT_SEND_RF_FRAME_DONE',['../group__bc__td1207r.html#gga76dcaa6d24a22b5ffe5ec15aa338cd5cac147b5d83aae183112ffde4a7adf0009',1,'bc_td1207r.h']]],
+  ['bc_5ftd1207r_5fevent_5fsend_5frf_5fframe_5fstart',['BC_TD1207R_EVENT_SEND_RF_FRAME_START',['../group__bc__td1207r.html#gga76dcaa6d24a22b5ffe5ec15aa338cd5ca418c393f635ec876adbdee2e5595e146',1,'bc_td1207r.h']]],
   ['bc_5ftmp112_5fevent_5ferror',['BC_TMP112_EVENT_ERROR',['../group__bc__tmp112.html#gga0f3f2d66b8fa03f44b26592fbfc95087a582b8397de6631d5375a4b327b247db3',1,'bc_tmp112.h']]],
-  ['bc_5ftmp112_5fevent_5fupdate',['BC_TMP112_EVENT_UPDATE',['../group__bc__tmp112.html#gga0f3f2d66b8fa03f44b26592fbfc95087a3d1328d2df88d39300cfe192cbeac8ae',1,'bc_tmp112.h']]]
+  ['bc_5ftmp112_5fevent_5fupdate',['BC_TMP112_EVENT_UPDATE',['../group__bc__tmp112.html#gga0f3f2d66b8fa03f44b26592fbfc95087a3d1328d2df88d39300cfe192cbeac8ae',1,'bc_tmp112.h']]],
+  ['bc_5fuart_5fbaudrate_5f9600_5fbd',['BC_UART_BAUDRATE_9600_BD',['../group__bc__uart.html#ggabe2f6f464dc94204d147f3f498fbeb85a38128ec5d358e5824a20620ed9b96c2a',1,'bc_uart.h']]],
+  ['bc_5fuart_5fuart0',['BC_UART_UART0',['../group__bc__uart.html#ggafc2793f7c8bd58556f8344cfb1ff4811a3df15d0f6bdd645435dea972f2edb930',1,'bc_uart.h']]],
+  ['bc_5fuart_5fuart1',['BC_UART_UART1',['../group__bc__uart.html#ggafc2793f7c8bd58556f8344cfb1ff4811afa614bde5555b594663b3b7474e9070b',1,'bc_uart.h']]],
+  ['bc_5fuart_5fuart2',['BC_UART_UART2',['../group__bc__uart.html#ggafc2793f7c8bd58556f8344cfb1ff4811a66cd08232879638f96034cb607a7cc25',1,'bc_uart.h']]]
 ];

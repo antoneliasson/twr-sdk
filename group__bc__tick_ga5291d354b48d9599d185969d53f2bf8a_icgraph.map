@@ -1,4 +1,5 @@
 <map id="bc_tick_get" name="bc_tick_get">
 <area shape="rect" id="node2" href="$group__bc__led.html#ga70430d42b18f282381a8c8044c8adf94" title="Turn on LED for the specified duration of time. " alt="" coords="157,5,256,32"/>
 <area shape="rect" id="node3" href="$group__bc__scheduler.html#gae127d7da60ea52a5801bafc4e987cfa1" title="Run task scheduler. " alt="" coords="145,56,269,83"/>
+<area shape="rect" id="node4" href="$group__bc__uart.html#ga4256fe65e122609345ab0702924ad5a9" title="Read data from UART channel. " alt="" coords="158,107,255,133"/>
 </map>

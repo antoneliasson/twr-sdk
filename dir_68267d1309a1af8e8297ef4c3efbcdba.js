@@ -13,6 +13,7 @@ var dir_68267d1309a1af8e8297ef4c3efbcdba =
     [ "bc_lis2dh12.c", "bc__lis2dh12_8c_source.html", null ],
     [ "bc_module_power.c", "bc__module__power_8c_source.html", null ],
     [ "bc_module_relay.c", "bc__module__relay_8c_source.html", null ],
+    [ "bc_module_sigfox.c", "bc__module__sigfox_8c_source.html", null ],
     [ "bc_mpl3115a2.c", "bc__mpl3115a2_8c_source.html", null ],
     [ "bc_opt3001.c", "bc__opt3001_8c_source.html", null ],
     [ "bc_pyq1648.c", "bc__pyq1648_8c_source.html", null ],
@@ -24,8 +25,10 @@ var dir_68267d1309a1af8e8297ef4c3efbcdba =
     [ "bc_tag_lux_meter.c", "bc__tag__lux__meter_8c_source.html", null ],
     [ "bc_tag_temperature.c", "bc__tag__temperature_8c_source.html", null ],
     [ "bc_tca9534a.c", "bc__tca9534a_8c_source.html", null ],
+    [ "bc_td1207r.c", "bc__td1207r_8c_source.html", null ],
     [ "bc_tick.c", "bc__tick_8c_source.html", null ],
     [ "bc_tmp112.c", "bc__tmp112_8c_source.html", null ],
+    [ "bc_uart.c", "bc__uart_8c_source.html", null ],
     [ "bc_usb_cdc.c", "bc__usb__cdc_8c_source.html", null ],
     [ "jsmn.c", "jsmn_8c_source.html", null ]
 ];

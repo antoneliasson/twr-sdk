@@ -1,0 +1,5 @@
+<map id="bc_uart_write" name="bc_uart_write">
+<area shape="rect" id="node2" href="$group__bc__fifo.html#ga7c6039111e9e8d59771f49f87c26504e" title="Write data to FIFO. " alt="" coords="155,31,251,57"/>
+<area shape="rect" id="node3" href="$group__bc__irq.html#ga83398e8b1c443f7bf1b1980959d3cc63" title="Deny all interrupt requests. " alt="" coords="299,5,405,32"/>
+<area shape="rect" id="node4" href="$group__bc__irq.html#ga6bd1e6c1589c97558d14e8f3d648e656" title="Allow all interrupt requests. " alt="" coords="301,68,403,95"/>
+</map>

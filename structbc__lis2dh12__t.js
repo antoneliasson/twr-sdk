@@ -1,7 +1,6 @@
 var structbc__lis2dh12__t =
 [
     [ "_accelerometer_valid", "structbc__lis2dh12__t.html#aaaf04fa8ceacdaab87855560544c587c", null ],
-    [ "_alarm_active", "structbc__lis2dh12__t.html#a85a81c6d4fb6996d19f21abe2a175145", null ],
     [ "_event_handler", "structbc__lis2dh12__t.html#af8e4f981a0b96fec11ffde4cb444e2be", null ],
     [ "_i2c_address", "structbc__lis2dh12__t.html#a54ab5ad5fda988e529a01ea16f2e0af7", null ],
     [ "_i2c_channel", "structbc__lis2dh12__t.html#a53bc49429db39b5aa5875d62fc4ff474", null ],

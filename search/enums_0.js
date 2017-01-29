@@ -14,6 +14,7 @@ var searchData=
   ['bc_5fmodule_5frelay_5fcommand_5ft',['bc_module_relay_command_t',['../group__bc__module__relay.html#ga6ec8130f7a81c173e48e9622aea69936',1,'bc_module_relay.h']]],
   ['bc_5fmodule_5frelay_5fstate_5ft',['bc_module_relay_state_t',['../group__bc__module__relay.html#ga3252af413b59ca9bfc8a94afddec804f',1,'bc_module_relay.h']]],
   ['bc_5fmodule_5frelay_5ftask_5fstate_5ft',['bc_module_relay_task_state_t',['../group__bc__module__relay.html#gad138b7ed462e11d64f7380730c72bfc8',1,'bc_module_relay.h']]],
+  ['bc_5fmodule_5fsigfox_5fevent_5ft',['bc_module_sigfox_event_t',['../group__bc__module__sigfox.html#ga2df4600a924ed19152325147a97a9ac7',1,'bc_module_sigfox.h']]],
   ['bc_5fmpl3115a2_5fevent_5ft',['bc_mpl3115a2_event_t',['../group__bc__mpl3115a2.html#ga668c89e25a55f82bc44bd30eff13d76c',1,'bc_mpl3115a2.h']]],
   ['bc_5fopt3001_5fevent_5ft',['bc_opt3001_event_t',['../group__bc__opt3001.html#gaabef7058f5bd9bcf5474d86c05e85c29',1,'bc_opt3001.h']]],
   ['bc_5fopt3001_5fstate_5ft',['bc_opt3001_state_t',['../group__bc__opt3001.html#gae4af0af6296014e618ddbfb5216fb8fb',1,'bc_opt3001.h']]],
@@ -27,5 +28,8 @@ var searchData=
   ['bc_5ftca9534a_5fpin_5fdirection_5ft',['bc_tca9534a_pin_direction_t',['../group__bc__tca9534a.html#ga46d4f0b1a0c98629cbe48b30c06e342c',1,'bc_tca9534a.h']]],
   ['bc_5ftca9534a_5fpin_5ft',['bc_tca9534a_pin_t',['../group__bc__tca9534a.html#ga9b0181f873bff18d0e4833ab15a6813c',1,'bc_tca9534a.h']]],
   ['bc_5ftca9534a_5fstate_5ft',['bc_tca9534a_state_t',['../group__bc__tca9534a.html#ga7aa4f08940f1ef2a0227d1ac9f06479f',1,'bc_tca9534a.h']]],
-  ['bc_5ftmp112_5fevent_5ft',['bc_tmp112_event_t',['../group__bc__tmp112.html#ga0f3f2d66b8fa03f44b26592fbfc95087',1,'bc_tmp112.h']]]
+  ['bc_5ftd1207r_5fevent_5ft',['bc_td1207r_event_t',['../group__bc__td1207r.html#ga76dcaa6d24a22b5ffe5ec15aa338cd5c',1,'bc_td1207r.h']]],
+  ['bc_5ftmp112_5fevent_5ft',['bc_tmp112_event_t',['../group__bc__tmp112.html#ga0f3f2d66b8fa03f44b26592fbfc95087',1,'bc_tmp112.h']]],
+  ['bc_5fuart_5fbaudrate_5ft',['bc_uart_baudrate_t',['../group__bc__uart.html#gabe2f6f464dc94204d147f3f498fbeb85',1,'bc_uart.h']]],
+  ['bc_5fuart_5fchannel_5ft',['bc_uart_channel_t',['../group__bc__uart.html#gafc2793f7c8bd58556f8344cfb1ff4811',1,'bc_uart.h']]]
 ];

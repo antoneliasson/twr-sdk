@@ -11,6 +11,7 @@ var modules =
     [ "bc_module_pir", "group__bc__module__pir.html", "group__bc__module__pir" ],
     [ "bc_module_power", "group__bc__module__power.html", "group__bc__module__power" ],
     [ "bc_module_relay", "group__bc__module__relay.html", "group__bc__module__relay" ],
+    [ "bc_module_sigfox", "group__bc__module__sigfox.html", "group__bc__module__sigfox" ],
     [ "bc_mpl3115a2", "group__bc__mpl3115a2.html", "group__bc__mpl3115a2" ],
     [ "bc_opt3001", "group__bc__opt3001.html", "group__bc__opt3001" ],
     [ "bc_pyq1648", "group__bc__pyq1648.html", "group__bc__pyq1648" ],
@@ -21,6 +22,8 @@ var modules =
     [ "bc_tag_lux_meter", "group__bc__tag__lux__meter.html", "group__bc__tag__lux__meter" ],
     [ "bc_tag_temperature", "group__bc__tag__temperature.html", "group__bc__tag__temperature" ],
     [ "bc_tca9534a", "group__bc__tca9534a.html", "group__bc__tca9534a" ],
+    [ "bc_td1207r", "group__bc__td1207r.html", "group__bc__td1207r" ],
     [ "bc_tick", "group__bc__tick.html", "group__bc__tick" ],
-    [ "bc_tmp112", "group__bc__tmp112.html", "group__bc__tmp112" ]
+    [ "bc_tmp112", "group__bc__tmp112.html", "group__bc__tmp112" ],
+    [ "bc_uart", "group__bc__uart.html", "group__bc__uart" ]
 ];
