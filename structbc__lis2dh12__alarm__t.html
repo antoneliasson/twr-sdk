@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>BigClown Core Module Library: bc_lis2dh12_t Struct Reference</title>
+<title>BigClown Core Module Library: bc_lis2dh12_alarm_t Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -84,7 +84,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('structbc__lis2dh12__t.html','');});
+$(document).ready(function(){initNavTree('structbc__lis2dh12__alarm__t.html','');});
 </script>
 <div id="doc-content">
 <!-- window showing the filter options -->
@@ -105,58 +105,40 @@ $(document).ready(function(){initNavTree('structbc__lis2dh12__t.html','');});
   <div class="summary">
 <a href="#pub-attribs">Data Fields</a>  </div>
   <div class="headertitle">
-<div class="title">bc_lis2dh12_t Struct Reference</div>  </div>
+<div class="title">bc_lis2dh12_alarm_t Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a53bc49429db39b5aa5875d62fc4ff474"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a53bc49429db39b5aa5875d62fc4ff474"></a>
-<a class="el" href="group__bc__i2c.html#ga5f7217e6558c54ac6920e5dabb777fef">bc_i2c_channel_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_i2c_channel</b></td></tr>
-<tr class="separator:a53bc49429db39b5aa5875d62fc4ff474"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a54ab5ad5fda988e529a01ea16f2e0af7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a54ab5ad5fda988e529a01ea16f2e0af7"></a>
-uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>_i2c_address</b></td></tr>
-<tr class="separator:a54ab5ad5fda988e529a01ea16f2e0af7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af8e4f981a0b96fec11ffde4cb444e2be"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af8e4f981a0b96fec11ffde4cb444e2be"></a>
-void(*&#160;</td><td class="memItemRight" valign="bottom"><b>_event_handler</b> )(<a class="el" href="structbc__lis2dh12__t.html">bc_lis2dh12_t</a> *, bc_lis2dh12_event_t)</td></tr>
-<tr class="separator:af8e4f981a0b96fec11ffde4cb444e2be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab30a0342e74f8fe69d370e0a9b66301e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab30a0342e74f8fe69d370e0a9b66301e"></a>
-<a class="el" href="group__bc__tick.html#gabd224c28866c49d86f5d33cae606bbe0">bc_tick_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_update_interval</b></td></tr>
-<tr class="separator:ab30a0342e74f8fe69d370e0a9b66301e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac704eee3687b988d512f4b19b2ff49b0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac704eee3687b988d512f4b19b2ff49b0"></a>
-bc_lis2dh12_state_t&#160;</td><td class="memItemRight" valign="bottom"><b>_state</b></td></tr>
-<tr class="separator:ac704eee3687b988d512f4b19b2ff49b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaaf04fa8ceacdaab87855560544c587c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaaf04fa8ceacdaab87855560544c587c"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>_accelerometer_valid</b></td></tr>
-<tr class="separator:aaaf04fa8ceacdaab87855560544c587c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2b2a0e7cea76ca5fb78a8f1ceeb53d3c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2b2a0e7cea76ca5fb78a8f1ceeb53d3c"></a>
-uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>_out_x_l</b></td></tr>
-<tr class="separator:a2b2a0e7cea76ca5fb78a8f1ceeb53d3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4fa130fe72cab5545817874f4c3c8c3b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4fa130fe72cab5545817874f4c3c8c3b"></a>
-uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>_out_x_h</b></td></tr>
-<tr class="separator:a4fa130fe72cab5545817874f4c3c8c3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4172e75f99eb19ac970e817d473cdb10"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4172e75f99eb19ac970e817d473cdb10"></a>
-uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>_out_y_l</b></td></tr>
-<tr class="separator:a4172e75f99eb19ac970e817d473cdb10"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af7b91df528f65ae31aa40992cf85a0f7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af7b91df528f65ae31aa40992cf85a0f7"></a>
-uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>_out_y_h</b></td></tr>
-<tr class="separator:af7b91df528f65ae31aa40992cf85a0f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a27f8a2098bac8ddd86bc085de9ecfa0f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a27f8a2098bac8ddd86bc085de9ecfa0f"></a>
-uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>_out_z_l</b></td></tr>
-<tr class="separator:a27f8a2098bac8ddd86bc085de9ecfa0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8cacac5f821fd01c18811f9038f27c5f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8cacac5f821fd01c18811f9038f27c5f"></a>
-uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>_out_z_h</b></td></tr>
-<tr class="separator:a8cacac5f821fd01c18811f9038f27c5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a85a81c6d4fb6996d19f21abe2a175145"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a85a81c6d4fb6996d19f21abe2a175145"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>_alarm_active</b></td></tr>
-<tr class="separator:a85a81c6d4fb6996d19f21abe2a175145"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abaa29b879caf6f8ee66c18d6acb5634a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abaa29b879caf6f8ee66c18d6acb5634a"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>_irq_flag</b></td></tr>
-<tr class="separator:abaa29b879caf6f8ee66c18d6acb5634a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d9f3b1e3c38fdfe8c702605e6b2442e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6d9f3b1e3c38fdfe8c702605e6b2442e"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>threshold</b></td></tr>
+<tr class="separator:a6d9f3b1e3c38fdfe8c702605e6b2442e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe592610c4ed1f3ca1f434a68d26377d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abe592610c4ed1f3ca1f434a68d26377d"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>duration</b></td></tr>
+<tr class="separator:abe592610c4ed1f3ca1f434a68d26377d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b728cb9e4869d8274cc38c5094efd4c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0b728cb9e4869d8274cc38c5094efd4c"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>x_low</b></td></tr>
+<tr class="separator:a0b728cb9e4869d8274cc38c5094efd4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a172169a4495e634df8432efd2310da42"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a172169a4495e634df8432efd2310da42"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>x_high</b></td></tr>
+<tr class="separator:a172169a4495e634df8432efd2310da42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0bf044e5c1d58a5214961ca158344473"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0bf044e5c1d58a5214961ca158344473"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>y_low</b></td></tr>
+<tr class="separator:a0bf044e5c1d58a5214961ca158344473"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb343996261b5542fd85ab8075f52142"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adb343996261b5542fd85ab8075f52142"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>y_high</b></td></tr>
+<tr class="separator:adb343996261b5542fd85ab8075f52142"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1fbca18efa413c44e532d2d7a2784f3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad1fbca18efa413c44e532d2d7a2784f3"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>z_low</b></td></tr>
+<tr class="separator:ad1fbca18efa413c44e532d2d7a2784f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a12faaff633929f781579e0005521c4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0a12faaff633929f781579e0005521c4"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>z_high</b></td></tr>
+<tr class="separator:a0a12faaff633929f781579e0005521c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p>Definition at line <a class="el" href="bc__lis2dh12_8h_source.html#l00059">59</a> of file <a class="el" href="bc__lis2dh12_8h_source.html">bc_lis2dh12.h</a>.</p>
+<p>Definition at line <a class="el" href="bc__lis2dh12_8h_source.html#l00044">44</a> of file <a class="el" href="bc__lis2dh12_8h_source.html">bc_lis2dh12.h</a>.</p>
 </div><hr/>The documentation for this struct was generated from the following file:<ul>
 <li>inc/<a class="el" href="bc__lis2dh12_8h_source.html">bc_lis2dh12.h</a></li>
 </ul>
@@ -165,7 +147,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>_irq_flag</b></td></t
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="structbc__lis2dh12__t.html">bc_lis2dh12_t</a></li>
+    <li class="navelem"><a class="el" href="structbc__lis2dh12__alarm__t.html">bc_lis2dh12_alarm_t</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
