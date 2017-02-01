@@ -1,6 +1,7 @@
 var searchData=
 [
   ['bc_5fled_5ft',['bc_led_t',['../group__bc__led.html#gad08c12a4324e33141d1ab7cd444024e0',1,'bc_led.h']]],
+  ['bc_5flis2dh12_5ft',['bc_lis2dh12_t',['../group__bc__lis2dh12.html#gaf66429f9cca1e29aff1a026976bea96e',1,'bc_lis2dh12.h']]],
   ['bc_5fmodule_5fsigfox_5ft',['bc_module_sigfox_t',['../group__bc__module__sigfox.html#gabd92251cde902bf11ba41db822acd216',1,'bc_module_sigfox.h']]],
   ['bc_5ftag_5fbarometer_5ft',['bc_tag_barometer_t',['../group__bc__tag__barometer.html#ga5932b1ada727486311cad95d739683a0',1,'bc_tag_barometer.h']]],
   ['bc_5ftag_5flux_5fmeter_5ft',['bc_tag_lux_meter_t',['../group__bc__tag__lux__meter.html#gae841ab30954883209455b41cca0658b5',1,'bc_tag_lux_meter.h']]],

@@ -8,6 +8,7 @@ var modules =
     [ "bc_i2c", "group__bc__i2c.html", "group__bc__i2c" ],
     [ "bc_irq", "group__bc__irq.html", "group__bc__irq" ],
     [ "bc_led", "group__bc__led.html", "group__bc__led" ],
+    [ "bc_lis2dh12", "group__bc__lis2dh12.html", "group__bc__lis2dh12" ],
     [ "bc_module_pir", "group__bc__module__pir.html", "group__bc__module__pir" ],
     [ "bc_module_power", "group__bc__module__power.html", "group__bc__module__power" ],
     [ "bc_module_relay", "group__bc__module__relay.html", "group__bc__module__relay" ],

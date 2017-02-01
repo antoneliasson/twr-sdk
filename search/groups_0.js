@@ -8,6 +8,7 @@ var searchData=
   ['bc_5fi2c',['bc_i2c',['../group__bc__i2c.html',1,'']]],
   ['bc_5firq',['bc_irq',['../group__bc__irq.html',1,'']]],
   ['bc_5fled',['bc_led',['../group__bc__led.html',1,'']]],
+  ['bc_5flis2dh12',['bc_lis2dh12',['../group__bc__lis2dh12.html',1,'']]],
   ['bc_5fmodule_5fpir',['bc_module_pir',['../group__bc__module__pir.html',1,'']]],
   ['bc_5fmodule_5fpower',['bc_module_power',['../group__bc__module__power.html',1,'']]],
   ['bc_5fmodule_5frelay',['bc_module_relay',['../group__bc__module__relay.html',1,'']]],
