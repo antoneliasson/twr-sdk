@@ -156,7 +156,7 @@ $(document).ready(function(){initNavTree('bc__pyq1648_8c_source.html','');});
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> _bc_pyq1648_dev_init(<a class="code" href="structbc__pyq1648__t.html">bc_pyq1648_t</a> *<span class="keyword">self</span>);</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> _bc_pyq1648_compose_event_unit_config(<a class="code" href="structbc__pyq1648__t.html">bc_pyq1648_t</a> *<span class="keyword">self</span>);</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> _bc_pyq1648_delay_100us(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i);</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keyword">static</span> <a class="code" href="group__bc__tick.html#gabd224c28866c49d86f5d33cae606bbe0">bc_tick_t</a> _bc_pyq1648_task(<span class="keywordtype">void</span> *param, <a class="code" href="group__bc__tick.html#gabd224c28866c49d86f5d33cae606bbe0">bc_tick_t</a> tick_now);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> _bc_pyq1648_task(<span class="keywordtype">void</span> *param);</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">bool</span> _bc_pyq1648_echo(<a class="code" href="structbc__pyq1648__t.html">bc_pyq1648_t</a> *<span class="keyword">self</span>);</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> _bc_pyq1648_set_dummy_forced_read_out(<a class="code" href="structbc__pyq1648__t.html">bc_pyq1648_t</a> *<span class="keyword">self</span>);</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">bool</span> _bc_pyq1648_get_forced_read_out(<a class="code" href="structbc__pyq1648__t.html">bc_pyq1648_t</a> *<span class="keyword">self</span>, int32_t *PIRval, uint32_t *statcfg);</div>
@@ -192,7 +192,7 @@ $(document).ready(function(){initNavTree('bc__pyq1648_8c_source.html','');});
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    _bc_pyq1648_compose_event_unit_config(<span class="keyword">self</span>);</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="comment">/* Register task */</span></div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <a class="code" href="group__bc__scheduler.html#gab4c901b213237276515265030f9aeef0">bc_scheduler_register</a>(_bc_pyq1648_task, <span class="keyword">self</span>, BC_PYQ1648_DELAY_RUN);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <a class="code" href="group__bc__scheduler.html#gac6e2fa9155567fb1f32a8b8b563e2f30">bc_scheduler_register</a>(_bc_pyq1648_task, <span class="keyword">self</span>, BC_PYQ1648_DELAY_RUN);</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;}</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
 <div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="group__bc__pyq1648.html#ga2a7e606a08a9131ab801175f52290c16">   92</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__bc__pyq1648.html#ga2a7e606a08a9131ab801175f52290c16">bc_pyq1648_set_event_handler</a>(<a class="code" href="structbc__pyq1648__t.html">bc_pyq1648_t</a> *<span class="keyword">self</span>, <span class="keywordtype">void</span> (*event_handler)(<a class="code" href="structbc__pyq1648__t.html">bc_pyq1648_t</a> *, bc_pyq1648_event_t))</div>
@@ -429,7 +429,7 @@ $(document).ready(function(){initNavTree('bc__pyq1648_8c_source.html','');});
 <div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;    }</div>
 <div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;}</div>
 <div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;</div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;<span class="keyword">static</span> <a class="code" href="group__bc__tick.html#gabd224c28866c49d86f5d33cae606bbe0">bc_tick_t</a> _bc_pyq1648_task(<span class="keywordtype">void</span> *param, <a class="code" href="group__bc__tick.html#gabd224c28866c49d86f5d33cae606bbe0">bc_tick_t</a> tick_now)</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> _bc_pyq1648_task(<span class="keywordtype">void</span> *param)</div>
 <div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;{</div>
 <div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;    <a class="code" href="structbc__pyq1648__t.html">bc_pyq1648_t</a> *<span class="keyword">self</span> = param;</div>
 <div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;</div>
@@ -448,93 +448,103 @@ $(document).ready(function(){initNavTree('bc__pyq1648_8c_source.html','');});
 <div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;</div>
 <div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;            <span class="keyword">self</span>-&gt;_state = BC_PYQ1648_STATE_INITIALIZE;</div>
 <div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;</div>
-<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;            <span class="keywordflow">return</span> tick_now + BC_PYQ1648_UPDATE_INTERVAL;</div>
-<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;        }</div>
-<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;        <span class="keywordflow">case</span> BC_PYQ1648_STATE_INITIALIZE:</div>
-<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;        {</div>
-<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;            <span class="keyword">self</span>-&gt;_state = BC_PYQ1648_STATE_ERROR;</div>
-<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;</div>
-<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;            _bc_pyq1648_dev_init(<span class="keyword">self</span>);</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;            <a class="code" href="group__bc__scheduler.html#gace099e37ceac6a2338ade5ceb13c528c">bc_scheduler_plan_current_relative</a>(BC_PYQ1648_UPDATE_INTERVAL);</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;</div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;            <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;        }</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;        <span class="keywordflow">case</span> BC_PYQ1648_STATE_INITIALIZE:</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;        {</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;            <span class="keyword">self</span>-&gt;_state = BC_PYQ1648_STATE_ERROR;</div>
 <div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;</div>
-<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;            <span class="keyword">self</span>-&gt;_state = BC_PYQ1648_STATE_IGNORE;</div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;            _bc_pyq1648_dev_init(<span class="keyword">self</span>);</div>
 <div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;</div>
-<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;            <span class="keywordflow">return</span> tick_now + BC_PYQ1648_DELAY_INITIALIZATION;</div>
-<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;        }</div>
-<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;        <span class="keywordflow">case</span> BC_PYQ1648_STATE_IGNORE:</div>
-<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;        {</div>
-<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;            <span class="keyword">self</span>-&gt;_state = BC_PYQ1648_STATE_ERROR;</div>
-<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;</div>
-<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;            <span class="keywordflow">if</span> (self-&gt;_ignore_untill == 0)</div>
-<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;            {</div>
-<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;                <span class="comment">// TODO ... acquire !!!</span></div>
-<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;                <span class="keyword">self</span>-&gt;_ignore_untill = <a class="code" href="group__bc__tick.html#ga5291d354b48d9599d185969d53f2bf8a">bc_tick_get</a>() + (75000 / 15);</div>
-<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;            }</div>
-<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;</div>
-<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="group__bc__gpio.html#ga2403cbaba160a3f146a0090cb16c330b">bc_gpio_get_input</a>(self-&gt;_gpio_channel_dl))</div>
-<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;            {</div>
-<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;                _bc_pyq1648_clear_event(<span class="keyword">self</span>);</div>
-<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;            }</div>
-<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;</div>
-<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="group__bc__tick.html#ga5291d354b48d9599d185969d53f2bf8a">bc_tick_get</a>() &gt;= self-&gt;_ignore_untill)</div>
-<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;            {</div>
-<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;                <span class="keyword">self</span>-&gt;_state = BC_PYQ1648_STATE_CHECK;</div>
-<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;            }</div>
-<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;            <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;            <span class="keyword">self</span>-&gt;_state = BC_PYQ1648_STATE_IGNORE;</div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;</div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;            <a class="code" href="group__bc__scheduler.html#gace099e37ceac6a2338ade5ceb13c528c">bc_scheduler_plan_current_relative</a>(BC_PYQ1648_DELAY_INITIALIZATION);</div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;</div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;            <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;        }</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;        <span class="keywordflow">case</span> BC_PYQ1648_STATE_IGNORE:</div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;        {</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;            <span class="keyword">self</span>-&gt;_state = BC_PYQ1648_STATE_ERROR;</div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;</div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;            <span class="keywordflow">if</span> (self-&gt;_ignore_untill == 0)</div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;            {</div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;                <span class="comment">// TODO ... acquire !!!</span></div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;                <span class="keyword">self</span>-&gt;_ignore_untill = <a class="code" href="group__bc__tick.html#ga5291d354b48d9599d185969d53f2bf8a">bc_tick_get</a>() + (75000 / 15);</div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;            }</div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;</div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="group__bc__gpio.html#ga2403cbaba160a3f146a0090cb16c330b">bc_gpio_get_input</a>(self-&gt;_gpio_channel_dl))</div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;            {</div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;                _bc_pyq1648_clear_event(<span class="keyword">self</span>);</div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;            }</div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;</div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="group__bc__tick.html#ga5291d354b48d9599d185969d53f2bf8a">bc_tick_get</a>() &gt;= self-&gt;_ignore_untill)</div>
 <div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;            {</div>
-<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;                <span class="keyword">self</span>-&gt;_state = BC_PYQ1648_STATE_IGNORE;</div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;                <span class="keyword">self</span>-&gt;_state = BC_PYQ1648_STATE_CHECK;</div>
 <div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;            }</div>
-<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;</div>
-<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;            <span class="keywordflow">return</span> tick_now + BC_PYQ1648_UPDATE_INTERVAL;</div>
-<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;        }</div>
-<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;        <span class="keywordflow">case</span> BC_PYQ1648_STATE_CHECK:</div>
-<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;        {</div>
-<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;            <a class="code" href="group__bc__tick.html#gabd224c28866c49d86f5d33cae606bbe0">bc_tick_t</a> tick_now = <a class="code" href="group__bc__tick.html#ga5291d354b48d9599d185969d53f2bf8a">bc_tick_get</a>();</div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;            <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;            {</div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;                <span class="keyword">self</span>-&gt;_state = BC_PYQ1648_STATE_IGNORE;</div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;            }</div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;</div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;            <a class="code" href="group__bc__scheduler.html#gace099e37ceac6a2338ade5ceb13c528c">bc_scheduler_plan_current_relative</a>(BC_PYQ1648_UPDATE_INTERVAL);</div>
 <div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;</div>
-<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;            <span class="keyword">self</span>-&gt;_state = BC_PYQ1648_STATE_ERROR;</div>
-<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;</div>
-<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="group__bc__gpio.html#ga2403cbaba160a3f146a0090cb16c330b">bc_gpio_get_input</a>(self-&gt;_gpio_channel_dl))</div>
-<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;            {</div>
-<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;                <span class="keywordflow">if</span> (tick_now &gt;= self-&gt;_aware_time)</div>
-<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;                {</div>
-<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;                    <span class="keyword">self</span>-&gt;_event_handler(<span class="keyword">self</span>, BC_PYQ1648_EVENT_MOTION);</div>
-<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;                    <span class="keyword">self</span>-&gt;_aware_time = tick_now + <span class="keyword">self</span>-&gt;_blank_period;</div>
-<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;                    <span class="keyword">self</span>-&gt;_event_valid = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;                }</div>
-<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;                _bc_pyq1648_clear_event(<span class="keyword">self</span>);</div>
-<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;            }</div>
-<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;</div>
-<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;<span class="preprocessor">#if (BC_PYQ1648_CONNECTION_CHECK)</span></div>
-<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;<span class="preprocessor"></span>            <span class="keywordflow">if</span> (tick_now &gt;= self-&gt;_connection_check)</div>
-<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;            {</div>
-<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;                <span class="keyword">self</span>-&gt;_connection_check = tick_now + BC_PYQ1648_CONNECTION_CHECK_INTERVAL;</div>
-<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;                <span class="keywordflow">if</span> (!_bc_pyq1648_echo(<span class="keyword">self</span>))</div>
-<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;                {</div>
-<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;                    <span class="keyword">self</span>-&gt;_event_valid = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;                    <span class="keyword">self</span>-&gt;_event_handler(<span class="keyword">self</span>, BC_PYQ1648_EVENT_ERROR);</div>
-<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;                    <span class="keywordflow">goto</span> start;</div>
-<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;                }</div>
-<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;            }</div>
-<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;            <span class="keyword">self</span>-&gt;_state = BC_PYQ1648_STATE_CHECK;</div>
-<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;            <span class="keywordflow">return</span> tick_now + BC_PYQ1648_UPDATE_INTERVAL;</div>
-<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;        }</div>
-<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;        <span class="keywordflow">default</span>:</div>
-<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;        {</div>
-<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;            <span class="keyword">self</span>-&gt;_state = BC_PYQ1648_STATE_ERROR;</div>
-<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;</div>
-<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;            <span class="keywordflow">goto</span> start;</div>
-<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;        }</div>
-<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;    }</div>
-<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;}</div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;            <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;        }</div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;        <span class="keywordflow">case</span> BC_PYQ1648_STATE_CHECK:</div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;        {</div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;            <a class="code" href="group__bc__tick.html#gabd224c28866c49d86f5d33cae606bbe0">bc_tick_t</a> tick_now = <a class="code" href="group__bc__tick.html#ga5291d354b48d9599d185969d53f2bf8a">bc_tick_get</a>();</div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;</div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;            <span class="keyword">self</span>-&gt;_state = BC_PYQ1648_STATE_ERROR;</div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;</div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="group__bc__gpio.html#ga2403cbaba160a3f146a0090cb16c330b">bc_gpio_get_input</a>(self-&gt;_gpio_channel_dl))</div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;            {</div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;                <span class="keywordflow">if</span> (tick_now &gt;= self-&gt;_aware_time)</div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;                {</div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;                    <span class="keyword">self</span>-&gt;_event_handler(<span class="keyword">self</span>, BC_PYQ1648_EVENT_MOTION);</div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;                    <span class="keyword">self</span>-&gt;_aware_time = tick_now + <span class="keyword">self</span>-&gt;_blank_period;</div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;                    <span class="keyword">self</span>-&gt;_event_valid = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;                }</div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;                _bc_pyq1648_clear_event(<span class="keyword">self</span>);</div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;            }</div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;</div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;<span class="preprocessor">#if (BC_PYQ1648_CONNECTION_CHECK)</span></div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;<span class="preprocessor"></span>            <span class="keywordflow">if</span> (tick_now &gt;= self-&gt;_connection_check)</div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;            {</div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;                <span class="keyword">self</span>-&gt;_connection_check = tick_now + BC_PYQ1648_CONNECTION_CHECK_INTERVAL;</div>
+<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;                <span class="keywordflow">if</span> (!_bc_pyq1648_echo(<span class="keyword">self</span>))</div>
+<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;                {</div>
+<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;                    <span class="keyword">self</span>-&gt;_event_valid = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;                    <span class="keyword">self</span>-&gt;_event_handler(<span class="keyword">self</span>, BC_PYQ1648_EVENT_ERROR);</div>
+<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;                    <span class="keywordflow">goto</span> start;</div>
+<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;                }</div>
+<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;            }</div>
+<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;            <span class="keyword">self</span>-&gt;_state = BC_PYQ1648_STATE_CHECK;</div>
+<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;</div>
+<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;            <a class="code" href="group__bc__scheduler.html#gace099e37ceac6a2338ade5ceb13c528c">bc_scheduler_plan_current_relative</a>(BC_PYQ1648_UPDATE_INTERVAL);</div>
+<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;</div>
+<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;            <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;        }</div>
+<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;        <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;        {</div>
+<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;            <span class="keyword">self</span>-&gt;_state = BC_PYQ1648_STATE_ERROR;</div>
+<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;</div>
+<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;            <span class="keywordflow">goto</span> start;</div>
+<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;        }</div>
+<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;    }</div>
+<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;}</div>
 <div class="ttc" id="group__bc__tick_html_gabd224c28866c49d86f5d33cae606bbe0"><div class="ttname"><a href="group__bc__tick.html#gabd224c28866c49d86f5d33cae606bbe0">bc_tick_t</a></div><div class="ttdeci">uint64_t bc_tick_t</div><div class="ttdoc">Timestamp data type. </div><div class="ttdef"><b>Definition:</b> <a href="bc__tick_8h_source.html#l00016">bc_tick.h:16</a></div></div>
 <div class="ttc" id="group__bc__pyq1648_html_ga2a7e606a08a9131ab801175f52290c16"><div class="ttname"><a href="group__bc__pyq1648.html#ga2a7e606a08a9131ab801175f52290c16">bc_pyq1648_set_event_handler</a></div><div class="ttdeci">void bc_pyq1648_set_event_handler(bc_pyq1648_t *self, void(*event_handler)(bc_pyq1648_t *, bc_pyq1648_event_t))</div><div class="ttdoc">Set callback function. </div><div class="ttdef"><b>Definition:</b> <a href="bc__pyq1648_8c_source.html#l00092">bc_pyq1648.c:92</a></div></div>
 <div class="ttc" id="group__bc__irq_html_ga6bd1e6c1589c97558d14e8f3d648e656"><div class="ttname"><a href="group__bc__irq.html#ga6bd1e6c1589c97558d14e8f3d648e656">bc_irq_enable</a></div><div class="ttdeci">void bc_irq_enable(void)</div><div class="ttdoc">Allow all interrupt requests. </div><div class="ttdef"><b>Definition:</b> <a href="bc__irq_8c_source.html#l00009">bc_irq.c:9</a></div></div>
-<div class="ttc" id="group__bc__scheduler_html_gab4c901b213237276515265030f9aeef0"><div class="ttname"><a href="group__bc__scheduler.html#gab4c901b213237276515265030f9aeef0">bc_scheduler_register</a></div><div class="ttdeci">bc_scheduler_task_id_t bc_scheduler_register(bc_tick_t(*task)(void *, bc_tick_t), void *param, bc_tick_t tick)</div><div class="ttdoc">Register new task to the scheduler. </div><div class="ttdef"><b>Definition:</b> <a href="bc__scheduler_8c_source.html#l00048">bc_scheduler.c:48</a></div></div>
+<div class="ttc" id="group__bc__scheduler_html_gac6e2fa9155567fb1f32a8b8b563e2f30"><div class="ttname"><a href="group__bc__scheduler.html#gac6e2fa9155567fb1f32a8b8b563e2f30">bc_scheduler_register</a></div><div class="ttdeci">bc_scheduler_task_id_t bc_scheduler_register(void(*task)(void *), void *param, bc_tick_t tick)</div><div class="ttdoc">Register task in scheduler. </div><div class="ttdef"><b>Definition:</b> <a href="bc__scheduler_8c_source.html#l00047">bc_scheduler.c:47</a></div></div>
 <div class="ttc" id="group__bc__gpio_html_ga63a3ad86dfef88c7c940a2a34945d853"><div class="ttname"><a href="group__bc__gpio.html#ga63a3ad86dfef88c7c940a2a34945d853">bc_gpio_set_mode</a></div><div class="ttdeci">void bc_gpio_set_mode(bc_gpio_channel_t channel, bc_gpio_mode_t mode)</div><div class="ttdoc">Set mode of operation for GPIO channel. </div><div class="ttdef"><b>Definition:</b> <a href="bc__gpio_8c_source.html#l00324">bc_gpio.c:324</a></div></div>
 <div class="ttc" id="structbc__pyq1648__t_html"><div class="ttname"><a href="structbc__pyq1648__t.html">bc_pyq1648_t</a></div><div class="ttdef"><b>Definition:</b> <a href="bc__pyq1648_8h_source.html#l00038">bc_pyq1648.h:38</a></div></div>
 <div class="ttc" id="group__bc__tick_html_ga5291d354b48d9599d185969d53f2bf8a"><div class="ttname"><a href="group__bc__tick.html#ga5291d354b48d9599d185969d53f2bf8a">bc_tick_get</a></div><div class="ttdeci">bc_tick_t bc_tick_get(void)</div><div class="ttdoc">Get absolute timestamp since start of program. </div><div class="ttdef"><b>Definition:</b> <a href="bc__tick_8c_source.html#l00004">bc_tick.c:4</a></div></div>
 <div class="ttc" id="group__bc__gpio_html_ga509a65d13103db1a636c7ba082336cdd"><div class="ttname"><a href="group__bc__gpio.html#ga509a65d13103db1a636c7ba082336cdd">bc_gpio_set_output</a></div><div class="ttdeci">void bc_gpio_set_output(bc_gpio_channel_t channel, bool state)</div><div class="ttdoc">Set output state for GPIO channel. </div><div class="ttdef"><b>Definition:</b> <a href="bc__gpio_8c_source.html#l00392">bc_gpio.c:392</a></div></div>
+<div class="ttc" id="group__bc__scheduler_html_gace099e37ceac6a2338ade5ceb13c528c"><div class="ttname"><a href="group__bc__scheduler.html#gace099e37ceac6a2338ade5ceb13c528c">bc_scheduler_plan_current_relative</a></div><div class="ttdeci">void bc_scheduler_plan_current_relative(bc_tick_t tick)</div><div class="ttdoc">Schedule current task to tick relative from current spin. </div><div class="ttdef"><b>Definition:</b> <a href="bc__scheduler_8c_source.html#l00119">bc_scheduler.c:119</a></div></div>
 <div class="ttc" id="group__bc__pyq1648_html_gae1b159c9580dff6af770755e53d4e56b"><div class="ttname"><a href="group__bc__pyq1648.html#gae1b159c9580dff6af770755e53d4e56b">bc_pyq1648_init</a></div><div class="ttdeci">void bc_pyq1648_init(bc_pyq1648_t *self, bc_gpio_channel_t gpio_channel_serin, bc_gpio_channel_t gpio_channel_dl)</div><div class="ttdoc">Initialize PIR sensor PYQ1648. </div><div class="ttdef"><b>Definition:</b> <a href="bc__pyq1648_8c_source.html#l00073">bc_pyq1648.c:73</a></div></div>
 <div class="ttc" id="group__bc__gpio_html_gga5a8d8aed85b7bb7f5b219fc6a4cd5b8ea03905144630290f56ceaa36a0caf540a"><div class="ttname"><a href="group__bc__gpio.html#gga5a8d8aed85b7bb7f5b219fc6a4cd5b8ea03905144630290f56ceaa36a0caf540a">BC_GPIO_P8</a></div><div class="ttdoc">GPIO channel P8. </div><div class="ttdef"><b>Definition:</b> <a href="bc__gpio_8h_source.html#l00022">bc_gpio.h:22</a></div></div>
 <div class="ttc" id="group__bc__gpio_html_gga95188c2afa0f36cb97ebd6c5bc6eab6caa39d606c602ae07201060e664368ff26"><div class="ttname"><a href="group__bc__gpio.html#gga95188c2afa0f36cb97ebd6c5bc6eab6caa39d606c602ae07201060e664368ff26">BC_GPIO_MODE_INPUT</a></div><div class="ttdoc">GPIO channel operates as input. </div><div class="ttdef"><b>Definition:</b> <a href="bc__gpio_8h_source.html#l00051">bc_gpio.h:51</a></div></div>
