@@ -1,7 +1,5 @@
 var NAVTREEINDEX2 =
 {
-"structbc__opt3001__t.html#ae06fd7b65444725cbcfad673c411aa01":[0,14,0,5],
-"structbc__opt3001__t.html#af75ab54e3bbd5ab0b92da979ad4879cc":[0,14,0,1],
 "structbc__pyq1648__t.html":[0,15,0],
 "structbc__pyq1648__t.html#a0d1fecc4ab43f5142376b964d5f80119":[0,15,0,8],
 "structbc__pyq1648__t.html#a1e809b0997c359c0962b9e8db250016a":[0,15,0,6],
