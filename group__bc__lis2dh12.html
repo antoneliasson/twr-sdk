@@ -171,9 +171,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga4e706e214a03b568e43b923931774160"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bc__lis2dh12.html#ga4e706e214a03b568e43b923931774160">bc_lis2dh12_init</a> (<a class="el" href="structbc__lis2dh12__t.html">bc_lis2dh12_t</a> *self, <a class="el" href="group__bc__i2c.html#ga5f7217e6558c54ac6920e5dabb777fef">bc_i2c_channel_t</a> i2c_channel, uint8_t i2c_address)</td></tr>
 <tr class="memdesc:ga4e706e214a03b568e43b923931774160"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize LIS2DH12.  <a href="#ga4e706e214a03b568e43b923931774160">More...</a><br/></td></tr>
 <tr class="separator:ga4e706e214a03b568e43b923931774160"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga06606ea3eac83f88968fa9c85cc51881"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bc__lis2dh12.html#ga06606ea3eac83f88968fa9c85cc51881">bc_lis2dh12_set_event_handler</a> (<a class="el" href="structbc__lis2dh12__t.html">bc_lis2dh12_t</a> *self, void(*event_handler)(<a class="el" href="structbc__lis2dh12__t.html">bc_lis2dh12_t</a> *, <a class="el" href="group__bc__lis2dh12.html#ga5dc318914a8bce8dc9af065e14cdbb45">bc_lis2dh12_event_t</a>))</td></tr>
-<tr class="memdesc:ga06606ea3eac83f88968fa9c85cc51881"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set callback function.  <a href="#ga06606ea3eac83f88968fa9c85cc51881">More...</a><br/></td></tr>
-<tr class="separator:ga06606ea3eac83f88968fa9c85cc51881"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadd862cd2a33599f416dad74380928084"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bc__lis2dh12.html#gadd862cd2a33599f416dad74380928084">bc_lis2dh12_set_event_handler</a> (<a class="el" href="structbc__lis2dh12__t.html">bc_lis2dh12_t</a> *self, void(*event_handler)(<a class="el" href="structbc__lis2dh12__t.html">bc_lis2dh12_t</a> *, <a class="el" href="group__bc__lis2dh12.html#ga5dc318914a8bce8dc9af065e14cdbb45">bc_lis2dh12_event_t</a>, void *), void *event_param)</td></tr>
+<tr class="memdesc:gadd862cd2a33599f416dad74380928084"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set callback function.  <a href="#gadd862cd2a33599f416dad74380928084">More...</a><br/></td></tr>
+<tr class="separator:gadd862cd2a33599f416dad74380928084"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gadbd2d03f7d812d178f3b7db2933ebc8c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bc__lis2dh12.html#gadbd2d03f7d812d178f3b7db2933ebc8c">bc_lis2dh12_set_update_interval</a> (<a class="el" href="structbc__lis2dh12__t.html">bc_lis2dh12_t</a> *self, <a class="el" href="group__bc__tick.html#gabd224c28866c49d86f5d33cae606bbe0">bc_tick_t</a> interval)</td></tr>
 <tr class="memdesc:gadbd2d03f7d812d178f3b7db2933ebc8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set measurement interval.  <a href="#gadbd2d03f7d812d178f3b7db2933ebc8c">More...</a><br/></td></tr>
 <tr class="separator:gadbd2d03f7d812d178f3b7db2933ebc8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -258,7 +258,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
 <dd>
 false When value is invalid </dd></dl>
 
-<p>Definition at line <a class="el" href="bc__lis2dh12_8c_source.html#l00081">81</a> of file <a class="el" href="bc__lis2dh12_8c_source.html">bc_lis2dh12.c</a>.</p>
+<p>Definition at line <a class="el" href="bc__lis2dh12_8c_source.html#l00082">82</a> of file <a class="el" href="bc__lis2dh12_8c_source.html">bc_lis2dh12.c</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -307,9 +307,9 @@ Here is the call graph for this function:</div>
 <dd>
 false When value is invalid </dd></dl>
 
-<p>Definition at line <a class="el" href="bc__lis2dh12_8c_source.html#l00061">61</a> of file <a class="el" href="bc__lis2dh12_8c_source.html">bc_lis2dh12.c</a>.</p>
+<p>Definition at line <a class="el" href="bc__lis2dh12_8c_source.html#l00062">62</a> of file <a class="el" href="bc__lis2dh12_8c_source.html">bc_lis2dh12.c</a>.</p>
 
-<p>Referenced by <a class="el" href="bc__lis2dh12_8c_source.html#l00081">bc_lis2dh12_get_result_g()</a>.</p>
+<p>Referenced by <a class="el" href="bc__lis2dh12_8c_source.html#l00082">bc_lis2dh12_get_result_g()</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -411,7 +411,7 @@ Here is the call graph for this function:</div>
 <dd>
 false When configuration was not successful </dd></dl>
 
-<p>Definition at line <a class="el" href="bc__lis2dh12_8c_source.html#l00308">308</a> of file <a class="el" href="bc__lis2dh12_8c_source.html">bc_lis2dh12.c</a>.</p>
+<p>Definition at line <a class="el" href="bc__lis2dh12_8c_source.html#l00309">309</a> of file <a class="el" href="bc__lis2dh12_8c_source.html">bc_lis2dh12.c</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -424,7 +424,7 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="ga06606ea3eac83f88968fa9c85cc51881"></a>
+<a class="anchor" id="gadd862cd2a33599f416dad74380928084"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -437,8 +437,14 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">void(*)(<a class="el" href="structbc__lis2dh12__t.html">bc_lis2dh12_t</a> *, <a class="el" href="group__bc__lis2dh12.html#ga5dc318914a8bce8dc9af065e14cdbb45">bc_lis2dh12_event_t</a>)&#160;</td>
-          <td class="paramname"><em>event_handler</em>&#160;</td>
+          <td class="paramtype">void(*)(<a class="el" href="structbc__lis2dh12__t.html">bc_lis2dh12_t</a> *, <a class="el" href="group__bc__lis2dh12.html#ga5dc318914a8bce8dc9af065e14cdbb45">bc_lis2dh12_event_t</a>, void *)&#160;</td>
+          <td class="paramname"><em>event_handler</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>event_param</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -453,6 +459,7 @@ Here is the call graph for this function:</div>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">self</td><td>Instance </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">event_handler</td><td>Function address </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">event_param</td><td>Optional event parameter (can be NULL) </td></tr>
   </table>
   </dd>
 </dl>
@@ -494,7 +501,7 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="bc__lis2dh12_8c_source.html#l00056">56</a> of file <a class="el" href="bc__lis2dh12_8c_source.html">bc_lis2dh12.c</a>.</p>
+<p>Definition at line <a class="el" href="bc__lis2dh12_8c_source.html#l00057">57</a> of file <a class="el" href="bc__lis2dh12_8c_source.html">bc_lis2dh12.c</a>.</p>
 
 </div>
 </div>

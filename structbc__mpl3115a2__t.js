@@ -1,7 +1,8 @@
 var structbc__mpl3115a2__t =
 [
     [ "_altitude_valid", "structbc__mpl3115a2__t.html#aebb13db2d12f124c8d3f06a711a6a26f", null ],
-    [ "_event_handler", "structbc__mpl3115a2__t.html#a06e35f857e4bbb761ac4458ea67b64f5", null ],
+    [ "_event_handler", "structbc__mpl3115a2__t.html#a77e7ef08c9f665a07a6745c0896ded43", null ],
+    [ "_event_param", "structbc__mpl3115a2__t.html#aa8e86f0747fd84ef50c4c014a2b48f8e", null ],
     [ "_i2c_address", "structbc__mpl3115a2__t.html#aaba14cca8a075536467317190ea37067", null ],
     [ "_i2c_channel", "structbc__mpl3115a2__t.html#ad114ce1da6fb93c3a1cdd23c87511f2a", null ],
     [ "_pressure_valid", "structbc__mpl3115a2__t.html#a40148bc0a2ea9d965b36e1a2335e241f", null ],

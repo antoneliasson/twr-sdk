@@ -8,6 +8,6 @@ var group__bc__tag__barometer =
     [ "bc_tag_barometer_get_altitude_meter", "group__bc__tag__barometer.html#gaa2bc04c1598f956b3b707b31545c0b0d", null ],
     [ "bc_tag_barometer_get_pressure_pascal", "group__bc__tag__barometer.html#ga17e6676b8d5ad29ef4b3bfb11689ec31", null ],
     [ "bc_tag_barometer_init", "group__bc__tag__barometer.html#ga9ae5b1f4d56c6d1f4e3e2acc3f0ed0d2", null ],
-    [ "bc_tag_barometer_set_event_handler", "group__bc__tag__barometer.html#ga5f24e5c27435f56e42f8b1f7074a78b9", null ],
+    [ "bc_tag_barometer_set_event_handler", "group__bc__tag__barometer.html#ga59c6f61ba3dd41b99f98d6a9673f5839", null ],
     [ "bc_tag_barometer_set_update_interval", "group__bc__tag__barometer.html#ga4a21af19a5c181dce2c99f12b5430d08", null ]
 ];

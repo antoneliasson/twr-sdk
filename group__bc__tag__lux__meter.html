@@ -138,9 +138,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga0b3fdcc39e460870d8c98e0824002203"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bc__tag__lux__meter.html#ga0b3fdcc39e460870d8c98e0824002203">bc_tag_lux_meter_init</a> (<a class="el" href="group__bc__tag__lux__meter.html#gae841ab30954883209455b41cca0658b5">bc_tag_lux_meter_t</a> *self, <a class="el" href="group__bc__i2c.html#ga5f7217e6558c54ac6920e5dabb777fef">bc_i2c_channel_t</a> i2c_channel, <a class="el" href="group__bc__tag__lux__meter.html#ga4447094c0dc46d0507c5eaebb09418a5">bc_tag_lux_meter_i2c_address_t</a> i2c_address)</td></tr>
 <tr class="memdesc:ga0b3fdcc39e460870d8c98e0824002203"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize BigClown Lux Meter Tag.  <a href="#ga0b3fdcc39e460870d8c98e0824002203">More...</a><br/></td></tr>
 <tr class="separator:ga0b3fdcc39e460870d8c98e0824002203"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga85d67e8cb02cb94fef924e307df0ac97"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bc__tag__lux__meter.html#ga85d67e8cb02cb94fef924e307df0ac97">bc_tag_lux_meter_set_event_handler</a> (<a class="el" href="group__bc__tag__lux__meter.html#gae841ab30954883209455b41cca0658b5">bc_tag_lux_meter_t</a> *self, void(*event_handler)(<a class="el" href="group__bc__tag__lux__meter.html#gae841ab30954883209455b41cca0658b5">bc_tag_lux_meter_t</a> *, <a class="el" href="group__bc__tag__lux__meter.html#ga2ab9d7993074385c79b424e61774e343">bc_tag_lux_meter_event_t</a>))</td></tr>
-<tr class="memdesc:ga85d67e8cb02cb94fef924e307df0ac97"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set callback function.  <a href="#ga85d67e8cb02cb94fef924e307df0ac97">More...</a><br/></td></tr>
-<tr class="separator:ga85d67e8cb02cb94fef924e307df0ac97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga047fd84e9a99942c10df46cf35bdcb6a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bc__tag__lux__meter.html#ga047fd84e9a99942c10df46cf35bdcb6a">bc_tag_lux_meter_set_event_handler</a> (<a class="el" href="group__bc__tag__lux__meter.html#gae841ab30954883209455b41cca0658b5">bc_tag_lux_meter_t</a> *self, void(*event_handler)(<a class="el" href="group__bc__tag__lux__meter.html#gae841ab30954883209455b41cca0658b5">bc_tag_lux_meter_t</a> *, <a class="el" href="group__bc__tag__lux__meter.html#ga2ab9d7993074385c79b424e61774e343">bc_tag_lux_meter_event_t</a>, void *), void *event_param)</td></tr>
+<tr class="memdesc:ga047fd84e9a99942c10df46cf35bdcb6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set callback function.  <a href="#ga047fd84e9a99942c10df46cf35bdcb6a">More...</a><br/></td></tr>
+<tr class="separator:ga047fd84e9a99942c10df46cf35bdcb6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac1ade8c7b8759d6a93e4d4263271967b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bc__tag__lux__meter.html#gac1ade8c7b8759d6a93e4d4263271967b">bc_tag_lux_meter_set_update_interval</a> (<a class="el" href="group__bc__tag__lux__meter.html#gae841ab30954883209455b41cca0658b5">bc_tag_lux_meter_t</a> *self, <a class="el" href="group__bc__tick.html#gabd224c28866c49d86f5d33cae606bbe0">bc_tick_t</a> interval)</td></tr>
 <tr class="memdesc:gac1ade8c7b8759d6a93e4d4263271967b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set measurement interval.  <a href="#gac1ade8c7b8759d6a93e4d4263271967b">More...</a><br/></td></tr>
 <tr class="separator:gac1ade8c7b8759d6a93e4d4263271967b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -354,7 +354,7 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="ga85d67e8cb02cb94fef924e307df0ac97"></a>
+<a class="anchor" id="ga047fd84e9a99942c10df46cf35bdcb6a"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -367,8 +367,14 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">void(*)(<a class="el" href="group__bc__tag__lux__meter.html#gae841ab30954883209455b41cca0658b5">bc_tag_lux_meter_t</a> *, <a class="el" href="group__bc__tag__lux__meter.html#ga2ab9d7993074385c79b424e61774e343">bc_tag_lux_meter_event_t</a>)&#160;</td>
-          <td class="paramname"><em>event_handler</em>&#160;</td>
+          <td class="paramtype">void(*)(<a class="el" href="group__bc__tag__lux__meter.html#gae841ab30954883209455b41cca0658b5">bc_tag_lux_meter_t</a> *, <a class="el" href="group__bc__tag__lux__meter.html#ga2ab9d7993074385c79b424e61774e343">bc_tag_lux_meter_event_t</a>, void *)&#160;</td>
+          <td class="paramname"><em>event_handler</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>event_param</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -383,6 +389,7 @@ Here is the call graph for this function:</div>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">self</td><td>Instance </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">event_handler</td><td>Function address </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">event_param</td><td>Optional event parameter (can be NULL) </td></tr>
   </table>
   </dd>
 </dl>
@@ -392,9 +399,9 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="group__bc__tag__lux__meter_ga85d67e8cb02cb94fef924e307df0ac97_cgraph.png" border="0" usemap="#group__bc__tag__lux__meter_ga85d67e8cb02cb94fef924e307df0ac97_cgraph" alt=""/></div>
-<map name="group__bc__tag__lux__meter_ga85d67e8cb02cb94fef924e307df0ac97_cgraph" id="group__bc__tag__lux__meter_ga85d67e8cb02cb94fef924e307df0ac97_cgraph">
-<area shape="rect" id="node2" href="group__bc__opt3001.html#ga3e646657c8829b1ef740e355bee64e93" title="Set callback function. " alt="" coords="206,5,359,46"/></map>
+<div class="center"><img src="group__bc__tag__lux__meter_ga047fd84e9a99942c10df46cf35bdcb6a_cgraph.png" border="0" usemap="#group__bc__tag__lux__meter_ga047fd84e9a99942c10df46cf35bdcb6a_cgraph" alt=""/></div>
+<map name="group__bc__tag__lux__meter_ga047fd84e9a99942c10df46cf35bdcb6a_cgraph" id="group__bc__tag__lux__meter_ga047fd84e9a99942c10df46cf35bdcb6a_cgraph">
+<area shape="rect" id="node2" href="group__bc__opt3001.html#gace4583fa55cda833082b33dd854c6aea" title="Set callback function. " alt="" coords="206,5,359,46"/></map>
 </div>
 </p>
 

@@ -10,6 +10,6 @@ var group__bc__tmp112 =
     [ "bc_tmp112_get_temperature_kelvin", "group__bc__tmp112.html#gac438ff1d6f87792dd5899b44cda3f8fa", null ],
     [ "bc_tmp112_get_temperature_raw", "group__bc__tmp112.html#ga93c96309f01b036202ba1694f545fd2f", null ],
     [ "bc_tmp112_init", "group__bc__tmp112.html#gafa5c6541860450a84023c16293d977ac", null ],
-    [ "bc_tmp112_set_event_handler", "group__bc__tmp112.html#gabb3367166e4d8374d6e309724613fe23", null ],
+    [ "bc_tmp112_set_event_handler", "group__bc__tmp112.html#ga65ffabed8ee064936a332b41ecb81fc9", null ],
     [ "bc_tmp112_set_update_interval", "group__bc__tmp112.html#gaab18b8b8625b2d4d4272f4c0b6666153", null ]
 ];

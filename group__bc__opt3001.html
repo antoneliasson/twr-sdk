@@ -150,9 +150,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga3db4ea45d7c7b4cb5e63fda04802e1ba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bc__opt3001.html#ga3db4ea45d7c7b4cb5e63fda04802e1ba">bc_opt3001_init</a> (<a class="el" href="structbc__opt3001__t.html">bc_opt3001_t</a> *self, <a class="el" href="group__bc__i2c.html#ga5f7217e6558c54ac6920e5dabb777fef">bc_i2c_channel_t</a> i2c_channel, uint8_t i2c_address)</td></tr>
 <tr class="memdesc:ga3db4ea45d7c7b4cb5e63fda04802e1ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize OPT3001 driver.  <a href="#ga3db4ea45d7c7b4cb5e63fda04802e1ba">More...</a><br/></td></tr>
 <tr class="separator:ga3db4ea45d7c7b4cb5e63fda04802e1ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3e646657c8829b1ef740e355bee64e93"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bc__opt3001.html#ga3e646657c8829b1ef740e355bee64e93">bc_opt3001_set_event_handler</a> (<a class="el" href="structbc__opt3001__t.html">bc_opt3001_t</a> *self, void(*event_handler)(<a class="el" href="structbc__opt3001__t.html">bc_opt3001_t</a> *, <a class="el" href="group__bc__opt3001.html#gaabef7058f5bd9bcf5474d86c05e85c29">bc_opt3001_event_t</a>))</td></tr>
-<tr class="memdesc:ga3e646657c8829b1ef740e355bee64e93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set callback function.  <a href="#ga3e646657c8829b1ef740e355bee64e93">More...</a><br/></td></tr>
-<tr class="separator:ga3e646657c8829b1ef740e355bee64e93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gace4583fa55cda833082b33dd854c6aea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bc__opt3001.html#gace4583fa55cda833082b33dd854c6aea">bc_opt3001_set_event_handler</a> (<a class="el" href="structbc__opt3001__t.html">bc_opt3001_t</a> *self, void(*event_handler)(<a class="el" href="structbc__opt3001__t.html">bc_opt3001_t</a> *, <a class="el" href="group__bc__opt3001.html#gaabef7058f5bd9bcf5474d86c05e85c29">bc_opt3001_event_t</a>, void *), void *event_param)</td></tr>
+<tr class="memdesc:gace4583fa55cda833082b33dd854c6aea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set callback function.  <a href="#gace4583fa55cda833082b33dd854c6aea">More...</a><br/></td></tr>
+<tr class="separator:gace4583fa55cda833082b33dd854c6aea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaff0e45c5bd37a1686e3b32e5ffba839f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bc__opt3001.html#gaff0e45c5bd37a1686e3b32e5ffba839f">bc_opt3001_set_update_interval</a> (<a class="el" href="structbc__opt3001__t.html">bc_opt3001_t</a> *self, <a class="el" href="group__bc__tick.html#gabd224c28866c49d86f5d33cae606bbe0">bc_tick_t</a> interval)</td></tr>
 <tr class="memdesc:gaff0e45c5bd37a1686e3b32e5ffba839f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set measurement interval.  <a href="#gaff0e45c5bd37a1686e3b32e5ffba839f">More...</a><br/></td></tr>
 <tr class="separator:gaff0e45c5bd37a1686e3b32e5ffba839f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -227,7 +227,7 @@ Functions</h2></td></tr>
 <dd>
 false When value is invalid </dd></dl>
 
-<p>Definition at line <a class="el" href="bc__opt3001_8c_source.html#l00042">42</a> of file <a class="el" href="bc__opt3001_8c_source.html">bc_opt3001.c</a>.</p>
+<p>Definition at line <a class="el" href="bc__opt3001_8c_source.html#l00043">43</a> of file <a class="el" href="bc__opt3001_8c_source.html">bc_opt3001.c</a>.</p>
 
 <p>Referenced by <a class="el" href="bc__tag__lux__meter_8c_source.html#l00023">bc_tag_lux_meter_get_luminosity_lux()</a>.</p>
 
@@ -287,9 +287,9 @@ Here is the caller graph for this function:</div>
 <dd>
 false When value is invalid </dd></dl>
 
-<p>Definition at line <a class="el" href="bc__opt3001_8c_source.html#l00030">30</a> of file <a class="el" href="bc__opt3001_8c_source.html">bc_opt3001.c</a>.</p>
+<p>Definition at line <a class="el" href="bc__opt3001_8c_source.html#l00031">31</a> of file <a class="el" href="bc__opt3001_8c_source.html">bc_opt3001.c</a>.</p>
 
-<p>Referenced by <a class="el" href="bc__opt3001_8c_source.html#l00042">bc_opt3001_get_luminosity_lux()</a>, and <a class="el" href="bc__tag__lux__meter_8c_source.html#l00018">bc_tag_lux_meter_get_luminosity_raw()</a>.</p>
+<p>Referenced by <a class="el" href="bc__opt3001_8c_source.html#l00043">bc_opt3001_get_luminosity_lux()</a>, and <a class="el" href="bc__tag__lux__meter_8c_source.html#l00018">bc_tag_lux_meter_get_luminosity_raw()</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -366,7 +366,7 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="ga3e646657c8829b1ef740e355bee64e93"></a>
+<a class="anchor" id="gace4583fa55cda833082b33dd854c6aea"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -379,8 +379,14 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">void(*)(<a class="el" href="structbc__opt3001__t.html">bc_opt3001_t</a> *, <a class="el" href="group__bc__opt3001.html#gaabef7058f5bd9bcf5474d86c05e85c29">bc_opt3001_event_t</a>)&#160;</td>
-          <td class="paramname"><em>event_handler</em>&#160;</td>
+          <td class="paramtype">void(*)(<a class="el" href="structbc__opt3001__t.html">bc_opt3001_t</a> *, <a class="el" href="group__bc__opt3001.html#gaabef7058f5bd9bcf5474d86c05e85c29">bc_opt3001_event_t</a>, void *)&#160;</td>
+          <td class="paramname"><em>event_handler</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>event_param</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -395,6 +401,7 @@ Here is the caller graph for this function:</div>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">self</td><td>Instance </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">event_handler</td><td>Function address </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">event_param</td><td>Optional event parameter (can be NULL) </td></tr>
   </table>
   </dd>
 </dl>
@@ -406,9 +413,9 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="group__bc__opt3001_ga3e646657c8829b1ef740e355bee64e93_icgraph.png" border="0" usemap="#group__bc__opt3001_ga3e646657c8829b1ef740e355bee64e93_icgraph" alt=""/></div>
-<map name="group__bc__opt3001_ga3e646657c8829b1ef740e355bee64e93_icgraph" id="group__bc__opt3001_ga3e646657c8829b1ef740e355bee64e93_icgraph">
-<area shape="rect" id="node2" href="group__bc__tag__lux__meter.html#ga85d67e8cb02cb94fef924e307df0ac97" title="Set callback function. " alt="" coords="209,5,359,46"/></map>
+<div class="center"><img src="group__bc__opt3001_gace4583fa55cda833082b33dd854c6aea_icgraph.png" border="0" usemap="#group__bc__opt3001_gace4583fa55cda833082b33dd854c6aea_icgraph" alt=""/></div>
+<map name="group__bc__opt3001_gace4583fa55cda833082b33dd854c6aea_icgraph" id="group__bc__opt3001_gace4583fa55cda833082b33dd854c6aea_icgraph">
+<area shape="rect" id="node2" href="group__bc__tag__lux__meter.html#ga047fd84e9a99942c10df46cf35bdcb6a" title="Set callback function. " alt="" coords="209,5,359,46"/></map>
 </div>
 </p>
 
@@ -447,7 +454,7 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="bc__opt3001_8c_source.html#l00025">25</a> of file <a class="el" href="bc__opt3001_8c_source.html">bc_opt3001.c</a>.</p>
+<p>Definition at line <a class="el" href="bc__opt3001_8c_source.html#l00026">26</a> of file <a class="el" href="bc__opt3001_8c_source.html">bc_opt3001.c</a>.</p>
 
 <p>Referenced by <a class="el" href="bc__tag__lux__meter_8c_source.html#l00013">bc_tag_lux_meter_set_update_interval()</a>.</p>
 

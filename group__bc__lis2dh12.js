@@ -23,7 +23,8 @@ var group__bc__lis2dh12 =
     [ "bc_lis2dh12_t", "structbc__lis2dh12__t.html", [
       [ "_accelerometer_valid", "structbc__lis2dh12__t.html#aaaf04fa8ceacdaab87855560544c587c", null ],
       [ "_alarm_active", "structbc__lis2dh12__t.html#a85a81c6d4fb6996d19f21abe2a175145", null ],
-      [ "_event_handler", "structbc__lis2dh12__t.html#af8e4f981a0b96fec11ffde4cb444e2be", null ],
+      [ "_event_handler", "structbc__lis2dh12__t.html#a45e04a5b2f37de1e978ef99fdacd05fc", null ],
+      [ "_event_param", "structbc__lis2dh12__t.html#a0cb6217713eac7a0002035cf299ebfdd", null ],
       [ "_i2c_address", "structbc__lis2dh12__t.html#a54ab5ad5fda988e529a01ea16f2e0af7", null ],
       [ "_i2c_channel", "structbc__lis2dh12__t.html#a53bc49429db39b5aa5875d62fc4ff474", null ],
       [ "_irq_flag", "structbc__lis2dh12__t.html#abaa29b879caf6f8ee66c18d6acb5634a", null ],
@@ -46,7 +47,7 @@ var group__bc__lis2dh12 =
     [ "bc_lis2dh12_get_result_raw", "group__bc__lis2dh12.html#ga523ceef2e9671e6660dbebf966171fdf", null ],
     [ "bc_lis2dh12_init", "group__bc__lis2dh12.html#ga4e706e214a03b568e43b923931774160", null ],
     [ "bc_lis2dh12_set_alarm", "group__bc__lis2dh12.html#gabdb52865d27aca4cd3f0ca31133f4187", null ],
-    [ "bc_lis2dh12_set_event_handler", "group__bc__lis2dh12.html#ga06606ea3eac83f88968fa9c85cc51881", null ],
+    [ "bc_lis2dh12_set_event_handler", "group__bc__lis2dh12.html#gadd862cd2a33599f416dad74380928084", null ],
     [ "bc_lis2dh12_set_update_interval", "group__bc__lis2dh12.html#gadbd2d03f7d812d178f3b7db2933ebc8c", null ],
     [ "bc_lis2dh12_signalize", "group__bc__lis2dh12.html#ga117acea23c46e6381c657a7dd850d616", null ]
 ];

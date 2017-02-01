@@ -122,179 +122,180 @@ $(document).ready(function(){initNavTree('bc__tmp112_8c_source.html','');});
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <a class="code" href="group__bc__scheduler.html#gac6e2fa9155567fb1f32a8b8b563e2f30">bc_scheduler_register</a>(_bc_tmp112_task, <span class="keyword">self</span>, BC_TMP112_DELAY_RUN);</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;}</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="group__bc__tmp112.html#gabb3367166e4d8374d6e309724613fe23">   19</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__bc__tmp112.html#gabb3367166e4d8374d6e309724613fe23">bc_tmp112_set_event_handler</a>(<a class="code" href="group__bc__tmp112.html#gaf3f5f3f39d19ba5d648dc39c844e4ab5">bc_tmp112_t</a> *<span class="keyword">self</span>, <span class="keywordtype">void</span> (*event_handler)(<a class="code" href="group__bc__tmp112.html#gaf3f5f3f39d19ba5d648dc39c844e4ab5">bc_tmp112_t</a> *, <a class="code" href="group__bc__tmp112.html#ga0f3f2d66b8fa03f44b26592fbfc95087">bc_tmp112_event_t</a>))</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="group__bc__tmp112.html#ga65ffabed8ee064936a332b41ecb81fc9">   19</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__bc__tmp112.html#ga65ffabed8ee064936a332b41ecb81fc9">bc_tmp112_set_event_handler</a>(<a class="code" href="group__bc__tmp112.html#gaf3f5f3f39d19ba5d648dc39c844e4ab5">bc_tmp112_t</a> *<span class="keyword">self</span>, <span class="keywordtype">void</span> (*event_handler)(<a class="code" href="group__bc__tmp112.html#gaf3f5f3f39d19ba5d648dc39c844e4ab5">bc_tmp112_t</a> *, <a class="code" href="group__bc__tmp112.html#ga0f3f2d66b8fa03f44b26592fbfc95087">bc_tmp112_event_t</a>, <span class="keywordtype">void</span> *), <span class="keywordtype">void</span> *event_param)</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;{</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keyword">self</span>-&gt;_event_handler = event_handler;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;}</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
-<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="group__bc__tmp112.html#gaab18b8b8625b2d4d4272f4c0b6666153">   24</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__bc__tmp112.html#gaab18b8b8625b2d4d4272f4c0b6666153">bc_tmp112_set_update_interval</a>(<a class="code" href="group__bc__tmp112.html#gaf3f5f3f39d19ba5d648dc39c844e4ab5">bc_tmp112_t</a> *<span class="keyword">self</span>, <a class="code" href="group__bc__tick.html#gabd224c28866c49d86f5d33cae606bbe0">bc_tick_t</a> interval)</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;{</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keyword">self</span>-&gt;_update_interval = interval;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;}</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
-<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="group__bc__tmp112.html#ga93c96309f01b036202ba1694f545fd2f">   29</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="group__bc__tmp112.html#ga93c96309f01b036202ba1694f545fd2f">bc_tmp112_get_temperature_raw</a>(<a class="code" href="group__bc__tmp112.html#gaf3f5f3f39d19ba5d648dc39c844e4ab5">bc_tmp112_t</a> *<span class="keyword">self</span>, int16_t *raw)</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;{</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordflow">if</span> (!self-&gt;_temperature_valid)</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    {</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    }</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    *raw = (int16_t) self-&gt;_reg_temperature &gt;&gt; 4;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;}</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="group__bc__tmp112.html#ga9d591221cfb0cbb55e5104ffd20ff0ec">   41</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="group__bc__tmp112.html#ga9d591221cfb0cbb55e5104ffd20ff0ec">bc_tmp112_get_temperature_celsius</a>(<a class="code" href="group__bc__tmp112.html#gaf3f5f3f39d19ba5d648dc39c844e4ab5">bc_tmp112_t</a> *<span class="keyword">self</span>, <span class="keywordtype">float</span> *celsius)</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;{</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    int16_t raw;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="group__bc__tmp112.html#ga93c96309f01b036202ba1694f545fd2f">bc_tmp112_get_temperature_raw</a>(<span class="keyword">self</span>, &amp;raw))</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    {</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    }</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    *celsius = (float) raw / 16.f;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;}</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
-<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="group__bc__tmp112.html#gab9f11bac41821cc261fb7d3cf58e0efb">   55</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="group__bc__tmp112.html#gab9f11bac41821cc261fb7d3cf58e0efb">bc_tmp112_get_temperature_fahrenheit</a>(<a class="code" href="group__bc__tmp112.html#gaf3f5f3f39d19ba5d648dc39c844e4ab5">bc_tmp112_t</a> *<span class="keyword">self</span>, <span class="keywordtype">float</span> *fahrenheit)</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;{</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">float</span> celsius;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="group__bc__tmp112.html#ga9d591221cfb0cbb55e5104ffd20ff0ec">bc_tmp112_get_temperature_celsius</a>(<span class="keyword">self</span>, &amp;celsius))</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    {</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    }</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    *fahrenheit = celsius * 1.8f + 32.f;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;}</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
-<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="group__bc__tmp112.html#gac438ff1d6f87792dd5899b44cda3f8fa">   69</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="group__bc__tmp112.html#gac438ff1d6f87792dd5899b44cda3f8fa">bc_tmp112_get_temperature_kelvin</a>(<a class="code" href="group__bc__tmp112.html#gaf3f5f3f39d19ba5d648dc39c844e4ab5">bc_tmp112_t</a> *<span class="keyword">self</span>, <span class="keywordtype">float</span> *kelvin)</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;{</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordtype">float</span> celsius;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="group__bc__tmp112.html#ga9d591221cfb0cbb55e5104ffd20ff0ec">bc_tmp112_get_temperature_celsius</a>(<span class="keyword">self</span>, &amp;celsius))</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    {</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    }</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    *kelvin = celsius + 273.15f;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordflow">if</span> (*kelvin &lt; 0.f)</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    {</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        *kelvin = 0.f;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    }</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;}</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> _bc_tmp112_task(<span class="keywordtype">void</span> *param)</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;{</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <a class="code" href="group__bc__tmp112.html#gaf3f5f3f39d19ba5d648dc39c844e4ab5">bc_tmp112_t</a> *<span class="keyword">self</span> = param;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;start:</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordflow">switch</span> (self-&gt;_state)</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    {</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <span class="keywordflow">case</span> BC_TMP112_STATE_ERROR:</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        {</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;            <span class="keyword">self</span>-&gt;_temperature_valid = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            <span class="keywordflow">if</span> (self-&gt;_event_handler != NULL)</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;            {</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;                <span class="keyword">self</span>-&gt;_event_handler(<span class="keyword">self</span>, <a class="code" href="group__bc__tmp112.html#gga0f3f2d66b8fa03f44b26592fbfc95087a582b8397de6631d5375a4b327b247db3">BC_TMP112_EVENT_ERROR</a>);</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;            }</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;            <span class="keyword">self</span>-&gt;_state = BC_TMP112_STATE_MEASURE;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;            <a class="code" href="group__bc__scheduler.html#gace099e37ceac6a2338ade5ceb13c528c">bc_scheduler_plan_current_relative</a>(self-&gt;_update_interval);</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;            <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        }</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        <span class="keywordflow">case</span> BC_TMP112_STATE_MEASURE:</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        {</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;            <span class="keyword">self</span>-&gt;_state = BC_TMP112_STATE_ERROR;</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;            <span class="keywordflow">if</span> (!<a class="code" href="group__bc__i2c.html#ga67a958f1691787b61dae034f441513a3">bc_i2c_write_8b</a>(self-&gt;_i2c_channel, self-&gt;_i2c_address, 0x01, 0x81))</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;            {</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;                <span class="keywordflow">goto</span> start;</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;            }</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;            <span class="keyword">self</span>-&gt;_state = BC_TMP112_STATE_READ;</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;            <a class="code" href="group__bc__scheduler.html#gace099e37ceac6a2338ade5ceb13c528c">bc_scheduler_plan_current_relative</a>(BC_TMP112_DELAY_READ);</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;            <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        }</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        <span class="keywordflow">case</span> BC_TMP112_STATE_READ:</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        {</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;            <span class="keyword">self</span>-&gt;_state = BC_TMP112_STATE_ERROR;</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;            uint8_t reg_configuration;</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;            <span class="keywordflow">if</span> (!<a class="code" href="group__bc__i2c.html#gac2eee84f73bb3bbd953be621f21eb0e1">bc_i2c_read_8b</a>(self-&gt;_i2c_channel, self-&gt;_i2c_address, 0x01, &amp;reg_configuration))</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;            {</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;                <span class="keywordflow">goto</span> start;</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;            }</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;            <span class="keywordflow">if</span> ((reg_configuration &amp; 0x81) != 0x81)</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;            {</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;                <span class="keywordflow">goto</span> start;</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;            }</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;            <span class="keywordflow">if</span> (!<a class="code" href="group__bc__i2c.html#ga24e64fdccaf5a35f647f65cf21a7a5c1">bc_i2c_read_16b</a>(self-&gt;_i2c_channel, self-&gt;_i2c_address, 0x00, &amp;self-&gt;_reg_temperature))</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;            {</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;                <span class="keywordflow">goto</span> start;</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;            }</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;            <span class="keyword">self</span>-&gt;_temperature_valid = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;            <span class="keyword">self</span>-&gt;_state = BC_TMP112_STATE_UPDATE;</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;            <span class="keywordflow">goto</span> start;</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;        }</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;        <span class="keywordflow">case</span> BC_TMP112_STATE_UPDATE:</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;        {</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;            <span class="keywordflow">if</span> (self-&gt;_event_handler != NULL)</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;            {</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;                <span class="keyword">self</span>-&gt;_event_handler(<span class="keyword">self</span>, <a class="code" href="group__bc__tmp112.html#gga0f3f2d66b8fa03f44b26592fbfc95087a3d1328d2df88d39300cfe192cbeac8ae">BC_TMP112_EVENT_UPDATE</a>);</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;            }</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;            <span class="keyword">self</span>-&gt;_state = BC_TMP112_STATE_MEASURE;</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;            <a class="code" href="group__bc__scheduler.html#gace099e37ceac6a2338ade5ceb13c528c">bc_scheduler_plan_current_relative</a>(self-&gt;_update_interval);</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;            <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;        }</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;        <span class="keywordflow">default</span>:</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;        {</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;            <span class="keyword">self</span>-&gt;_state = BC_TMP112_STATE_ERROR;</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;            <span class="keywordflow">goto</span> start;</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;        }</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    }</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;}</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keyword">self</span>-&gt;_event_param = event_param;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;}</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="group__bc__tmp112.html#gaab18b8b8625b2d4d4272f4c0b6666153">   25</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__bc__tmp112.html#gaab18b8b8625b2d4d4272f4c0b6666153">bc_tmp112_set_update_interval</a>(<a class="code" href="group__bc__tmp112.html#gaf3f5f3f39d19ba5d648dc39c844e4ab5">bc_tmp112_t</a> *<span class="keyword">self</span>, <a class="code" href="group__bc__tick.html#gabd224c28866c49d86f5d33cae606bbe0">bc_tick_t</a> interval)</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;{</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keyword">self</span>-&gt;_update_interval = interval;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;}</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="group__bc__tmp112.html#ga93c96309f01b036202ba1694f545fd2f">   30</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="group__bc__tmp112.html#ga93c96309f01b036202ba1694f545fd2f">bc_tmp112_get_temperature_raw</a>(<a class="code" href="group__bc__tmp112.html#gaf3f5f3f39d19ba5d648dc39c844e4ab5">bc_tmp112_t</a> *<span class="keyword">self</span>, int16_t *raw)</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;{</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordflow">if</span> (!self-&gt;_temperature_valid)</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    {</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    }</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    *raw = (int16_t) self-&gt;_reg_temperature &gt;&gt; 4;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;}</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="group__bc__tmp112.html#ga9d591221cfb0cbb55e5104ffd20ff0ec">   42</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="group__bc__tmp112.html#ga9d591221cfb0cbb55e5104ffd20ff0ec">bc_tmp112_get_temperature_celsius</a>(<a class="code" href="group__bc__tmp112.html#gaf3f5f3f39d19ba5d648dc39c844e4ab5">bc_tmp112_t</a> *<span class="keyword">self</span>, <span class="keywordtype">float</span> *celsius)</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;{</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    int16_t raw;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="group__bc__tmp112.html#ga93c96309f01b036202ba1694f545fd2f">bc_tmp112_get_temperature_raw</a>(<span class="keyword">self</span>, &amp;raw))</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    {</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    }</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    *celsius = (float) raw / 16.f;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;}</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="group__bc__tmp112.html#gab9f11bac41821cc261fb7d3cf58e0efb">   56</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="group__bc__tmp112.html#gab9f11bac41821cc261fb7d3cf58e0efb">bc_tmp112_get_temperature_fahrenheit</a>(<a class="code" href="group__bc__tmp112.html#gaf3f5f3f39d19ba5d648dc39c844e4ab5">bc_tmp112_t</a> *<span class="keyword">self</span>, <span class="keywordtype">float</span> *fahrenheit)</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;{</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">float</span> celsius;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="group__bc__tmp112.html#ga9d591221cfb0cbb55e5104ffd20ff0ec">bc_tmp112_get_temperature_celsius</a>(<span class="keyword">self</span>, &amp;celsius))</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    {</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    }</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    *fahrenheit = celsius * 1.8f + 32.f;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;}</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="group__bc__tmp112.html#gac438ff1d6f87792dd5899b44cda3f8fa">   70</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="group__bc__tmp112.html#gac438ff1d6f87792dd5899b44cda3f8fa">bc_tmp112_get_temperature_kelvin</a>(<a class="code" href="group__bc__tmp112.html#gaf3f5f3f39d19ba5d648dc39c844e4ab5">bc_tmp112_t</a> *<span class="keyword">self</span>, <span class="keywordtype">float</span> *kelvin)</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;{</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordtype">float</span> celsius;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="group__bc__tmp112.html#ga9d591221cfb0cbb55e5104ffd20ff0ec">bc_tmp112_get_temperature_celsius</a>(<span class="keyword">self</span>, &amp;celsius))</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    {</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    }</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    *kelvin = celsius + 273.15f;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordflow">if</span> (*kelvin &lt; 0.f)</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    {</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        *kelvin = 0.f;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    }</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;}</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> _bc_tmp112_task(<span class="keywordtype">void</span> *param)</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;{</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <a class="code" href="group__bc__tmp112.html#gaf3f5f3f39d19ba5d648dc39c844e4ab5">bc_tmp112_t</a> *<span class="keyword">self</span> = param;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;start:</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordflow">switch</span> (self-&gt;_state)</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    {</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        <span class="keywordflow">case</span> BC_TMP112_STATE_ERROR:</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        {</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;            <span class="keyword">self</span>-&gt;_temperature_valid = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;            <span class="keywordflow">if</span> (self-&gt;_event_handler != NULL)</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;            {</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;                <span class="keyword">self</span>-&gt;_event_handler(<span class="keyword">self</span>, <a class="code" href="group__bc__tmp112.html#gga0f3f2d66b8fa03f44b26592fbfc95087a582b8397de6631d5375a4b327b247db3">BC_TMP112_EVENT_ERROR</a>, self-&gt;_event_param);</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;            }</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;            <span class="keyword">self</span>-&gt;_state = BC_TMP112_STATE_MEASURE;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;            <a class="code" href="group__bc__scheduler.html#gace099e37ceac6a2338ade5ceb13c528c">bc_scheduler_plan_current_relative</a>(self-&gt;_update_interval);</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;            <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        }</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        <span class="keywordflow">case</span> BC_TMP112_STATE_MEASURE:</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        {</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;            <span class="keyword">self</span>-&gt;_state = BC_TMP112_STATE_ERROR;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;            <span class="keywordflow">if</span> (!<a class="code" href="group__bc__i2c.html#ga67a958f1691787b61dae034f441513a3">bc_i2c_write_8b</a>(self-&gt;_i2c_channel, self-&gt;_i2c_address, 0x01, 0x81))</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;            {</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;                <span class="keywordflow">goto</span> start;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;            }</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;            <span class="keyword">self</span>-&gt;_state = BC_TMP112_STATE_READ;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;            <a class="code" href="group__bc__scheduler.html#gace099e37ceac6a2338ade5ceb13c528c">bc_scheduler_plan_current_relative</a>(BC_TMP112_DELAY_READ);</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;            <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        }</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        <span class="keywordflow">case</span> BC_TMP112_STATE_READ:</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        {</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;            <span class="keyword">self</span>-&gt;_state = BC_TMP112_STATE_ERROR;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;            uint8_t reg_configuration;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;            <span class="keywordflow">if</span> (!<a class="code" href="group__bc__i2c.html#gac2eee84f73bb3bbd953be621f21eb0e1">bc_i2c_read_8b</a>(self-&gt;_i2c_channel, self-&gt;_i2c_address, 0x01, &amp;reg_configuration))</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;            {</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;                <span class="keywordflow">goto</span> start;</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;            }</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;            <span class="keywordflow">if</span> ((reg_configuration &amp; 0x81) != 0x81)</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;            {</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;                <span class="keywordflow">goto</span> start;</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;            }</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;            <span class="keywordflow">if</span> (!<a class="code" href="group__bc__i2c.html#ga24e64fdccaf5a35f647f65cf21a7a5c1">bc_i2c_read_16b</a>(self-&gt;_i2c_channel, self-&gt;_i2c_address, 0x00, &amp;self-&gt;_reg_temperature))</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;            {</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;                <span class="keywordflow">goto</span> start;</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;            }</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;            <span class="keyword">self</span>-&gt;_temperature_valid = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;            <span class="keyword">self</span>-&gt;_state = BC_TMP112_STATE_UPDATE;</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;            <span class="keywordflow">goto</span> start;</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;        }</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;        <span class="keywordflow">case</span> BC_TMP112_STATE_UPDATE:</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;        {</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;            <span class="keywordflow">if</span> (self-&gt;_event_handler != NULL)</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;            {</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;                <span class="keyword">self</span>-&gt;_event_handler(<span class="keyword">self</span>, <a class="code" href="group__bc__tmp112.html#gga0f3f2d66b8fa03f44b26592fbfc95087a3d1328d2df88d39300cfe192cbeac8ae">BC_TMP112_EVENT_UPDATE</a>, self-&gt;_event_param);</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;            }</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;            <span class="keyword">self</span>-&gt;_state = BC_TMP112_STATE_MEASURE;</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;            <a class="code" href="group__bc__scheduler.html#gace099e37ceac6a2338ade5ceb13c528c">bc_scheduler_plan_current_relative</a>(self-&gt;_update_interval);</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;            <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;        }</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;        <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;        {</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;            <span class="keyword">self</span>-&gt;_state = BC_TMP112_STATE_ERROR;</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;            <span class="keywordflow">goto</span> start;</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;        }</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    }</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;}</div>
 <div class="ttc" id="group__bc__tmp112_html_gafa5c6541860450a84023c16293d977ac"><div class="ttname"><a href="group__bc__tmp112.html#gafa5c6541860450a84023c16293d977ac">bc_tmp112_init</a></div><div class="ttdeci">void bc_tmp112_init(bc_tmp112_t *self, bc_i2c_channel_t i2c_channel, uint8_t i2c_address)</div><div class="ttdoc">Initialize TMP112. </div><div class="ttdef"><b>Definition:</b> <a href="bc__tmp112_8c_source.html#l00009">bc_tmp112.c:9</a></div></div>
 <div class="ttc" id="group__bc__tick_html_gabd224c28866c49d86f5d33cae606bbe0"><div class="ttname"><a href="group__bc__tick.html#gabd224c28866c49d86f5d33cae606bbe0">bc_tick_t</a></div><div class="ttdeci">uint64_t bc_tick_t</div><div class="ttdoc">Timestamp data type. </div><div class="ttdef"><b>Definition:</b> <a href="bc__tick_8h_source.html#l00016">bc_tick.h:16</a></div></div>
 <div class="ttc" id="group__bc__tmp112_html_ga0f3f2d66b8fa03f44b26592fbfc95087"><div class="ttname"><a href="group__bc__tmp112.html#ga0f3f2d66b8fa03f44b26592fbfc95087">bc_tmp112_event_t</a></div><div class="ttdeci">bc_tmp112_event_t</div><div class="ttdoc">Callback events. </div><div class="ttdef"><b>Definition:</b> <a href="bc__tmp112_8h_source.html#l00013">bc_tmp112.h:13</a></div></div>
 <div class="ttc" id="group__bc__i2c_html_ga24e64fdccaf5a35f647f65cf21a7a5c1"><div class="ttname"><a href="group__bc__i2c.html#ga24e64fdccaf5a35f647f65cf21a7a5c1">bc_i2c_read_16b</a></div><div class="ttdeci">bool bc_i2c_read_16b(bc_i2c_channel_t channel, uint8_t device_address, uint32_t memory_address, uint16_t *data)</div><div class="ttdoc">Read 2 bytes from I2C channel. </div><div class="ttdef"><b>Definition:</b> <a href="bc__i2c_8c_source.html#l00216">bc_i2c.c:216</a></div></div>
 <div class="ttc" id="group__bc__i2c_html_ga67a958f1691787b61dae034f441513a3"><div class="ttname"><a href="group__bc__i2c.html#ga67a958f1691787b61dae034f441513a3">bc_i2c_write_8b</a></div><div class="ttdeci">bool bc_i2c_write_8b(bc_i2c_channel_t channel, uint8_t device_address, uint32_t memory_address, uint8_t data)</div><div class="ttdoc">Write 1 byte to I2C channel. </div><div class="ttdef"><b>Definition:</b> <a href="bc__i2c_8c_source.html#l00175">bc_i2c.c:175</a></div></div>
 <div class="ttc" id="group__bc__scheduler_html_gac6e2fa9155567fb1f32a8b8b563e2f30"><div class="ttname"><a href="group__bc__scheduler.html#gac6e2fa9155567fb1f32a8b8b563e2f30">bc_scheduler_register</a></div><div class="ttdeci">bc_scheduler_task_id_t bc_scheduler_register(void(*task)(void *), void *param, bc_tick_t tick)</div><div class="ttdoc">Register task in scheduler. </div><div class="ttdef"><b>Definition:</b> <a href="bc__scheduler_8c_source.html#l00047">bc_scheduler.c:47</a></div></div>
-<div class="ttc" id="group__bc__tmp112_html_gabb3367166e4d8374d6e309724613fe23"><div class="ttname"><a href="group__bc__tmp112.html#gabb3367166e4d8374d6e309724613fe23">bc_tmp112_set_event_handler</a></div><div class="ttdeci">void bc_tmp112_set_event_handler(bc_tmp112_t *self, void(*event_handler)(bc_tmp112_t *, bc_tmp112_event_t))</div><div class="ttdoc">Set callback function. </div><div class="ttdef"><b>Definition:</b> <a href="bc__tmp112_8c_source.html#l00019">bc_tmp112.c:19</a></div></div>
 <div class="ttc" id="group__bc__tmp112_html_gga0f3f2d66b8fa03f44b26592fbfc95087a3d1328d2df88d39300cfe192cbeac8ae"><div class="ttname"><a href="group__bc__tmp112.html#gga0f3f2d66b8fa03f44b26592fbfc95087a3d1328d2df88d39300cfe192cbeac8ae">BC_TMP112_EVENT_UPDATE</a></div><div class="ttdoc">Update event. </div><div class="ttdef"><b>Definition:</b> <a href="bc__tmp112_8h_source.html#l00016">bc_tmp112.h:16</a></div></div>
-<div class="ttc" id="group__bc__tmp112_html_gab9f11bac41821cc261fb7d3cf58e0efb"><div class="ttname"><a href="group__bc__tmp112.html#gab9f11bac41821cc261fb7d3cf58e0efb">bc_tmp112_get_temperature_fahrenheit</a></div><div class="ttdeci">bool bc_tmp112_get_temperature_fahrenheit(bc_tmp112_t *self, float *fahrenheit)</div><div class="ttdoc">Get measured temperature in degrees of Fahrenheit. </div><div class="ttdef"><b>Definition:</b> <a href="bc__tmp112_8c_source.html#l00055">bc_tmp112.c:55</a></div></div>
-<div class="ttc" id="group__bc__tmp112_html_gaab18b8b8625b2d4d4272f4c0b6666153"><div class="ttname"><a href="group__bc__tmp112.html#gaab18b8b8625b2d4d4272f4c0b6666153">bc_tmp112_set_update_interval</a></div><div class="ttdeci">void bc_tmp112_set_update_interval(bc_tmp112_t *self, bc_tick_t interval)</div><div class="ttdoc">Set measurement interval. </div><div class="ttdef"><b>Definition:</b> <a href="bc__tmp112_8c_source.html#l00024">bc_tmp112.c:24</a></div></div>
+<div class="ttc" id="group__bc__tmp112_html_gab9f11bac41821cc261fb7d3cf58e0efb"><div class="ttname"><a href="group__bc__tmp112.html#gab9f11bac41821cc261fb7d3cf58e0efb">bc_tmp112_get_temperature_fahrenheit</a></div><div class="ttdeci">bool bc_tmp112_get_temperature_fahrenheit(bc_tmp112_t *self, float *fahrenheit)</div><div class="ttdoc">Get measured temperature in degrees of Fahrenheit. </div><div class="ttdef"><b>Definition:</b> <a href="bc__tmp112_8c_source.html#l00056">bc_tmp112.c:56</a></div></div>
+<div class="ttc" id="group__bc__tmp112_html_gaab18b8b8625b2d4d4272f4c0b6666153"><div class="ttname"><a href="group__bc__tmp112.html#gaab18b8b8625b2d4d4272f4c0b6666153">bc_tmp112_set_update_interval</a></div><div class="ttdeci">void bc_tmp112_set_update_interval(bc_tmp112_t *self, bc_tick_t interval)</div><div class="ttdoc">Set measurement interval. </div><div class="ttdef"><b>Definition:</b> <a href="bc__tmp112_8c_source.html#l00025">bc_tmp112.c:25</a></div></div>
 <div class="ttc" id="group__bc__scheduler_html_gace099e37ceac6a2338ade5ceb13c528c"><div class="ttname"><a href="group__bc__scheduler.html#gace099e37ceac6a2338ade5ceb13c528c">bc_scheduler_plan_current_relative</a></div><div class="ttdeci">void bc_scheduler_plan_current_relative(bc_tick_t tick)</div><div class="ttdoc">Schedule current task to tick relative from current spin. </div><div class="ttdef"><b>Definition:</b> <a href="bc__scheduler_8c_source.html#l00119">bc_scheduler.c:119</a></div></div>
 <div class="ttc" id="group__bc__tmp112_html_gaf3f5f3f39d19ba5d648dc39c844e4ab5"><div class="ttname"><a href="group__bc__tmp112.html#gaf3f5f3f39d19ba5d648dc39c844e4ab5">bc_tmp112_t</a></div><div class="ttdeci">struct bc_tmp112_t bc_tmp112_t</div><div class="ttdoc">TMP112 instance. </div><div class="ttdef"><b>Definition:</b> <a href="bc__tmp112_8h_source.html#l00022">bc_tmp112.h:22</a></div></div>
 <div class="ttc" id="group__bc__tmp112_html_gga0f3f2d66b8fa03f44b26592fbfc95087a582b8397de6631d5375a4b327b247db3"><div class="ttname"><a href="group__bc__tmp112.html#gga0f3f2d66b8fa03f44b26592fbfc95087a582b8397de6631d5375a4b327b247db3">BC_TMP112_EVENT_ERROR</a></div><div class="ttdoc">Error event. </div><div class="ttdef"><b>Definition:</b> <a href="bc__tmp112_8h_source.html#l00015">bc_tmp112.h:15</a></div></div>
-<div class="ttc" id="group__bc__tmp112_html_gac438ff1d6f87792dd5899b44cda3f8fa"><div class="ttname"><a href="group__bc__tmp112.html#gac438ff1d6f87792dd5899b44cda3f8fa">bc_tmp112_get_temperature_kelvin</a></div><div class="ttdeci">bool bc_tmp112_get_temperature_kelvin(bc_tmp112_t *self, float *kelvin)</div><div class="ttdoc">Get measured temperature in kelvin. </div><div class="ttdef"><b>Definition:</b> <a href="bc__tmp112_8c_source.html#l00069">bc_tmp112.c:69</a></div></div>
-<div class="ttc" id="group__bc__tmp112_html_ga9d591221cfb0cbb55e5104ffd20ff0ec"><div class="ttname"><a href="group__bc__tmp112.html#ga9d591221cfb0cbb55e5104ffd20ff0ec">bc_tmp112_get_temperature_celsius</a></div><div class="ttdeci">bool bc_tmp112_get_temperature_celsius(bc_tmp112_t *self, float *celsius)</div><div class="ttdoc">Get measured temperature in degrees of Celsius. </div><div class="ttdef"><b>Definition:</b> <a href="bc__tmp112_8c_source.html#l00041">bc_tmp112.c:41</a></div></div>
+<div class="ttc" id="group__bc__tmp112_html_gac438ff1d6f87792dd5899b44cda3f8fa"><div class="ttname"><a href="group__bc__tmp112.html#gac438ff1d6f87792dd5899b44cda3f8fa">bc_tmp112_get_temperature_kelvin</a></div><div class="ttdeci">bool bc_tmp112_get_temperature_kelvin(bc_tmp112_t *self, float *kelvin)</div><div class="ttdoc">Get measured temperature in kelvin. </div><div class="ttdef"><b>Definition:</b> <a href="bc__tmp112_8c_source.html#l00070">bc_tmp112.c:70</a></div></div>
+<div class="ttc" id="group__bc__tmp112_html_ga9d591221cfb0cbb55e5104ffd20ff0ec"><div class="ttname"><a href="group__bc__tmp112.html#ga9d591221cfb0cbb55e5104ffd20ff0ec">bc_tmp112_get_temperature_celsius</a></div><div class="ttdeci">bool bc_tmp112_get_temperature_celsius(bc_tmp112_t *self, float *celsius)</div><div class="ttdoc">Get measured temperature in degrees of Celsius. </div><div class="ttdef"><b>Definition:</b> <a href="bc__tmp112_8c_source.html#l00042">bc_tmp112.c:42</a></div></div>
+<div class="ttc" id="group__bc__tmp112_html_ga65ffabed8ee064936a332b41ecb81fc9"><div class="ttname"><a href="group__bc__tmp112.html#ga65ffabed8ee064936a332b41ecb81fc9">bc_tmp112_set_event_handler</a></div><div class="ttdeci">void bc_tmp112_set_event_handler(bc_tmp112_t *self, void(*event_handler)(bc_tmp112_t *, bc_tmp112_event_t, void *), void *event_param)</div><div class="ttdoc">Set callback function. </div><div class="ttdef"><b>Definition:</b> <a href="bc__tmp112_8c_source.html#l00019">bc_tmp112.c:19</a></div></div>
 <div class="ttc" id="group__bc__i2c_html_ga5f7217e6558c54ac6920e5dabb777fef"><div class="ttname"><a href="group__bc__i2c.html#ga5f7217e6558c54ac6920e5dabb777fef">bc_i2c_channel_t</a></div><div class="ttdeci">bc_i2c_channel_t</div><div class="ttdoc">I2C channels. </div><div class="ttdef"><b>Definition:</b> <a href="bc__i2c_8h_source.html#l00015">bc_i2c.h:15</a></div></div>
 <div class="ttc" id="group__bc__i2c_html_gac2eee84f73bb3bbd953be621f21eb0e1"><div class="ttname"><a href="group__bc__i2c.html#gac2eee84f73bb3bbd953be621f21eb0e1">bc_i2c_read_8b</a></div><div class="ttdeci">bool bc_i2c_read_8b(bc_i2c_channel_t channel, uint8_t device_address, uint32_t memory_address, uint8_t *data)</div><div class="ttdoc">Read 1 byte from I2C channel. </div><div class="ttdef"><b>Definition:</b> <a href="bc__i2c_8c_source.html#l00204">bc_i2c.c:204</a></div></div>
-<div class="ttc" id="group__bc__tmp112_html_ga93c96309f01b036202ba1694f545fd2f"><div class="ttname"><a href="group__bc__tmp112.html#ga93c96309f01b036202ba1694f545fd2f">bc_tmp112_get_temperature_raw</a></div><div class="ttdeci">bool bc_tmp112_get_temperature_raw(bc_tmp112_t *self, int16_t *raw)</div><div class="ttdoc">Get measured temperature as raw value. </div><div class="ttdef"><b>Definition:</b> <a href="bc__tmp112_8c_source.html#l00029">bc_tmp112.c:29</a></div></div>
+<div class="ttc" id="group__bc__tmp112_html_ga93c96309f01b036202ba1694f545fd2f"><div class="ttname"><a href="group__bc__tmp112.html#ga93c96309f01b036202ba1694f545fd2f">bc_tmp112_get_temperature_raw</a></div><div class="ttdeci">bool bc_tmp112_get_temperature_raw(bc_tmp112_t *self, int16_t *raw)</div><div class="ttdoc">Get measured temperature as raw value. </div><div class="ttdef"><b>Definition:</b> <a href="bc__tmp112_8c_source.html#l00030">bc_tmp112.c:30</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

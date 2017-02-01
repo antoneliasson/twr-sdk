@@ -20,7 +20,7 @@ var NAVTREEINDEX =
 [
 "annotated.html",
 "group__bc__pyq1648.html#gae1b159c9580dff6af770755e53d4e56b",
-"structbc__pyq1648__t.html#a2f280f0f80d65c9cc91971fc08083967"
+"structbc__pyq1648__t.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -2,7 +2,8 @@ var structbc__button__t =
 [
     [ "_click_timeout", "structbc__button__t.html#abf229b4cb488d69f75c8445acb0b7790", null ],
     [ "_debounce_time", "structbc__button__t.html#a2d67e516c5dcc53be95e9dbd9e750ca8", null ],
-    [ "_event_handler", "structbc__button__t.html#ad8efa95e8b1494cb7e1e46c06508473b", null ],
+    [ "_event_handler", "structbc__button__t.html#a9e262bec9d43c7901bbbbf4e03eacd2a", null ],
+    [ "_event_param", "structbc__button__t.html#a4cbe00eecd4f19ac5d074426f12451cb", null ],
     [ "_gpio_channel", "structbc__button__t.html#a3f627e048293fa75e5d6c20069b08188", null ],
     [ "_gpio_pull", "structbc__button__t.html#a102a5c6becb96f65b8ec39ece37fb3cb", null ],
     [ "_hold_signalized", "structbc__button__t.html#a845e6ec9f16eba3149503eeb399b8e38", null ],

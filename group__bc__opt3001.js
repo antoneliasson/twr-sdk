@@ -1,7 +1,8 @@
 var group__bc__opt3001 =
 [
     [ "bc_opt3001_t", "structbc__opt3001__t.html", [
-      [ "_event_handler", "structbc__opt3001__t.html#aa07f2af076aa1ec1fb3e1452d9bcc937", null ],
+      [ "_event_handler", "structbc__opt3001__t.html#a5178a51ae889b5d23a3431b8464d769e", null ],
+      [ "_event_param", "structbc__opt3001__t.html#af75ab54e3bbd5ab0b92da979ad4879cc", null ],
       [ "_i2c_address", "structbc__opt3001__t.html#a685adb0313047c3a9f94d99b5fa2fa46", null ],
       [ "_i2c_channel", "structbc__opt3001__t.html#a904770a9497bda9e20157dc94dfaff68", null ],
       [ "_luminosity_valid", "structbc__opt3001__t.html#a2a799cba2a4b706c7c8cc5f1711f871f", null ],
@@ -17,6 +18,6 @@ var group__bc__opt3001 =
     [ "bc_opt3001_get_luminosity_lux", "group__bc__opt3001.html#gafba93b22c9d067ecaa5ea8d7462fe4b5", null ],
     [ "bc_opt3001_get_luminosity_raw", "group__bc__opt3001.html#gacf21436b58d187c8e5d95571a74e623f", null ],
     [ "bc_opt3001_init", "group__bc__opt3001.html#ga3db4ea45d7c7b4cb5e63fda04802e1ba", null ],
-    [ "bc_opt3001_set_event_handler", "group__bc__opt3001.html#ga3e646657c8829b1ef740e355bee64e93", null ],
+    [ "bc_opt3001_set_event_handler", "group__bc__opt3001.html#gace4583fa55cda833082b33dd854c6aea", null ],
     [ "bc_opt3001_set_update_interval", "group__bc__opt3001.html#gaff0e45c5bd37a1686e3b32e5ffba839f", null ]
 ];

@@ -14,6 +14,6 @@ var group__bc__tag__temperature =
     [ "bc_tag_temperature_get_temperature_kelvin", "group__bc__tag__temperature.html#ga5d0c15faca9c4ea1c73ce79f772410c4", null ],
     [ "bc_tag_temperature_get_temperature_raw", "group__bc__tag__temperature.html#ga717da6197f3d30f8ee39e1682459f108", null ],
     [ "bc_tag_temperature_init", "group__bc__tag__temperature.html#gad01d8bc1a7320cb8dbb0f1306d333783", null ],
-    [ "bc_tag_temperature_set_event_handler", "group__bc__tag__temperature.html#ga8c8384f630b648f0e96320fef9945eff", null ],
+    [ "bc_tag_temperature_set_event_handler", "group__bc__tag__temperature.html#ga6b703ad273b3d4096fab5ea7032c7fe9", null ],
     [ "bc_tag_temperature_set_update_interval", "group__bc__tag__temperature.html#ga4be4786f6804ac04a6b6519fac9328f0", null ]
 ];

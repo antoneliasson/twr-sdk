@@ -2,7 +2,8 @@ var group__bc__mpl3115a2 =
 [
     [ "bc_mpl3115a2_t", "structbc__mpl3115a2__t.html", [
       [ "_altitude_valid", "structbc__mpl3115a2__t.html#aebb13db2d12f124c8d3f06a711a6a26f", null ],
-      [ "_event_handler", "structbc__mpl3115a2__t.html#a06e35f857e4bbb761ac4458ea67b64f5", null ],
+      [ "_event_handler", "structbc__mpl3115a2__t.html#a77e7ef08c9f665a07a6745c0896ded43", null ],
+      [ "_event_param", "structbc__mpl3115a2__t.html#aa8e86f0747fd84ef50c4c014a2b48f8e", null ],
       [ "_i2c_address", "structbc__mpl3115a2__t.html#aaba14cca8a075536467317190ea37067", null ],
       [ "_i2c_channel", "structbc__mpl3115a2__t.html#ad114ce1da6fb93c3a1cdd23c87511f2a", null ],
       [ "_pressure_valid", "structbc__mpl3115a2__t.html#a40148bc0a2ea9d965b36e1a2335e241f", null ],
@@ -23,6 +24,6 @@ var group__bc__mpl3115a2 =
     [ "bc_mpl3115a2_get_altitude_meter", "group__bc__mpl3115a2.html#gaa4c2b06d0266ee2f018b3098a510f8b0", null ],
     [ "bc_mpl3115a2_get_pressure_pascal", "group__bc__mpl3115a2.html#ga2a44c24bb088dc765911ddbc0637cbc3", null ],
     [ "bc_mpl3115a2_init", "group__bc__mpl3115a2.html#ga634445e187612f04ed034c3f95ef006e", null ],
-    [ "bc_mpl3115a2_set_event_handler", "group__bc__mpl3115a2.html#ga5d271882313cb39e307e98498b62b30f", null ],
+    [ "bc_mpl3115a2_set_event_handler", "group__bc__mpl3115a2.html#gaf647532d853b25e03723ed75bb5ecbbf", null ],
     [ "bc_mpl3115a2_set_update_interval", "group__bc__mpl3115a2.html#gaa976e072fb109951e3d170400a216bf7", null ]
 ];

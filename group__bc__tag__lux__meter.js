@@ -12,6 +12,6 @@ var group__bc__tag__lux__meter =
     [ "bc_tag_lux_meter_get_luminosity_lux", "group__bc__tag__lux__meter.html#gac7a812d56dfd26feca94f7b8866979ed", null ],
     [ "bc_tag_lux_meter_get_luminosity_raw", "group__bc__tag__lux__meter.html#ga1af6f8c12684bf3f1c3eb3b4d30cc001", null ],
     [ "bc_tag_lux_meter_init", "group__bc__tag__lux__meter.html#ga0b3fdcc39e460870d8c98e0824002203", null ],
-    [ "bc_tag_lux_meter_set_event_handler", "group__bc__tag__lux__meter.html#ga85d67e8cb02cb94fef924e307df0ac97", null ],
+    [ "bc_tag_lux_meter_set_event_handler", "group__bc__tag__lux__meter.html#ga047fd84e9a99942c10df46cf35bdcb6a", null ],
     [ "bc_tag_lux_meter_set_update_interval", "group__bc__tag__lux__meter.html#gac1ade8c7b8759d6a93e4d4263271967b", null ]
 ];

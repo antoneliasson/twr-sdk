@@ -2,7 +2,8 @@ var structbc__spirit1__t =
 [
     [ "current_state", "structbc__spirit1__t.html#a2841286a0382909b4e2a3a733ec028ee", null ],
     [ "desired_state", "structbc__spirit1__t.html#a14979272d25b18990c30d6c394b5de83", null ],
-    [ "event_handler", "structbc__spirit1__t.html#a36f9d0c11b7336d1ad70631626648e58", null ],
+    [ "event_handler", "structbc__spirit1__t.html#aff245538fda82f741171f4e24ecd5782", null ],
+    [ "event_param", "structbc__spirit1__t.html#af58f3e82e66acc3e1d446eea888c1f6b", null ],
     [ "rx_buffer", "structbc__spirit1__t.html#ac258f6111704ca417c83bf05c1389ec4", null ],
     [ "rx_length", "structbc__spirit1__t.html#a12e52263caa477fc4c54d684f27496a1", null ],
     [ "rx_tick_timeout", "structbc__spirit1__t.html#a1750cb0fc895de283ff5416dcda3b722", null ],

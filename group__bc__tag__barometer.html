@@ -130,9 +130,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga9ae5b1f4d56c6d1f4e3e2acc3f0ed0d2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bc__tag__barometer.html#ga9ae5b1f4d56c6d1f4e3e2acc3f0ed0d2">bc_tag_barometer_init</a> (<a class="el" href="group__bc__tag__barometer.html#ga5932b1ada727486311cad95d739683a0">bc_tag_barometer_t</a> *self, <a class="el" href="group__bc__i2c.html#ga5f7217e6558c54ac6920e5dabb777fef">bc_i2c_channel_t</a> i2c_channel)</td></tr>
 <tr class="memdesc:ga9ae5b1f4d56c6d1f4e3e2acc3f0ed0d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize BigClown Barometer Tag.  <a href="#ga9ae5b1f4d56c6d1f4e3e2acc3f0ed0d2">More...</a><br/></td></tr>
 <tr class="separator:ga9ae5b1f4d56c6d1f4e3e2acc3f0ed0d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5f24e5c27435f56e42f8b1f7074a78b9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bc__tag__barometer.html#ga5f24e5c27435f56e42f8b1f7074a78b9">bc_tag_barometer_set_event_handler</a> (<a class="el" href="group__bc__tag__barometer.html#ga5932b1ada727486311cad95d739683a0">bc_tag_barometer_t</a> *self, void(*event_handler)(<a class="el" href="group__bc__tag__barometer.html#ga5932b1ada727486311cad95d739683a0">bc_tag_barometer_t</a> *, <a class="el" href="group__bc__tag__barometer.html#ga748ff522e8ada749b4d81d781b68a5c0">bc_tag_barometer_event_t</a>))</td></tr>
-<tr class="memdesc:ga5f24e5c27435f56e42f8b1f7074a78b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set callback function.  <a href="#ga5f24e5c27435f56e42f8b1f7074a78b9">More...</a><br/></td></tr>
-<tr class="separator:ga5f24e5c27435f56e42f8b1f7074a78b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga59c6f61ba3dd41b99f98d6a9673f5839"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bc__tag__barometer.html#ga59c6f61ba3dd41b99f98d6a9673f5839">bc_tag_barometer_set_event_handler</a> (<a class="el" href="group__bc__tag__barometer.html#ga5932b1ada727486311cad95d739683a0">bc_tag_barometer_t</a> *self, void(*event_handler)(<a class="el" href="group__bc__tag__barometer.html#ga5932b1ada727486311cad95d739683a0">bc_tag_barometer_t</a> *, <a class="el" href="group__bc__tag__barometer.html#ga748ff522e8ada749b4d81d781b68a5c0">bc_tag_barometer_event_t</a>, void *), void *event_param)</td></tr>
+<tr class="memdesc:ga59c6f61ba3dd41b99f98d6a9673f5839"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set callback function.  <a href="#ga59c6f61ba3dd41b99f98d6a9673f5839">More...</a><br/></td></tr>
+<tr class="separator:ga59c6f61ba3dd41b99f98d6a9673f5839"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga4a21af19a5c181dce2c99f12b5430d08"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bc__tag__barometer.html#ga4a21af19a5c181dce2c99f12b5430d08">bc_tag_barometer_set_update_interval</a> (<a class="el" href="group__bc__tag__barometer.html#ga5932b1ada727486311cad95d739683a0">bc_tag_barometer_t</a> *self, <a class="el" href="group__bc__tick.html#gabd224c28866c49d86f5d33cae606bbe0">bc_tick_t</a> interval)</td></tr>
 <tr class="memdesc:ga4a21af19a5c181dce2c99f12b5430d08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set measurement interval.  <a href="#ga4a21af19a5c181dce2c99f12b5430d08">More...</a><br/></td></tr>
 <tr class="separator:ga4a21af19a5c181dce2c99f12b5430d08"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -315,7 +315,7 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="ga5f24e5c27435f56e42f8b1f7074a78b9"></a>
+<a class="anchor" id="ga59c6f61ba3dd41b99f98d6a9673f5839"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -328,8 +328,14 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">void(*)(<a class="el" href="group__bc__tag__barometer.html#ga5932b1ada727486311cad95d739683a0">bc_tag_barometer_t</a> *, <a class="el" href="group__bc__tag__barometer.html#ga748ff522e8ada749b4d81d781b68a5c0">bc_tag_barometer_event_t</a>)&#160;</td>
-          <td class="paramname"><em>event_handler</em>&#160;</td>
+          <td class="paramtype">void(*)(<a class="el" href="group__bc__tag__barometer.html#ga5932b1ada727486311cad95d739683a0">bc_tag_barometer_t</a> *, <a class="el" href="group__bc__tag__barometer.html#ga748ff522e8ada749b4d81d781b68a5c0">bc_tag_barometer_event_t</a>, void *)&#160;</td>
+          <td class="paramname"><em>event_handler</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>event_param</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -344,6 +350,7 @@ Here is the call graph for this function:</div>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">self</td><td>Instance </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">event_handler</td><td>Function address </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">event_param</td><td>Optional event parameter (can be NULL) </td></tr>
   </table>
   </dd>
 </dl>
@@ -353,9 +360,9 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="group__bc__tag__barometer_ga5f24e5c27435f56e42f8b1f7074a78b9_cgraph.png" border="0" usemap="#group__bc__tag__barometer_ga5f24e5c27435f56e42f8b1f7074a78b9_cgraph" alt=""/></div>
-<map name="group__bc__tag__barometer_ga5f24e5c27435f56e42f8b1f7074a78b9_cgraph" id="group__bc__tag__barometer_ga5f24e5c27435f56e42f8b1f7074a78b9_cgraph">
-<area shape="rect" id="node2" href="group__bc__mpl3115a2.html#ga5d271882313cb39e307e98498b62b30f" title="Set callback function. " alt="" coords="205,5,376,46"/></map>
+<div class="center"><img src="group__bc__tag__barometer_ga59c6f61ba3dd41b99f98d6a9673f5839_cgraph.png" border="0" usemap="#group__bc__tag__barometer_ga59c6f61ba3dd41b99f98d6a9673f5839_cgraph" alt=""/></div>
+<map name="group__bc__tag__barometer_ga59c6f61ba3dd41b99f98d6a9673f5839_cgraph" id="group__bc__tag__barometer_ga59c6f61ba3dd41b99f98d6a9673f5839_cgraph">
+<area shape="rect" id="node2" href="group__bc__mpl3115a2.html#gaf647532d853b25e03723ed75bb5ecbbf" title="Set callback function. " alt="" coords="205,5,376,46"/></map>
 </div>
 </p>
 
