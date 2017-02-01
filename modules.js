@@ -2,6 +2,7 @@ var modules =
 [
     [ "bc_adc", "group__bc__adc.html", "group__bc__adc" ],
     [ "bc_dac", "group__bc__dac.html", "group__bc__dac" ],
+    [ "bc_dfu", "group__bc__dfu.html", "group__bc__dfu" ],
     [ "bc_eeprom", "group__bc__eeprom.html", "group__bc__eeprom" ],
     [ "bc_fifo", "group__bc__fifo.html", "group__bc__fifo" ],
     [ "bc_gpio", "group__bc__gpio.html", "group__bc__gpio" ],
