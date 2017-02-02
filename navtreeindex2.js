@@ -1,5 +1,6 @@
 var NAVTREEINDEX2 =
 {
+"structbc__opt3001__t.html#a5974b329381420bbd08616a7980c27a7":[0,15,0,7],
 "structbc__opt3001__t.html#a685adb0313047c3a9f94d99b5fa2fa46":[0,15,0,2],
 "structbc__opt3001__t.html#a904770a9497bda9e20157dc94dfaff68":[0,15,0,3],
 "structbc__opt3001__t.html#ae06fd7b65444725cbcfad673c411aa01":[0,15,0,5],

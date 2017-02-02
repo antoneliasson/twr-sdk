@@ -1,6 +1,7 @@
 var dir_bfccd401955b95cf8c75461437045ac0 =
 [
     [ "base64.h", "base64_8h_source.html", null ],
+    [ "bc.h", "bc_8h_source.html", null ],
     [ "bc_adc.h", "bc__adc_8h_source.html", null ],
     [ "bc_button.h", "bc__button_8h_source.html", null ],
     [ "bc_common.h", "bc__common_8h_source.html", null ],
