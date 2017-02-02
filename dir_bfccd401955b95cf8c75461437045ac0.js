@@ -1,7 +1,6 @@
 var dir_bfccd401955b95cf8c75461437045ac0 =
 [
     [ "base64.h", "base64_8h_source.html", null ],
-    [ "bc.h", "bc_8h_source.html", null ],
     [ "bc_adc.h", "bc__adc_8h_source.html", null ],
     [ "bc_button.h", "bc__button_8h_source.html", null ],
     [ "bc_common.h", "bc__common_8h_source.html", null ],
@@ -37,5 +36,6 @@ var dir_bfccd401955b95cf8c75461437045ac0 =
     [ "bc_tmp112.h", "bc__tmp112_8h_source.html", null ],
     [ "bc_uart.h", "bc__uart_8h_source.html", null ],
     [ "bc_usb_cdc.h", "bc__usb__cdc_8h_source.html", null ],
+    [ "bcl.h", "bcl_8h_source.html", null ],
     [ "jsmn.h", "jsmn_8h_source.html", null ]
 ];
