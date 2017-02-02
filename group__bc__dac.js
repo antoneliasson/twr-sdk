@@ -1,8 +1,8 @@
 var group__bc__dac =
 [
     [ "bc_dac_channel_t", "group__bc__dac.html#ga6b501cbc097e7509bf581f10b5e0653b", [
-      [ "BC_DAC_DAC0", "group__bc__dac.html#gga6b501cbc097e7509bf581f10b5e0653ba65aa1827cb3b17783fc52a8e40101579", null ],
-      [ "BC_DAC_DAC1", "group__bc__dac.html#gga6b501cbc097e7509bf581f10b5e0653bad26dcb7bd14f4ea6e791304fae30a8b5", null ]
+      [ "BC_DAC_CHANNEL_DAC0", "group__bc__dac.html#gga6b501cbc097e7509bf581f10b5e0653bad1b67a392d603fda44b94af1a0f902b0", null ],
+      [ "BC_DAC_CHANNEL_DAC1", "group__bc__dac.html#gga6b501cbc097e7509bf581f10b5e0653ba5e695e3ee8860c882d248f2e62243ff8", null ]
     ] ],
     [ "bc_dac_format_t", "group__bc__dac.html#gad077a5e3ec3f5caa34c2984e97b4e681", [
       [ "BC_DAC_FORMAT_8_BIT", "group__bc__dac.html#ggad077a5e3ec3f5caa34c2984e97b4e681af44dbe585a6b15101749da1963009cc3", null ],
@@ -13,5 +13,6 @@ var group__bc__dac =
     [ "bc_dac_get_format", "group__bc__dac.html#gabfc44a3c375aac0b89e2b80dfd4f575a", null ],
     [ "bc_dac_init", "group__bc__dac.html#ga2783888c3a44e929c9d03242705bb4f4", null ],
     [ "bc_dac_set_format", "group__bc__dac.html#ga2183b3db08053b38bf6b6a66a31d6924", null ],
-    [ "bc_dac_set_output", "group__bc__dac.html#ga3367c5781848ece525cd76e480dc9a5f", null ]
+    [ "bc_dac_set_output_raw", "group__bc__dac.html#ga49ed4ed1b0c1927d4a496f2fd6ffce11", null ],
+    [ "bc_dac_set_output_voltage", "group__bc__dac.html#ga6416f43941313275c79586b8ff90f5a4", null ]
 ];
