@@ -13,7 +13,6 @@ var annotated =
     [ "bc_module_relay_t", "structbc__module__relay__t.html", "structbc__module__relay__t" ],
     [ "bc_mpl3115a2_t", "structbc__mpl3115a2__t.html", "structbc__mpl3115a2__t" ],
     [ "bc_opt3001_t", "structbc__opt3001__t.html", "structbc__opt3001__t" ],
-    [ "bc_pyq1648_t", "structbc__pyq1648__t.html", "structbc__pyq1648__t" ],
     [ "bc_spirit1_t", "structbc__spirit1__t.html", "structbc__spirit1__t" ],
     [ "bc_tag_humidity_t", "structbc__tag__humidity__t.html", "structbc__tag__humidity__t" ],
     [ "bc_tca9534a_t", "structbc__tca9534a__t.html", "structbc__tca9534a__t" ],
