@@ -109,10 +109,10 @@ $(document).ready(function(){initNavTree('group__bc__module__pir.html','');});
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:ga8b8a000f50b4b3cc67f30ef29bab0d71"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga8b8a000f50b4b3cc67f30ef29bab0d71"></a>
-typedef bc_pyq1648_sensitivity_t&#160;</td><td class="memItemRight" valign="bottom"><b>bc_module_pir_sensitivity_t</b></td></tr>
+typedef <a class="el" href="group__bc__pyq1648.html#ga59cb77930cb31205dc0542436ef3e013">bc_pyq1648_sensitivity_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>bc_module_pir_sensitivity_t</b></td></tr>
 <tr class="separator:ga8b8a000f50b4b3cc67f30ef29bab0d71"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf808b0b058d8b619b676641ff3566ec3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gaf808b0b058d8b619b676641ff3566ec3"></a>
-typedef bc_pyq1648_event_t&#160;</td><td class="memItemRight" valign="bottom"><b>bc_module_pir_event_t</b></td></tr>
+typedef <a class="el" href="group__bc__pyq1648.html#ga6ce6480a22edf36b6fc59f395906af4c">bc_pyq1648_event_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>bc_module_pir_event_t</b></td></tr>
 <tr class="separator:gaf808b0b058d8b619b676641ff3566ec3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaaea169791d2e6b66a9117dd6b86ac97c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gaaea169791d2e6b66a9117dd6b86ac97c"></a>
 typedef <a class="el" href="structbc__pyq1648__t.html">bc_pyq1648_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>bc_module_pir_t</b></td></tr>
@@ -120,86 +120,57 @@ typedef <a class="el" href="structbc__pyq1648__t.html">bc_pyq1648_t</a>&#160;</t
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gaabc1636464d203b943d5681b4a197f44"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bc__module__pir.html#gaabc1636464d203b943d5681b4a197f44">bc_module_pir_init</a> (<a class="el" href="structbc__pyq1648__t.html">bc_module_pir_t</a> *self, <a class="el" href="group__bc__gpio.html#ga5a8d8aed85b7bb7f5b219fc6a4cd5b8e">bc_gpio_channel_t</a> gpio_channel_setup, <a class="el" href="group__bc__gpio.html#ga5a8d8aed85b7bb7f5b219fc6a4cd5b8e">bc_gpio_channel_t</a> gpio_channel_event)</td></tr>
-<tr class="memdesc:gaabc1636464d203b943d5681b4a197f44"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize PIR module on channels gpio_channel_setup and gpio_channel_event.  <a href="#gaabc1636464d203b943d5681b4a197f44">More...</a><br/></td></tr>
-<tr class="separator:gaabc1636464d203b943d5681b4a197f44"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2878292e77b820e0ce61d61b9816bb2b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bc__module__pir.html#ga2878292e77b820e0ce61d61b9816bb2b">bc_module_pir_set_event_handler</a> (<a class="el" href="structbc__pyq1648__t.html">bc_module_pir_t</a> *self, void(*event_handler)(<a class="el" href="structbc__pyq1648__t.html">bc_module_pir_t</a> *, bc_module_pir_event_t))</td></tr>
-<tr class="memdesc:ga2878292e77b820e0ce61d61b9816bb2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set PIR module event handler.  <a href="#ga2878292e77b820e0ce61d61b9816bb2b">More...</a><br/></td></tr>
-<tr class="separator:ga2878292e77b820e0ce61d61b9816bb2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gabd1d816178965ae60ee52bfad36217b1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bc__module__pir.html#gabd1d816178965ae60ee52bfad36217b1">bc_module_pir_set_sensitivity</a> (<a class="el" href="structbc__pyq1648__t.html">bc_pyq1648_t</a> *self, bc_module_pir_sensitivity_t sensitivity)</td></tr>
-<tr class="memdesc:gabd1d816178965ae60ee52bfad36217b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set PIR module set sensitivity.  <a href="#gabd1d816178965ae60ee52bfad36217b1">More...</a><br/></td></tr>
+<tr class="memitem:ga1f66ec757948f0565cf77e5716f16734"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bc__module__pir.html#ga1f66ec757948f0565cf77e5716f16734">bc_module_pir_init</a> (<a class="el" href="structbc__pyq1648__t.html">bc_module_pir_t</a> *self)</td></tr>
+<tr class="memdesc:ga1f66ec757948f0565cf77e5716f16734"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize PIR Module.  <a href="#ga1f66ec757948f0565cf77e5716f16734">More...</a><br/></td></tr>
+<tr class="separator:ga1f66ec757948f0565cf77e5716f16734"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga73669cb2f80a0d12744acb2182fcd2fa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bc__module__pir.html#ga73669cb2f80a0d12744acb2182fcd2fa">bc_module_pir_set_event_handler</a> (<a class="el" href="structbc__pyq1648__t.html">bc_module_pir_t</a> *self, void(*event_handler)(<a class="el" href="structbc__pyq1648__t.html">bc_module_pir_t</a> *, <a class="el" href="group__bc__pyq1648.html#ga6ce6480a22edf36b6fc59f395906af4c">bc_module_pir_event_t</a>, void *), void *event_param)</td></tr>
+<tr class="memdesc:ga73669cb2f80a0d12744acb2182fcd2fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set PIR Module event handler.  <a href="#ga73669cb2f80a0d12744acb2182fcd2fa">More...</a><br/></td></tr>
+<tr class="separator:ga73669cb2f80a0d12744acb2182fcd2fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabd1d816178965ae60ee52bfad36217b1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bc__module__pir.html#gabd1d816178965ae60ee52bfad36217b1">bc_module_pir_set_sensitivity</a> (<a class="el" href="structbc__pyq1648__t.html">bc_pyq1648_t</a> *self, <a class="el" href="group__bc__pyq1648.html#ga59cb77930cb31205dc0542436ef3e013">bc_module_pir_sensitivity_t</a> sensitivity)</td></tr>
+<tr class="memdesc:gabd1d816178965ae60ee52bfad36217b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set PIR Module sensitivity.  <a href="#gabd1d816178965ae60ee52bfad36217b1">More...</a><br/></td></tr>
 <tr class="separator:gabd1d816178965ae60ee52bfad36217b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Driver for PIR module. </p>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="gaabc1636464d203b943d5681b4a197f44"></a>
+<a class="anchor" id="ga1f66ec757948f0565cf77e5716f16734"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void bc_module_pir_init </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structbc__pyq1648__t.html">bc_module_pir_t</a> *&#160;</td>
-          <td class="paramname"><em>self</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>self</em></td><td>)</td>
           <td></td>
-          <td class="paramtype"><a class="el" href="group__bc__gpio.html#ga5a8d8aed85b7bb7f5b219fc6a4cd5b8e">bc_gpio_channel_t</a>&#160;</td>
-          <td class="paramname"><em>gpio_channel_setup</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__bc__gpio.html#ga5a8d8aed85b7bb7f5b219fc6a4cd5b8e">bc_gpio_channel_t</a>&#160;</td>
-          <td class="paramname"><em>gpio_channel_event</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>Initialize PIR module on channels gpio_channel_setup and gpio_channel_event. </p>
+<p>Initialize PIR Module. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">self</td><td>PIR image </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">gpio_channel_setup</td><td>PIR setup channel </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">gpio_channel_event</td><td>PIR event channel </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="bc__module__pir_8h_source.html#l00029">29</a> of file <a class="el" href="bc__module__pir_8h_source.html">bc_module_pir.h</a>.</p>
+<p>Definition at line <a class="el" href="bc__module__pir_8c_source.html#l00003">3</a> of file <a class="el" href="bc__module__pir_8c_source.html">bc_module_pir.c</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="group__bc__module__pir_gaabc1636464d203b943d5681b4a197f44_cgraph.png" border="0" usemap="#group__bc__module__pir_gaabc1636464d203b943d5681b4a197f44_cgraph" alt=""/></div>
-<map name="group__bc__module__pir_gaabc1636464d203b943d5681b4a197f44_cgraph" id="group__bc__module__pir_gaabc1636464d203b943d5681b4a197f44_cgraph">
-<area shape="rect" id="node2" href="group__bc__pyq1648.html#gae1b159c9580dff6af770755e53d4e56b" title="Initialize PIR sensor PYQ1648. " alt="" coords="185,5,301,32"/><area shape="rect" id="node3" href="group__bc__scheduler.html#gac6e2fa9155567fb1f32a8b8b563e2f30" title="Register task in scheduler. " alt="" coords="349,5,499,32"/></map>
+<div class="center"><img src="group__bc__module__pir_ga1f66ec757948f0565cf77e5716f16734_cgraph.png" border="0" usemap="#group__bc__module__pir_ga1f66ec757948f0565cf77e5716f16734_cgraph" alt=""/></div>
+<map name="group__bc__module__pir_ga1f66ec757948f0565cf77e5716f16734_cgraph" id="group__bc__module__pir_ga1f66ec757948f0565cf77e5716f16734_cgraph">
+<area shape="rect" id="node2" href="group__bc__pyq1648.html#gae1b159c9580dff6af770755e53d4e56b" title="Initialize PYQ1648 driver. " alt="" coords="185,5,301,32"/><area shape="rect" id="node3" href="group__bc__scheduler.html#gac6e2fa9155567fb1f32a8b8b563e2f30" title="Register task in scheduler. " alt="" coords="349,5,499,32"/></map>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="ga2878292e77b820e0ce61d61b9816bb2b"></a>
+<a class="anchor" id="ga73669cb2f80a0d12744acb2182fcd2fa"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void bc_module_pir_set_event_handler </td>
@@ -210,8 +181,14 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">void(*)(<a class="el" href="structbc__pyq1648__t.html">bc_module_pir_t</a> *, bc_module_pir_event_t)&#160;</td>
-          <td class="paramname"><em>event_handler</em>&#160;</td>
+          <td class="paramtype">void(*)(<a class="el" href="structbc__pyq1648__t.html">bc_module_pir_t</a> *, <a class="el" href="group__bc__pyq1648.html#ga6ce6480a22edf36b6fc59f395906af4c">bc_module_pir_event_t</a>, void *)&#160;</td>
+          <td class="paramname"><em>event_handler</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>event_param</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -219,29 +196,25 @@ Here is the call graph for this function:</div>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>Set PIR module event handler. </p>
+<p>Set PIR Module event handler. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">self</td><td>PIR image </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">event_handler</td><td>PIR event handler </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">self</td><td>PIR Module image </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">event_handler</td><td>PIR Module event handler </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">event_param</td><td>Optional event parameter (can be NULL) </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="bc__module__pir_8h_source.html#l00038">38</a> of file <a class="el" href="bc__module__pir_8h_source.html">bc_module_pir.h</a>.</p>
+<p>Definition at line <a class="el" href="bc__module__pir_8c_source.html#l00008">8</a> of file <a class="el" href="bc__module__pir_8c_source.html">bc_module_pir.c</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="group__bc__module__pir_ga2878292e77b820e0ce61d61b9816bb2b_cgraph.png" border="0" usemap="#group__bc__module__pir_ga2878292e77b820e0ce61d61b9816bb2b_cgraph" alt=""/></div>
-<map name="group__bc__module__pir_ga2878292e77b820e0ce61d61b9816bb2b_cgraph" id="group__bc__module__pir_ga2878292e77b820e0ce61d61b9816bb2b_cgraph">
+<div class="center"><img src="group__bc__module__pir_ga73669cb2f80a0d12744acb2182fcd2fa_cgraph.png" border="0" usemap="#group__bc__module__pir_ga73669cb2f80a0d12744acb2182fcd2fa_cgraph" alt=""/></div>
+<map name="group__bc__module__pir_ga73669cb2f80a0d12744acb2182fcd2fa_cgraph" id="group__bc__module__pir_ga73669cb2f80a0d12744acb2182fcd2fa_cgraph">
 <area shape="rect" id="node2" href="group__bc__pyq1648.html#ga3cad0fac5f944011ef12699588862773" title="Set callback function. " alt="" coords="225,5,381,46"/></map>
 </div>
 </p>
@@ -251,9 +224,6 @@ Here is the call graph for this function:</div>
 <a class="anchor" id="gabd1d816178965ae60ee52bfad36217b1"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void bc_module_pir_set_sensitivity </td>
@@ -264,7 +234,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">bc_module_pir_sensitivity_t&#160;</td>
+          <td class="paramtype"><a class="el" href="group__bc__pyq1648.html#ga59cb77930cb31205dc0542436ef3e013">bc_module_pir_sensitivity_t</a>&#160;</td>
           <td class="paramname"><em>sensitivity</em>&#160;</td>
         </tr>
         <tr>
@@ -273,30 +243,25 @@ Here is the call graph for this function:</div>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>Set PIR module set sensitivity. </p>
+<p>Set PIR Module sensitivity. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">self</td><td>PIR module image </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">event_handler</td><td>PIR module event handler </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">self</td><td>PIR Module image </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sensitivity</td><td>PIR Module sensitivity </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="bc__module__pir_8h_source.html#l00047">47</a> of file <a class="el" href="bc__module__pir_8h_source.html">bc_module_pir.h</a>.</p>
+<p>Definition at line <a class="el" href="bc__module__pir_8c_source.html#l00013">13</a> of file <a class="el" href="bc__module__pir_8c_source.html">bc_module_pir.c</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="group__bc__module__pir_gabd1d816178965ae60ee52bfad36217b1_cgraph.png" border="0" usemap="#group__bc__module__pir_gabd1d816178965ae60ee52bfad36217b1_cgraph" alt=""/></div>
 <map name="group__bc__module__pir_gabd1d816178965ae60ee52bfad36217b1_cgraph" id="group__bc__module__pir_gabd1d816178965ae60ee52bfad36217b1_cgraph">
-<area shape="rect" id="node2" href="group__bc__pyq1648.html#ga85f892884862b1ab2b090984da978f66" title="Set PIR sensor sensitivity. " alt="" coords="251,5,434,32"/></map>
+<area shape="rect" id="node2" href="group__bc__pyq1648.html#ga85f892884862b1ab2b090984da978f66" title="Set PYQ1648 sensitivity. " alt="" coords="251,5,434,32"/></map>
 </div>
 </p>
 
