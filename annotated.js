@@ -1,6 +1,5 @@
 var annotated =
 [
-    [ "bc_button_t", "structbc__button__t.html", "structbc__button__t" ],
     [ "bc_fifo_t", "structbc__fifo__t.html", "structbc__fifo__t" ],
     [ "bc_hdc2080_t", "structbc__hdc2080__t.html", "structbc__hdc2080__t" ],
     [ "bc_hts221_t", "structbc__hts221__t.html", "structbc__hts221__t" ],

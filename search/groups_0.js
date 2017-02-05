@@ -1,6 +1,7 @@
 var searchData=
 [
   ['bc_5fadc',['bc_adc',['../group__bc__adc.html',1,'']]],
+  ['bc_5fbutton',['bc_button',['../group__bc__button.html',1,'']]],
   ['bc_5fdac',['bc_dac',['../group__bc__dac.html',1,'']]],
   ['bc_5fdfu',['bc_dfu',['../group__bc__dfu.html',1,'']]],
   ['bc_5feeprom',['bc_eeprom',['../group__bc__eeprom.html',1,'']]],

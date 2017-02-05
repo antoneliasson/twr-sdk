@@ -3,6 +3,7 @@ var searchData=
   ['bc_5fadc_5fchannel_5ft',['bc_adc_channel_t',['../group__bc__adc.html#ga36de67b89dc275ad2108cff743861612',1,'bc_adc.h']]],
   ['bc_5fadc_5fformat_5ft',['bc_adc_format_t',['../group__bc__adc.html#gadcd16f9828c6f56bd4afa0512889ec72',1,'bc_adc.h']]],
   ['bc_5fadc_5freference_5ft',['bc_adc_reference_t',['../group__bc__adc.html#gac69d57639e271008982890fd564825d3',1,'bc_adc.h']]],
+  ['bc_5fbutton_5fevent_5ft',['bc_button_event_t',['../group__bc__button.html#ga6584b74ad24dd2ca8048fd72c73426fa',1,'bc_button.h']]],
   ['bc_5fdac_5fchannel_5ft',['bc_dac_channel_t',['../group__bc__dac.html#ga6b501cbc097e7509bf581f10b5e0653b',1,'bc_dac.h']]],
   ['bc_5fdac_5fformat_5ft',['bc_dac_format_t',['../group__bc__dac.html#gad077a5e3ec3f5caa34c2984e97b4e681',1,'bc_dac.h']]],
   ['bc_5fgpio_5fchannel_5ft',['bc_gpio_channel_t',['../group__bc__gpio.html#ga5a8d8aed85b7bb7f5b219fc6a4cd5b8e',1,'bc_gpio.h']]],

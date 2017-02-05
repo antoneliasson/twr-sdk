@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['bc_5fbutton_5ft',['bc_button_t',['../group__bc__button.html#ga6af5329f29fb4e6879280407003567b2',1,'bc_button.h']]],
   ['bc_5fled_5ft',['bc_led_t',['../group__bc__led.html#gad08c12a4324e33141d1ab7cd444024e0',1,'bc_led.h']]],
   ['bc_5flis2dh12_5ft',['bc_lis2dh12_t',['../group__bc__lis2dh12.html#gaf66429f9cca1e29aff1a026976bea96e',1,'bc_lis2dh12.h']]],
   ['bc_5fmodule_5fsigfox_5ft',['bc_module_sigfox_t',['../group__bc__module__sigfox.html#gabd92251cde902bf11ba41db822acd216',1,'bc_module_sigfox.h']]],
