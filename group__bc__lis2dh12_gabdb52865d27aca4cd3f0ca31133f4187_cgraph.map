@@ -1,4 +1,8 @@
 <map id="bc_lis2dh12_set_alarm" name="bc_lis2dh12_set_alarm">
-<area shape="rect" id="node2" href="$group__bc__i2c.html#ga67a958f1691787b61dae034f441513a3" title="Write 1 byte to I2C channel. " alt="" coords="209,5,325,32"/>
-<area shape="rect" id="node3" href="$group__bc__i2c.html#gaaaf4f051d096dc4469495b710037340f" title="Write to I2C channel. " alt="" coords="374,5,469,32"/>
+<area shape="rect" id="node2" href="$group__bc__i2c.html#ga67a958f1691787b61dae034f441513a3" title="Write 1 byte to I2C channel. " alt="" coords="214,5,330,32"/>
+<area shape="rect" id="node4" href="$group__bc__exti.html#ga8ce4c65e88fa0b3531b3ff1fb32b5777" title="Enable EXTI line interrupt and register callback function. " alt="" coords="215,107,329,133"/>
+<area shape="rect" id="node7" href="$group__bc__exti.html#gadecae09ae5fb15b8ef5eafe5f8ca0ba3" title="Disable EXTI line interrupt. " alt="" coords="208,56,336,83"/>
+<area shape="rect" id="node3" href="$group__bc__i2c.html#gaaaf4f051d096dc4469495b710037340f" title="Write to I2C channel. " alt="" coords="390,5,485,32"/>
+<area shape="rect" id="node5" href="$group__bc__irq.html#ga83398e8b1c443f7bf1b1980959d3cc63" title="Deny all interrupt requests. " alt="" coords="385,107,490,133"/>
+<area shape="rect" id="node6" href="$group__bc__irq.html#ga6bd1e6c1589c97558d14e8f3d648e656" title="Allow all interrupt requests. " alt="" coords="386,56,489,83"/>
 </map>

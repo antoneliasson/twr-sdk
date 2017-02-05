@@ -1,6 +1,5 @@
 <map id="bc_gpio_init" name="bc_gpio_init">
-<area shape="rect" id="node2" href="$group__bc__button.html#gabe97691e3013ec4031dc43e4dc36b9ef" title="Initialize button. " alt="" coords="149,5,251,32"/>
-<area shape="rect" id="node3" href="$group__bc__led.html#ga822e72175b9bc2557ad7c989f98c7068" title="Initialize LED. " alt="" coords="158,56,242,83"/>
-<area shape="rect" id="node4" href="$group__bc__td1207r.html#ga1b5a8cc467f2285e7894a9397be094dc" title="Initialize TD1207R. " alt="" coords="145,107,255,133"/>
-<area shape="rect" id="node5" href="$group__bc__module__sigfox.html#ga45b1d5138717de6f72bedaf3f26ec6dd" title="Initialize BigClown SigFox Module. " alt="" coords="305,107,455,133"/>
+<area shape="rect" id="node2" href="$group__bc__led.html#ga822e72175b9bc2557ad7c989f98c7068" title="Initialize LED. " alt="" coords="158,5,242,32"/>
+<area shape="rect" id="node3" href="$group__bc__td1207r.html#ga1b5a8cc467f2285e7894a9397be094dc" title="Initialize TD1207R. " alt="" coords="145,56,255,83"/>
+<area shape="rect" id="node4" href="$group__bc__module__sigfox.html#ga45b1d5138717de6f72bedaf3f26ec6dd" title="Initialize BigClown SigFox Module. " alt="" coords="305,56,455,83"/>
 </map>

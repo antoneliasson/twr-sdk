@@ -5,6 +5,7 @@ var dir_68267d1309a1af8e8297ef4c3efbcdba =
     [ "bc_dac.c", "bc__dac_8c_source.html", null ],
     [ "bc_dfu.c", "bc__dfu_8c_source.html", null ],
     [ "bc_eeprom.c", "bc__eeprom_8c_source.html", null ],
+    [ "bc_exti.c", "bc__exti_8c_source.html", null ],
     [ "bc_fifo.c", "bc__fifo_8c_source.html", null ],
     [ "bc_gpio.c", "bc__gpio_8c_source.html", null ],
     [ "bc_hdc2080.c", "bc__hdc2080_8c_source.html", null ],
