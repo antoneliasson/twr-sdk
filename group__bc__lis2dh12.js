@@ -48,5 +48,6 @@ var group__bc__lis2dh12 =
     [ "bc_lis2dh12_init", "group__bc__lis2dh12.html#ga4e706e214a03b568e43b923931774160", null ],
     [ "bc_lis2dh12_set_alarm", "group__bc__lis2dh12.html#gabdb52865d27aca4cd3f0ca31133f4187", null ],
     [ "bc_lis2dh12_set_event_handler", "group__bc__lis2dh12.html#gadd862cd2a33599f416dad74380928084", null ],
-    [ "bc_lis2dh12_set_update_interval", "group__bc__lis2dh12.html#gadbd2d03f7d812d178f3b7db2933ebc8c", null ]
+    [ "bc_lis2dh12_set_update_interval", "group__bc__lis2dh12.html#gadbd2d03f7d812d178f3b7db2933ebc8c", null ],
+    [ "bc_lis2dh12_signalize", "group__bc__lis2dh12.html#ga117acea23c46e6381c657a7dd850d616", null ]
 ];
