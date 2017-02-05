@@ -6,6 +6,8 @@ var searchData=
   ['bc_5fbutton_5fevent_5ft',['bc_button_event_t',['../group__bc__button.html#ga6584b74ad24dd2ca8048fd72c73426fa',1,'bc_button.h']]],
   ['bc_5fdac_5fchannel_5ft',['bc_dac_channel_t',['../group__bc__dac.html#ga6b501cbc097e7509bf581f10b5e0653b',1,'bc_dac.h']]],
   ['bc_5fdac_5fformat_5ft',['bc_dac_format_t',['../group__bc__dac.html#gad077a5e3ec3f5caa34c2984e97b4e681',1,'bc_dac.h']]],
+  ['bc_5fexti_5fedge_5ft',['bc_exti_edge_t',['../group__bc__exti.html#ga79a5d27d60c847f652dc07ebe8cad8ef',1,'bc_exti.h']]],
+  ['bc_5fexti_5fline_5ft',['bc_exti_line_t',['../group__bc__exti.html#gad3665a3da5318105db2c06ba0647eead',1,'bc_exti.h']]],
   ['bc_5fgpio_5fchannel_5ft',['bc_gpio_channel_t',['../group__bc__gpio.html#ga5a8d8aed85b7bb7f5b219fc6a4cd5b8e',1,'bc_gpio.h']]],
   ['bc_5fgpio_5fmode_5ft',['bc_gpio_mode_t',['../group__bc__gpio.html#ga95188c2afa0f36cb97ebd6c5bc6eab6c',1,'bc_gpio.h']]],
   ['bc_5fgpio_5fpull_5ft',['bc_gpio_pull_t',['../group__bc__gpio.html#ga04280a82f9ae57f8d71b6ac697a139f5',1,'bc_gpio.h']]],

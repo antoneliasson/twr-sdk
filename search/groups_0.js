@@ -5,6 +5,7 @@ var searchData=
   ['bc_5fdac',['bc_dac',['../group__bc__dac.html',1,'']]],
   ['bc_5fdfu',['bc_dfu',['../group__bc__dfu.html',1,'']]],
   ['bc_5feeprom',['bc_eeprom',['../group__bc__eeprom.html',1,'']]],
+  ['bc_5fexti',['bc_exti',['../group__bc__exti.html',1,'']]],
   ['bc_5ffifo',['bc_fifo',['../group__bc__fifo.html',1,'']]],
   ['bc_5fgpio',['bc_gpio',['../group__bc__gpio.html',1,'']]],
   ['bc_5fi2c',['bc_i2c',['../group__bc__i2c.html',1,'']]],
