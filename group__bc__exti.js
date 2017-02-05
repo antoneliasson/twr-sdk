@@ -1,5 +1,10 @@
 var group__bc__exti =
 [
+    [ "bc_exti_edge_t", "group__bc__exti.html#ga79a5d27d60c847f652dc07ebe8cad8ef", [
+      [ "BC_EXTI_EDGE_RISING", "group__bc__exti.html#gga79a5d27d60c847f652dc07ebe8cad8efa0c18b239e7c58f3fac603f7f0bbedef6", null ],
+      [ "BC_EXTI_EDGE_FALLING", "group__bc__exti.html#gga79a5d27d60c847f652dc07ebe8cad8efa5549772527ecde3869ab23d9c9ba9913", null ],
+      [ "BC_EXTI_EDGE_RISING_AND_FALLING", "group__bc__exti.html#gga79a5d27d60c847f652dc07ebe8cad8efa62e7f0660c3a5910c99c668747cfcc48", null ]
+    ] ],
     [ "bc_exti_line_t", "group__bc__exti.html#gad3665a3da5318105db2c06ba0647eead", [
       [ "BC_EXTI_LINE_PA0", "group__bc__exti.html#ggad3665a3da5318105db2c06ba0647eeadae640ce9da7dfcd123fab4efe7fa2b6bd", null ],
       [ "BC_EXTI_LINE_PA1", "group__bc__exti.html#ggad3665a3da5318105db2c06ba0647eeada66193ad9a82aef98bf20f92268df772a", null ],
@@ -37,13 +42,26 @@ var group__bc__exti =
       [ "BC_EXTI_LINE_PC14", "group__bc__exti.html#ggad3665a3da5318105db2c06ba0647eeada9602ec37ab5934713078fc240d2eab90", null ],
       [ "BC_EXTI_LINE_PC15", "group__bc__exti.html#ggad3665a3da5318105db2c06ba0647eeadada433dda9595b8de959889cf3c5800c8", null ],
       [ "BC_EXTI_LINE_PH0", "group__bc__exti.html#ggad3665a3da5318105db2c06ba0647eeada05e492c85b320b4f6317c74f110681f3", null ],
-      [ "BC_EXTI_LINE_PH1", "group__bc__exti.html#ggad3665a3da5318105db2c06ba0647eeada08ad16a609b7f57967bdffd9ae64dfe8", null ]
+      [ "BC_EXTI_LINE_PH1", "group__bc__exti.html#ggad3665a3da5318105db2c06ba0647eeada08ad16a609b7f57967bdffd9ae64dfe8", null ],
+      [ "BC_EXTI_LINE_P0", "group__bc__exti.html#ggad3665a3da5318105db2c06ba0647eeada3fc87159b43e5be043f83a1417f2cb04", null ],
+      [ "BC_EXTI_LINE_P1", "group__bc__exti.html#ggad3665a3da5318105db2c06ba0647eeada37692fec0d7250ded9839f3a69452977", null ],
+      [ "BC_EXTI_LINE_P2", "group__bc__exti.html#ggad3665a3da5318105db2c06ba0647eeadac6f78afec58b6b98e279ae8585498f51", null ],
+      [ "BC_EXTI_LINE_P3", "group__bc__exti.html#ggad3665a3da5318105db2c06ba0647eeadab39e3408f06e832167e49065feaf1b16", null ],
+      [ "BC_EXTI_LINE_P4", "group__bc__exti.html#ggad3665a3da5318105db2c06ba0647eeadad8b5fa0393f1c00dbff64cbe5f5e0429", null ],
+      [ "BC_EXTI_LINE_P5", "group__bc__exti.html#ggad3665a3da5318105db2c06ba0647eeada66dfae0efc127e084d4ea0801e0664da", null ],
+      [ "BC_EXTI_LINE_P6", "group__bc__exti.html#ggad3665a3da5318105db2c06ba0647eeadaee0fd9c35318c3aab78d0ee13b818385", null ],
+      [ "BC_EXTI_LINE_P7", "group__bc__exti.html#ggad3665a3da5318105db2c06ba0647eeadabef545b4ae7246e5952136ccc2c8e3d0", null ],
+      [ "BC_EXTI_LINE_P8", "group__bc__exti.html#ggad3665a3da5318105db2c06ba0647eeadab69103430b66abc115d0c22552cc71ee", null ],
+      [ "BC_EXTI_LINE_P9", "group__bc__exti.html#ggad3665a3da5318105db2c06ba0647eeada9b59d2b3431d2f46873b9683a0c0ec16", null ],
+      [ "BC_EXTI_LINE_P10", "group__bc__exti.html#ggad3665a3da5318105db2c06ba0647eeada518177d8c64951c5fd636094d4d9ad99", null ],
+      [ "BC_EXTI_LINE_P11", "group__bc__exti.html#ggad3665a3da5318105db2c06ba0647eeada004a1181c272ac44a9f2aa4b9c558c21", null ],
+      [ "BC_EXTI_LINE_P12", "group__bc__exti.html#ggad3665a3da5318105db2c06ba0647eeada516338e955c129945d376defb8b87afc", null ],
+      [ "BC_EXTI_LINE_P13", "group__bc__exti.html#ggad3665a3da5318105db2c06ba0647eeada0a07cd73b69111d7e4ec2e0524990c1d", null ],
+      [ "BC_EXTI_LINE_P14", "group__bc__exti.html#ggad3665a3da5318105db2c06ba0647eeadaa7ba54f8e5dfa3f7e76ff7d22bf00f38", null ],
+      [ "BC_EXTI_LINE_P15", "group__bc__exti.html#ggad3665a3da5318105db2c06ba0647eeada806815edbeab8a2161b90d79f53e2be5", null ],
+      [ "BC_EXTI_LINE_P16", "group__bc__exti.html#ggad3665a3da5318105db2c06ba0647eeadae6221f1b715f72e73c71981a0c85f56b", null ],
+      [ "BC_EXTI_LINE_P17", "group__bc__exti.html#ggad3665a3da5318105db2c06ba0647eeada5721ba11402131632e62f44b62446000", null ]
     ] ],
-    [ "bc_exti_sensitivity_t", "group__bc__exti.html#gad6012b6bae7014682025b2df28474785", [
-      [ "BC_EXTI_SENSITIVITY_RISING", "group__bc__exti.html#ggad6012b6bae7014682025b2df28474785a51e4948ff30d165849b11e5df30299eb", null ],
-      [ "BC_EXTI_SENSITIVITY_FALLING", "group__bc__exti.html#ggad6012b6bae7014682025b2df28474785a4235e540415bf9c89e93356ff3124fd1", null ],
-      [ "BC_EXTI_SENSITIVITY_RISING_AND_FALLING", "group__bc__exti.html#ggad6012b6bae7014682025b2df28474785a0d98023dd523f4c34c27ab7599e7f244", null ]
-    ] ],
-    [ "bc_exti_register", "group__bc__exti.html#ga8ce4c65e88fa0b3531b3ff1fb32b5777", null ],
+    [ "bc_exti_register", "group__bc__exti.html#gae770b9db8ac6a9967402a8bec4391470", null ],
     [ "bc_exti_unregister", "group__bc__exti.html#gadecae09ae5fb15b8ef5eafe5f8ca0ba3", null ]
 ];
