@@ -1,5 +1,13 @@
 var NAVTREEINDEX2 =
 {
+"structbc__i2c__tranfer__t.html#a8ea2cc0345efb417babe261e171997c4":[0,8,0,3],
+"structbc__i2c__tranfer__t.html#ae3701a88ed65ab6980fec4717d58fb62":[0,8,0,0],
+"structbc__i2c__tranfer__t.html#afa552b8d01f0a38acfa89b44d630fb15":[0,8,0,1],
+"structbc__lis2dh12__alarm__t.html":[0,11,2],
+"structbc__lis2dh12__alarm__t.html#a0a12faaff633929f781579e0005521c4":[0,11,2,6],
+"structbc__lis2dh12__alarm__t.html#a0b728cb9e4869d8274cc38c5094efd4c":[0,11,2,3],
+"structbc__lis2dh12__alarm__t.html#a0bf044e5c1d58a5214961ca158344473":[0,11,2,5],
+"structbc__lis2dh12__alarm__t.html#a172169a4495e634df8432efd2310da42":[0,11,2,2],
 "structbc__lis2dh12__alarm__t.html#a6d9f3b1e3c38fdfe8c702605e6b2442e":[0,11,2,1],
 "structbc__lis2dh12__alarm__t.html#abe592610c4ed1f3ca1f434a68d26377d":[0,11,2,0],
 "structbc__lis2dh12__alarm__t.html#ad1fbca18efa413c44e532d2d7a2784f3":[0,11,2,7],

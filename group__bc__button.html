@@ -104,7 +104,7 @@ $(document).ready(function(){initNavTree('group__bc__button.html','');});
 </div><!--header-->
 <div class="contents">
 
-<p>Driver for buttons.  
+<p>Driver for generic button.  
 <a href="#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
@@ -117,14 +117,16 @@ typedef struct <a class="el" href="group__bc__button.html#ga6af5329f29fb4e687928
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
 <tr class="memitem:ga6584b74ad24dd2ca8048fd72c73426fa"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bc__button.html#ga6584b74ad24dd2ca8048fd72c73426fa">bc_button_event_t</a> { <br/>
-&#160;&#160;<b>BC_BUTTON_EVENT_PRESS</b> = 0, 
+&#160;&#160;<a class="el" href="group__bc__button.html#gga6584b74ad24dd2ca8048fd72c73426faa6bf841696f39b503c0532dd5355257f0">BC_BUTTON_EVENT_PRESS</a> = 0, 
 <br/>
-&#160;&#160;<b>BC_BUTTON_EVENT_CLICK</b> = 1, 
+&#160;&#160;<a class="el" href="group__bc__button.html#gga6584b74ad24dd2ca8048fd72c73426faa3cf8c849c98c5eeb04342e7d57e48be0">BC_BUTTON_EVENT_RELEASE</a> = 1, 
 <br/>
-&#160;&#160;<b>BC_BUTTON_EVENT_HOLD</b> = 2
+&#160;&#160;<a class="el" href="group__bc__button.html#gga6584b74ad24dd2ca8048fd72c73426faa613834ce5ac464ef972a9151ed31cbbf">BC_BUTTON_EVENT_CLICK</a> = 2, 
+<br/>
+&#160;&#160;<a class="el" href="group__bc__button.html#gga6584b74ad24dd2ca8048fd72c73426faa052f99139e11a572e64823ea711a180b">BC_BUTTON_EVENT_HOLD</a> = 3
 <br/>
  }</td></tr>
-<tr class="memdesc:ga6584b74ad24dd2ca8048fd72c73426fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">button callback events <br/></td></tr>
+<tr class="memdesc:ga6584b74ad24dd2ca8048fd72c73426fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback events.  <a href="group__bc__button.html#ga6584b74ad24dd2ca8048fd72c73426fa">More...</a><br/></td></tr>
 <tr class="separator:ga6584b74ad24dd2ca8048fd72c73426fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
@@ -135,21 +137,52 @@ Functions</h2></td></tr>
 <tr class="memitem:ga1765fab7226084fdfa85dcc872f1467f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bc__button.html#ga1765fab7226084fdfa85dcc872f1467f">bc_button_set_event_handler</a> (<a class="el" href="group__bc__button.html#ga6af5329f29fb4e6879280407003567b2">bc_button_t</a> *self, void(*event_handler)(<a class="el" href="group__bc__button.html#ga6af5329f29fb4e6879280407003567b2">bc_button_t</a> *, <a class="el" href="group__bc__button.html#ga6584b74ad24dd2ca8048fd72c73426fa">bc_button_event_t</a>, void *), void *event_param)</td></tr>
 <tr class="memdesc:ga1765fab7226084fdfa85dcc872f1467f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set callback function.  <a href="#ga1765fab7226084fdfa85dcc872f1467f">More...</a><br/></td></tr>
 <tr class="separator:ga1765fab7226084fdfa85dcc872f1467f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3d3bc8fcbeb56bf01a1ea7bb11df1306"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga3d3bc8fcbeb56bf01a1ea7bb11df1306"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>bc_button_set_scan_interval</b> (<a class="el" href="group__bc__button.html#ga6af5329f29fb4e6879280407003567b2">bc_button_t</a> *self, <a class="el" href="group__bc__tick.html#gabd224c28866c49d86f5d33cae606bbe0">bc_tick_t</a> scan_interval)</td></tr>
+<tr class="memitem:ga3d3bc8fcbeb56bf01a1ea7bb11df1306"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bc__button.html#ga3d3bc8fcbeb56bf01a1ea7bb11df1306">bc_button_set_scan_interval</a> (<a class="el" href="group__bc__button.html#ga6af5329f29fb4e6879280407003567b2">bc_button_t</a> *self, <a class="el" href="group__bc__tick.html#gabd224c28866c49d86f5d33cae606bbe0">bc_tick_t</a> scan_interval)</td></tr>
+<tr class="memdesc:ga3d3bc8fcbeb56bf01a1ea7bb11df1306"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set scan interval (period of button input sampling)  <a href="#ga3d3bc8fcbeb56bf01a1ea7bb11df1306">More...</a><br/></td></tr>
 <tr class="separator:ga3d3bc8fcbeb56bf01a1ea7bb11df1306"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac5bc1f8b0c6f62909bdedb29ace97f83"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gac5bc1f8b0c6f62909bdedb29ace97f83"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>bc_button_set_debounce_time</b> (<a class="el" href="group__bc__button.html#ga6af5329f29fb4e6879280407003567b2">bc_button_t</a> *self, <a class="el" href="group__bc__tick.html#gabd224c28866c49d86f5d33cae606bbe0">bc_tick_t</a> debounce_time)</td></tr>
+<tr class="memitem:gac5bc1f8b0c6f62909bdedb29ace97f83"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bc__button.html#gac5bc1f8b0c6f62909bdedb29ace97f83">bc_button_set_debounce_time</a> (<a class="el" href="group__bc__button.html#ga6af5329f29fb4e6879280407003567b2">bc_button_t</a> *self, <a class="el" href="group__bc__tick.html#gabd224c28866c49d86f5d33cae606bbe0">bc_tick_t</a> debounce_time)</td></tr>
+<tr class="memdesc:gac5bc1f8b0c6f62909bdedb29ace97f83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set debounce time (minimum sampling interval during which input cannot change to toggle its state)  <a href="#gac5bc1f8b0c6f62909bdedb29ace97f83">More...</a><br/></td></tr>
 <tr class="separator:gac5bc1f8b0c6f62909bdedb29ace97f83"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga88fd3c911e2feb4f5ea8e1eb511ad8e5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga88fd3c911e2feb4f5ea8e1eb511ad8e5"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>bc_button_set_click_timeout</b> (<a class="el" href="group__bc__button.html#ga6af5329f29fb4e6879280407003567b2">bc_button_t</a> *self, <a class="el" href="group__bc__tick.html#gabd224c28866c49d86f5d33cae606bbe0">bc_tick_t</a> click_timeout)</td></tr>
+<tr class="memitem:ga88fd3c911e2feb4f5ea8e1eb511ad8e5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bc__button.html#ga88fd3c911e2feb4f5ea8e1eb511ad8e5">bc_button_set_click_timeout</a> (<a class="el" href="group__bc__button.html#ga6af5329f29fb4e6879280407003567b2">bc_button_t</a> *self, <a class="el" href="group__bc__tick.html#gabd224c28866c49d86f5d33cae606bbe0">bc_tick_t</a> click_timeout)</td></tr>
+<tr class="memdesc:ga88fd3c911e2feb4f5ea8e1eb511ad8e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set click timeout (maximum interval within which button has to be released to recognize click event)  <a href="#ga88fd3c911e2feb4f5ea8e1eb511ad8e5">More...</a><br/></td></tr>
 <tr class="separator:ga88fd3c911e2feb4f5ea8e1eb511ad8e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3ec362aaaa409c85170310074cc5a320"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga3ec362aaaa409c85170310074cc5a320"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>bc_button_set_hold_time</b> (<a class="el" href="group__bc__button.html#ga6af5329f29fb4e6879280407003567b2">bc_button_t</a> *self, <a class="el" href="group__bc__tick.html#gabd224c28866c49d86f5d33cae606bbe0">bc_tick_t</a> hold_time)</td></tr>
+<tr class="memitem:ga3ec362aaaa409c85170310074cc5a320"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bc__button.html#ga3ec362aaaa409c85170310074cc5a320">bc_button_set_hold_time</a> (<a class="el" href="group__bc__button.html#ga6af5329f29fb4e6879280407003567b2">bc_button_t</a> *self, <a class="el" href="group__bc__tick.html#gabd224c28866c49d86f5d33cae606bbe0">bc_tick_t</a> hold_time)</td></tr>
+<tr class="memdesc:ga3ec362aaaa409c85170310074cc5a320"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set hold time (interval after which hold event is recognized when button is steadily pressed)  <a href="#ga3ec362aaaa409c85170310074cc5a320">More...</a><br/></td></tr>
 <tr class="separator:ga3ec362aaaa409c85170310074cc5a320"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Driver for buttons. </p>
+<p>Driver for generic button. </p>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a class="anchor" id="ga6584b74ad24dd2ca8048fd72c73426fa"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__bc__button.html#ga6584b74ad24dd2ca8048fd72c73426fa">bc_button_event_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Callback events. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="gga6584b74ad24dd2ca8048fd72c73426faa6bf841696f39b503c0532dd5355257f0"></a>BC_BUTTON_EVENT_PRESS</em>&#160;</td><td class="fielddoc">
+<p>Event button pressed. </p>
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="gga6584b74ad24dd2ca8048fd72c73426faa3cf8c849c98c5eeb04342e7d57e48be0"></a>BC_BUTTON_EVENT_RELEASE</em>&#160;</td><td class="fielddoc">
+<p>Event button released. </p>
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="gga6584b74ad24dd2ca8048fd72c73426faa613834ce5ac464ef972a9151ed31cbbf"></a>BC_BUTTON_EVENT_CLICK</em>&#160;</td><td class="fielddoc">
+<p>Event button clicked (pressed and released within certain time) </p>
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="gga6584b74ad24dd2ca8048fd72c73426faa052f99139e11a572e64823ea711a180b"></a>BC_BUTTON_EVENT_HOLD</em>&#160;</td><td class="fielddoc">
+<p>Event button hold (pressed for longer time) </p>
+</td></tr>
+</table>
+
+<p>Definition at line <a class="el" href="bc__button_8h_source.html#l00013">13</a> of file <a class="el" href="bc__button_8h_source.html">bc_button.h</a>.</p>
+
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
 <a class="anchor" id="gabe97691e3013ec4031dc43e4dc36b9ef"></a>
 <div class="memitem">
@@ -192,7 +225,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>bc_button_set_hold_ti
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">self</td><td>Instance </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">bc_gpio_channel_t</td><td>GPIO channel button is connected to </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">bc_gpio_pull_t</td><td>Enable no-pull, pull-up or pull-down </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">bc_gpio_pull_t</td><td>GPIO pull-up/pull-down setting </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">idle_state</td><td>GPIO pin idle state (when button is not pressed) </td></tr>
   </table>
   </dd>
@@ -208,6 +241,80 @@ Here is the call graph for this function:</div>
 <area shape="rect" id="node2" href="group__bc__gpio.html#ga06db16c5cd7f6ffff7e297970814221d" title="Initialize GPIO channel. " alt="" coords="187,5,277,32"/><area shape="rect" id="node5" href="group__bc__gpio.html#ga39141debc333424326e1d448f3f81b6d" title="Set pull&#45;up/pull&#45;down configuration for GPIO channel. " alt="" coords="173,56,291,83"/><area shape="rect" id="node6" href="group__bc__gpio.html#ga63a3ad86dfef88c7c940a2a34945d853" title="Set mode of operation for GPIO channel. " alt="" coords="167,107,297,133"/><area shape="rect" id="node7" href="group__bc__scheduler.html#gac6e2fa9155567fb1f32a8b8b563e2f30" title="Register task in scheduler. " alt="" coords="157,157,307,184"/><area shape="rect" id="node3" href="group__bc__irq.html#ga83398e8b1c443f7bf1b1980959d3cc63" title="Deny all interrupt requests. " alt="" coords="355,31,461,57"/><area shape="rect" id="node4" href="group__bc__irq.html#ga6bd1e6c1589c97558d14e8f3d648e656" title="Allow all interrupt requests. " alt="" coords="357,81,459,108"/></map>
 </div>
 </p>
+
+</div>
+</div>
+<a class="anchor" id="ga88fd3c911e2feb4f5ea8e1eb511ad8e5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void bc_button_set_click_timeout </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__bc__button.html#ga6af5329f29fb4e6879280407003567b2">bc_button_t</a> *&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__bc__tick.html#gabd224c28866c49d86f5d33cae606bbe0">bc_tick_t</a>&#160;</td>
+          <td class="paramname"><em>click_timeout</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set click timeout (maximum interval within which button has to be released to recognize click event) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">self</td><td>Instance </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">click_timeout</td><td>Desired click timeout in ticks </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="bc__button_8c_source.html#l00047">47</a> of file <a class="el" href="bc__button_8c_source.html">bc_button.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gac5bc1f8b0c6f62909bdedb29ace97f83"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void bc_button_set_debounce_time </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__bc__button.html#ga6af5329f29fb4e6879280407003567b2">bc_button_t</a> *&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__bc__tick.html#gabd224c28866c49d86f5d33cae606bbe0">bc_tick_t</a>&#160;</td>
+          <td class="paramname"><em>debounce_time</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set debounce time (minimum sampling interval during which input cannot change to toggle its state) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">self</td><td>Instance </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">debounce_time</td><td>Desired debounce time in ticks </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="bc__button_8c_source.html#l00042">42</a> of file <a class="el" href="bc__button_8c_source.html">bc_button.c</a>.</p>
 
 </div>
 </div>
@@ -252,6 +359,80 @@ Here is the call graph for this function:</div>
 </dl>
 
 <p>Definition at line <a class="el" href="bc__button_8c_source.html#l00031">31</a> of file <a class="el" href="bc__button_8c_source.html">bc_button.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga3ec362aaaa409c85170310074cc5a320"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void bc_button_set_hold_time </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__bc__button.html#ga6af5329f29fb4e6879280407003567b2">bc_button_t</a> *&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__bc__tick.html#gabd224c28866c49d86f5d33cae606bbe0">bc_tick_t</a>&#160;</td>
+          <td class="paramname"><em>hold_time</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set hold time (interval after which hold event is recognized when button is steadily pressed) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">self</td><td>Instance </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">hold_time</td><td>Desired hold time in ticks </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="bc__button_8c_source.html#l00052">52</a> of file <a class="el" href="bc__button_8c_source.html">bc_button.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga3d3bc8fcbeb56bf01a1ea7bb11df1306"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void bc_button_set_scan_interval </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__bc__button.html#ga6af5329f29fb4e6879280407003567b2">bc_button_t</a> *&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__bc__tick.html#gabd224c28866c49d86f5d33cae606bbe0">bc_tick_t</a>&#160;</td>
+          <td class="paramname"><em>scan_interval</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set scan interval (period of button input sampling) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">self</td><td>Instance </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">scan_interval</td><td>Desired scan interval in ticks </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="bc__button_8c_source.html#l00037">37</a> of file <a class="el" href="bc__button_8c_source.html">bc_button.c</a>.</p>
 
 </div>
 </div>
