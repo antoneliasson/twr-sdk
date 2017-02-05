@@ -1,4 +1,5 @@
 <map id="bc_tca9534a_init" name="bc_tca9534a_init">
-<area shape="rect" id="node2" href="$group__bc__i2c.html#gac2eee84f73bb3bbd953be621f21eb0e1" title="Read 1 byte from I2C channel. " alt="" coords="174,5,287,32"/>
-<area shape="rect" id="node3" href="$group__bc__i2c.html#ga071d3d85ba25f77685909dd9712b34ea" title="Read from I2C channel. " alt="" coords="337,5,429,32"/>
+<area shape="rect" id="node2" href="$group__bc__i2c.html#ga8f29242288303f0328c6514068e516fa" title="Initialize I2C channel. " alt="" coords="189,5,273,32"/>
+<area shape="rect" id="node3" href="$group__bc__i2c.html#gac2eee84f73bb3bbd953be621f21eb0e1" title="Read 1 byte from I2C channel. " alt="" coords="174,56,287,83"/>
+<area shape="rect" id="node4" href="$group__bc__i2c.html#ga071d3d85ba25f77685909dd9712b34ea" title="Read from I2C channel. " alt="" coords="337,56,429,83"/>
 </map>

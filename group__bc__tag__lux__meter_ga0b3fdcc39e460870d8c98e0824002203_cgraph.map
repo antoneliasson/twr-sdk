@@ -1,4 +1,5 @@
 <map id="bc_tag_lux_meter_init" name="bc_tag_lux_meter_init">
-<area shape="rect" id="node2" href="$group__bc__opt3001.html#ga3db4ea45d7c7b4cb5e63fda04802e1ba" title="Initialize OPT3001 driver. " alt="" coords="203,5,317,32"/>
-<area shape="rect" id="node3" href="$group__bc__scheduler.html#gac6e2fa9155567fb1f32a8b8b563e2f30" title="Register task in scheduler. " alt="" coords="365,5,515,32"/>
+<area shape="rect" id="node2" href="$group__bc__opt3001.html#ga3db4ea45d7c7b4cb5e63fda04802e1ba" title="Initialize OPT3001 driver. " alt="" coords="203,31,317,57"/>
+<area shape="rect" id="node3" href="$group__bc__i2c.html#ga8f29242288303f0328c6514068e516fa" title="Initialize I2C channel. " alt="" coords="398,5,482,32"/>
+<area shape="rect" id="node4" href="$group__bc__scheduler.html#gac6e2fa9155567fb1f32a8b8b563e2f30" title="Register task in scheduler. " alt="" coords="365,56,515,83"/>
 </map>
