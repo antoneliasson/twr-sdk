@@ -1,5 +1,6 @@
 var group__bc__module__pir =
 [
+    [ "bc_module_pir_t", "group__bc__module__pir.html#gaaea169791d2e6b66a9117dd6b86ac97c", null ],
     [ "bc_module_pir_event_t", "group__bc__module__pir.html#ga410105480a1961eb87370fde66df340f", null ],
     [ "bc_module_pir_sensitivity_t", "group__bc__module__pir.html#gadcfb88944cffccae03f9b599cb292c8f", [
       [ "BC_MODULE_PIR_SENSITIVITY_LOW", "group__bc__module__pir.html#ggadcfb88944cffccae03f9b599cb292c8faebac734409e6d88011136140e40493e7", null ],

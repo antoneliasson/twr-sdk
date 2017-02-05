@@ -97,7 +97,6 @@ $(document).ready(function(){initNavTree('group__bc__lis2dh12.html','');});
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
-<a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
@@ -106,7 +105,7 @@ $(document).ready(function(){initNavTree('group__bc__lis2dh12.html','');});
 </div><!--header-->
 <div class="contents">
 
-<p>Driver for LIS2DH12 accelerometer.  
+<p>Driver for LIS2DH12 3-axis MEMS accelerometer.  
 <a href="#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
@@ -120,23 +119,11 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbc__lis2dh12__alarm__t.html">bc_lis2dh12_alarm_t</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">LIS2DH12 alarm set structure.  <a href="structbc__lis2dh12__alarm__t.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbc__lis2dh12__t.html">bc_lis2dh12_t</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">LIS2DH12 instance.  <a href="structbc__lis2dh12__t.html#details">More...</a><br/></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:ga259393566168bbf437268c549dacb832"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga259393566168bbf437268c549dacb832"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>BC_LIS2DH12_ADDRESS_DEFAULT</b>&#160;&#160;&#160;0x18</td></tr>
-<tr class="separator:ga259393566168bbf437268c549dacb832"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad2b220a7d0c865c4061ff4eccdf8f124"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gad2b220a7d0c865c4061ff4eccdf8f124"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>BC_LIS2DH12_ADDRESS_ALTERNATE</b>&#160;&#160;&#160;0x19</td></tr>
-<tr class="separator:gad2b220a7d0c865c4061ff4eccdf8f124"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:gaf66429f9cca1e29aff1a026976bea96e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gaf66429f9cca1e29aff1a026976bea96e"></a>
-typedef struct <a class="el" href="structbc__lis2dh12__t.html">bc_lis2dh12_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bc__lis2dh12.html#gaf66429f9cca1e29aff1a026976bea96e">bc_lis2dh12_t</a></td></tr>
+typedef struct <a class="el" href="group__bc__lis2dh12.html#gaf66429f9cca1e29aff1a026976bea96e">bc_lis2dh12_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bc__lis2dh12.html#gaf66429f9cca1e29aff1a026976bea96e">bc_lis2dh12_t</a></td></tr>
 <tr class="memdesc:gaf66429f9cca1e29aff1a026976bea96e"><td class="mdescLeft">&#160;</td><td class="mdescRight">LIS2DH12 instance. <br/></td></tr>
 <tr class="separator:gaf66429f9cca1e29aff1a026976bea96e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -152,43 +139,30 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:ga5dc318914a8bce8dc9af065e14cdbb45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback events.  <a href="group__bc__lis2dh12.html#ga5dc318914a8bce8dc9af065e14cdbb45">More...</a><br/></td></tr>
 <tr class="separator:ga5dc318914a8bce8dc9af065e14cdbb45"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad6717f4c213cc784759fd3821b0391d4"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><b>bc_lis2dh12_state_t</b> { <br/>
-&#160;&#160;<b>BC_LIS2DH12_STATE_ERROR</b> = -1, 
-<br/>
-&#160;&#160;<b>BC_LIS2DH12_STATE_INITIALIZE</b> = 0, 
-<br/>
-&#160;&#160;<b>BC_LIS2DH12_STATE_MEASURE</b> = 1, 
-<br/>
-&#160;&#160;<b>BC_LIS2DH12_STATE_READ</b> = 2, 
-<br/>
-&#160;&#160;<b>BC_LIS2DH12_STATE_UPDATE</b> = 3
-<br/>
- }</td></tr>
-<tr class="separator:gad6717f4c213cc784759fd3821b0391d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga4e706e214a03b568e43b923931774160"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bc__lis2dh12.html#ga4e706e214a03b568e43b923931774160">bc_lis2dh12_init</a> (<a class="el" href="structbc__lis2dh12__t.html">bc_lis2dh12_t</a> *self, <a class="el" href="group__bc__i2c.html#ga5f7217e6558c54ac6920e5dabb777fef">bc_i2c_channel_t</a> i2c_channel, uint8_t i2c_address)</td></tr>
+<tr class="memitem:ga4e706e214a03b568e43b923931774160"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bc__lis2dh12.html#ga4e706e214a03b568e43b923931774160">bc_lis2dh12_init</a> (<a class="el" href="group__bc__lis2dh12.html#gaf66429f9cca1e29aff1a026976bea96e">bc_lis2dh12_t</a> *self, <a class="el" href="group__bc__i2c.html#ga5f7217e6558c54ac6920e5dabb777fef">bc_i2c_channel_t</a> i2c_channel, uint8_t i2c_address)</td></tr>
 <tr class="memdesc:ga4e706e214a03b568e43b923931774160"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize LIS2DH12.  <a href="#ga4e706e214a03b568e43b923931774160">More...</a><br/></td></tr>
 <tr class="separator:ga4e706e214a03b568e43b923931774160"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gadd862cd2a33599f416dad74380928084"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bc__lis2dh12.html#gadd862cd2a33599f416dad74380928084">bc_lis2dh12_set_event_handler</a> (<a class="el" href="structbc__lis2dh12__t.html">bc_lis2dh12_t</a> *self, void(*event_handler)(<a class="el" href="structbc__lis2dh12__t.html">bc_lis2dh12_t</a> *, <a class="el" href="group__bc__lis2dh12.html#ga5dc318914a8bce8dc9af065e14cdbb45">bc_lis2dh12_event_t</a>, void *), void *event_param)</td></tr>
+<tr class="memitem:gadd862cd2a33599f416dad74380928084"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bc__lis2dh12.html#gadd862cd2a33599f416dad74380928084">bc_lis2dh12_set_event_handler</a> (<a class="el" href="group__bc__lis2dh12.html#gaf66429f9cca1e29aff1a026976bea96e">bc_lis2dh12_t</a> *self, void(*event_handler)(<a class="el" href="group__bc__lis2dh12.html#gaf66429f9cca1e29aff1a026976bea96e">bc_lis2dh12_t</a> *, <a class="el" href="group__bc__lis2dh12.html#ga5dc318914a8bce8dc9af065e14cdbb45">bc_lis2dh12_event_t</a>, void *), void *event_param)</td></tr>
 <tr class="memdesc:gadd862cd2a33599f416dad74380928084"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set callback function.  <a href="#gadd862cd2a33599f416dad74380928084">More...</a><br/></td></tr>
 <tr class="separator:gadd862cd2a33599f416dad74380928084"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gadbd2d03f7d812d178f3b7db2933ebc8c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bc__lis2dh12.html#gadbd2d03f7d812d178f3b7db2933ebc8c">bc_lis2dh12_set_update_interval</a> (<a class="el" href="structbc__lis2dh12__t.html">bc_lis2dh12_t</a> *self, <a class="el" href="group__bc__tick.html#gabd224c28866c49d86f5d33cae606bbe0">bc_tick_t</a> interval)</td></tr>
+<tr class="memitem:gadbd2d03f7d812d178f3b7db2933ebc8c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bc__lis2dh12.html#gadbd2d03f7d812d178f3b7db2933ebc8c">bc_lis2dh12_set_update_interval</a> (<a class="el" href="group__bc__lis2dh12.html#gaf66429f9cca1e29aff1a026976bea96e">bc_lis2dh12_t</a> *self, <a class="el" href="group__bc__tick.html#gabd224c28866c49d86f5d33cae606bbe0">bc_tick_t</a> interval)</td></tr>
 <tr class="memdesc:gadbd2d03f7d812d178f3b7db2933ebc8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set measurement interval.  <a href="#gadbd2d03f7d812d178f3b7db2933ebc8c">More...</a><br/></td></tr>
 <tr class="separator:gadbd2d03f7d812d178f3b7db2933ebc8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga523ceef2e9671e6660dbebf966171fdf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bc__lis2dh12.html#ga523ceef2e9671e6660dbebf966171fdf">bc_lis2dh12_get_result_raw</a> (<a class="el" href="structbc__lis2dh12__t.html">bc_lis2dh12_t</a> *self, <a class="el" href="structbc__lis2dh12__result__raw__t.html">bc_lis2dh12_result_raw_t</a> *result_raw)</td></tr>
+<tr class="memitem:ga523ceef2e9671e6660dbebf966171fdf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bc__lis2dh12.html#ga523ceef2e9671e6660dbebf966171fdf">bc_lis2dh12_get_result_raw</a> (<a class="el" href="group__bc__lis2dh12.html#gaf66429f9cca1e29aff1a026976bea96e">bc_lis2dh12_t</a> *self, <a class="el" href="structbc__lis2dh12__result__raw__t.html">bc_lis2dh12_result_raw_t</a> *result_raw)</td></tr>
 <tr class="memdesc:ga523ceef2e9671e6660dbebf966171fdf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get measured acceleration as raw value.  <a href="#ga523ceef2e9671e6660dbebf966171fdf">More...</a><br/></td></tr>
 <tr class="separator:ga523ceef2e9671e6660dbebf966171fdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga47cce13a72b350cb25efa341423b8d56"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bc__lis2dh12.html#ga47cce13a72b350cb25efa341423b8d56">bc_lis2dh12_get_result_g</a> (<a class="el" href="structbc__lis2dh12__t.html">bc_lis2dh12_t</a> *self, <a class="el" href="structbc__lis2dh12__result__g__t.html">bc_lis2dh12_result_g_t</a> *result_g)</td></tr>
+<tr class="memitem:ga47cce13a72b350cb25efa341423b8d56"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bc__lis2dh12.html#ga47cce13a72b350cb25efa341423b8d56">bc_lis2dh12_get_result_g</a> (<a class="el" href="group__bc__lis2dh12.html#gaf66429f9cca1e29aff1a026976bea96e">bc_lis2dh12_t</a> *self, <a class="el" href="structbc__lis2dh12__result__g__t.html">bc_lis2dh12_result_g_t</a> *result_g)</td></tr>
 <tr class="memdesc:ga47cce13a72b350cb25efa341423b8d56"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get measured acceleration in g.  <a href="#ga47cce13a72b350cb25efa341423b8d56">More...</a><br/></td></tr>
 <tr class="separator:ga47cce13a72b350cb25efa341423b8d56"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gabdb52865d27aca4cd3f0ca31133f4187"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bc__lis2dh12.html#gabdb52865d27aca4cd3f0ca31133f4187">bc_lis2dh12_set_alarm</a> (<a class="el" href="structbc__lis2dh12__t.html">bc_lis2dh12_t</a> *self, <a class="el" href="structbc__lis2dh12__alarm__t.html">bc_lis2dh12_alarm_t</a> *alarm)</td></tr>
+<tr class="memitem:gabdb52865d27aca4cd3f0ca31133f4187"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bc__lis2dh12.html#gabdb52865d27aca4cd3f0ca31133f4187">bc_lis2dh12_set_alarm</a> (<a class="el" href="group__bc__lis2dh12.html#gaf66429f9cca1e29aff1a026976bea96e">bc_lis2dh12_t</a> *self, <a class="el" href="structbc__lis2dh12__alarm__t.html">bc_lis2dh12_alarm_t</a> *alarm)</td></tr>
 <tr class="memdesc:gabdb52865d27aca4cd3f0ca31133f4187"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable or disable accelerometer threshold alarm.  <a href="#gabdb52865d27aca4cd3f0ca31133f4187">More...</a><br/></td></tr>
 <tr class="separator:gabdb52865d27aca4cd3f0ca31133f4187"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Driver for LIS2DH12 accelerometer. </p>
+<p>Driver for LIS2DH12 3-axis MEMS accelerometer. </p>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
 <a class="anchor" id="ga5dc318914a8bce8dc9af065e14cdbb45"></a>
 <div class="memitem">
@@ -213,7 +187,7 @@ Functions</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="bc__lis2dh12_8h_source.html#l00017">17</a> of file <a class="el" href="bc__lis2dh12_8h_source.html">bc_lis2dh12.h</a>.</p>
+<p>Definition at line <a class="el" href="bc__lis2dh12_8h_source.html#l00013">13</a> of file <a class="el" href="bc__lis2dh12_8h_source.html">bc_lis2dh12.h</a>.</p>
 
 </div>
 </div>
@@ -225,7 +199,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">bool bc_lis2dh12_get_result_g </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structbc__lis2dh12__t.html">bc_lis2dh12_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="group__bc__lis2dh12.html#gaf66429f9cca1e29aff1a026976bea96e">bc_lis2dh12_t</a> *&#160;</td>
           <td class="paramname"><em>self</em>, </td>
         </tr>
         <tr>
@@ -274,7 +248,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">bool bc_lis2dh12_get_result_raw </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structbc__lis2dh12__t.html">bc_lis2dh12_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="group__bc__lis2dh12.html#gaf66429f9cca1e29aff1a026976bea96e">bc_lis2dh12_t</a> *&#160;</td>
           <td class="paramname"><em>self</em>, </td>
         </tr>
         <tr>
@@ -325,7 +299,7 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="memname">bool bc_lis2dh12_init </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structbc__lis2dh12__t.html">bc_lis2dh12_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="group__bc__lis2dh12.html#gaf66429f9cca1e29aff1a026976bea96e">bc_lis2dh12_t</a> *&#160;</td>
           <td class="paramname"><em>self</em>, </td>
         </tr>
         <tr>
@@ -378,7 +352,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">bool bc_lis2dh12_set_alarm </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structbc__lis2dh12__t.html">bc_lis2dh12_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="group__bc__lis2dh12.html#gaf66429f9cca1e29aff1a026976bea96e">bc_lis2dh12_t</a> *&#160;</td>
           <td class="paramname"><em>self</em>, </td>
         </tr>
         <tr>
@@ -427,13 +401,13 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">void bc_lis2dh12_set_event_handler </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structbc__lis2dh12__t.html">bc_lis2dh12_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="group__bc__lis2dh12.html#gaf66429f9cca1e29aff1a026976bea96e">bc_lis2dh12_t</a> *&#160;</td>
           <td class="paramname"><em>self</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">void(*)(<a class="el" href="structbc__lis2dh12__t.html">bc_lis2dh12_t</a> *, <a class="el" href="group__bc__lis2dh12.html#ga5dc318914a8bce8dc9af065e14cdbb45">bc_lis2dh12_event_t</a>, void *)&#160;</td>
+          <td class="paramtype">void(*)(<a class="el" href="group__bc__lis2dh12.html#gaf66429f9cca1e29aff1a026976bea96e">bc_lis2dh12_t</a> *, <a class="el" href="group__bc__lis2dh12.html#ga5dc318914a8bce8dc9af065e14cdbb45">bc_lis2dh12_event_t</a>, void *)&#160;</td>
           <td class="paramname"><em>event_handler</em>, </td>
         </tr>
         <tr>
@@ -471,7 +445,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">void bc_lis2dh12_set_update_interval </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structbc__lis2dh12__t.html">bc_lis2dh12_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="group__bc__lis2dh12.html#gaf66429f9cca1e29aff1a026976bea96e">bc_lis2dh12_t</a> *&#160;</td>
           <td class="paramname"><em>self</em>, </td>
         </tr>
         <tr>
