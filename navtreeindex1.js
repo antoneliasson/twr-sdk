@@ -1,5 +1,6 @@
 var NAVTREEINDEX1 =
 {
+"group__bc__hdc2080.html#gaa4cf9c164b7a2dde482968d8b4967ef5":[0,8,6],
 "group__bc__hdc2080.html#gab1dbbf6344e61442cf0e0e9b3187ae2a":[0,8,1],
 "group__bc__hdc2080.html#gabac119de881d5c96af19f32f2f7927ce":[0,8,4],
 "group__bc__hdc2080.html#ggab1dbbf6344e61442cf0e0e9b3187ae2aa0268f17bff7f7fcd16b752446bbc5c49":[0,8,1,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX1 =
 "group__bc__uart.html#ga4256fe65e122609345ab0702924ad5a9":[0,32,4],
 "group__bc__uart.html#gaacd83e579229cf6cde13228169d55ebf":[0,32,5],
 "group__bc__uart.html#gab536b53616dfc99ddbe5ff412441df0b":[0,32,3],
-"group__bc__uart.html#gabe2f6f464dc94204d147f3f498fbeb85":[0,32,1],
-"group__bc__uart.html#gafc2793f7c8bd58556f8344cfb1ff4811":[0,32,2]
+"group__bc__uart.html#gabe2f6f464dc94204d147f3f498fbeb85":[0,32,1]
 };

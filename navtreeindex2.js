@@ -1,11 +1,12 @@
 var NAVTREEINDEX2 =
 {
+"group__bc__uart.html#gafc2793f7c8bd58556f8344cfb1ff4811":[0,32,2],
 "group__bc__uart.html#ggabe2f6f464dc94204d147f3f498fbeb85a38128ec5d358e5824a20620ed9b96c2a":[0,32,1,0],
 "group__bc__uart.html#ggafc2793f7c8bd58556f8344cfb1ff4811a3df15d0f6bdd645435dea972f2edb930":[0,32,2,0],
 "group__bc__uart.html#ggafc2793f7c8bd58556f8344cfb1ff4811a66cd08232879638f96034cb607a7cc25":[0,32,2,2],
 "group__bc__uart.html#ggafc2793f7c8bd58556f8344cfb1ff4811afa614bde5555b594663b3b7474e9070b":[0,32,2,1],
 "index.html":[],
-"jsmn_8c_source.html":[2,0,1,34],
+"jsmn_8c_source.html":[2,0,1,35],
 "jsmn_8h_source.html":[2,0,0,38],
 "modules.html":[0],
 "pages.html":[],

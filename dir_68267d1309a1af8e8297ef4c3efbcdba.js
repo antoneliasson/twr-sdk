@@ -23,6 +23,7 @@ var dir_68267d1309a1af8e8297ef4c3efbcdba =
     [ "bc_pyq1648.c", "bc__pyq1648_8c_source.html", null ],
     [ "bc_rtc.c", "bc__rtc_8c_source.html", null ],
     [ "bc_scheduler.c", "bc__scheduler_8c_source.html", null ],
+    [ "bc_spi.c", "bc__spi_8c_source.html", null ],
     [ "bc_spirit1.c", "bc__spirit1_8c_source.html", null ],
     [ "bc_tag_barometer.c", "bc__tag__barometer_8c_source.html", null ],
     [ "bc_tag_humidity.c", "bc__tag__humidity_8c_source.html", null ],
