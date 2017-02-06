@@ -130,8 +130,8 @@ $(document).ready(function(){initNavTree('bc__pyq1648_8c_source.html','');});
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PYQ1648_FILTER_SOURCE_LEN 0x02</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PYQ1648_RESERVED_LEN 0x05</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">//#define BC_PYQ1648_CONNECTION_CHECK true</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#define BC_PYQ1648_DELAY_RUN 50</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#define BC_PYQ1648_CONNECTION_CHECK true</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define BC_PYQ1648_DELAY_RUN 50</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define BC_PYQ1648_DELAY_INITIALIZATION 10</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define BC_PYQ1648_UPDATE_INTERVAL 50</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define BC_PYQ1648_CONNECTION_CHECK_INTERVAL 5000</span></div>
@@ -255,7 +255,7 @@ $(document).ready(function(){initNavTree('bc__pyq1648_8c_source.html','');});
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    <span class="comment">// Initialize pointer to GPIO BSRR register of SERIN pin</span></div>
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    <span class="comment">// (very fast operations with pins are needed)</span></div>
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    GPIO_TypeDef *GPIOx = _pyq1648_gpiox_table[<span class="keyword">self</span>-&gt;_gpio_channel_serin];</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    uint32_t *GPIOx_BSRR = (uint32_t *) &amp;GPIOx-&gt;BSRR;</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    <span class="keyword">volatile</span> uint32_t *GPIOx_BSRR = &amp;GPIOx-&gt;BSRR;</div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;</div>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    <span class="comment">// Low level pin initialization</span></div>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    _bc_pyq1648_msp_init(self-&gt;_gpio_channel_serin, self-&gt;_gpio_channel_dl);</div>
@@ -353,8 +353,8 @@ $(document).ready(function(){initNavTree('bc__pyq1648_8c_source.html','');});
 <div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;    <span class="comment">// Initialize pointer to GPIO BSRR and IDR registers of DL pin</span></div>
 <div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    <span class="comment">// (very fast operations with pins are needed)</span></div>
 <div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    GPIO_TypeDef *GPIOx = _pyq1648_gpiox_table[<span class="keyword">self</span>-&gt;_gpio_channel_dl];</div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;    uint32_t *GPIOx_BSRR = (uint32_t *) &amp;GPIOx-&gt;BSRR;</div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    uint32_t *GPIOx_IDR = (uint32_t *) &amp;GPIOx-&gt;IDR;</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;    <span class="keyword">volatile</span> uint32_t *GPIOx_BSRR = &amp;GPIOx-&gt;BSRR;</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    <span class="keyword">volatile</span> uint32_t *GPIOx_IDR = &amp;GPIOx-&gt;IDR;</div>
 <div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;</div>
 <div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;    *GPIOx_BSRR = bsrr_mask[1]; <span class="comment">// Set DL = High, to force fast uC controlled DL read out</span></div>
 <div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    <a class="code" href="group__bc__gpio.html#ga63a3ad86dfef88c7c940a2a34945d853">bc_gpio_set_mode</a>(self-&gt;_gpio_channel_dl, <a class="code" href="group__bc__gpio.html#gga95188c2afa0f36cb97ebd6c5bc6eab6ca92cf3f1d89c43c735e756479890cd608">BC_GPIO_MODE_OUTPUT</a>); <span class="comment">// Configure PORT DL as Output</span></div>
