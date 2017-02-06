@@ -1,6 +1,7 @@
 var NAVTREE =
 [
   [ "BigClown Core Module Library", "index.html", [
+    [ "BigClown firmware SDK", "index.html", null ],
     [ "Modules", "modules.html", "modules" ],
     [ "Data Structures", null, [
       [ "Data Structures", "annotated.html", "annotated" ],

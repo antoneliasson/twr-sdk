@@ -434,5 +434,6 @@ var searchData=
   ['bc_5fuart_5fuart1',['BC_UART_UART1',['../group__bc__uart.html#ggafc2793f7c8bd58556f8344cfb1ff4811afa614bde5555b594663b3b7474e9070b',1,'bc_uart.h']]],
   ['bc_5fuart_5fuart2',['BC_UART_UART2',['../group__bc__uart.html#ggafc2793f7c8bd58556f8344cfb1ff4811a66cd08232879638f96034cb607a7cc25',1,'bc_uart.h']]],
   ['bc_5fuart_5fwrite',['bc_uart_write',['../group__bc__uart.html#gaacd83e579229cf6cde13228169d55ebf',1,'bc_uart_write(bc_uart_channel_t channel, const void *buffer, size_t length, bc_tick_t timeout):&#160;bc_uart.c'],['../group__bc__uart.html#gaacd83e579229cf6cde13228169d55ebf',1,'bc_uart_write(bc_uart_channel_t channel, const void *buffer, size_t length, bc_tick_t timeout):&#160;bc_uart.c']]],
-  ['buffer',['buffer',['../structbc__fifo__t.html#a8db99590451e3476c324d205ae0eca86',1,'bc_fifo_t::buffer()'],['../structbc__i2c__tranfer__t.html#ae3701a88ed65ab6980fec4717d58fb62',1,'bc_i2c_tranfer_t::buffer()']]]
+  ['buffer',['buffer',['../structbc__fifo__t.html#a8db99590451e3476c324d205ae0eca86',1,'bc_fifo_t::buffer()'],['../structbc__i2c__tranfer__t.html#ae3701a88ed65ab6980fec4717d58fb62',1,'bc_i2c_tranfer_t::buffer()']]],
+  ['bigclown_20firmware_20sdk',['BigClown firmware SDK',['../index.html',1,'']]]
 ];
