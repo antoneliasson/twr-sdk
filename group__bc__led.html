@@ -117,17 +117,19 @@ typedef struct <a class="el" href="group__bc__led.html#gad08c12a4324e33141d1ab7c
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
 <tr class="memitem:gae9ea7763b55ff27ec63b6f9a5069a9c1"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bc__led.html#gae9ea7763b55ff27ec63b6f9a5069a9c1">bc_led_mode_t</a> { <br/>
-&#160;&#160;<a class="el" href="group__bc__led.html#ggae9ea7763b55ff27ec63b6f9a5069a9c1ac62ebddc21c20866b200ef345db1bb77">BC_LED_MODE_OFF</a> = 0, 
+&#160;&#160;<a class="el" href="group__bc__led.html#ggae9ea7763b55ff27ec63b6f9a5069a9c1aac16ac411cf6152afff5a74a26f77398">BC_LED_MODE_TOGGLE</a> = 0, 
 <br/>
-&#160;&#160;<a class="el" href="group__bc__led.html#ggae9ea7763b55ff27ec63b6f9a5069a9c1aef86aa16ff540c4653431ced4c25dfd3">BC_LED_MODE_ON</a> = 1, 
+&#160;&#160;<a class="el" href="group__bc__led.html#ggae9ea7763b55ff27ec63b6f9a5069a9c1ac62ebddc21c20866b200ef345db1bb77">BC_LED_MODE_OFF</a> = 1, 
 <br/>
-&#160;&#160;<a class="el" href="group__bc__led.html#ggae9ea7763b55ff27ec63b6f9a5069a9c1a728d7bdceb47d519a899ccf7882e13d1">BC_LED_MODE_BLINK</a> = 2, 
+&#160;&#160;<a class="el" href="group__bc__led.html#ggae9ea7763b55ff27ec63b6f9a5069a9c1aef86aa16ff540c4653431ced4c25dfd3">BC_LED_MODE_ON</a> = 2, 
 <br/>
-&#160;&#160;<a class="el" href="group__bc__led.html#ggae9ea7763b55ff27ec63b6f9a5069a9c1a9566d63a071b070b30272b85c919824f">BC_LED_MODE_BLINK_SLOW</a> = 3, 
+&#160;&#160;<a class="el" href="group__bc__led.html#ggae9ea7763b55ff27ec63b6f9a5069a9c1a728d7bdceb47d519a899ccf7882e13d1">BC_LED_MODE_BLINK</a> = 3, 
 <br/>
-&#160;&#160;<a class="el" href="group__bc__led.html#ggae9ea7763b55ff27ec63b6f9a5069a9c1abceeffe3c6e9de4c8f8b6a9fbcda3918">BC_LED_MODE_BLINK_FAST</a> = 4, 
+&#160;&#160;<a class="el" href="group__bc__led.html#ggae9ea7763b55ff27ec63b6f9a5069a9c1a9566d63a071b070b30272b85c919824f">BC_LED_MODE_BLINK_SLOW</a> = 4, 
 <br/>
-&#160;&#160;<a class="el" href="group__bc__led.html#ggae9ea7763b55ff27ec63b6f9a5069a9c1a98556b0e6dc4939ed6020c45086f3872">BC_LED_MODE_FLASH</a> = 5
+&#160;&#160;<a class="el" href="group__bc__led.html#ggae9ea7763b55ff27ec63b6f9a5069a9c1abceeffe3c6e9de4c8f8b6a9fbcda3918">BC_LED_MODE_BLINK_FAST</a> = 5, 
+<br/>
+&#160;&#160;<a class="el" href="group__bc__led.html#ggae9ea7763b55ff27ec63b6f9a5069a9c1a98556b0e6dc4939ed6020c45086f3872">BC_LED_MODE_FLASH</a> = 6
 <br/>
  }</td></tr>
 <tr class="memdesc:gae9ea7763b55ff27ec63b6f9a5069a9c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">LED modes.  <a href="group__bc__led.html#gae9ea7763b55ff27ec63b6f9a5069a9c1">More...</a><br/></td></tr>
@@ -177,7 +179,10 @@ How to use this driver</h1>
 
 <p>LED modes. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="ggae9ea7763b55ff27ec63b6f9a5069a9c1ac62ebddc21c20866b200ef345db1bb77"></a>BC_LED_MODE_OFF</em>&#160;</td><td class="fielddoc">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="ggae9ea7763b55ff27ec63b6f9a5069a9c1aac16ac411cf6152afff5a74a26f77398"></a>BC_LED_MODE_TOGGLE</em>&#160;</td><td class="fielddoc">
+<p>LED toggles between on/off state (this has no effect while processing alternating patterns) </p>
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ggae9ea7763b55ff27ec63b6f9a5069a9c1ac62ebddc21c20866b200ef345db1bb77"></a>BC_LED_MODE_OFF</em>&#160;</td><td class="fielddoc">
 <p>LED has steady off state. </p>
 </td></tr>
 <tr><td class="fieldname"><em><a class="anchor" id="ggae9ea7763b55ff27ec63b6f9a5069a9c1aef86aa16ff540c4653431ced4c25dfd3"></a>BC_LED_MODE_ON</em>&#160;</td><td class="fielddoc">
@@ -249,7 +254,7 @@ How to use this driver</h1>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="bc__led_8c_source.html#l00009">9</a> of file <a class="el" href="bc__led_8c_source.html">bc_led.c</a>.</p>
+<p>Definition at line <a class="el" href="bc__led_8c_source.html#l00013">13</a> of file <a class="el" href="bc__led_8c_source.html">bc_led.c</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -295,14 +300,14 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="bc__led_8c_source.html#l00101">101</a> of file <a class="el" href="bc__led_8c_source.html">bc_led.c</a>.</p>
+<p>Definition at line <a class="el" href="bc__led_8c_source.html#l00138">138</a> of file <a class="el" href="bc__led_8c_source.html">bc_led.c</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="group__bc__led_ga70430d42b18f282381a8c8044c8adf94_cgraph.png" border="0" usemap="#group__bc__led_ga70430d42b18f282381a8c8044c8adf94_cgraph" alt=""/></div>
 <map name="group__bc__led_ga70430d42b18f282381a8c8044c8adf94_cgraph" id="group__bc__led_ga70430d42b18f282381a8c8044c8adf94_cgraph">
-<area shape="rect" id="node2" href="group__bc__scheduler.html#gade94244616617574eee859c0fb5df428" title="Schedule specified task to absolute tick. " alt="" coords="152,5,339,32"/><area shape="rect" id="node3" href="group__bc__tick.html#ga5291d354b48d9599d185969d53f2bf8a" title="Get absolute timestamp since start of program. " alt="" coords="201,56,290,83"/><area shape="rect" id="node4" href="group__bc__gpio.html#ga509a65d13103db1a636c7ba082336cdd" title="Set output state for GPIO channel. " alt="" coords="178,107,313,133"/><area shape="rect" id="node5" href="group__bc__scheduler.html#gac6e2fa9155567fb1f32a8b8b563e2f30" title="Register task in scheduler. " alt="" coords="171,157,320,184"/></map>
+<area shape="rect" id="node2" href="group__bc__scheduler.html#gade94244616617574eee859c0fb5df428" title="Schedule specified task to absolute tick. " alt="" coords="152,5,339,32"/><area shape="rect" id="node3" href="group__bc__tick.html#ga5291d354b48d9599d185969d53f2bf8a" title="Get absolute timestamp since start of program. " alt="" coords="201,56,290,83"/><area shape="rect" id="node4" href="group__bc__scheduler.html#gac6e2fa9155567fb1f32a8b8b563e2f30" title="Register task in scheduler. " alt="" coords="171,107,320,133"/></map>
 </div>
 </p>
 
@@ -341,7 +346,7 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="bc__led_8c_source.html#l00042">42</a> of file <a class="el" href="bc__led_8c_source.html">bc_led.c</a>.</p>
+<p>Definition at line <a class="el" href="bc__led_8c_source.html#l00046">46</a> of file <a class="el" href="bc__led_8c_source.html">bc_led.c</a>.</p>
 
 </div>
 </div>
@@ -378,7 +383,7 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="bc__led_8c_source.html#l00091">91</a> of file <a class="el" href="bc__led_8c_source.html">bc_led.c</a>.</p>
+<p>Definition at line <a class="el" href="bc__led_8c_source.html#l00128">128</a> of file <a class="el" href="bc__led_8c_source.html">bc_led.c</a>.</p>
 
 </div>
 </div>
@@ -415,7 +420,7 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="bc__led_8c_source.html#l00037">37</a> of file <a class="el" href="bc__led_8c_source.html">bc_led.c</a>.</p>
+<p>Definition at line <a class="el" href="bc__led_8c_source.html#l00041">41</a> of file <a class="el" href="bc__led_8c_source.html">bc_led.c</a>.</p>
 
 </div>
 </div>

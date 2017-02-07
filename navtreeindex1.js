@@ -40,12 +40,13 @@ var NAVTREEINDEX1 =
 "group__bc__led.html#gad08c12a4324e33141d1ab7cd444024e0":[1,12,0],
 "group__bc__led.html#gae9ea7763b55ff27ec63b6f9a5069a9c1":[1,12,1],
 "group__bc__led.html#gafc579801a777bb5fe3318e2bd0397279":[1,12,6],
-"group__bc__led.html#ggae9ea7763b55ff27ec63b6f9a5069a9c1a728d7bdceb47d519a899ccf7882e13d1":[1,12,1,2],
-"group__bc__led.html#ggae9ea7763b55ff27ec63b6f9a5069a9c1a9566d63a071b070b30272b85c919824f":[1,12,1,3],
-"group__bc__led.html#ggae9ea7763b55ff27ec63b6f9a5069a9c1a98556b0e6dc4939ed6020c45086f3872":[1,12,1,5],
-"group__bc__led.html#ggae9ea7763b55ff27ec63b6f9a5069a9c1abceeffe3c6e9de4c8f8b6a9fbcda3918":[1,12,1,4],
-"group__bc__led.html#ggae9ea7763b55ff27ec63b6f9a5069a9c1ac62ebddc21c20866b200ef345db1bb77":[1,12,1,0],
-"group__bc__led.html#ggae9ea7763b55ff27ec63b6f9a5069a9c1aef86aa16ff540c4653431ced4c25dfd3":[1,12,1,1],
+"group__bc__led.html#ggae9ea7763b55ff27ec63b6f9a5069a9c1a728d7bdceb47d519a899ccf7882e13d1":[1,12,1,3],
+"group__bc__led.html#ggae9ea7763b55ff27ec63b6f9a5069a9c1a9566d63a071b070b30272b85c919824f":[1,12,1,4],
+"group__bc__led.html#ggae9ea7763b55ff27ec63b6f9a5069a9c1a98556b0e6dc4939ed6020c45086f3872":[1,12,1,6],
+"group__bc__led.html#ggae9ea7763b55ff27ec63b6f9a5069a9c1aac16ac411cf6152afff5a74a26f77398":[1,12,1,0],
+"group__bc__led.html#ggae9ea7763b55ff27ec63b6f9a5069a9c1abceeffe3c6e9de4c8f8b6a9fbcda3918":[1,12,1,5],
+"group__bc__led.html#ggae9ea7763b55ff27ec63b6f9a5069a9c1ac62ebddc21c20866b200ef345db1bb77":[1,12,1,1],
+"group__bc__led.html#ggae9ea7763b55ff27ec63b6f9a5069a9c1aef86aa16ff540c4653431ced4c25dfd3":[1,12,1,2],
 "group__bc__lis2dh12.html":[1,13],
 "group__bc__lis2dh12.html#ga47cce13a72b350cb25efa341423b8d56":[1,13,5],
 "group__bc__lis2dh12.html#ga4e706e214a03b568e43b923931774160":[1,13,7],
@@ -248,6 +249,5 @@ var NAVTREEINDEX1 =
 "group__bc__uart.html":[1,32],
 "group__bc__uart.html#ga4256fe65e122609345ab0702924ad5a9":[1,32,4],
 "group__bc__uart.html#gaacd83e579229cf6cde13228169d55ebf":[1,32,5],
-"group__bc__uart.html#gab536b53616dfc99ddbe5ff412441df0b":[1,32,3],
-"group__bc__uart.html#gabe2f6f464dc94204d147f3f498fbeb85":[1,32,1]
+"group__bc__uart.html#gab536b53616dfc99ddbe5ff412441df0b":[1,32,3]
 };

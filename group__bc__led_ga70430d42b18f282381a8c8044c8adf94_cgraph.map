@@ -1,6 +1,5 @@
 <map id="bc_led_pulse" name="bc_led_pulse">
 <area shape="rect" id="node2" href="$group__bc__scheduler.html#gade94244616617574eee859c0fb5df428" title="Schedule specified task to absolute tick. " alt="" coords="152,5,339,32"/>
 <area shape="rect" id="node3" href="$group__bc__tick.html#ga5291d354b48d9599d185969d53f2bf8a" title="Get absolute timestamp since start of program. " alt="" coords="201,56,290,83"/>
-<area shape="rect" id="node4" href="$group__bc__gpio.html#ga509a65d13103db1a636c7ba082336cdd" title="Set output state for GPIO channel. " alt="" coords="178,107,313,133"/>
-<area shape="rect" id="node5" href="$group__bc__scheduler.html#gac6e2fa9155567fb1f32a8b8b563e2f30" title="Register task in scheduler. " alt="" coords="171,157,320,184"/>
+<area shape="rect" id="node4" href="$group__bc__scheduler.html#gac6e2fa9155567fb1f32a8b8b563e2f30" title="Register task in scheduler. " alt="" coords="171,107,320,133"/>
 </map>

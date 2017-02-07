@@ -21,7 +21,7 @@ var NAVTREEINDEX =
 [
 "annotated.html",
 "group__bc__hdc2080.html#gaa4cf9c164b7a2dde482968d8b4967ef5",
-"group__bc__uart.html#gafc2793f7c8bd58556f8344cfb1ff4811"
+"group__bc__uart.html#gabe2f6f464dc94204d147f3f498fbeb85"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

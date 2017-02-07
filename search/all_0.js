@@ -213,6 +213,7 @@ var searchData=
   ['bc_5fled_5fmode_5foff',['BC_LED_MODE_OFF',['../group__bc__led.html#ggae9ea7763b55ff27ec63b6f9a5069a9c1ac62ebddc21c20866b200ef345db1bb77',1,'bc_led.h']]],
   ['bc_5fled_5fmode_5fon',['BC_LED_MODE_ON',['../group__bc__led.html#ggae9ea7763b55ff27ec63b6f9a5069a9c1aef86aa16ff540c4653431ced4c25dfd3',1,'bc_led.h']]],
   ['bc_5fled_5fmode_5ft',['bc_led_mode_t',['../group__bc__led.html#gae9ea7763b55ff27ec63b6f9a5069a9c1',1,'bc_led.h']]],
+  ['bc_5fled_5fmode_5ftoggle',['BC_LED_MODE_TOGGLE',['../group__bc__led.html#ggae9ea7763b55ff27ec63b6f9a5069a9c1aac16ac411cf6152afff5a74a26f77398',1,'bc_led.h']]],
   ['bc_5fled_5fpulse',['bc_led_pulse',['../group__bc__led.html#ga70430d42b18f282381a8c8044c8adf94',1,'bc_led_pulse(bc_led_t *self, bc_tick_t duration):&#160;bc_led.c'],['../group__bc__led.html#ga70430d42b18f282381a8c8044c8adf94',1,'bc_led_pulse(bc_led_t *self, bc_tick_t duration):&#160;bc_led.c']]],
   ['bc_5fled_5fset_5fmode',['bc_led_set_mode',['../group__bc__led.html#ga6ffe61a0edb14fbf3847203068cf4715',1,'bc_led_set_mode(bc_led_t *self, bc_led_mode_t mode):&#160;bc_led.c'],['../group__bc__led.html#ga6ffe61a0edb14fbf3847203068cf4715',1,'bc_led_set_mode(bc_led_t *self, bc_led_mode_t mode):&#160;bc_led.c']]],
   ['bc_5fled_5fset_5fpattern',['bc_led_set_pattern',['../group__bc__led.html#ga5599ece47811e27512bad8e7b1670818',1,'bc_led_set_pattern(bc_led_t *self, uint32_t pattern):&#160;bc_led.c'],['../group__bc__led.html#ga5599ece47811e27512bad8e7b1670818',1,'bc_led_set_pattern(bc_led_t *self, uint32_t pattern):&#160;bc_led.c']]],

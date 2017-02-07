@@ -2,6 +2,7 @@ var group__bc__led =
 [
     [ "bc_led_t", "group__bc__led.html#gad08c12a4324e33141d1ab7cd444024e0", null ],
     [ "bc_led_mode_t", "group__bc__led.html#gae9ea7763b55ff27ec63b6f9a5069a9c1", [
+      [ "BC_LED_MODE_TOGGLE", "group__bc__led.html#ggae9ea7763b55ff27ec63b6f9a5069a9c1aac16ac411cf6152afff5a74a26f77398", null ],
       [ "BC_LED_MODE_OFF", "group__bc__led.html#ggae9ea7763b55ff27ec63b6f9a5069a9c1ac62ebddc21c20866b200ef345db1bb77", null ],
       [ "BC_LED_MODE_ON", "group__bc__led.html#ggae9ea7763b55ff27ec63b6f9a5069a9c1aef86aa16ff540c4653431ced4c25dfd3", null ],
       [ "BC_LED_MODE_BLINK", "group__bc__led.html#ggae9ea7763b55ff27ec63b6f9a5069a9c1a728d7bdceb47d519a899ccf7882e13d1", null ],

@@ -122,6 +122,7 @@ var searchData=
   ['bc_5fled_5fmode_5fflash',['BC_LED_MODE_FLASH',['../group__bc__led.html#ggae9ea7763b55ff27ec63b6f9a5069a9c1a98556b0e6dc4939ed6020c45086f3872',1,'bc_led.h']]],
   ['bc_5fled_5fmode_5foff',['BC_LED_MODE_OFF',['../group__bc__led.html#ggae9ea7763b55ff27ec63b6f9a5069a9c1ac62ebddc21c20866b200ef345db1bb77',1,'bc_led.h']]],
   ['bc_5fled_5fmode_5fon',['BC_LED_MODE_ON',['../group__bc__led.html#ggae9ea7763b55ff27ec63b6f9a5069a9c1aef86aa16ff540c4653431ced4c25dfd3',1,'bc_led.h']]],
+  ['bc_5fled_5fmode_5ftoggle',['BC_LED_MODE_TOGGLE',['../group__bc__led.html#ggae9ea7763b55ff27ec63b6f9a5069a9c1aac16ac411cf6152afff5a74a26f77398',1,'bc_led.h']]],
   ['bc_5flis2dh12_5fevent_5falarm',['BC_LIS2DH12_EVENT_ALARM',['../group__bc__lis2dh12.html#gga5dc318914a8bce8dc9af065e14cdbb45a2f9073f4bcb75a8425d93eb75f7a63d7',1,'bc_lis2dh12.h']]],
   ['bc_5flis2dh12_5fevent_5ferror',['BC_LIS2DH12_EVENT_ERROR',['../group__bc__lis2dh12.html#gga5dc318914a8bce8dc9af065e14cdbb45a99cf60bcf3dde56922255f7c7aa373c0',1,'bc_lis2dh12.h']]],
   ['bc_5flis2dh12_5fevent_5fupdate',['BC_LIS2DH12_EVENT_UPDATE',['../group__bc__lis2dh12.html#gga5dc318914a8bce8dc9af065e14cdbb45a3bf470c693907288d7bd3a905b1edcd8',1,'bc_lis2dh12.h']]],
