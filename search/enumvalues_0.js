@@ -1,11 +1,11 @@
 var searchData=
 [
-  ['bc_5fadc_5fa0',['BC_ADC_A0',['../group__bc__adc.html#gga36de67b89dc275ad2108cff743861612af831b707e477be564f3623032eb7e6e7',1,'bc_adc.h']]],
-  ['bc_5fadc_5fa1',['BC_ADC_A1',['../group__bc__adc.html#gga36de67b89dc275ad2108cff743861612ab7d1f2ecf639682b68cc8ee1537d4a0a',1,'bc_adc.h']]],
-  ['bc_5fadc_5fa2',['BC_ADC_A2',['../group__bc__adc.html#gga36de67b89dc275ad2108cff743861612ab6c5486c191ca613b50e0c9058c583ef',1,'bc_adc.h']]],
-  ['bc_5fadc_5fa3',['BC_ADC_A3',['../group__bc__adc.html#gga36de67b89dc275ad2108cff743861612a651a86611969d1f3df6c593aa3e0e1ef',1,'bc_adc.h']]],
-  ['bc_5fadc_5fa4',['BC_ADC_A4',['../group__bc__adc.html#gga36de67b89dc275ad2108cff743861612a3b0faa3326a672ea73f4969afc3a438b',1,'bc_adc.h']]],
-  ['bc_5fadc_5fa5',['BC_ADC_A5',['../group__bc__adc.html#gga36de67b89dc275ad2108cff743861612a535cf5114177753e4d6a5ffcc0c4bb1a',1,'bc_adc.h']]],
+  ['bc_5fadc_5fchannel_5fa0',['BC_ADC_CHANNEL_A0',['../group__bc__adc.html#gga36de67b89dc275ad2108cff743861612a5224406d442099295d839f662030dc76',1,'bc_adc.h']]],
+  ['bc_5fadc_5fchannel_5fa1',['BC_ADC_CHANNEL_A1',['../group__bc__adc.html#gga36de67b89dc275ad2108cff743861612a24f09a1d1b7ba087370b0b0cc56dd1e7',1,'bc_adc.h']]],
+  ['bc_5fadc_5fchannel_5fa2',['BC_ADC_CHANNEL_A2',['../group__bc__adc.html#gga36de67b89dc275ad2108cff743861612a6a84ba5c9f26056d0bbf3d935e42f107',1,'bc_adc.h']]],
+  ['bc_5fadc_5fchannel_5fa3',['BC_ADC_CHANNEL_A3',['../group__bc__adc.html#gga36de67b89dc275ad2108cff743861612aa8d1c72404fb66f9b2d389b14304fce4',1,'bc_adc.h']]],
+  ['bc_5fadc_5fchannel_5fa4',['BC_ADC_CHANNEL_A4',['../group__bc__adc.html#gga36de67b89dc275ad2108cff743861612a03046f9658ddd4bfde0aff13aa753dc9',1,'bc_adc.h']]],
+  ['bc_5fadc_5fchannel_5fa5',['BC_ADC_CHANNEL_A5',['../group__bc__adc.html#gga36de67b89dc275ad2108cff743861612a31e6cfe48a20fa881c7670c010f8b87d',1,'bc_adc.h']]],
   ['bc_5fadc_5fformat_5f16_5fbit',['BC_ADC_FORMAT_16_BIT',['../group__bc__adc.html#ggadcd16f9828c6f56bd4afa0512889ec72a47f6a438dcff46eb8a153a83f169f184',1,'bc_adc.h']]],
   ['bc_5fadc_5fformat_5f24_5fbit',['BC_ADC_FORMAT_24_BIT',['../group__bc__adc.html#ggadcd16f9828c6f56bd4afa0512889ec72a7436256f8a596fb84e8a2603e488e9cf',1,'bc_adc.h']]],
   ['bc_5fadc_5fformat_5f32_5fbit',['BC_ADC_FORMAT_32_BIT',['../group__bc__adc.html#ggadcd16f9828c6f56bd4afa0512889ec72a4a522a2162272b97868adbf584bc1a8c',1,'bc_adc.h']]],

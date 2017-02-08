@@ -1,5 +1,6 @@
 var annotated =
 [
+    [ "bc_adc_config_t", "structbc__adc__config__t.html", "structbc__adc__config__t" ],
     [ "bc_fifo_t", "structbc__fifo__t.html", "structbc__fifo__t" ],
     [ "bc_i2c_tranfer_t", "structbc__i2c__tranfer__t.html", "structbc__i2c__tranfer__t" ],
     [ "bc_lis2dh12_alarm_t", "structbc__lis2dh12__alarm__t.html", "structbc__lis2dh12__alarm__t" ],

@@ -1,6 +1,7 @@
 var dir_68267d1309a1af8e8297ef4c3efbcdba =
 [
     [ "base64.c", "base64_8c_source.html", null ],
+    [ "bc_adc.c", "bc__adc_8c_source.html", null ],
     [ "bc_button.c", "bc__button_8c_source.html", null ],
     [ "bc_dac.c", "bc__dac_8c_source.html", null ],
     [ "bc_dfu.c", "bc__dfu_8c_source.html", null ],
