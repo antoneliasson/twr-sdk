@@ -1,5 +1,7 @@
 var NAVTREEINDEX2 =
 {
+"group__bc__uart.html#ga4256fe65e122609345ab0702924ad5a9":[1,32,4],
+"group__bc__uart.html#gaacd83e579229cf6cde13228169d55ebf":[1,32,5],
 "group__bc__uart.html#gab536b53616dfc99ddbe5ff412441df0b":[1,32,3],
 "group__bc__uart.html#gabe2f6f464dc94204d147f3f498fbeb85":[1,32,1],
 "group__bc__uart.html#gafc2793f7c8bd58556f8344cfb1ff4811":[1,32,2],
@@ -9,8 +11,8 @@ var NAVTREEINDEX2 =
 "group__bc__uart.html#ggafc2793f7c8bd58556f8344cfb1ff4811afa614bde5555b594663b3b7474e9070b":[1,32,2,1],
 "index.html":[],
 "index.html":[0],
-"jsmn_8c_source.html":[3,0,1,36],
-"jsmn_8h_source.html":[3,0,0,38],
+"jsmn_8c_source.html":[3,0,1,37],
+"jsmn_8h_source.html":[3,0,0,39],
 "modules.html":[1],
 "pages.html":[],
 "structbc__adc__config__t.html":[2,0,0],

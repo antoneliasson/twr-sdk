@@ -15,6 +15,7 @@ var dir_68267d1309a1af8e8297ef4c3efbcdba =
     [ "bc_irq.c", "bc__irq_8c_source.html", null ],
     [ "bc_led.c", "bc__led_8c_source.html", null ],
     [ "bc_lis2dh12.c", "bc__lis2dh12_8c_source.html", null ],
+    [ "bc_module_core.c", "bc__module__core_8c_source.html", null ],
     [ "bc_module_pir.c", "bc__module__pir_8c_source.html", null ],
     [ "bc_module_power.c", "bc__module__power_8c_source.html", null ],
     [ "bc_module_relay.c", "bc__module__relay_8c_source.html", null ],
