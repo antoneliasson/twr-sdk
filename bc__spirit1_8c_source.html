@@ -563,7 +563,7 @@ $(document).ready(function(){initNavTree('bc__spirit1_8c_source.html','');});
 <div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;    <span class="comment">// TODO This delay might not exist (maybe poll GPIO?)...</span></div>
 <div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;</div>
 <div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;    <span class="comment">// Set prescaler</span></div>
-<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;    TIM7-&gt;PSC = 32 - 1;</div>
+<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;    TIM7-&gt;PSC = 16 - 1;</div>
 <div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;</div>
 <div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;    <span class="comment">// Set auto-reload register - period 10 ms</span></div>
 <div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;    TIM7-&gt;ARR = 10000 - 1;</div>
@@ -590,7 +590,7 @@ $(document).ready(function(){initNavTree('bc__spirit1_8c_source.html','');});
 <div class="line"><a name="l00483"></a><span class="lineno">  483</span>&#160;    GPIOB-&gt;BSRR = GPIO_BSRR_BS_7;</div>
 <div class="line"><a name="l00484"></a><span class="lineno">  484</span>&#160;</div>
 <div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160;    <span class="comment">// Set prescaler</span></div>
-<div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160;    TIM7-&gt;PSC = 64 - 1;</div>
+<div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160;    TIM7-&gt;PSC = 32 - 1;</div>
 <div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;</div>
 <div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;    <span class="comment">// Set auto-reload register - period 100 ms</span></div>
 <div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;    TIM7-&gt;ARR = 50000 - 1;</div>
@@ -617,7 +617,7 @@ $(document).ready(function(){initNavTree('bc__spirit1_8c_source.html','');});
 <div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;    TIM7-&gt;PSC = 0;</div>
 <div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;</div>
 <div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;    <span class="comment">// Set auto-reload register - period 4 us</span></div>
-<div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;    TIM7-&gt;ARR = 128 - 1;</div>
+<div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;    TIM7-&gt;ARR = 32 - 1;</div>
 <div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;</div>
 <div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160;    <span class="comment">// Generate update of registers</span></div>
 <div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160;    TIM7-&gt;EGR = TIM_EGR_UG;</div>
@@ -638,7 +638,7 @@ $(document).ready(function(){initNavTree('bc__spirit1_8c_source.html','');});
 <div class="line"><a name="l00531"></a><span class="lineno">  531</span>&#160;    TIM7-&gt;PSC = 0;</div>
 <div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;</div>
 <div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160;    <span class="comment">// Set auto-reload register - period 4 us</span></div>
-<div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;    TIM7-&gt;ARR = 128 - 1;</div>
+<div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;    TIM7-&gt;ARR = 64 - 1;</div>
 <div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;</div>
 <div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;    <span class="comment">// Generate update of registers</span></div>
 <div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;    TIM7-&gt;EGR = TIM_EGR_UG;</div>
@@ -659,7 +659,7 @@ $(document).ready(function(){initNavTree('bc__spirit1_8c_source.html','');});
 <div class="line"><a name="l00552"></a><span class="lineno">  552</span>&#160;    TIM7-&gt;PSC = 0;</div>
 <div class="line"><a name="l00553"></a><span class="lineno">  553</span>&#160;</div>
 <div class="line"><a name="l00554"></a><span class="lineno">  554</span>&#160;    <span class="comment">// Set auto-reload register - period 4 us</span></div>
-<div class="line"><a name="l00555"></a><span class="lineno">  555</span>&#160;    TIM7-&gt;ARR = 128 - 1;</div>
+<div class="line"><a name="l00555"></a><span class="lineno">  555</span>&#160;    TIM7-&gt;ARR = 64 - 1;</div>
 <div class="line"><a name="l00556"></a><span class="lineno">  556</span>&#160;</div>
 <div class="line"><a name="l00557"></a><span class="lineno">  557</span>&#160;    <span class="comment">// Generate update of registers</span></div>
 <div class="line"><a name="l00558"></a><span class="lineno">  558</span>&#160;    TIM7-&gt;EGR = TIM_EGR_UG;</div>
@@ -702,7 +702,7 @@ $(document).ready(function(){initNavTree('bc__spirit1_8c_source.html','');});
 <div class="line"><a name="l00595"></a><span class="lineno">  595</span>&#160;    <span class="comment">// Enable clock for GPIOH, GPIOB and GPIOA</span></div>
 <div class="line"><a name="l00596"></a><span class="lineno">  596</span>&#160;    RCC-&gt;IOPENR |= RCC_IOPENR_GPIOHEN | RCC_IOPENR_GPIOBEN | RCC_IOPENR_GPIOAEN;</div>
 <div class="line"><a name="l00597"></a><span class="lineno">  597</span>&#160;</div>
-<div class="line"><a name="l00598"></a><span class="lineno">  598</span>&#160;    <span class="comment">// TODO Errata workaround</span></div>
+<div class="line"><a name="l00598"></a><span class="lineno">  598</span>&#160;    <span class="comment">// Errata workaround</span></div>
 <div class="line"><a name="l00599"></a><span class="lineno">  599</span>&#160;    RCC-&gt;IOPENR;</div>
 <div class="line"><a name="l00600"></a><span class="lineno">  600</span>&#160;</div>
 <div class="line"><a name="l00601"></a><span class="lineno">  601</span>&#160;    <span class="comment">// Output log. 1 on SDN pin</span></div>
@@ -738,8 +738,8 @@ $(document).ready(function(){initNavTree('bc__spirit1_8c_source.html','');});
 <div class="line"><a name="l00631"></a><span class="lineno">  631</span>&#160;    <span class="comment">// Enable clock for SPI1</span></div>
 <div class="line"><a name="l00632"></a><span class="lineno">  632</span>&#160;    RCC-&gt;APB2ENR |= RCC_APB2ENR_SPI1EN;</div>
 <div class="line"><a name="l00633"></a><span class="lineno">  633</span>&#160;</div>
-<div class="line"><a name="l00634"></a><span class="lineno">  634</span>&#160;    <span class="comment">// Software slave management, baud rate control = fPCLK / 8, master configuration</span></div>
-<div class="line"><a name="l00635"></a><span class="lineno">  635</span>&#160;    SPI1-&gt;CR1 = SPI_CR1_SSM | SPI_CR1_SSI | SPI_CR1_BR_1 | SPI_CR1_MSTR;</div>
+<div class="line"><a name="l00634"></a><span class="lineno">  634</span>&#160;    <span class="comment">// Software slave management, baud rate control = fPCLK / 4, master configuration</span></div>
+<div class="line"><a name="l00635"></a><span class="lineno">  635</span>&#160;    SPI1-&gt;CR1 = SPI_CR1_SSM | SPI_CR1_SSI | SPI_CR1_BR_0 | SPI_CR1_MSTR;</div>
 <div class="line"><a name="l00636"></a><span class="lineno">  636</span>&#160;</div>
 <div class="line"><a name="l00637"></a><span class="lineno">  637</span>&#160;    <span class="comment">// Enable SPI</span></div>
 <div class="line"><a name="l00638"></a><span class="lineno">  638</span>&#160;    SPI1-&gt;CR1 |= SPI_CR1_SPE;</div>
