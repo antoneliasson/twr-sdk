@@ -123,26 +123,26 @@ $(document).ready(function(){initNavTree('bc__module__core_8c_source.html','');}
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    RCC-&gt;APB1ENR |= RCC_APB1ENR_PWREN;  <span class="comment">// Enable APB1 clock</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#if DEBUG_ENABLE</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor"></span>    RCC-&gt;APB2ENR |= RCC_APB2ENR_SYSCFGEN | <span class="comment">// Enable system configuration controller block</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    RCC_APB2ENR_DBGMCUEN;   <span class="comment">// Enable MCU debug module clock</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor"></span>    RCC-&gt;APB2ENR |= RCC_APB2ENR_SYSCFGEN |  <span class="comment">// Enable system configuration controller block</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;                    RCC_APB2ENR_DBGMCUEN;   <span class="comment">// Enable MCU debug module clock</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    DBGMCU-&gt;CR = DBGMCU_CR_DBG_SLEEP |  <span class="comment">// Debug Sleep mode (FCLK=On, HCLK=On)</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    DBGMCU_CR_DBG_STOP |   <span class="comment">// Debug Stop mode (FCLK=On, HCLK=On)</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    DBGMCU_CR_DBG_STANDBY; <span class="comment">// Debug Standby mode (FCLK=On, HCLK=On)</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;                 DBGMCU_CR_DBG_STOP |   <span class="comment">// Debug Stop mode (FCLK=On, HCLK=On)</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;                 DBGMCU_CR_DBG_STANDBY; <span class="comment">// Debug Standby mode (FCLK=On, HCLK=On)</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    DBGMCU-&gt;APB1FZ = DBGMCU_APB1_FZ_DBG_TIM2_STOP |</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    DBGMCU_APB1_FZ_DBG_TIM6_STOP |</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    DBGMCU_APB1_FZ_DBG_RTC_STOP |</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    DBGMCU_APB1_FZ_DBG_WWDG_STOP |</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    DBGMCU_APB1_FZ_DBG_IWDG_STOP |</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    DBGMCU_APB1_FZ_DBG_I2C1_STOP |</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    DBGMCU_APB1_FZ_DBG_I2C2_STOP |</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    DBGMCU_APB1_FZ_DBG_LPTIMER_STOP;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                     DBGMCU_APB1_FZ_DBG_TIM6_STOP |</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                     DBGMCU_APB1_FZ_DBG_RTC_STOP |</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                     DBGMCU_APB1_FZ_DBG_WWDG_STOP |</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;                     DBGMCU_APB1_FZ_DBG_IWDG_STOP |</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                     DBGMCU_APB1_FZ_DBG_I2C1_STOP |</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                     DBGMCU_APB1_FZ_DBG_I2C2_STOP |</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                     DBGMCU_APB1_FZ_DBG_LPTIMER_STOP;</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    DBGMCU-&gt;APB2FZ = DBGMCU_APB2_FZ_DBG_TIM21_STOP |</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    DBGMCU_APB2_FZ_DBG_TIM22_STOP;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                     DBGMCU_APB2_FZ_DBG_TIM22_STOP;</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor"></span>    RCC-&gt;APB2ENR |= RCC_APB2ENR_SYSCFGEN; <span class="comment">// Enable system configuration controller block</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor"></span>    RCC-&gt;APB2ENR |= RCC_APB2ENR_SYSCFGEN;   <span class="comment">// Enable system configuration controller block</span></div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    DBGMCU-&gt;APB1FZ = 0;</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    DBGMCU-&gt;APB2FZ = 0;</div>
@@ -156,15 +156,15 @@ $(document).ready(function(){initNavTree('bc__module__core_8c_source.html','');}
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    RCC-&gt;CFGR |= RCC_CFGR_STOPWUCK; <span class="comment">// Device is waked up with HSI16 (else MSI ... 64 KHz to 4 MHz)</span></div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    PWR-&gt;CR = PWR_CR_DBP |    <span class="comment">// Disable backup domain</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    PWR_CR_VOS_0 |  <span class="comment">// Internal regulator setup (1.8V)</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    PWR_CR_LPSDSR | <span class="comment">// Enable deep-sleep (else only sleep)</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    PWR_CR_ULP;     <span class="comment">// Disable Vrefint in sleep mode</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    PWR-&gt;CR =       PWR_CR_DBP |    <span class="comment">// Disable backup domain</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                    PWR_CR_VOS_0 |  <span class="comment">// Internal regulator setup (1.8V)</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                    PWR_CR_LPSDSR | <span class="comment">// Enable deep-sleep (else only sleep)</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                    PWR_CR_ULP;     <span class="comment">// Disable Vrefint in sleep mode</span></div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    RCC-&gt;IOPENR = RCC_IOPENR_GPIOAEN |    <span class="comment">// Enable GPIOA clocks</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    RCC_IOPENR_GPIOBEN |    <span class="comment">// Enable GPIOB clocks</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    RCC_IOPENR_GPIOCEN |    <span class="comment">// Enable GPIOC clocks</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    RCC_IOPENR_GPIOHEN;     <span class="comment">// Enable GPIOH clocks</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    RCC-&gt;IOPENR =   RCC_IOPENR_GPIOAEN |    <span class="comment">// Enable GPIOA clocks</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                    RCC_IOPENR_GPIOBEN |    <span class="comment">// Enable GPIOB clocks</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                    RCC_IOPENR_GPIOCEN |    <span class="comment">// Enable GPIOC clocks</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                    RCC_IOPENR_GPIOHEN;     <span class="comment">// Enable GPIOH clocks</span></div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    GPIOA-&gt;MODER |= GPIO_MODER_MODE4_1 | GPIO_MODER_MODE4_0;</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
@@ -187,53 +187,51 @@ $(document).ready(function(){initNavTree('bc__module__core_8c_source.html','');}
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    RCC_ClkInitTypeDef RCC_ClkInitStruct;</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    RCC_PeriphCLKInitTypeDef PeriphClkInit;</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    __HAL_PWR_VOLTAGESCALING_CONFIG(PWR_REGULATOR_VOLTAGE_SCALE1);</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSI | RCC_OSCILLATORTYPE_LSE | RCC_OSCILLATORTYPE_HSI48;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    RCC_OscInitStruct.LSEState = RCC_LSE_ON;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    RCC_OscInitStruct.HSIState = RCC_HSI_ON;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    RCC_OscInitStruct.HSICalibrationValue = 16;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    RCC_OscInitStruct.HSI48State = RCC_HSI48_ON;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    RCC_OscInitStruct.PLL.PLLState = RCC_PLL_NONE;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordflow">if</span> (HAL_RCC_OscConfig(&amp;RCC_OscInitStruct) != HAL_OK)</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    {</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        Error_Handler();</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    }</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    RCC_ClkInitStruct.ClockType = RCC_CLOCKTYPE_HCLK | RCC_CLOCKTYPE_SYSCLK | RCC_CLOCKTYPE_PCLK1 | RCC_CLOCKTYPE_PCLK2;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_HSI;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    RCC_ClkInitStruct.AHBCLKDivider = RCC_SYSCLK_DIV1;</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV1;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV1;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    __HAL_PWR_VOLTAGESCALING_CONFIG(PWR_REGULATOR_VOLTAGE_SCALE1);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSI | RCC_OSCILLATORTYPE_HSI48;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    RCC_OscInitStruct.HSIState = RCC_HSI_ON;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    RCC_OscInitStruct.HSICalibrationValue = 16;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    RCC_OscInitStruct.HSI48State = RCC_HSI48_ON;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    RCC_OscInitStruct.PLL.PLLState = RCC_PLL_ON;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSI;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    RCC_OscInitStruct.PLL.PLLMUL = RCC_PLLMUL_4;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    RCC_OscInitStruct.PLL.PLLDIV = RCC_PLLDIV_2;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordflow">if</span> (HAL_RCC_OscConfig(&amp;RCC_OscInitStruct) != HAL_OK)</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    {</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        Error_Handler();</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    }</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    RCC_ClkInitStruct.ClockType = RCC_CLOCKTYPE_HCLK | RCC_CLOCKTYPE_SYSCLK | RCC_CLOCKTYPE_PCLK1 | RCC_CLOCKTYPE_PCLK2;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_PLLCLK;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    RCC_ClkInitStruct.AHBCLKDivider = RCC_SYSCLK_DIV1;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV1;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV1;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keywordflow">if</span> (HAL_RCC_ClockConfig(&amp;RCC_ClkInitStruct, FLASH_LATENCY_1) != HAL_OK)</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    {</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        Error_Handler();</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    }</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordflow">if</span> (HAL_RCC_ClockConfig(&amp;RCC_ClkInitStruct, FLASH_LATENCY_0) != HAL_OK)</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    {</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        Error_Handler();</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    }</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    PeriphClkInit.PeriphClockSelection = RCC_PERIPHCLK_USART1 | RCC_PERIPHCLK_LPUART1 | RCC_PERIPHCLK_USB;</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    PeriphClkInit.Usart1ClockSelection = RCC_USART1CLKSOURCE_PCLK2;</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    PeriphClkInit.Lpuart1ClockSelection = RCC_LPUART1CLKSOURCE_LSE;</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    PeriphClkInit.UsbClockSelection = RCC_USBCLKSOURCE_HSI48;</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keywordflow">if</span> (HAL_RCCEx_PeriphCLKConfig(&amp;PeriphClkInit) != HAL_OK)</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    {</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        Error_Handler();</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    }</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    HAL_SYSTICK_Config(HAL_RCC_GetHCLKFreq() / 1000);</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    HAL_SYSTICK_CLKSourceConfig(SYSTICK_CLKSOURCE_HCLK);</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    <span class="comment">/* SysTick_IRQn interrupt configuration */</span></div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    HAL_NVIC_SetPriority(SysTick_IRQn, 0, 0);</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;}</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;<span class="keywordtype">void</span> Error_Handler(<span class="keywordtype">void</span>)</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;{</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    <span class="comment">// TODO Replace</span></div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    <span class="keywordflow">for</span> (;;)</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;        ;</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;}</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    PeriphClkInit.PeriphClockSelection = RCC_PERIPHCLK_I2C1 | RCC_PERIPHCLK_USB;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    PeriphClkInit.I2c1ClockSelection = RCC_I2C1CLKSOURCE_PCLK1;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    PeriphClkInit.UsbClockSelection = RCC_USBCLKSOURCE_HSI48;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="keywordflow">if</span> (HAL_RCCEx_PeriphCLKConfig(&amp;PeriphClkInit) != HAL_OK)</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    {</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        Error_Handler();</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    }</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    HAL_SYSTICK_Config(HAL_RCC_GetHCLKFreq() / 1000);</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    HAL_SYSTICK_CLKSourceConfig(SYSTICK_CLKSOURCE_HCLK);</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    HAL_NVIC_SetPriority(SysTick_IRQn, 0, 0);</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;}</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="keywordtype">void</span> Error_Handler(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;{</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <span class="comment">// TODO Replace</span></div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="keywordflow">for</span> (;;);</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;}</div>
 <div class="ttc" id="group__bc__rtc_html_ga9f9babc3991fa3c791abf0cd57614898"><div class="ttname"><a href="group__bc__rtc.html#ga9f9babc3991fa3c791abf0cd57614898">bc_rtc_init</a></div><div class="ttdeci">void bc_rtc_init(void)</div><div class="ttdoc">Initialize real-time clock. </div><div class="ttdef"><b>Definition:</b> <a href="bc__rtc_8c_source.html#l00005">bc_rtc.c:5</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
