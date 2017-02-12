@@ -4,6 +4,7 @@ var dir_d8bdea2ed69f83e0d6a3af9ddcb8c644 =
     [ "bc_adc.c", "bc__adc_8c_source.html", null ],
     [ "bc_button.c", "bc__button_8c_source.html", null ],
     [ "bc_dac.c", "bc__dac_8c_source.html", null ],
+    [ "bc_device_id.c", "bc__device__id_8c_source.html", null ],
     [ "bc_dfu.c", "bc__dfu_8c_source.html", null ],
     [ "bc_eeprom.c", "bc__eeprom_8c_source.html", null ],
     [ "bc_exti.c", "bc__exti_8c_source.html", null ],

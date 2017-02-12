@@ -5,6 +5,7 @@ var dir_1d7b98041e0ea635e761b4c525e79ea9 =
     [ "bc_button.h", "bc__button_8h_source.html", null ],
     [ "bc_common.h", "bc__common_8h_source.html", null ],
     [ "bc_dac.h", "bc__dac_8h_source.html", null ],
+    [ "bc_device_id.h", "bc__device__id_8h_source.html", null ],
     [ "bc_dfu.h", "bc__dfu_8h_source.html", null ],
     [ "bc_eeprom.h", "bc__eeprom_8h_source.html", null ],
     [ "bc_exti.h", "bc__exti_8h_source.html", null ],
