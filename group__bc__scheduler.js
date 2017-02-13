@@ -2,6 +2,8 @@ var group__bc__scheduler =
 [
     [ "BC_SCHEDULER_MAX_TASKS", "group__bc__scheduler.html#ga2940011c306bba0793d7ec1915385292", null ],
     [ "bc_scheduler_task_id_t", "group__bc__scheduler.html#ga9ab6b2475ac67e4c9b274eb70f0daa4c", null ],
+    [ "bc_scheduler_disable_sleep", "group__bc__scheduler.html#ga44a15b79846a742e71e853de96e003f5", null ],
+    [ "bc_scheduler_enable_sleep", "group__bc__scheduler.html#ga6a85110571b97a741348298bc77a429a", null ],
     [ "bc_scheduler_get_spin_tick", "group__bc__scheduler.html#gaf69cd527d59d2ea27ff970b886a062e2", null ],
     [ "bc_scheduler_init", "group__bc__scheduler.html#gafd46883b1205451e4d307679cc586034", null ],
     [ "bc_scheduler_plan_absolute", "group__bc__scheduler.html#gade94244616617574eee859c0fb5df428", null ],
