@@ -1,4 +1,6 @@
 <map id="bc_scheduler_plan_now" name="bc_scheduler_plan_now">
-<area shape="rect" id="node2" href="$group__bc__td1207r.html#ga901747d090d799193a17dd46850c2d75" title="Send RF frame command. " alt="" coords="216,5,352,46"/>
-<area shape="rect" id="node3" href="$group__bc__module__sigfox.html#gaff30d9b95f4292f5bf26c0ba02f37160" title="Send RF frame command. " alt="" coords="400,5,563,46"/>
+<area shape="rect" id="node2" href="$group__bc__pyq1648.html#ga85f892884862b1ab2b090984da978f66" title="Set PYQ1648 sensitivity. " alt="" coords="217,5,399,32"/>
+<area shape="rect" id="node4" href="$group__bc__td1207r.html#ga901747d090d799193a17dd46850c2d75" title="Send RF frame command. " alt="" coords="240,57,376,98"/>
+<area shape="rect" id="node3" href="$group__bc__module__pir.html#gabd1d816178965ae60ee52bfad36217b1" title="Set sensor sensitivity. " alt="" coords="448,5,645,32"/>
+<area shape="rect" id="node5" href="$group__bc__module__sigfox.html#gaff30d9b95f4292f5bf26c0ba02f37160" title="Send RF frame command. " alt="" coords="465,57,628,98"/>
 </map>
