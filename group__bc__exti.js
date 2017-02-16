@@ -60,7 +60,8 @@ var group__bc__exti =
       [ "BC_EXTI_LINE_P14", "group__bc__exti.html#ggad3665a3da5318105db2c06ba0647eeadaa7ba54f8e5dfa3f7e76ff7d22bf00f38", null ],
       [ "BC_EXTI_LINE_P15", "group__bc__exti.html#ggad3665a3da5318105db2c06ba0647eeada806815edbeab8a2161b90d79f53e2be5", null ],
       [ "BC_EXTI_LINE_P16", "group__bc__exti.html#ggad3665a3da5318105db2c06ba0647eeadae6221f1b715f72e73c71981a0c85f56b", null ],
-      [ "BC_EXTI_LINE_P17", "group__bc__exti.html#ggad3665a3da5318105db2c06ba0647eeada5721ba11402131632e62f44b62446000", null ]
+      [ "BC_EXTI_LINE_P17", "group__bc__exti.html#ggad3665a3da5318105db2c06ba0647eeada5721ba11402131632e62f44b62446000", null ],
+      [ "BC_EXTI_LINE_BUTTON", "group__bc__exti.html#ggad3665a3da5318105db2c06ba0647eeada78714a06fc6c77c1493164495ace342f", null ]
     ] ],
     [ "bc_exti_register", "group__bc__exti.html#gac41431498863e49ed40aa975e3da7630", null ],
     [ "bc_exti_unregister", "group__bc__exti.html#gadecae09ae5fb15b8ef5eafe5f8ca0ba3", null ]
