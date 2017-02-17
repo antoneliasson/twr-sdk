@@ -15,6 +15,7 @@ var searchData=
   ['bc_5firq',['bc_irq',['../group__bc__irq.html',1,'']]],
   ['bc_5fled',['bc_led',['../group__bc__led.html',1,'']]],
   ['bc_5flis2dh12',['bc_lis2dh12',['../group__bc__lis2dh12.html',1,'']]],
+  ['bc_5fmodule_5fencoder',['bc_module_encoder',['../group__bc__module__encoder.html',1,'']]],
   ['bc_5fmodule_5fpir',['bc_module_pir',['../group__bc__module__pir.html',1,'']]],
   ['bc_5fmodule_5fpower',['bc_module_power',['../group__bc__module__power.html',1,'']]],
   ['bc_5fmodule_5frelay',['bc_module_relay',['../group__bc__module__relay.html',1,'']]],
@@ -33,5 +34,6 @@ var searchData=
   ['bc_5ftd1207r',['bc_td1207r',['../group__bc__td1207r.html',1,'']]],
   ['bc_5ftick',['bc_tick',['../group__bc__tick.html',1,'']]],
   ['bc_5ftmp112',['bc_tmp112',['../group__bc__tmp112.html',1,'']]],
-  ['bc_5fuart',['bc_uart',['../group__bc__uart.html',1,'']]]
+  ['bc_5fuart',['bc_uart',['../group__bc__uart.html',1,'']]],
+  ['bc_5fws2812b',['bc_ws2812b',['../group__bc__ws2812b.html',1,'']]]
 ];

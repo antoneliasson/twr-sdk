@@ -17,6 +17,7 @@ var searchData=
   ['bc_5fi2c_5fspeed_5ft',['bc_i2c_speed_t',['../group__bc__i2c.html#ga219721504620df6336373d3e827bb517',1,'bc_i2c.h']]],
   ['bc_5fled_5fmode_5ft',['bc_led_mode_t',['../group__bc__led.html#gae9ea7763b55ff27ec63b6f9a5069a9c1',1,'bc_led.h']]],
   ['bc_5flis2dh12_5fevent_5ft',['bc_lis2dh12_event_t',['../group__bc__lis2dh12.html#ga5dc318914a8bce8dc9af065e14cdbb45',1,'bc_lis2dh12.h']]],
+  ['bc_5fmodule_5fencoder_5fevent_5ft',['bc_module_encoder_event_t',['../group__bc__module__encoder.html#ga05ee7d1261c5601857e9daafa780c322',1,'bc_module_encoder.h']]],
   ['bc_5fmodule_5fpir_5fevent_5ft',['bc_module_pir_event_t',['../group__bc__module__pir.html#ga410105480a1961eb87370fde66df340f',1,'bc_module_pir.h']]],
   ['bc_5fmodule_5fpir_5fsensitivity_5ft',['bc_module_pir_sensitivity_t',['../group__bc__module__pir.html#gadcfb88944cffccae03f9b599cb292c8f',1,'bc_module_pir.h']]],
   ['bc_5fmodule_5frelay_5fstate_5ft',['bc_module_relay_state_t',['../group__bc__module__relay.html#ga3252af413b59ca9bfc8a94afddec804f',1,'bc_module_relay.h']]],

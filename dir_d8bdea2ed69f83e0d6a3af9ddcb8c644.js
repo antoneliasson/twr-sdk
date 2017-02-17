@@ -17,6 +17,7 @@ var dir_d8bdea2ed69f83e0d6a3af9ddcb8c644 =
     [ "bc_led.c", "bc__led_8c_source.html", null ],
     [ "bc_lis2dh12.c", "bc__lis2dh12_8c_source.html", null ],
     [ "bc_module_core.c", "bc__module__core_8c_source.html", null ],
+    [ "bc_module_encoder.c", "bc__module__encoder_8c_source.html", null ],
     [ "bc_module_pir.c", "bc__module__pir_8c_source.html", null ],
     [ "bc_module_power.c", "bc__module__power_8c_source.html", null ],
     [ "bc_module_relay.c", "bc__module__relay_8c_source.html", null ],
@@ -38,5 +39,6 @@ var dir_d8bdea2ed69f83e0d6a3af9ddcb8c644 =
     [ "bc_tmp112.c", "bc__tmp112_8c_source.html", null ],
     [ "bc_uart.c", "bc__uart_8c_source.html", null ],
     [ "bc_usb_cdc.c", "bc__usb__cdc_8c_source.html", null ],
+    [ "bc_ws2812b.c", "bc__ws2812b_8c_source.html", null ],
     [ "jsmn.c", "jsmn_8c_source.html", null ]
 ];

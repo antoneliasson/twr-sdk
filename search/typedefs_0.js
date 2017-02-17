@@ -5,6 +5,7 @@ var searchData=
   ['bc_5fhts221_5ft',['bc_hts221_t',['../group__bc__hts221.html#gafb796827f75b93bf77b43d78f0c153d4',1,'bc_hts221.h']]],
   ['bc_5fled_5ft',['bc_led_t',['../group__bc__led.html#gad08c12a4324e33141d1ab7cd444024e0',1,'bc_led.h']]],
   ['bc_5flis2dh12_5ft',['bc_lis2dh12_t',['../group__bc__lis2dh12.html#gaf66429f9cca1e29aff1a026976bea96e',1,'bc_lis2dh12.h']]],
+  ['bc_5fmodule_5fencoder_5ft',['bc_module_encoder_t',['../group__bc__module__encoder.html#gadb9b5053a9a614e4b65fa8ff320d87ec',1,'bc_module_encoder.h']]],
   ['bc_5fmodule_5fpir_5ft',['bc_module_pir_t',['../group__bc__module__pir.html#gaaea169791d2e6b66a9117dd6b86ac97c',1,'bc_module_pir.h']]],
   ['bc_5fmodule_5frelay_5ft',['bc_module_relay_t',['../group__bc__module__relay.html#ga4759d667ac9cc15469d15d5dcd3e531b',1,'bc_module_relay.h']]],
   ['bc_5fmodule_5fsigfox_5ft',['bc_module_sigfox_t',['../group__bc__module__sigfox.html#gabd92251cde902bf11ba41db822acd216',1,'bc_module_sigfox.h']]],

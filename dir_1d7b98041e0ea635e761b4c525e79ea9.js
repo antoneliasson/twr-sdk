@@ -18,6 +18,7 @@ var dir_1d7b98041e0ea635e761b4c525e79ea9 =
     [ "bc_led.h", "bc__led_8h_source.html", null ],
     [ "bc_lis2dh12.h", "bc__lis2dh12_8h_source.html", null ],
     [ "bc_module_core.h", "bc__module__core_8h_source.html", null ],
+    [ "bc_module_encoder.h", "bc__module__encoder_8h_source.html", null ],
     [ "bc_module_pir.h", "bc__module__pir_8h_source.html", null ],
     [ "bc_module_power.h", "bc__module__power_8h_source.html", null ],
     [ "bc_module_relay.h", "bc__module__relay_8h_source.html", null ],
@@ -39,6 +40,7 @@ var dir_1d7b98041e0ea635e761b4c525e79ea9 =
     [ "bc_tmp112.h", "bc__tmp112_8h_source.html", null ],
     [ "bc_uart.h", "bc__uart_8h_source.html", null ],
     [ "bc_usb_cdc.h", "bc__usb__cdc_8h_source.html", null ],
+    [ "bc_ws2812b.h", "bc__ws2812b_8h_source.html", null ],
     [ "bcl.h", "bcl_8h_source.html", null ],
     [ "jsmn.h", "jsmn_8h_source.html", null ]
 ];

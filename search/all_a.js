@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['x_5faxis',['x_axis',['../structbc__lis2dh12__result__raw__t.html#adea9be4b53fa6af11ae9c33e6d7e8ff5',1,'bc_lis2dh12_result_raw_t::x_axis()'],['../structbc__lis2dh12__result__g__t.html#add00c49c646171c22c57731b0e38cc44',1,'bc_lis2dh12_result_g_t::x_axis()']]]
+  ['z_5faxis',['z_axis',['../structbc__lis2dh12__result__raw__t.html#a1a3772c48741748918f03da74236a8ae',1,'bc_lis2dh12_result_raw_t::z_axis()'],['../structbc__lis2dh12__result__g__t.html#a520f97ac86f4bc6a5dada672d8dfcd4e',1,'bc_lis2dh12_result_g_t::z_axis()']]]
 ];

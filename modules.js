@@ -15,6 +15,7 @@ var modules =
     [ "bc_irq", "group__bc__irq.html", "group__bc__irq" ],
     [ "bc_led", "group__bc__led.html", "group__bc__led" ],
     [ "bc_lis2dh12", "group__bc__lis2dh12.html", "group__bc__lis2dh12" ],
+    [ "bc_module_encoder", "group__bc__module__encoder.html", "group__bc__module__encoder" ],
     [ "bc_module_pir", "group__bc__module__pir.html", "group__bc__module__pir" ],
     [ "bc_module_power", "group__bc__module__power.html", "group__bc__module__power" ],
     [ "bc_module_relay", "group__bc__module__relay.html", "group__bc__module__relay" ],
@@ -33,5 +34,6 @@ var modules =
     [ "bc_td1207r", "group__bc__td1207r.html", "group__bc__td1207r" ],
     [ "bc_tick", "group__bc__tick.html", "group__bc__tick" ],
     [ "bc_tmp112", "group__bc__tmp112.html", "group__bc__tmp112" ],
-    [ "bc_uart", "group__bc__uart.html", "group__bc__uart" ]
+    [ "bc_uart", "group__bc__uart.html", "group__bc__uart" ],
+    [ "bc_ws2812b", "group__bc__ws2812b.html", null ]
 ];
