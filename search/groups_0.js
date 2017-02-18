@@ -15,6 +15,7 @@ var searchData=
   ['bc_5firq',['bc_irq',['../group__bc__irq.html',1,'']]],
   ['bc_5fled',['bc_led',['../group__bc__led.html',1,'']]],
   ['bc_5flis2dh12',['bc_lis2dh12',['../group__bc__lis2dh12.html',1,'']]],
+  ['bc_5fmodule_5fclimate',['bc_module_climate',['../group__bc__module__climate.html',1,'']]],
   ['bc_5fmodule_5fencoder',['bc_module_encoder',['../group__bc__module__encoder.html',1,'']]],
   ['bc_5fmodule_5fpir',['bc_module_pir',['../group__bc__module__pir.html',1,'']]],
   ['bc_5fmodule_5fpower',['bc_module_power',['../group__bc__module__power.html',1,'']]],

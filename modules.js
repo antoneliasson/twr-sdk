@@ -15,6 +15,7 @@ var modules =
     [ "bc_irq", "group__bc__irq.html", "group__bc__irq" ],
     [ "bc_led", "group__bc__led.html", "group__bc__led" ],
     [ "bc_lis2dh12", "group__bc__lis2dh12.html", "group__bc__lis2dh12" ],
+    [ "bc_module_climate", "group__bc__module__climate.html", "group__bc__module__climate" ],
     [ "bc_module_encoder", "group__bc__module__encoder.html", "group__bc__module__encoder" ],
     [ "bc_module_pir", "group__bc__module__pir.html", "group__bc__module__pir" ],
     [ "bc_module_power", "group__bc__module__power.html", "group__bc__module__power" ],

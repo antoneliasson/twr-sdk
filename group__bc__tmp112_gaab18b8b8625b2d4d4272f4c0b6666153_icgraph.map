@@ -1,3 +1,4 @@
 <map id="bc_tmp112_set_update_interval" name="bc_tmp112_set_update_interval">
-<area shape="rect" id="node2" href="$group__bc__tag__temperature.html#ga4be4786f6804ac04a6b6519fac9328f0" title="Set measurement interval. " alt="" coords="211,5,354,46"/>
+<area shape="rect" id="node2" href="$group__bc__module__climate.html#gad9f6b5a60403e86ac3e20ec350789a22" title="Set measurement interval for thermometer. " alt="" coords="211,5,408,46"/>
+<area shape="rect" id="node3" href="$group__bc__tag__temperature.html#ga4be4786f6804ac04a6b6519fac9328f0" title="Set measurement interval. " alt="" coords="238,70,381,111"/>
 </map>
