@@ -1,6 +1,6 @@
 <map id="bc_scheduler_register" name="bc_scheduler_register">
 <area shape="rect" id="node2" href="$group__bc__button.html#gabe97691e3013ec4031dc43e4dc36b9ef" title="Initialize button. " alt="" coords="217,5,319,32"/>
-<area shape="rect" id="node3" href="$group__bc__module__encoder.html#ga6184013c83cfb8986ad2daf40c376989" title="Initialize encoder module. " alt="" coords="381,31,544,57"/>
+<area shape="rect" id="node3" href="$group__bc__module__encoder.html#ga6f67406dd1e0db504050b19437779001" title="Initialize Encoder Module. " alt="" coords="381,31,544,57"/>
 <area shape="rect" id="node4" href="$group__bc__hdc2080.html#gabac119de881d5c96af19f32f2f7927ce" title="Initialize HDC2080. " alt="" coords="210,107,326,133"/>
 <area shape="rect" id="node6" href="$group__bc__hts221.html#ga6fa1b3193fe2b98f5edf0066b9a4bc7a" title="Initialize HTS221. " alt="" coords="215,157,321,184"/>
 <area shape="rect" id="node7" href="$group__bc__led.html#ga822e72175b9bc2557ad7c989f98c7068" title="Initialize LED. " alt="" coords="226,208,310,235"/>

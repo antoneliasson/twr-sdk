@@ -1,6 +1,6 @@
 <map id="bc_gpio_set_mode" name="bc_gpio_set_mode">
 <area shape="rect" id="node2" href="$group__bc__button.html#gabe97691e3013ec4031dc43e4dc36b9ef" title="Initialize button. " alt="" coords="189,5,291,32"/>
-<area shape="rect" id="node3" href="$group__bc__module__encoder.html#ga6184013c83cfb8986ad2daf40c376989" title="Initialize encoder module. " alt="" coords="344,31,507,57"/>
+<area shape="rect" id="node3" href="$group__bc__module__encoder.html#ga6f67406dd1e0db504050b19437779001" title="Initialize Encoder Module. " alt="" coords="344,31,507,57"/>
 <area shape="rect" id="node4" href="$group__bc__led.html#ga822e72175b9bc2557ad7c989f98c7068" title="Initialize LED. " alt="" coords="198,107,282,133"/>
 <area shape="rect" id="node5" href="$group__bc__td1207r.html#ga1b5a8cc467f2285e7894a9397be094dc" title="Initialize TD1207R. " alt="" coords="185,157,295,184"/>
 <area shape="rect" id="node6" href="$group__bc__module__sigfox.html#ga45b1d5138717de6f72bedaf3f26ec6dd" title="Initialize BigClown SigFox Module. " alt="" coords="350,157,501,184"/>
