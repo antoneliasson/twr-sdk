@@ -109,7 +109,17 @@ $(document).ready(function(){initNavTree('group__bc__module__encoder.html','');}
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:ga05ee7d1261c5601857e9daafa780c322"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bc__module__encoder.html#ga05ee7d1261c5601857e9daafa780c322">bc_module_encoder_event_t</a> { <a class="el" href="group__bc__module__encoder.html#gga05ee7d1261c5601857e9daafa780c322a01c67b8e1900106b9c46e7483f1d1cff">BC_MODULE_ENCODER_EVENT_UPDATE</a> = 0
+<tr class="memitem:ga05ee7d1261c5601857e9daafa780c322"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bc__module__encoder.html#ga05ee7d1261c5601857e9daafa780c322">bc_module_encoder_event_t</a> { <br/>
+&#160;&#160;<a class="el" href="group__bc__module__encoder.html#gga05ee7d1261c5601857e9daafa780c322a5d5e479c18981607b0a22a9857449896">BC_MODULE_ENCODER_EVENT_ROTATION</a> = 0, 
+<br/>
+&#160;&#160;<a class="el" href="group__bc__module__encoder.html#gga05ee7d1261c5601857e9daafa780c322a209f5dd6b5a290c1494b094c70738c8c">BC_MODULE_ENCODER_EVENT_PRESS</a> = 1, 
+<br/>
+&#160;&#160;<a class="el" href="group__bc__module__encoder.html#gga05ee7d1261c5601857e9daafa780c322a53124b5eda56e923e774c5f123560d71">BC_MODULE_ENCODER_EVENT_RELEASE</a> = 2, 
+<br/>
+&#160;&#160;<a class="el" href="group__bc__module__encoder.html#gga05ee7d1261c5601857e9daafa780c322aabee3efa9ed63a03a98918fd6e00618d">BC_MODULE_ENCODER_EVENT_CLICK</a> = 3, 
+<br/>
+&#160;&#160;<a class="el" href="group__bc__module__encoder.html#gga05ee7d1261c5601857e9daafa780c322a1c64a3978383dcd6e4b4954c38b814f4">BC_MODULE_ENCODER_EVENT_HOLD</a> = 4
+<br/>
  }</td></tr>
 <tr class="memdesc:ga05ee7d1261c5601857e9daafa780c322"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback events.  <a href="group__bc__module__encoder.html#ga05ee7d1261c5601857e9daafa780c322">More...</a><br/></td></tr>
 <tr class="separator:ga05ee7d1261c5601857e9daafa780c322"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -145,8 +155,20 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
 
 <p>Callback events. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="gga05ee7d1261c5601857e9daafa780c322a01c67b8e1900106b9c46e7483f1d1cff"></a>BC_MODULE_ENCODER_EVENT_UPDATE</em>&#160;</td><td class="fielddoc">
-<p>Update event. </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="gga05ee7d1261c5601857e9daafa780c322a5d5e479c18981607b0a22a9857449896"></a>BC_MODULE_ENCODER_EVENT_ROTATION</em>&#160;</td><td class="fielddoc">
+<p>Event rotation. </p>
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="gga05ee7d1261c5601857e9daafa780c322a209f5dd6b5a290c1494b094c70738c8c"></a>BC_MODULE_ENCODER_EVENT_PRESS</em>&#160;</td><td class="fielddoc">
+<p>Event button pressed. </p>
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="gga05ee7d1261c5601857e9daafa780c322a53124b5eda56e923e774c5f123560d71"></a>BC_MODULE_ENCODER_EVENT_RELEASE</em>&#160;</td><td class="fielddoc">
+<p>Event button released. </p>
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="gga05ee7d1261c5601857e9daafa780c322aabee3efa9ed63a03a98918fd6e00618d"></a>BC_MODULE_ENCODER_EVENT_CLICK</em>&#160;</td><td class="fielddoc">
+<p>Event button clicked (pressed and released within certain time) </p>
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="gga05ee7d1261c5601857e9daafa780c322a1c64a3978383dcd6e4b4954c38b814f4"></a>BC_MODULE_ENCODER_EVENT_HOLD</em>&#160;</td><td class="fielddoc">
+<p>Event button hold (pressed for longer time) </p>
 </td></tr>
 </table>
 
@@ -172,7 +194,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
 <p>Get encoder button instance. </p>
 <dl class="section return"><dt>Returns</dt><dd>Pointer to button instance </dd></dl>
 
-<p>Definition at line <a class="el" href="bc__module__encoder_8c_source.html#l00055">55</a> of file <a class="el" href="bc__module__encoder_8c_source.html">bc_module_encoder.c</a>.</p>
+<p>Definition at line <a class="el" href="bc__module__encoder_8c_source.html#l00058">58</a> of file <a class="el" href="bc__module__encoder_8c_source.html">bc_module_encoder.c</a>.</p>
 
 </div>
 </div>
@@ -193,7 +215,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
 <p>Read encoder delta increment (can be positive or negative number) </p>
 <dl class="section return"><dt>Returns</dt><dd>Delta increment </dd></dl>
 
-<p>Definition at line <a class="el" href="bc__module__encoder_8c_source.html#l00060">60</a> of file <a class="el" href="bc__module__encoder_8c_source.html">bc_module_encoder.c</a>.</p>
+<p>Definition at line <a class="el" href="bc__module__encoder_8c_source.html#l00063">63</a> of file <a class="el" href="bc__module__encoder_8c_source.html">bc_module_encoder.c</a>.</p>
 
 </div>
 </div>
@@ -230,7 +252,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="bc__module__encoder_8c_source.html#l00049">49</a> of file <a class="el" href="bc__module__encoder_8c_source.html">bc_module_encoder.c</a>.</p>
+<p>Definition at line <a class="el" href="bc__module__encoder_8c_source.html#l00052">52</a> of file <a class="el" href="bc__module__encoder_8c_source.html">bc_module_encoder.c</a>.</p>
 
 </div>
 </div>
