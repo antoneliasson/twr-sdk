@@ -97,7 +97,6 @@ $(document).ready(function(){initNavTree('group__bc__module__power.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">bc_module_power</div>  </div>
@@ -107,55 +106,36 @@ $(document).ready(function(){initNavTree('group__bc__module__power.html','');});
 <p>Driver for Power Module.  
 <a href="#details">More...</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:ga626c69e201f6894b18dfcdae5ca7177c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga626c69e201f6894b18dfcdae5ca7177c"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bc__module__power.html#ga626c69e201f6894b18dfcdae5ca7177c">BC_MODULE_POWER_MAX_LED_STRIP_COUNT</a>&#160;&#160;&#160;150</td></tr>
-<tr class="memdesc:ga626c69e201f6894b18dfcdae5ca7177c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the LED count. <br/></td></tr>
-<tr class="separator:ga626c69e201f6894b18dfcdae5ca7177c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga0c704bee8a4c908d42321155eb6e83ff"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga0c704bee8a4c908d42321155eb6e83ff"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>bc_module_power_init</b> ()</td></tr>
-<tr class="separator:ga0c704bee8a4c908d42321155eb6e83ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadf23b21469581c6a756091a60895aa82"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gadf23b21469581c6a756091a60895aa82"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>bc_module_power_init</b> (void)</td></tr>
+<tr class="separator:gadf23b21469581c6a756091a60895aa82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad442b2608e42830cc69e894ee08cedbf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gad442b2608e42830cc69e894ee08cedbf"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>bc_module_power_relay_set_state</b> (bool state)</td></tr>
+<tr class="separator:gad442b2608e42830cc69e894ee08cedbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8fa93bc325fc3e59454023618581fe33"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga8fa93bc325fc3e59454023618581fe33"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>bc_module_power_relay_get_state</b> (void)</td></tr>
+<tr class="separator:ga8fa93bc325fc3e59454023618581fe33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad567817af169da33d1dfb5cfa36e5f8d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gad567817af169da33d1dfb5cfa36e5f8d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>bc_module_power_led_strip_init</b> (<a class="el" href="structbc__led__strip__t.html">bc_led_strip_t</a> *led_strip)</td></tr>
+<tr class="separator:gad567817af169da33d1dfb5cfa36e5f8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gacffe2642395eb090e9a5a722751a1ca6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gacffe2642395eb090e9a5a722751a1ca6"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>bc_module_power_led_strip_test</b> (void)</td></tr>
 <tr class="separator:gacffe2642395eb090e9a5a722751a1ca6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5b264a03d2ecb103e1843a4da8dcdd7a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga5b264a03d2ecb103e1843a4da8dcdd7a"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>bc_module_power_set_led_strip</b> (const uint8_t *frame_buffer, size_t length)</td></tr>
-<tr class="separator:ga5b264a03d2ecb103e1843a4da8dcdd7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf2406d1cc2a98742ae4756509a158648"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gaf2406d1cc2a98742ae4756509a158648"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>bc_module_power_set_relay</b> (bool state)</td></tr>
-<tr class="separator:gaf2406d1cc2a98742ae4756509a158648"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5ddbc82e696c0621d24791cc21b00904"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga5ddbc82e696c0621d24791cc21b00904"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>bc_module_power_get_relay</b> ()</td></tr>
-<tr class="separator:ga5ddbc82e696c0621d24791cc21b00904"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1fa96e8e647ce0cd02e30e712908fdba"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga1fa96e8e647ce0cd02e30e712908fdba"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>bc_module_power_led_strip_set_pixel</b> (uint16_t position, uint8_t red, uint8_t green, uint8_t blue, uint8_t white)</td></tr>
-<tr class="separator:ga1fa96e8e647ce0cd02e30e712908fdba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga763bbf3a2318187e3064eb5a7b82a300"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga763bbf3a2318187e3064eb5a7b82a300"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>bc_module_power_led_strip_set_pixel</b> (int position, uint8_t red, uint8_t green, uint8_t blue, uint8_t white)</td></tr>
+<tr class="separator:ga763bbf3a2318187e3064eb5a7b82a300"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad9dad84e07ae786b1ade1cb48195c1c8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gad9dad84e07ae786b1ade1cb48195c1c8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>bc_module_power_led_strip_set_pixel_uint</b> (int position, uint32_t color)</td></tr>
+<tr class="separator:gad9dad84e07ae786b1ade1cb48195c1c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2a753fdcbf19f2f1b95e7a2302877c41"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga2a753fdcbf19f2f1b95e7a2302877c41"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>bc_module_power_led_strip_set_framebuffer</b> (const uint8_t *framebuffer, size_t length)</td></tr>
+<tr class="separator:ga2a753fdcbf19f2f1b95e7a2302877c41"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Driver for Power Module. </p>
-<h1><a class="anchor" id="example"></a>
-How to use this driver</h1>
-<div class="fragment"><div class="line"><span class="keywordtype">void</span> application_init()</div>
-<div class="line">{</div>
-<div class="line">    bc_module_power_init();</div>
-<div class="line"></div>
-<div class="line">    <span class="comment">// Then you fill the framebuffer with RGBW values.</span></div>
-<div class="line">    <span class="comment">// You can change the values in the frameBuffer on the fly.</span></div>
-<div class="line">    <span class="comment">// Each LED pixel has 4 bytes in framebuffer. For red, green, blue and white color.</span></div>
-<div class="line">    frameBuffer[0] = 255;   <span class="comment">// Set first LED red channel to 255</span></div>
-<div class="line">    frameBuffer[5] = 255;   <span class="comment">// Set second LED green channel to 255</span></div>
-<div class="line">    frameBuffer[10] = 255;  <span class="comment">// Set third LED blue channel to 255</span></div>
-<div class="line">    frameBuffer[15] = 255;  <span class="comment">// Set fourth LED white channel to 255</span></div>
-<div class="line"></div>
-<div class="line">    uint8_t framebuffer[50];</div>
-<div class="line">    memset(framebuffer, 255, <span class="keyword">sizeof</span>(framebuffer));</div>
-<div class="line">    bc_module_power_print_frame_buffer(framebuffer, <span class="keyword">sizeof</span>(framebuffer));</div>
-<div class="line">}</div>
-</div><!-- fragment --> </div><!-- contents -->
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

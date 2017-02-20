@@ -18,7 +18,7 @@ var modules =
     [ "bc_module_climate", "group__bc__module__climate.html", "group__bc__module__climate" ],
     [ "bc_module_encoder", "group__bc__module__encoder.html", "group__bc__module__encoder" ],
     [ "bc_module_pir", "group__bc__module__pir.html", "group__bc__module__pir" ],
-    [ "bc_module_power", "group__bc__module__power.html", "group__bc__module__power" ],
+    [ "bc_module_power", "group__bc__module__power.html", null ],
     [ "bc_module_relay", "group__bc__module__relay.html", "group__bc__module__relay" ],
     [ "bc_module_sigfox", "group__bc__module__sigfox.html", "group__bc__module__sigfox" ],
     [ "bc_mpl3115a2", "group__bc__mpl3115a2.html", "group__bc__mpl3115a2" ],

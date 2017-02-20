@@ -1,5 +1,7 @@
 var NAVTREEINDEX1 =
 {
+"group__bc__gpio.html#gga5a8d8aed85b7bb7f5b219fc6a4cd5b8ea853acf903d6de24ebc78b60ffde9335b":[1,8,0,2],
+"group__bc__gpio.html#gga5a8d8aed85b7bb7f5b219fc6a4cd5b8eaa3303cccd63224bb10962c2c012c1634":[1,8,0,4],
 "group__bc__gpio.html#gga5a8d8aed85b7bb7f5b219fc6a4cd5b8eab76d898f6042cf95dc66f3701926c57d":[1,8,0,12],
 "group__bc__gpio.html#gga5a8d8aed85b7bb7f5b219fc6a4cd5b8eae7f0408cf0f2059b03c8d5c3a246766d":[1,8,0,18],
 "group__bc__gpio.html#gga5a8d8aed85b7bb7f5b219fc6a4cd5b8eae8e7c8af286ace8783f393f922dc1047":[1,8,0,13],
@@ -120,7 +122,6 @@ var NAVTREEINDEX1 =
 "group__bc__module__pir.html#ggadcfb88944cffccae03f9b599cb292c8facae7663bdbf467692724844b2a6f5280":[1,17,2,3],
 "group__bc__module__pir.html#ggadcfb88944cffccae03f9b599cb292c8faebac734409e6d88011136140e40493e7":[1,17,2,0],
 "group__bc__module__power.html":[1,18],
-"group__bc__module__power.html#ga626c69e201f6894b18dfcdae5ca7177c":[1,18,0],
 "group__bc__module__relay.html":[1,19],
 "group__bc__module__relay.html#ga0427fb94a68fdcd760443e3cbed4d20c":[1,19,3],
 "group__bc__module__relay.html#ga09f53fc93003e4aa7200366e032c363b":[1,19,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX1 =
 "group__bc__tag__temperature.html#ga5d0c15faca9c4ea1c73ce79f772410c4":[1,30,5],
 "group__bc__tag__temperature.html#ga6b703ad273b3d4096fab5ea7032c7fe9":[1,30,8],
 "group__bc__tag__temperature.html#ga6df2d42735d92193f1da18b1078df39f":[1,30,3],
-"group__bc__tag__temperature.html#ga717da6197f3d30f8ee39e1682459f108":[1,30,6],
-"group__bc__tag__temperature.html#ga91462f2362a0209787e60a5181d49ae4":[1,30,2]
+"group__bc__tag__temperature.html#ga717da6197f3d30f8ee39e1682459f108":[1,30,6]
 };

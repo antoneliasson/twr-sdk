@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>Core Module SDK Documentation: bc_uart_t Struct Reference</title>
+<title>Core Module SDK Documentation: bc_led_strip_t Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -85,7 +85,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('structbc__uart__t.html','');});
+$(document).ready(function(){initNavTree('structbc__led__strip__t.html','');});
 </script>
 <div id="doc-content">
 <!-- window showing the filter options -->
@@ -106,42 +106,37 @@ $(document).ready(function(){initNavTree('structbc__uart__t.html','');});
   <div class="summary">
 <a href="#pub-attribs">Data Fields</a>  </div>
   <div class="headertitle">
-<div class="title">bc_uart_t Struct Reference</div>  </div>
+<div class="title">bc_led_strip_t Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="dynheader">
-Collaboration diagram for bc_uart_t:</div>
-<div class="dyncontent">
-<div class="center"><img src="structbc__uart__t__coll__graph.png" border="0" usemap="#bc__uart__t_coll__map" alt="Collaboration graph"/></div>
-<map name="bc__uart__t_coll__map" id="bc__uart__t_coll__map">
-<area shape="rect" id="node2" href="structbc__fifo__t.html" title="Structure of FIFO instance. " alt="" coords="7,5,79,32"/></map>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a88c78da6faa0380b5b3c6d4f7f155627"><td class="memItemLeft" ><a class="anchor" id="a88c78da6faa0380b5b3c6d4f7f155627"></a>
-struct {</td></tr>
-<tr class="memitem:a6a3d57af41219840d14f5e180f051d9a"><td class="memItemLeft" ><a class="anchor" id="a22cb64a68efda00c0de074cabd5d655b"></a>
-&#160;&#160;&#160;<a class="el" href="structbc__fifo__t.html">bc_fifo_t</a> *&#160;&#160;&#160;<b>tx_fifo</b></td></tr>
-<tr class="separator:a6a3d57af41219840d14f5e180f051d9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a877be2b4d366c7f2a71b18f6af92dca8"><td class="memItemLeft" ><a class="anchor" id="a6778e4597bcd6e456522e0273bd4a553"></a>
-&#160;&#160;&#160;<a class="el" href="structbc__fifo__t.html">bc_fifo_t</a> *&#160;&#160;&#160;<b>rx_fifo</b></td></tr>
-<tr class="separator:a877be2b4d366c7f2a71b18f6af92dca8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a88c78da6faa0380b5b3c6d4f7f155627"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>channel</b> [3]</td></tr>
-<tr class="separator:a88c78da6faa0380b5b3c6d4f7f155627"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fc5a2da0025d6a79a1211804b6193b9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3fc5a2da0025d6a79a1211804b6193b9"></a>
+bc_led_strip_type_t&#160;</td><td class="memItemRight" valign="bottom"><b>type</b></td></tr>
+<tr class="separator:a3fc5a2da0025d6a79a1211804b6193b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40a0ba963a6ed20a9e2102b0898f8ba7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a40a0ba963a6ed20a9e2102b0898f8ba7"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>count</b></td></tr>
+<tr class="separator:a40a0ba963a6ed20a9e2102b0898f8ba7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2b83ec54395e53f0a4a69c0434d7280"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae2b83ec54395e53f0a4a69c0434d7280"></a>
+uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><b>framebuffer</b></td></tr>
+<tr class="separator:ae2b83ec54395e53f0a4a69c0434d7280"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33e90e54fe46f42c980681840c90118a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a33e90e54fe46f42c980681840c90118a"></a>
+uint32_t *&#160;</td><td class="memItemRight" valign="bottom"><b>dma_buffer</b></td></tr>
+<tr class="separator:a33e90e54fe46f42c980681840c90118a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p>Definition at line <a class="el" href="bc__uart_8c_source.html#l00007">7</a> of file <a class="el" href="bc__uart_8c_source.html">bc_uart.c</a>.</p>
+<p>Definition at line <a class="el" href="bc__led__strip_8h_source.html#l00013">13</a> of file <a class="el" href="bc__led__strip_8h_source.html">bc_led_strip.h</a>.</p>
 </div><hr/>The documentation for this struct was generated from the following file:<ul>
-<li>bcl/src/<a class="el" href="bc__uart_8c_source.html">bc_uart.c</a></li>
+<li>bcl/inc/<a class="el" href="bc__led__strip_8h_source.html">bc_led_strip.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="structbc__uart__t.html">bc_uart_t</a></li>
+    <li class="navelem"><a class="el" href="structbc__led__strip__t.html">bc_led_strip_t</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>

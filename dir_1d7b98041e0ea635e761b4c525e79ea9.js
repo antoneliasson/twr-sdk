@@ -16,6 +16,7 @@ var dir_1d7b98041e0ea635e761b4c525e79ea9 =
     [ "bc_i2c.h", "bc__i2c_8h_source.html", null ],
     [ "bc_irq.h", "bc__irq_8h_source.html", null ],
     [ "bc_led.h", "bc__led_8h_source.html", null ],
+    [ "bc_led_strip.h", "bc__led__strip_8h_source.html", null ],
     [ "bc_lis2dh12.h", "bc__lis2dh12_8h_source.html", null ],
     [ "bc_module_climate.h", "bc__module__climate_8h_source.html", null ],
     [ "bc_module_core.h", "bc__module__core_8h_source.html", null ],
