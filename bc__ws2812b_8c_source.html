@@ -271,7 +271,7 @@ $(document).ready(function(){initNavTree('bc__ws2812b_8c_source.html','');});
 <div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    <a class="code" href="group__bc__scheduler.html#ga46c874e6f1b363cf6851cfa8f837c398">bc_scheduler_plan_now</a>(_bc_ws2812b.task_id);</div>
 <div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;}</div>
 <div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;<span class="keywordtype">void</span> bc_ws2812b_set_pixel(<span class="keywordtype">int</span> position, uint8_t red, uint8_t green, uint8_t blue, uint8_t white)</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;<span class="keywordtype">void</span> bc_ws2812b_set_pixel_from_rgb(<span class="keywordtype">int</span> position, uint8_t red, uint8_t green, uint8_t blue, uint8_t white)</div>
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;{</div>
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;</div>
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    uint32_t calculated_position = (position * _bc_ws2812b.type * 2);</div>
@@ -292,7 +292,7 @@ $(document).ready(function(){initNavTree('bc__ws2812b_8c_source.html','');});
 <div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;     }</div>
 <div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;}</div>
 <div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;<span class="keywordtype">void</span> bc_ws2812b_set_pixel_uint(<span class="keywordtype">int</span> position, uint32_t color)</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;<span class="keywordtype">void</span> bc_ws2812b_set_pixel_from_uint32(<span class="keywordtype">int</span> position, uint32_t color)</div>
 <div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;{</div>
 <div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    uint32_t calculated_position = (position * _bc_ws2812b.type * 2);</div>
 <div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;</div>

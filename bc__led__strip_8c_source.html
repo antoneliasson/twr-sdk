@@ -108,27 +108,26 @@ $(document).ready(function(){initNavTree('bc__led__strip_8c_source.html','');});
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &lt;bc_led_strip.h&gt;</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">static</span> uint8_t _bc_led_strip_framebuffer_rgbw_144[144 * 4];</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">static</span> uint32_t _bc_led_strip_dma_buffer_rgbw_144[144 * 4 * 2];</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">static</span> uint32_t _bc_led_strip_dma_buffer_rgbw_144[<span class="keyword">sizeof</span>(_bc_led_strip_framebuffer_rgbw_144) * 2];</div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">const</span> <a class="code" href="structbc__led__strip__t.html">bc_led_strip_t</a> bc_led_strip_rgbw_144 = {</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;        .type = BC_LED_STRIP_TYPE_RGBW,</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;        .count = 144,</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;        .framebuffer = _bc_led_strip_framebuffer_rgbw_144,</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;        .dma_buffer = _bc_led_strip_dma_buffer_rgbw_144</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;};</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">const</span> <a class="code" href="structbc__led__strip__t.html">bc_led_strip_t</a> bc_led_strip_rgbw_144 =</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;{</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    .type = BC_LED_STRIP_TYPE_RGBW,</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    .count = 144,</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    .framebuffer = _bc_led_strip_framebuffer_rgbw_144,</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    .dma_buffer = _bc_led_strip_dma_buffer_rgbw_144</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;};</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">static</span> uint8_t _bc_led_strip_framebuffer_rgb_150[150 * 3];</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">static</span> uint32_t _bc_led_strip_dma_buffer_rgb_150[150 * 3 * 2];</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">static</span> uint32_t _bc_led_strip_dma_buffer_rgb_150[<span class="keyword">sizeof</span>(_bc_led_strip_framebuffer_rgb_150) * 2];</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">const</span> <a class="code" href="structbc__led__strip__t.html">bc_led_strip_t</a> bc_led_strip_rgb_150 = {</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        .type = BC_LED_STRIP_TYPE_RGB,</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        .count = 150,</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        .framebuffer = _bc_led_strip_framebuffer_rgb_150,</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        .dma_buffer = _bc_led_strip_dma_buffer_rgb_150</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;};</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">const</span> <a class="code" href="structbc__led__strip__t.html">bc_led_strip_t</a> bc_led_strip_rgb_150 =</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    .type = BC_LED_STRIP_TYPE_RGB,</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    .count = 150,</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    .framebuffer = _bc_led_strip_framebuffer_rgb_150,</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    .dma_buffer = _bc_led_strip_dma_buffer_rgb_150</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;};</div>
 <div class="ttc" id="structbc__led__strip__t_html"><div class="ttname"><a href="structbc__led__strip__t.html">bc_led_strip_t</a></div><div class="ttdef"><b>Definition:</b> <a href="bc__led__strip_8h_source.html#l00013">bc_led_strip.h:13</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
