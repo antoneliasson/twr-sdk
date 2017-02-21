@@ -11,7 +11,6 @@ var searchData=
   ['bc_5fgpio_5fchannel_5ft',['bc_gpio_channel_t',['../group__bc__gpio.html#ga5a8d8aed85b7bb7f5b219fc6a4cd5b8e',1,'bc_gpio.h']]],
   ['bc_5fgpio_5fmode_5ft',['bc_gpio_mode_t',['../group__bc__gpio.html#ga95188c2afa0f36cb97ebd6c5bc6eab6c',1,'bc_gpio.h']]],
   ['bc_5fgpio_5fpull_5ft',['bc_gpio_pull_t',['../group__bc__gpio.html#ga04280a82f9ae57f8d71b6ac697a139f5',1,'bc_gpio.h']]],
-  ['bc_5fhc_5fsr04_5fevent_5ft',['bc_hc_sr04_event_t',['../group__bc__hc__sr04.html#ga851a8825f946d0fe31b1a0641012311c',1,'bc_hc_sr04.h']]],
   ['bc_5fhdc2080_5fevent_5ft',['bc_hdc2080_event_t',['../group__bc__hdc2080.html#gab1dbbf6344e61442cf0e0e9b3187ae2a',1,'bc_hdc2080.h']]],
   ['bc_5fhts221_5fevent_5ft',['bc_hts221_event_t',['../group__bc__hts221.html#ga4dbaffaef8beba51a4bad9ba776cdd43',1,'bc_hts221.h']]],
   ['bc_5fi2c_5fchannel_5ft',['bc_i2c_channel_t',['../group__bc__i2c.html#ga5f7217e6558c54ac6920e5dabb777fef',1,'bc_i2c.h']]],
