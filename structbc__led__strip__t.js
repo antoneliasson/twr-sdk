@@ -1,13 +1,7 @@
 var structbc__led__strip__t =
 [
-    [ "_buffer", "structbc__led__strip__t.html#a08f22dd77d47404918af9a4999615c62", null ],
-    [ "_driver", "structbc__led__strip__t.html#a5b4c34c742e6fa9d4adfd45e7ce9f3da", null ],
-    [ "_effect", "structbc__led__strip__t.html#a5e19c1b9169c8c7319c665b89871288e", null ],
-    [ "_event_handler", "structbc__led__strip__t.html#afc191607a401fc27343073bf3c37d6db", null ],
-    [ "_event_param", "structbc__led__strip__t.html#aaac98fb9cdaf33fca275530dcc171943", null ],
-    [ "color", "structbc__led__strip__t.html#a6a9654db230a854330bb5fcc39888352", null ],
-    [ "led", "structbc__led__strip__t.html#a5f589f6ca3188a520dc8264cc10052b0", null ],
-    [ "round", "structbc__led__strip__t.html#a7a9b37a87e48fc6853baa7c41de29ae9", null ],
-    [ "task_id", "structbc__led__strip__t.html#a3489958a1f036f8b49689e1d33a6941a", null ],
-    [ "wait", "structbc__led__strip__t.html#a1678aceec50fa0773f45bc6f75f7e5ab", null ]
+    [ "count", "structbc__led__strip__t.html#a40a0ba963a6ed20a9e2102b0898f8ba7", null ],
+    [ "dma_buffer", "structbc__led__strip__t.html#a33e90e54fe46f42c980681840c90118a", null ],
+    [ "framebuffer", "structbc__led__strip__t.html#ae2b83ec54395e53f0a4a69c0434d7280", null ],
+    [ "type", "structbc__led__strip__t.html#a3fc5a2da0025d6a79a1211804b6193b9", null ]
 ];
