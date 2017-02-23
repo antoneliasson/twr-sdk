@@ -145,53 +145,35 @@ $(document).ready(function(){initNavTree('bc__module__power_8c_source.html','');
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    } relay;</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keyword">struct</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    {</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keywordtype">bool</span> initialized;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <a class="code" href="structbc__led__strip__t.html">bc_led_strip_t</a> *led_strip;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    } led_strip;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;} _bc_module_power;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keywordtype">void</span> bc_module_power_init(<span class="keywordtype">void</span>)</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;{</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    memset(&amp;_bc_module_power, 0, <span class="keyword">sizeof</span>(_bc_module_power));</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <a class="code" href="group__bc__gpio.html#ga06db16c5cd7f6ffff7e297970814221d">bc_gpio_init</a>(BC_MODULE_POWER_PIN_RELAY);</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <a class="code" href="group__bc__gpio.html#ga63a3ad86dfef88c7c940a2a34945d853">bc_gpio_set_mode</a>(BC_MODULE_POWER_PIN_RELAY, <a class="code" href="group__bc__gpio.html#gga95188c2afa0f36cb97ebd6c5bc6eab6ca92cf3f1d89c43c735e756479890cd608">BC_GPIO_MODE_OUTPUT</a>);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;} _bc_module_power;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keywordtype">void</span> bc_module_power_init(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;{</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    memset(&amp;_bc_module_power, 0, <span class="keyword">sizeof</span>(_bc_module_power));</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="code" href="group__bc__gpio.html#ga06db16c5cd7f6ffff7e297970814221d">bc_gpio_init</a>(BC_MODULE_POWER_PIN_RELAY);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <a class="code" href="group__bc__gpio.html#ga63a3ad86dfef88c7c940a2a34945d853">bc_gpio_set_mode</a>(BC_MODULE_POWER_PIN_RELAY, <a class="code" href="group__bc__gpio.html#gga95188c2afa0f36cb97ebd6c5bc6eab6ca92cf3f1d89c43c735e756479890cd608">BC_GPIO_MODE_OUTPUT</a>);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;}</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keywordtype">void</span> bc_module_power_relay_set_state(<span class="keywordtype">bool</span> state)</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;{</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    _bc_module_power.relay.on = state;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <a class="code" href="group__bc__gpio.html#ga509a65d13103db1a636c7ba082336cdd">bc_gpio_set_output</a>(BC_MODULE_POWER_PIN_RELAY, _bc_module_power.relay.on);</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;}</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keywordtype">void</span> bc_module_power_relay_set_state(<span class="keywordtype">bool</span> state)</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keywordtype">bool</span> bc_module_power_relay_get_state(<span class="keywordtype">void</span>)</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;{</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    _bc_module_power.relay.on = state;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <a class="code" href="group__bc__gpio.html#ga509a65d13103db1a636c7ba082336cdd">bc_gpio_set_output</a>(BC_MODULE_POWER_PIN_RELAY, _bc_module_power.relay.on);</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;}</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="keywordtype">bool</span> bc_module_power_relay_get_state(<span class="keywordtype">void</span>)</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;{</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordflow">return</span> _bc_module_power.relay.on;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;}</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="keywordtype">void</span> bc_module_power_led_strip_init(<a class="code" href="structbc__led__strip__t.html">bc_led_strip_t</a> *led_strip, <span class="keyword">const</span> <a class="code" href="structbc__led__strip__buffer__t.html">bc_led_strip_buffer_t</a> *buffer)</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;{</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    bc_led_strip_init(led_strip, &amp;bc_module_power_led_strip_driver, buffer);</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    _bc_module_power.led_strip.initialized = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    _bc_module_power.led_strip.led_strip = led_strip;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;}</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<a class="code" href="structbc__led__strip__t.html">bc_led_strip_t</a> *bc_module_power_get_led_strip(<span class="keywordtype">void</span>)</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;{</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordflow">return</span> _bc_module_power.led_strip.led_strip;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;}</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordflow">return</span> _bc_module_power.relay.on;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;}</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keyword">const</span> <a class="code" href="structbc__led__strip__driver__t.html">bc_led_strip_driver_t</a> *bc_module_power_get_led_strip_driver(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;{</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordflow">return</span> &amp;bc_module_power_led_strip_driver;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;}</div>
 <div class="ttc" id="structbc__led__strip__buffer__t_html"><div class="ttname"><a href="structbc__led__strip__buffer__t.html">bc_led_strip_buffer_t</a></div><div class="ttdef"><b>Definition:</b> <a href="bc__led__strip_8h_source.html#l00013">bc_led_strip.h:13</a></div></div>
 <div class="ttc" id="group__bc__gpio_html_ga63a3ad86dfef88c7c940a2a34945d853"><div class="ttname"><a href="group__bc__gpio.html#ga63a3ad86dfef88c7c940a2a34945d853">bc_gpio_set_mode</a></div><div class="ttdeci">void bc_gpio_set_mode(bc_gpio_channel_t channel, bc_gpio_mode_t mode)</div><div class="ttdoc">Set mode of operation for GPIO channel. </div><div class="ttdef"><b>Definition:</b> <a href="bc__gpio_8c_source.html#l00324">bc_gpio.c:324</a></div></div>
 <div class="ttc" id="group__bc__gpio_html_ga509a65d13103db1a636c7ba082336cdd"><div class="ttname"><a href="group__bc__gpio.html#ga509a65d13103db1a636c7ba082336cdd">bc_gpio_set_output</a></div><div class="ttdeci">void bc_gpio_set_output(bc_gpio_channel_t channel, bool state)</div><div class="ttdoc">Set output state for GPIO channel. </div><div class="ttdef"><b>Definition:</b> <a href="bc__gpio_8c_source.html#l00392">bc_gpio.c:392</a></div></div>
-<div class="ttc" id="structbc__led__strip__t_html"><div class="ttname"><a href="structbc__led__strip__t.html">bc_led_strip_t</a></div><div class="ttdef"><b>Definition:</b> <a href="bc__led__strip_8h_source.html#l00047">bc_led_strip.h:47</a></div></div>
 <div class="ttc" id="structbc__led__strip__driver__t_html"><div class="ttname"><a href="structbc__led__strip__driver__t.html">bc_led_strip_driver_t</a></div><div class="ttdef"><b>Definition:</b> <a href="bc__led__strip_8h_source.html#l00021">bc_led_strip.h:21</a></div></div>
 <div class="ttc" id="group__bc__gpio_html_ga06db16c5cd7f6ffff7e297970814221d"><div class="ttname"><a href="group__bc__gpio.html#ga06db16c5cd7f6ffff7e297970814221d">bc_gpio_init</a></div><div class="ttdeci">void bc_gpio_init(bc_gpio_channel_t channel)</div><div class="ttdoc">Initialize GPIO channel. </div><div class="ttdef"><b>Definition:</b> <a href="bc__gpio_8c_source.html#l00285">bc_gpio.c:285</a></div></div>
 <div class="ttc" id="group__bc__gpio_html_gga95188c2afa0f36cb97ebd6c5bc6eab6ca92cf3f1d89c43c735e756479890cd608"><div class="ttname"><a href="group__bc__gpio.html#gga95188c2afa0f36cb97ebd6c5bc6eab6ca92cf3f1d89c43c735e756479890cd608">BC_GPIO_MODE_OUTPUT</a></div><div class="ttdoc">GPIO channel operates as output. </div><div class="ttdef"><b>Definition:</b> <a href="bc__gpio_8h_source.html#l00052">bc_gpio.h:52</a></div></div>
