@@ -9,6 +9,7 @@ var modules =
     [ "bc_exti", "group__bc__exti.html", "group__bc__exti" ],
     [ "bc_fifo", "group__bc__fifo.html", "group__bc__fifo" ],
     [ "bc_gpio", "group__bc__gpio.html", "group__bc__gpio" ],
+    [ "bc_hc_sr04", "group__bc__hc__sr04.html", "group__bc__hc__sr04" ],
     [ "bc_hdc2080", "group__bc__hdc2080.html", "group__bc__hdc2080" ],
     [ "bc_hts221", "group__bc__hts221.html", "group__bc__hts221" ],
     [ "bc_i2c", "group__bc__i2c.html", "group__bc__i2c" ],
