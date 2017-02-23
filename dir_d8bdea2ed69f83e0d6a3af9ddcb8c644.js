@@ -10,7 +10,6 @@ var dir_d8bdea2ed69f83e0d6a3af9ddcb8c644 =
     [ "bc_exti.c", "bc__exti_8c_source.html", null ],
     [ "bc_fifo.c", "bc__fifo_8c_source.html", null ],
     [ "bc_gpio.c", "bc__gpio_8c_source.html", null ],
-    [ "bc_hc_sr04.c", "bc__hc__sr04_8c_source.html", null ],
     [ "bc_hdc2080.c", "bc__hdc2080_8c_source.html", null ],
     [ "bc_hts221.c", "bc__hts221_8c_source.html", null ],
     [ "bc_i2c.c", "bc__i2c_8c_source.html", null ],
@@ -43,6 +42,5 @@ var dir_d8bdea2ed69f83e0d6a3af9ddcb8c644 =
     [ "bc_uart.c", "bc__uart_8c_source.html", null ],
     [ "bc_usb_cdc.c", "bc__usb__cdc_8c_source.html", null ],
     [ "bc_ws2812b.c", "bc__ws2812b_8c_source.html", null ],
-    [ "bc_wssfm10r1at.c", "bc__wssfm10r1at_8c_source.html", null ],
     [ "jsmn.c", "jsmn_8c_source.html", null ]
 ];

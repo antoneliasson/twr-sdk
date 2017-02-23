@@ -9,7 +9,6 @@ var searchData=
   ['bc_5fexti',['bc_exti',['../group__bc__exti.html',1,'']]],
   ['bc_5ffifo',['bc_fifo',['../group__bc__fifo.html',1,'']]],
   ['bc_5fgpio',['bc_gpio',['../group__bc__gpio.html',1,'']]],
-  ['bc_5fhc_5fsr04',['bc_hc_sr04',['../group__bc__hc__sr04.html',1,'']]],
   ['bc_5fhdc2080',['bc_hdc2080',['../group__bc__hdc2080.html',1,'']]],
   ['bc_5fhts221',['bc_hts221',['../group__bc__hts221.html',1,'']]],
   ['bc_5fi2c',['bc_i2c',['../group__bc__i2c.html',1,'']]],
@@ -37,6 +36,5 @@ var searchData=
   ['bc_5ftick',['bc_tick',['../group__bc__tick.html',1,'']]],
   ['bc_5ftmp112',['bc_tmp112',['../group__bc__tmp112.html',1,'']]],
   ['bc_5fuart',['bc_uart',['../group__bc__uart.html',1,'']]],
-  ['bc_5fws2812b',['bc_ws2812b',['../group__bc__ws2812b.html',1,'']]],
-  ['bc_5fwssfm10r1at',['bc_wssfm10r1at',['../group__bc__wssfm10r1at.html',1,'']]]
+  ['bc_5fws2812b',['bc_ws2812b',['../group__bc__ws2812b.html',1,'']]]
 ];
