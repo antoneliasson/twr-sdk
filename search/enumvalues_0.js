@@ -149,6 +149,8 @@ var searchData=
   ['bc_5fmodule_5fsigfox_5fevent_5ferror',['BC_MODULE_SIGFOX_EVENT_ERROR',['../group__bc__module__sigfox.html#gga2df4600a924ed19152325147a97a9ac7a3df4cd76d109c009e853723a905ce180',1,'bc_module_sigfox.h']]],
   ['bc_5fmodule_5fsigfox_5fevent_5fsend_5frf_5fframe_5fdone',['BC_MODULE_SIGFOX_EVENT_SEND_RF_FRAME_DONE',['../group__bc__module__sigfox.html#gga2df4600a924ed19152325147a97a9ac7adbf1a2f83e63d823d6adf7b43799fd65',1,'bc_module_sigfox.h']]],
   ['bc_5fmodule_5fsigfox_5fevent_5fsend_5frf_5fframe_5fstart',['BC_MODULE_SIGFOX_EVENT_SEND_RF_FRAME_START',['../group__bc__module__sigfox.html#gga2df4600a924ed19152325147a97a9ac7ae3f6416df05872588e30002a56e81ac7',1,'bc_module_sigfox.h']]],
+  ['bc_5fmodule_5fsigfox_5frevision_5fr1',['BC_MODULE_SIGFOX_REVISION_R1',['../group__bc__module__sigfox.html#gga8d0ad61d2292b696113e95e0f0441db2aec567ba2e71844193e4eb57325cabde0',1,'bc_module_sigfox.h']]],
+  ['bc_5fmodule_5fsigfox_5frevision_5fr2',['BC_MODULE_SIGFOX_REVISION_R2',['../group__bc__module__sigfox.html#gga8d0ad61d2292b696113e95e0f0441db2ae0816e33cf122b5b9794f9db7269aa3e',1,'bc_module_sigfox.h']]],
   ['bc_5fmpl3115a2_5fevent_5ferror',['BC_MPL3115A2_EVENT_ERROR',['../group__bc__mpl3115a2.html#gga668c89e25a55f82bc44bd30eff13d76ca516658c4331820b5e099c851890a2291',1,'bc_mpl3115a2.h']]],
   ['bc_5fmpl3115a2_5fevent_5fupdate',['BC_MPL3115A2_EVENT_UPDATE',['../group__bc__mpl3115a2.html#gga668c89e25a55f82bc44bd30eff13d76ca59337332782ff05f93e22920af96a132',1,'bc_mpl3115a2.h']]],
   ['bc_5fopt3001_5fevent_5ferror',['BC_OPT3001_EVENT_ERROR',['../group__bc__opt3001.html#ggaabef7058f5bd9bcf5474d86c05e85c29aa61c2522920e16e3091f73a88324d3ef',1,'bc_opt3001.h']]],

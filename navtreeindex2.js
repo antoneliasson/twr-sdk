@@ -1,5 +1,7 @@
 var NAVTREEINDEX2 =
 {
+"group__bc__tag__lux__meter.html#gac1ade8c7b8759d6a93e4d4263271967b":[1,30,7],
+"group__bc__tag__lux__meter.html#gac7a812d56dfd26feca94f7b8866979ed":[1,30,3],
 "group__bc__tag__lux__meter.html#gae841ab30954883209455b41cca0658b5":[1,30,0],
 "group__bc__tag__lux__meter.html#gga2ab9d7993074385c79b424e61774e343a37cd244e8fac4ef5ae3a931bf8248465":[1,30,1,1],
 "group__bc__tag__lux__meter.html#gga2ab9d7993074385c79b424e61774e343acfce049f7211a29d241d3861bcbcf1f2":[1,30,1,0],
@@ -80,8 +82,8 @@ var NAVTREEINDEX2 =
 "group__bc__wssfm10r1at.html#ggabf624504e1545ed64fa55905320dcd65a52ff48545f04470b2608ee06944df911":[1,38,1,0],
 "group__bc__wssfm10r1at.html#ggabf624504e1545ed64fa55905320dcd65a646fdfa0c6e2a32d19b34f757d214bbe":[1,38,1,1],
 "group__bc__wssfm10r1at.html#ggabf624504e1545ed64fa55905320dcd65aeabb1c9080409c05966bd70c7d393b4f":[1,38,1,2],
-"index.html":[],
 "index.html":[0],
+"index.html":[],
 "jsmn_8c_source.html":[3,0,0,1,44],
 "jsmn_8h_source.html":[3,0,0,0,46],
 "modules.html":[1],

@@ -3,6 +3,6 @@
 <area shape="rect" id="node3" href="$group__bc__module__encoder.html#ga6f67406dd1e0db504050b19437779001" title="Initialize Encoder Module. " alt="" coords="336,31,499,57"/>
 <area shape="rect" id="node4" href="$group__bc__led.html#ga822e72175b9bc2557ad7c989f98c7068" title="Initialize LED. " alt="" coords="174,107,258,133"/>
 <area shape="rect" id="node5" href="$group__bc__td1207r.html#ga1b5a8cc467f2285e7894a9397be094dc" title="Initialize TD1207R. " alt="" coords="161,157,271,184"/>
-<area shape="rect" id="node6" href="$group__bc__wssfm10r1at.html#ga59a1f344c6a04ca7feaed904f5e578aa" title="Initialize WSSFM10R1AT. " alt="" coords="145,208,287,235"/>
-<area shape="rect" id="node7" href="$group__bc__module__sigfox.html#ga45b1d5138717de6f72bedaf3f26ec6dd" title="Initialize BigClown SigFox Module. " alt="" coords="342,208,493,235"/>
+<area shape="rect" id="node7" href="$group__bc__wssfm10r1at.html#ga59a1f344c6a04ca7feaed904f5e578aa" title="Initialize WSSFM10R1AT. " alt="" coords="145,208,287,235"/>
+<area shape="rect" id="node6" href="$group__bc__module__sigfox.html#ga85ecac7b2744ca0180323c5448eafe0d" title="Initialize BigClown SigFox Module. " alt="" coords="342,183,493,209"/>
 </map>
