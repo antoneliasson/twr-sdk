@@ -1,0 +1,5 @@
+<map id="bc_wssfm10r1at_is_ready" name="bc_wssfm10r1at_is_ready">
+<area shape="rect" id="node2" href="$group__bc__module__sigfox.html#gae48d0c47c1f298945f2d920a771c4d19" title="Check if modem is ready for commands. " alt="" coords="235,5,379,46"/>
+<area shape="rect" id="node3" href="$group__bc__wssfm10r1at.html#ga0e8b81886d3958021cd94bcd81581ef2" title="Send RF frame command. " alt="" coords="230,70,383,111"/>
+<area shape="rect" id="node4" href="$group__bc__module__sigfox.html#gaff30d9b95f4292f5bf26c0ba02f37160" title="Send RF frame command. " alt="" coords="432,70,595,111"/>
+</map>

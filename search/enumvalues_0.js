@@ -185,5 +185,8 @@ var searchData=
   ['bc_5fuart_5fbaudrate_5f9600_5fbd',['BC_UART_BAUDRATE_9600_BD',['../group__bc__uart.html#ggabe2f6f464dc94204d147f3f498fbeb85a38128ec5d358e5824a20620ed9b96c2a',1,'bc_uart.h']]],
   ['bc_5fuart_5fuart0',['BC_UART_UART0',['../group__bc__uart.html#ggafc2793f7c8bd58556f8344cfb1ff4811a3df15d0f6bdd645435dea972f2edb930',1,'bc_uart.h']]],
   ['bc_5fuart_5fuart1',['BC_UART_UART1',['../group__bc__uart.html#ggafc2793f7c8bd58556f8344cfb1ff4811afa614bde5555b594663b3b7474e9070b',1,'bc_uart.h']]],
-  ['bc_5fuart_5fuart2',['BC_UART_UART2',['../group__bc__uart.html#ggafc2793f7c8bd58556f8344cfb1ff4811a66cd08232879638f96034cb607a7cc25',1,'bc_uart.h']]]
+  ['bc_5fuart_5fuart2',['BC_UART_UART2',['../group__bc__uart.html#ggafc2793f7c8bd58556f8344cfb1ff4811a66cd08232879638f96034cb607a7cc25',1,'bc_uart.h']]],
+  ['bc_5fwssfm10r1at_5fevent_5ferror',['BC_WSSFM10R1AT_EVENT_ERROR',['../group__bc__wssfm10r1at.html#ggabf624504e1545ed64fa55905320dcd65a52ff48545f04470b2608ee06944df911',1,'bc_wssfm10r1at.h']]],
+  ['bc_5fwssfm10r1at_5fevent_5fsend_5frf_5fframe_5fdone',['BC_WSSFM10R1AT_EVENT_SEND_RF_FRAME_DONE',['../group__bc__wssfm10r1at.html#ggabf624504e1545ed64fa55905320dcd65aeabb1c9080409c05966bd70c7d393b4f',1,'bc_wssfm10r1at.h']]],
+  ['bc_5fwssfm10r1at_5fevent_5fsend_5frf_5fframe_5fstart',['BC_WSSFM10R1AT_EVENT_SEND_RF_FRAME_START',['../group__bc__wssfm10r1at.html#ggabf624504e1545ed64fa55905320dcd65a646fdfa0c6e2a32d19b34f757d214bbe',1,'bc_wssfm10r1at.h']]]
 ];

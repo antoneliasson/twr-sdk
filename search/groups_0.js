@@ -37,5 +37,6 @@ var searchData=
   ['bc_5ftick',['bc_tick',['../group__bc__tick.html',1,'']]],
   ['bc_5ftmp112',['bc_tmp112',['../group__bc__tmp112.html',1,'']]],
   ['bc_5fuart',['bc_uart',['../group__bc__uart.html',1,'']]],
-  ['bc_5fws2812b',['bc_ws2812b',['../group__bc__ws2812b.html',1,'']]]
+  ['bc_5fws2812b',['bc_ws2812b',['../group__bc__ws2812b.html',1,'']]],
+  ['bc_5fwssfm10r1at',['bc_wssfm10r1at',['../group__bc__wssfm10r1at.html',1,'']]]
 ];
