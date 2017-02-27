@@ -147,6 +147,9 @@ var searchData=
   ['bc_5fmodule_5fpir_5fsensitivity_5fmedium',['BC_MODULE_PIR_SENSITIVITY_MEDIUM',['../group__bc__module__pir.html#ggadcfb88944cffccae03f9b599cb292c8faa29502979b2fc7f658229f5c1ed243bc',1,'bc_module_pir.h']]],
   ['bc_5fmodule_5fpir_5fsensitivity_5fvery_5fhigh',['BC_MODULE_PIR_SENSITIVITY_VERY_HIGH',['../group__bc__module__pir.html#ggadcfb88944cffccae03f9b599cb292c8facae7663bdbf467692724844b2a6f5280',1,'bc_module_pir.h']]],
   ['bc_5fmodule_5fsigfox_5fevent_5ferror',['BC_MODULE_SIGFOX_EVENT_ERROR',['../group__bc__module__sigfox.html#gga2df4600a924ed19152325147a97a9ac7a3df4cd76d109c009e853723a905ce180',1,'bc_module_sigfox.h']]],
+  ['bc_5fmodule_5fsigfox_5fevent_5fread_5fdevice_5fid',['BC_MODULE_SIGFOX_EVENT_READ_DEVICE_ID',['../group__bc__module__sigfox.html#gga2df4600a924ed19152325147a97a9ac7ad6410f4c5d03ba69644c71d1fb098469',1,'bc_module_sigfox.h']]],
+  ['bc_5fmodule_5fsigfox_5fevent_5fread_5fdevice_5fpac',['BC_MODULE_SIGFOX_EVENT_READ_DEVICE_PAC',['../group__bc__module__sigfox.html#gga2df4600a924ed19152325147a97a9ac7ab9fd763bb2331249163c5ac5f4913c10',1,'bc_module_sigfox.h']]],
+  ['bc_5fmodule_5fsigfox_5fevent_5fready',['BC_MODULE_SIGFOX_EVENT_READY',['../group__bc__module__sigfox.html#gga2df4600a924ed19152325147a97a9ac7a0b1f9a2135ef8664106d82a6232732b5',1,'bc_module_sigfox.h']]],
   ['bc_5fmodule_5fsigfox_5fevent_5fsend_5frf_5fframe_5fdone',['BC_MODULE_SIGFOX_EVENT_SEND_RF_FRAME_DONE',['../group__bc__module__sigfox.html#gga2df4600a924ed19152325147a97a9ac7adbf1a2f83e63d823d6adf7b43799fd65',1,'bc_module_sigfox.h']]],
   ['bc_5fmodule_5fsigfox_5fevent_5fsend_5frf_5fframe_5fstart',['BC_MODULE_SIGFOX_EVENT_SEND_RF_FRAME_START',['../group__bc__module__sigfox.html#gga2df4600a924ed19152325147a97a9ac7ae3f6416df05872588e30002a56e81ac7',1,'bc_module_sigfox.h']]],
   ['bc_5fmodule_5fsigfox_5frevision_5fr1',['BC_MODULE_SIGFOX_REVISION_R1',['../group__bc__module__sigfox.html#gga8d0ad61d2292b696113e95e0f0441db2aec567ba2e71844193e4eb57325cabde0',1,'bc_module_sigfox.h']]],
@@ -180,6 +183,7 @@ var searchData=
   ['bc_5ftag_5ftemperature_5fi2c_5faddress_5falternate',['BC_TAG_TEMPERATURE_I2C_ADDRESS_ALTERNATE',['../group__bc__tag__temperature.html#gga91462f2362a0209787e60a5181d49ae4a472da38ebe61df94bfef3a277154a3d7',1,'bc_tag_temperature.h']]],
   ['bc_5ftag_5ftemperature_5fi2c_5faddress_5fdefault',['BC_TAG_TEMPERATURE_I2C_ADDRESS_DEFAULT',['../group__bc__tag__temperature.html#gga91462f2362a0209787e60a5181d49ae4aaa28f5cfd232d670c4f161136e1c6ddd',1,'bc_tag_temperature.h']]],
   ['bc_5ftd1207r_5fevent_5ferror',['BC_TD1207R_EVENT_ERROR',['../group__bc__td1207r.html#gga76dcaa6d24a22b5ffe5ec15aa338cd5cae9d13d86240fe7db989365f069441db2',1,'bc_td1207r.h']]],
+  ['bc_5ftd1207r_5fevent_5fready',['BC_TD1207R_EVENT_READY',['../group__bc__td1207r.html#gga76dcaa6d24a22b5ffe5ec15aa338cd5caafcd539574e67394e3618c54b18defb6',1,'bc_td1207r.h']]],
   ['bc_5ftd1207r_5fevent_5fsend_5frf_5fframe_5fdone',['BC_TD1207R_EVENT_SEND_RF_FRAME_DONE',['../group__bc__td1207r.html#gga76dcaa6d24a22b5ffe5ec15aa338cd5cac147b5d83aae183112ffde4a7adf0009',1,'bc_td1207r.h']]],
   ['bc_5ftd1207r_5fevent_5fsend_5frf_5fframe_5fstart',['BC_TD1207R_EVENT_SEND_RF_FRAME_START',['../group__bc__td1207r.html#gga76dcaa6d24a22b5ffe5ec15aa338cd5ca418c393f635ec876adbdee2e5595e146',1,'bc_td1207r.h']]],
   ['bc_5ftmp112_5fevent_5ferror',['BC_TMP112_EVENT_ERROR',['../group__bc__tmp112.html#gga0f3f2d66b8fa03f44b26592fbfc95087a582b8397de6631d5375a4b327b247db3',1,'bc_tmp112.h']]],
@@ -189,6 +193,9 @@ var searchData=
   ['bc_5fuart_5fuart1',['BC_UART_UART1',['../group__bc__uart.html#ggafc2793f7c8bd58556f8344cfb1ff4811afa614bde5555b594663b3b7474e9070b',1,'bc_uart.h']]],
   ['bc_5fuart_5fuart2',['BC_UART_UART2',['../group__bc__uart.html#ggafc2793f7c8bd58556f8344cfb1ff4811a66cd08232879638f96034cb607a7cc25',1,'bc_uart.h']]],
   ['bc_5fwssfm10r1at_5fevent_5ferror',['BC_WSSFM10R1AT_EVENT_ERROR',['../group__bc__wssfm10r1at.html#ggabf624504e1545ed64fa55905320dcd65a52ff48545f04470b2608ee06944df911',1,'bc_wssfm10r1at.h']]],
+  ['bc_5fwssfm10r1at_5fevent_5fread_5fdevice_5fid',['BC_WSSFM10R1AT_EVENT_READ_DEVICE_ID',['../group__bc__wssfm10r1at.html#ggabf624504e1545ed64fa55905320dcd65aa11ccc3fc460f661e3a82faab58e056e',1,'bc_wssfm10r1at.h']]],
+  ['bc_5fwssfm10r1at_5fevent_5fread_5fdevice_5fpac',['BC_WSSFM10R1AT_EVENT_READ_DEVICE_PAC',['../group__bc__wssfm10r1at.html#ggabf624504e1545ed64fa55905320dcd65a64274cb8154486fcfb34aaa1131a2d4c',1,'bc_wssfm10r1at.h']]],
+  ['bc_5fwssfm10r1at_5fevent_5fready',['BC_WSSFM10R1AT_EVENT_READY',['../group__bc__wssfm10r1at.html#ggabf624504e1545ed64fa55905320dcd65a2f9aa70b84c9d6077e657f8343f72b90',1,'bc_wssfm10r1at.h']]],
   ['bc_5fwssfm10r1at_5fevent_5fsend_5frf_5fframe_5fdone',['BC_WSSFM10R1AT_EVENT_SEND_RF_FRAME_DONE',['../group__bc__wssfm10r1at.html#ggabf624504e1545ed64fa55905320dcd65aeabb1c9080409c05966bd70c7d393b4f',1,'bc_wssfm10r1at.h']]],
   ['bc_5fwssfm10r1at_5fevent_5fsend_5frf_5fframe_5fstart',['BC_WSSFM10R1AT_EVENT_SEND_RF_FRAME_START',['../group__bc__wssfm10r1at.html#ggabf624504e1545ed64fa55905320dcd65a646fdfa0c6e2a32d19b34f757d214bbe',1,'bc_wssfm10r1at.h']]]
 ];

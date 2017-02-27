@@ -2,6 +2,7 @@ var group__bc__td1207r =
 [
     [ "bc_td1207r_t", "group__bc__td1207r.html#ga9749f22a00a38a09406520becbc4f42b", null ],
     [ "bc_td1207r_event_t", "group__bc__td1207r.html#ga76dcaa6d24a22b5ffe5ec15aa338cd5c", [
+      [ "BC_TD1207R_EVENT_READY", "group__bc__td1207r.html#gga76dcaa6d24a22b5ffe5ec15aa338cd5caafcd539574e67394e3618c54b18defb6", null ],
       [ "BC_TD1207R_EVENT_ERROR", "group__bc__td1207r.html#gga76dcaa6d24a22b5ffe5ec15aa338cd5cae9d13d86240fe7db989365f069441db2", null ],
       [ "BC_TD1207R_EVENT_SEND_RF_FRAME_START", "group__bc__td1207r.html#gga76dcaa6d24a22b5ffe5ec15aa338cd5ca418c393f635ec876adbdee2e5595e146", null ],
       [ "BC_TD1207R_EVENT_SEND_RF_FRAME_DONE", "group__bc__td1207r.html#gga76dcaa6d24a22b5ffe5ec15aa338cd5cac147b5d83aae183112ffde4a7adf0009", null ]

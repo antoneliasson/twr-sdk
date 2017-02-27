@@ -118,11 +118,17 @@ typedef struct <a class="el" href="group__bc__wssfm10r1at.html#ga779143a8df55579
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
 <tr class="memitem:gabf624504e1545ed64fa55905320dcd65"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bc__wssfm10r1at.html#gabf624504e1545ed64fa55905320dcd65">bc_wssfm10r1at_event_t</a> { <br/>
-&#160;&#160;<a class="el" href="group__bc__wssfm10r1at.html#ggabf624504e1545ed64fa55905320dcd65a52ff48545f04470b2608ee06944df911">BC_WSSFM10R1AT_EVENT_ERROR</a> = 0, 
+&#160;&#160;<a class="el" href="group__bc__wssfm10r1at.html#ggabf624504e1545ed64fa55905320dcd65a2f9aa70b84c9d6077e657f8343f72b90">BC_WSSFM10R1AT_EVENT_READY</a> = 0, 
 <br/>
-&#160;&#160;<a class="el" href="group__bc__wssfm10r1at.html#ggabf624504e1545ed64fa55905320dcd65a646fdfa0c6e2a32d19b34f757d214bbe">BC_WSSFM10R1AT_EVENT_SEND_RF_FRAME_START</a> = 1, 
+&#160;&#160;<a class="el" href="group__bc__wssfm10r1at.html#ggabf624504e1545ed64fa55905320dcd65a52ff48545f04470b2608ee06944df911">BC_WSSFM10R1AT_EVENT_ERROR</a> = 1, 
 <br/>
-&#160;&#160;<a class="el" href="group__bc__wssfm10r1at.html#ggabf624504e1545ed64fa55905320dcd65aeabb1c9080409c05966bd70c7d393b4f">BC_WSSFM10R1AT_EVENT_SEND_RF_FRAME_DONE</a> = 2
+&#160;&#160;<a class="el" href="group__bc__wssfm10r1at.html#ggabf624504e1545ed64fa55905320dcd65a646fdfa0c6e2a32d19b34f757d214bbe">BC_WSSFM10R1AT_EVENT_SEND_RF_FRAME_START</a> = 2, 
+<br/>
+&#160;&#160;<a class="el" href="group__bc__wssfm10r1at.html#ggabf624504e1545ed64fa55905320dcd65aeabb1c9080409c05966bd70c7d393b4f">BC_WSSFM10R1AT_EVENT_SEND_RF_FRAME_DONE</a> = 3, 
+<br/>
+&#160;&#160;<a class="el" href="group__bc__wssfm10r1at.html#ggabf624504e1545ed64fa55905320dcd65aa11ccc3fc460f661e3a82faab58e056e">BC_WSSFM10R1AT_EVENT_READ_DEVICE_ID</a> = 4, 
+<br/>
+&#160;&#160;<a class="el" href="group__bc__wssfm10r1at.html#ggabf624504e1545ed64fa55905320dcd65a64274cb8154486fcfb34aaa1131a2d4c">BC_WSSFM10R1AT_EVENT_READ_DEVICE_PAC</a> = 5
 <br/>
  }</td></tr>
 <tr class="memdesc:gabf624504e1545ed64fa55905320dcd65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback events.  <a href="group__bc__wssfm10r1at.html#gabf624504e1545ed64fa55905320dcd65">More...</a><br/></td></tr>
@@ -142,14 +148,14 @@ Functions</h2></td></tr>
 <tr class="memitem:ga0e8b81886d3958021cd94bcd81581ef2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bc__wssfm10r1at.html#ga0e8b81886d3958021cd94bcd81581ef2">bc_wssfm10r1at_send_rf_frame</a> (<a class="el" href="group__bc__wssfm10r1at.html#ga779143a8df55579e10e85f0a0e6ba0de">bc_wssfm10r1at_t</a> *self, const void *buffer, size_t length)</td></tr>
 <tr class="memdesc:ga0e8b81886d3958021cd94bcd81581ef2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send RF frame command.  <a href="#ga0e8b81886d3958021cd94bcd81581ef2">More...</a><br/></td></tr>
 <tr class="separator:ga0e8b81886d3958021cd94bcd81581ef2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad6a6e49b5c7e36e06599f2f05d3fe786"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gad6a6e49b5c7e36e06599f2f05d3fe786"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>bc_wssfm10r1at_read_device_id</b> (<a class="el" href="group__bc__wssfm10r1at.html#ga779143a8df55579e10e85f0a0e6ba0de">bc_wssfm10r1at_t</a> *self)</td></tr>
+<tr class="memitem:gad6a6e49b5c7e36e06599f2f05d3fe786"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bc__wssfm10r1at.html#gad6a6e49b5c7e36e06599f2f05d3fe786">bc_wssfm10r1at_read_device_id</a> (<a class="el" href="group__bc__wssfm10r1at.html#ga779143a8df55579e10e85f0a0e6ba0de">bc_wssfm10r1at_t</a> *self)</td></tr>
+<tr class="memdesc:gad6a6e49b5c7e36e06599f2f05d3fe786"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read device ID command.  <a href="#gad6a6e49b5c7e36e06599f2f05d3fe786">More...</a><br/></td></tr>
 <tr class="separator:gad6a6e49b5c7e36e06599f2f05d3fe786"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gafdb1aec84a8dca089eeb01926403b7f5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gafdb1aec84a8dca089eeb01926403b7f5"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>bc_wssfm10r1at_read_pac</b> (<a class="el" href="group__bc__wssfm10r1at.html#ga779143a8df55579e10e85f0a0e6ba0de">bc_wssfm10r1at_t</a> *self)</td></tr>
-<tr class="separator:gafdb1aec84a8dca089eeb01926403b7f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab8160b0b5849307bc42bb3b243ceca31"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gab8160b0b5849307bc42bb3b243ceca31"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>bc_wssfm10r1at_continuous_wave</b> (<a class="el" href="group__bc__wssfm10r1at.html#ga779143a8df55579e10e85f0a0e6ba0de">bc_wssfm10r1at_t</a> *self)</td></tr>
+<tr class="memitem:gab3f0f3e28e58ec8ad4f48ab27d2621ad"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bc__wssfm10r1at.html#gab3f0f3e28e58ec8ad4f48ab27d2621ad">bc_wssfm10r1at_read_device_pac</a> (<a class="el" href="group__bc__wssfm10r1at.html#ga779143a8df55579e10e85f0a0e6ba0de">bc_wssfm10r1at_t</a> *self)</td></tr>
+<tr class="memdesc:gab3f0f3e28e58ec8ad4f48ab27d2621ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read device PAC command.  <a href="#gab3f0f3e28e58ec8ad4f48ab27d2621ad">More...</a><br/></td></tr>
+<tr class="separator:gab3f0f3e28e58ec8ad4f48ab27d2621ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab8160b0b5849307bc42bb3b243ceca31"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bc__wssfm10r1at.html#gab8160b0b5849307bc42bb3b243ceca31">bc_wssfm10r1at_continuous_wave</a> (<a class="el" href="group__bc__wssfm10r1at.html#ga779143a8df55579e10e85f0a0e6ba0de">bc_wssfm10r1at_t</a> *self)</td></tr>
+<tr class="memdesc:gab8160b0b5849307bc42bb3b243ceca31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate continuous wave command.  <a href="#gab8160b0b5849307bc42bb3b243ceca31">More...</a><br/></td></tr>
 <tr class="separator:gab8160b0b5849307bc42bb3b243ceca31"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -167,7 +173,10 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>bc_wssfm10r1at_contin
 
 <p>Callback events. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="ggabf624504e1545ed64fa55905320dcd65a52ff48545f04470b2608ee06944df911"></a>BC_WSSFM10R1AT_EVENT_ERROR</em>&#160;</td><td class="fielddoc">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="ggabf624504e1545ed64fa55905320dcd65a2f9aa70b84c9d6077e657f8343f72b90"></a>BC_WSSFM10R1AT_EVENT_READY</em>&#160;</td><td class="fielddoc">
+<p>Ready event. </p>
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ggabf624504e1545ed64fa55905320dcd65a52ff48545f04470b2608ee06944df911"></a>BC_WSSFM10R1AT_EVENT_ERROR</em>&#160;</td><td class="fielddoc">
 <p>Error event. </p>
 </td></tr>
 <tr><td class="fieldname"><em><a class="anchor" id="ggabf624504e1545ed64fa55905320dcd65a646fdfa0c6e2a32d19b34f757d214bbe"></a>BC_WSSFM10R1AT_EVENT_SEND_RF_FRAME_START</em>&#160;</td><td class="fielddoc">
@@ -176,6 +185,12 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>bc_wssfm10r1at_contin
 <tr><td class="fieldname"><em><a class="anchor" id="ggabf624504e1545ed64fa55905320dcd65aeabb1c9080409c05966bd70c7d393b4f"></a>BC_WSSFM10R1AT_EVENT_SEND_RF_FRAME_DONE</em>&#160;</td><td class="fielddoc">
 <p>RF frame transmission finished event. </p>
 </td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ggabf624504e1545ed64fa55905320dcd65aa11ccc3fc460f661e3a82faab58e056e"></a>BC_WSSFM10R1AT_EVENT_READ_DEVICE_ID</em>&#160;</td><td class="fielddoc">
+<p>Device ID has been read event. </p>
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ggabf624504e1545ed64fa55905320dcd65a64274cb8154486fcfb34aaa1131a2d4c"></a>BC_WSSFM10R1AT_EVENT_READ_DEVICE_PAC</em>&#160;</td><td class="fielddoc">
+<p>Device PAC has been read event. </p>
+</td></tr>
 </table>
 
 <p>Definition at line <a class="el" href="bc__wssfm10r1at_8h_source.html#l00021">21</a> of file <a class="el" href="bc__wssfm10r1at_8h_source.html">bc_wssfm10r1at.h</a>.</p>
@@ -183,6 +198,55 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>bc_wssfm10r1at_contin
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="gab8160b0b5849307bc42bb3b243ceca31"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool bc_wssfm10r1at_continuous_wave </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__bc__wssfm10r1at.html#ga779143a8df55579e10e85f0a0e6ba0de">bc_wssfm10r1at_t</a> *&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Generate continuous wave command. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">self</td><td>Instance </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if command was accepted for processing </dd>
+<dd>
+false if command was denied for processing </dd></dl>
+
+<p>Definition at line <a class="el" href="bc__wssfm10r1at_8c_source.html#l00107">107</a> of file <a class="el" href="bc__wssfm10r1at_8c_source.html">bc_wssfm10r1at.c</a>.</p>
+
+<p>Referenced by <a class="el" href="bc__module__sigfox_8c_source.html#l00074">bc_module_sigfox_continuous_wave()</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="group__bc__wssfm10r1at_gab8160b0b5849307bc42bb3b243ceca31_cgraph.png" border="0" usemap="#group__bc__wssfm10r1at_gab8160b0b5849307bc42bb3b243ceca31_cgraph" alt=""/></div>
+<map name="group__bc__wssfm10r1at_gab8160b0b5849307bc42bb3b243ceca31_cgraph" id="group__bc__wssfm10r1at_gab8160b0b5849307bc42bb3b243ceca31_cgraph">
+<area shape="rect" id="node2" href="group__bc__wssfm10r1at.html#ga69416799fb599c42020bd5012857e550" title="Check if modem is ready for commands. " alt="" coords="281,5,455,32"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="group__bc__wssfm10r1at_gab8160b0b5849307bc42bb3b243ceca31_icgraph.png" border="0" usemap="#group__bc__wssfm10r1at_gab8160b0b5849307bc42bb3b243ceca31_icgraph" alt=""/></div>
+<map name="group__bc__wssfm10r1at_gab8160b0b5849307bc42bb3b243ceca31_icgraph" id="group__bc__wssfm10r1at_gab8160b0b5849307bc42bb3b243ceca31_icgraph">
+<area shape="rect" id="node2" href="group__bc__module__sigfox.html#gaff0d8da9c6ca148e951442d7ea6d0547" title="Generate continuous wave command. " alt="" coords="280,5,515,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
 <a class="anchor" id="ga59a1f344c6a04ca7feaed904f5e578aa"></a>
 <div class="memitem">
 <div class="memproto">
@@ -223,7 +287,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>bc_wssfm10r1at_contin
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="bc__wssfm10r1at_8c_source.html#l00015">15</a> of file <a class="el" href="bc__wssfm10r1at_8c_source.html">bc_wssfm10r1at.c</a>.</p>
+<p>Definition at line <a class="el" href="bc__wssfm10r1at_8c_source.html#l00020">20</a> of file <a class="el" href="bc__wssfm10r1at_8c_source.html">bc_wssfm10r1at.c</a>.</p>
 
 <p>Referenced by <a class="el" href="bc__module__sigfox_8c_source.html#l00007">bc_module_sigfox_init()</a>.</p>
 
@@ -272,16 +336,114 @@ Here is the caller graph for this function:</div>
 <dd>
 false if not ready </dd></dl>
 
-<p>Definition at line <a class="el" href="bc__wssfm10r1at_8c_source.html#l00045">45</a> of file <a class="el" href="bc__wssfm10r1at_8c_source.html">bc_wssfm10r1at.c</a>.</p>
+<p>Definition at line <a class="el" href="bc__wssfm10r1at_8c_source.html#l00052">52</a> of file <a class="el" href="bc__wssfm10r1at_8c_source.html">bc_wssfm10r1at.c</a>.</p>
 
-<p>Referenced by <a class="el" href="bc__module__sigfox_8c_source.html#l00034">bc_module_sigfox_is_ready()</a>, and <a class="el" href="bc__wssfm10r1at_8c_source.html#l00050">bc_wssfm10r1at_send_rf_frame()</a>.</p>
+<p>Referenced by <a class="el" href="bc__module__sigfox_8c_source.html#l00034">bc_module_sigfox_is_ready()</a>, <a class="el" href="bc__wssfm10r1at_8c_source.html#l00107">bc_wssfm10r1at_continuous_wave()</a>, <a class="el" href="bc__wssfm10r1at_8c_source.html#l00083">bc_wssfm10r1at_read_device_id()</a>, <a class="el" href="bc__wssfm10r1at_8c_source.html#l00095">bc_wssfm10r1at_read_device_pac()</a>, and <a class="el" href="bc__wssfm10r1at_8c_source.html#l00067">bc_wssfm10r1at_send_rf_frame()</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="group__bc__wssfm10r1at_ga69416799fb599c42020bd5012857e550_icgraph.png" border="0" usemap="#group__bc__wssfm10r1at_ga69416799fb599c42020bd5012857e550_icgraph" alt=""/></div>
 <map name="group__bc__wssfm10r1at_ga69416799fb599c42020bd5012857e550_icgraph" id="group__bc__wssfm10r1at_ga69416799fb599c42020bd5012857e550_icgraph">
-<area shape="rect" id="node2" href="group__bc__module__sigfox.html#gae48d0c47c1f298945f2d920a771c4d19" title="Check if modem is ready for commands. " alt="" coords="235,5,379,46"/><area shape="rect" id="node3" href="group__bc__wssfm10r1at.html#ga0e8b81886d3958021cd94bcd81581ef2" title="Send RF frame command. " alt="" coords="230,70,383,111"/><area shape="rect" id="node4" href="group__bc__module__sigfox.html#gaff30d9b95f4292f5bf26c0ba02f37160" title="Send RF frame command. " alt="" coords="432,70,595,111"/></map>
+<area shape="rect" id="node2" href="group__bc__module__sigfox.html#gae48d0c47c1f298945f2d920a771c4d19" title="Check if modem is ready for commands. " alt="" coords="271,5,415,46"/><area shape="rect" id="node3" href="group__bc__wssfm10r1at.html#gab8160b0b5849307bc42bb3b243ceca31" title="Generate continuous wave command. " alt="" coords="229,71,456,97"/><area shape="rect" id="node5" href="group__bc__wssfm10r1at.html#gad6a6e49b5c7e36e06599f2f05d3fe786" title="Read device ID command. " alt="" coords="267,122,418,163"/><area shape="rect" id="node7" href="group__bc__wssfm10r1at.html#gab3f0f3e28e58ec8ad4f48ab27d2621ad" title="Read device PAC command. " alt="" coords="267,187,418,229"/><area shape="rect" id="node9" href="group__bc__wssfm10r1at.html#ga0e8b81886d3958021cd94bcd81581ef2" title="Send RF frame command. " alt="" coords="266,253,419,294"/><area shape="rect" id="node4" href="group__bc__module__sigfox.html#gaff0d8da9c6ca148e951442d7ea6d0547" title="Generate continuous wave command. " alt="" coords="504,71,739,97"/><area shape="rect" id="node6" href="group__bc__module__sigfox.html#ga36f59af90b257db1807db53082b64215" title="Read device ID command. " alt="" coords="542,122,701,163"/><area shape="rect" id="node8" href="group__bc__module__sigfox.html#ga8698a6efc239cdfd004ccf29d1e68c50" title="Read device PAC command. " alt="" coords="542,187,701,229"/><area shape="rect" id="node10" href="group__bc__module__sigfox.html#gaff30d9b95f4292f5bf26c0ba02f37160" title="Send RF frame command. " alt="" coords="540,253,703,294"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="gad6a6e49b5c7e36e06599f2f05d3fe786"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool bc_wssfm10r1at_read_device_id </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__bc__wssfm10r1at.html#ga779143a8df55579e10e85f0a0e6ba0de">bc_wssfm10r1at_t</a> *&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Read device ID command. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">self</td><td>Instance </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if command was accepted for processing </dd>
+<dd>
+false if command was denied for processing </dd></dl>
+
+<p>Definition at line <a class="el" href="bc__wssfm10r1at_8c_source.html#l00083">83</a> of file <a class="el" href="bc__wssfm10r1at_8c_source.html">bc_wssfm10r1at.c</a>.</p>
+
+<p>Referenced by <a class="el" href="bc__module__sigfox_8c_source.html#l00054">bc_module_sigfox_read_device_id()</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="group__bc__wssfm10r1at_gad6a6e49b5c7e36e06599f2f05d3fe786_cgraph.png" border="0" usemap="#group__bc__wssfm10r1at_gad6a6e49b5c7e36e06599f2f05d3fe786_cgraph" alt=""/></div>
+<map name="group__bc__wssfm10r1at_gad6a6e49b5c7e36e06599f2f05d3fe786_cgraph" id="group__bc__wssfm10r1at_gad6a6e49b5c7e36e06599f2f05d3fe786_cgraph">
+<area shape="rect" id="node2" href="group__bc__wssfm10r1at.html#ga69416799fb599c42020bd5012857e550" title="Check if modem is ready for commands. " alt="" coords="206,12,381,39"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="group__bc__wssfm10r1at_gad6a6e49b5c7e36e06599f2f05d3fe786_icgraph.png" border="0" usemap="#group__bc__wssfm10r1at_gad6a6e49b5c7e36e06599f2f05d3fe786_icgraph" alt=""/></div>
+<map name="group__bc__wssfm10r1at_gad6a6e49b5c7e36e06599f2f05d3fe786_icgraph" id="group__bc__wssfm10r1at_gad6a6e49b5c7e36e06599f2f05d3fe786_icgraph">
+<area shape="rect" id="node2" href="group__bc__module__sigfox.html#ga36f59af90b257db1807db53082b64215" title="Read device ID command. " alt="" coords="206,5,365,46"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="gab3f0f3e28e58ec8ad4f48ab27d2621ad"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool bc_wssfm10r1at_read_device_pac </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__bc__wssfm10r1at.html#ga779143a8df55579e10e85f0a0e6ba0de">bc_wssfm10r1at_t</a> *&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Read device PAC command. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">self</td><td>Instance </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if command was accepted for processing </dd>
+<dd>
+false if command was denied for processing </dd></dl>
+
+<p>Definition at line <a class="el" href="bc__wssfm10r1at_8c_source.html#l00095">95</a> of file <a class="el" href="bc__wssfm10r1at_8c_source.html">bc_wssfm10r1at.c</a>.</p>
+
+<p>Referenced by <a class="el" href="bc__module__sigfox_8c_source.html#l00064">bc_module_sigfox_read_device_pac()</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="group__bc__wssfm10r1at_gab3f0f3e28e58ec8ad4f48ab27d2621ad_cgraph.png" border="0" usemap="#group__bc__wssfm10r1at_gab3f0f3e28e58ec8ad4f48ab27d2621ad_cgraph" alt=""/></div>
+<map name="group__bc__wssfm10r1at_gab3f0f3e28e58ec8ad4f48ab27d2621ad_cgraph" id="group__bc__wssfm10r1at_gab3f0f3e28e58ec8ad4f48ab27d2621ad_cgraph">
+<area shape="rect" id="node2" href="group__bc__wssfm10r1at.html#ga69416799fb599c42020bd5012857e550" title="Check if modem is ready for commands. " alt="" coords="206,12,381,39"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="group__bc__wssfm10r1at_gab3f0f3e28e58ec8ad4f48ab27d2621ad_icgraph.png" border="0" usemap="#group__bc__wssfm10r1at_gab3f0f3e28e58ec8ad4f48ab27d2621ad_icgraph" alt=""/></div>
+<map name="group__bc__wssfm10r1at_gab3f0f3e28e58ec8ad4f48ab27d2621ad_icgraph" id="group__bc__wssfm10r1at_gab3f0f3e28e58ec8ad4f48ab27d2621ad_icgraph">
+<area shape="rect" id="node2" href="group__bc__module__sigfox.html#ga8698a6efc239cdfd004ccf29d1e68c50" title="Read device PAC command. " alt="" coords="206,5,365,46"/></map>
 </div>
 </p>
 
@@ -330,7 +492,7 @@ Here is the caller graph for this function:</div>
 <dd>
 false if command was denied for processing </dd></dl>
 
-<p>Definition at line <a class="el" href="bc__wssfm10r1at_8c_source.html#l00050">50</a> of file <a class="el" href="bc__wssfm10r1at_8c_source.html">bc_wssfm10r1at.c</a>.</p>
+<p>Definition at line <a class="el" href="bc__wssfm10r1at_8c_source.html#l00067">67</a> of file <a class="el" href="bc__wssfm10r1at_8c_source.html">bc_wssfm10r1at.c</a>.</p>
 
 <p>Referenced by <a class="el" href="bc__module__sigfox_8c_source.html#l00044">bc_module_sigfox_send_rf_frame()</a>.</p>
 
@@ -339,7 +501,7 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="group__bc__wssfm10r1at_ga0e8b81886d3958021cd94bcd81581ef2_cgraph.png" border="0" usemap="#group__bc__wssfm10r1at_ga0e8b81886d3958021cd94bcd81581ef2_cgraph" alt=""/></div>
 <map name="group__bc__wssfm10r1at_ga0e8b81886d3958021cd94bcd81581ef2_cgraph" id="group__bc__wssfm10r1at_ga0e8b81886d3958021cd94bcd81581ef2_cgraph">
-<area shape="rect" id="node2" href="group__bc__wssfm10r1at.html#ga69416799fb599c42020bd5012857e550" title="Check if modem is ready for commands. " alt="" coords="209,5,383,32"/><area shape="rect" id="node3" href="group__bc__scheduler.html#ga46c874e6f1b363cf6851cfa8f837c398" title="Schedule specified task for immediate execution. " alt="" coords="215,56,377,83"/></map>
+<area shape="rect" id="node2" href="group__bc__wssfm10r1at.html#ga69416799fb599c42020bd5012857e550" title="Check if modem is ready for commands. " alt="" coords="209,12,383,39"/></map>
 </div>
 </p>
 
@@ -394,7 +556,7 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="bc__wssfm10r1at_8c_source.html#l00039">39</a> of file <a class="el" href="bc__wssfm10r1at_8c_source.html">bc_wssfm10r1at.c</a>.</p>
+<p>Definition at line <a class="el" href="bc__wssfm10r1at_8c_source.html#l00046">46</a> of file <a class="el" href="bc__wssfm10r1at_8c_source.html">bc_wssfm10r1at.c</a>.</p>
 
 <p>Referenced by <a class="el" href="bc__module__sigfox_8c_source.html#l00007">bc_module_sigfox_init()</a>.</p>
 

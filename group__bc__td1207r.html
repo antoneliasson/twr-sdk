@@ -118,11 +118,13 @@ typedef struct <a class="el" href="group__bc__td1207r.html#ga9749f22a00a38a09406
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
 <tr class="memitem:ga76dcaa6d24a22b5ffe5ec15aa338cd5c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bc__td1207r.html#ga76dcaa6d24a22b5ffe5ec15aa338cd5c">bc_td1207r_event_t</a> { <br/>
-&#160;&#160;<a class="el" href="group__bc__td1207r.html#gga76dcaa6d24a22b5ffe5ec15aa338cd5cae9d13d86240fe7db989365f069441db2">BC_TD1207R_EVENT_ERROR</a> = 0, 
+&#160;&#160;<a class="el" href="group__bc__td1207r.html#gga76dcaa6d24a22b5ffe5ec15aa338cd5caafcd539574e67394e3618c54b18defb6">BC_TD1207R_EVENT_READY</a> = 0, 
 <br/>
-&#160;&#160;<a class="el" href="group__bc__td1207r.html#gga76dcaa6d24a22b5ffe5ec15aa338cd5ca418c393f635ec876adbdee2e5595e146">BC_TD1207R_EVENT_SEND_RF_FRAME_START</a> = 1, 
+&#160;&#160;<a class="el" href="group__bc__td1207r.html#gga76dcaa6d24a22b5ffe5ec15aa338cd5cae9d13d86240fe7db989365f069441db2">BC_TD1207R_EVENT_ERROR</a> = 1, 
 <br/>
-&#160;&#160;<a class="el" href="group__bc__td1207r.html#gga76dcaa6d24a22b5ffe5ec15aa338cd5cac147b5d83aae183112ffde4a7adf0009">BC_TD1207R_EVENT_SEND_RF_FRAME_DONE</a> = 2
+&#160;&#160;<a class="el" href="group__bc__td1207r.html#gga76dcaa6d24a22b5ffe5ec15aa338cd5ca418c393f635ec876adbdee2e5595e146">BC_TD1207R_EVENT_SEND_RF_FRAME_START</a> = 2, 
+<br/>
+&#160;&#160;<a class="el" href="group__bc__td1207r.html#gga76dcaa6d24a22b5ffe5ec15aa338cd5cac147b5d83aae183112ffde4a7adf0009">BC_TD1207R_EVENT_SEND_RF_FRAME_DONE</a> = 3
 <br/>
  }</td></tr>
 <tr class="memdesc:ga76dcaa6d24a22b5ffe5ec15aa338cd5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback events.  <a href="group__bc__td1207r.html#ga76dcaa6d24a22b5ffe5ec15aa338cd5c">More...</a><br/></td></tr>
@@ -158,7 +160,10 @@ Functions</h2></td></tr>
 
 <p>Callback events. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="gga76dcaa6d24a22b5ffe5ec15aa338cd5cae9d13d86240fe7db989365f069441db2"></a>BC_TD1207R_EVENT_ERROR</em>&#160;</td><td class="fielddoc">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="gga76dcaa6d24a22b5ffe5ec15aa338cd5caafcd539574e67394e3618c54b18defb6"></a>BC_TD1207R_EVENT_READY</em>&#160;</td><td class="fielddoc">
+<p>Ready event. </p>
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="gga76dcaa6d24a22b5ffe5ec15aa338cd5cae9d13d86240fe7db989365f069441db2"></a>BC_TD1207R_EVENT_ERROR</em>&#160;</td><td class="fielddoc">
 <p>Error event. </p>
 </td></tr>
 <tr><td class="fieldname"><em><a class="anchor" id="gga76dcaa6d24a22b5ffe5ec15aa338cd5ca418c393f635ec876adbdee2e5595e146"></a>BC_TD1207R_EVENT_SEND_RF_FRAME_START</em>&#160;</td><td class="fielddoc">
@@ -263,9 +268,9 @@ Here is the caller graph for this function:</div>
 <dd>
 false if not ready </dd></dl>
 
-<p>Definition at line <a class="el" href="bc__td1207r_8c_source.html#l00043">43</a> of file <a class="el" href="bc__td1207r_8c_source.html">bc_td1207r.c</a>.</p>
+<p>Definition at line <a class="el" href="bc__td1207r_8c_source.html#l00045">45</a> of file <a class="el" href="bc__td1207r_8c_source.html">bc_td1207r.c</a>.</p>
 
-<p>Referenced by <a class="el" href="bc__module__sigfox_8c_source.html#l00034">bc_module_sigfox_is_ready()</a>, and <a class="el" href="bc__td1207r_8c_source.html#l00048">bc_td1207r_send_rf_frame()</a>.</p>
+<p>Referenced by <a class="el" href="bc__module__sigfox_8c_source.html#l00034">bc_module_sigfox_is_ready()</a>, and <a class="el" href="bc__td1207r_8c_source.html#l00050">bc_td1207r_send_rf_frame()</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -321,7 +326,7 @@ Here is the caller graph for this function:</div>
 <dd>
 false if command was denied for processing </dd></dl>
 
-<p>Definition at line <a class="el" href="bc__td1207r_8c_source.html#l00048">48</a> of file <a class="el" href="bc__td1207r_8c_source.html">bc_td1207r.c</a>.</p>
+<p>Definition at line <a class="el" href="bc__td1207r_8c_source.html#l00050">50</a> of file <a class="el" href="bc__td1207r_8c_source.html">bc_td1207r.c</a>.</p>
 
 <p>Referenced by <a class="el" href="bc__module__sigfox_8c_source.html#l00044">bc_module_sigfox_send_rf_frame()</a>.</p>
 
@@ -385,7 +390,7 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="bc__td1207r_8c_source.html#l00037">37</a> of file <a class="el" href="bc__td1207r_8c_source.html">bc_td1207r.c</a>.</p>
+<p>Definition at line <a class="el" href="bc__td1207r_8c_source.html#l00039">39</a> of file <a class="el" href="bc__td1207r_8c_source.html">bc_td1207r.c</a>.</p>
 
 <p>Referenced by <a class="el" href="bc__module__sigfox_8c_source.html#l00007">bc_module_sigfox_init()</a>.</p>
 

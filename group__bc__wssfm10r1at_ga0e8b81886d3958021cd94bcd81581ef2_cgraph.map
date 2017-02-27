@@ -1,4 +1,3 @@
 <map id="bc_wssfm10r1at_send_rf_frame" name="bc_wssfm10r1at_send_rf_frame">
-<area shape="rect" id="node2" href="$group__bc__wssfm10r1at.html#ga69416799fb599c42020bd5012857e550" title="Check if modem is ready for commands. " alt="" coords="209,5,383,32"/>
-<area shape="rect" id="node3" href="$group__bc__scheduler.html#ga46c874e6f1b363cf6851cfa8f837c398" title="Schedule specified task for immediate execution. " alt="" coords="215,56,377,83"/>
+<area shape="rect" id="node2" href="$group__bc__wssfm10r1at.html#ga69416799fb599c42020bd5012857e550" title="Check if modem is ready for commands. " alt="" coords="209,12,383,39"/>
 </map>

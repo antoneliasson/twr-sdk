@@ -157,10 +157,10 @@ $(document).ready(function(){initNavTree('bc__uart_8c_source.html','');});
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        RCC-&gt;APB1ENR;</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="comment">// Enable transmitter and receiver</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        LPUART1-&gt;CR1 = USART_CR1_RXNEIE | USART_CR1_TE | USART_CR1_RE;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        LPUART1-&gt;CR1 = USART_CR1_RXNEIE | USART_CR1_TE | USART_CR1_RE | USART_CR1_UESM;</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="comment">// Enable clock in stop mode, disable overrun detection</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        LPUART1-&gt;CR3 = USART_CR3_UCESM | USART_CR3_OVRDIS;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        LPUART1-&gt;CR3 = USART_CR3_UCESM | USART_CR3_WUFIE | USART_CR3_WUS_1 | USART_CR3_WUS_0 | USART_CR3_OVRDIS;</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="comment">// Configure baudrate</span></div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        LPUART1-&gt;BRR = 0x369;</div>
@@ -267,41 +267,46 @@ $(document).ready(function(){initNavTree('bc__uart_8c_source.html','');});
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;</div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;<span class="keywordtype">void</span> AES_RNG_LPUART1_IRQHandler(<span class="keywordtype">void</span>)</div>
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;{</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    <span class="comment">// If it is TX interrupt...</span></div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    <span class="keywordflow">if</span> ((LPUART1-&gt;ISR &amp; USART_ISR_TXE) != 0)</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    {</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;        uint8_t character;</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    <span class="keywordflow">if</span> ((LPUART1-&gt;ISR &amp; USART_ISR_WUF) != 0)</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    {</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;        LPUART1-&gt;ICR = USART_ICR_WUCF;</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    }</div>
 <div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;        <span class="comment">// If there are still data in FIFO...</span></div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="group__bc__fifo.html#gaf85d006e3730b2bc28f613f6910ff842">bc_fifo_irq_read</a>(_bc_uart.channel[1].tx_fifo, &amp;character, 1) != 0)</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;        {</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;            <span class="comment">// Load TX buffer</span></div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;            LPUART1-&gt;TDR = character;</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;        }</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    <span class="comment">// If it is TX interrupt...</span></div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    <span class="keywordflow">if</span> ((LPUART1-&gt;ISR &amp; USART_ISR_TXE) != 0)</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    {</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;        uint8_t character;</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;        <span class="comment">// If there are still data in FIFO...</span></div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="group__bc__fifo.html#gaf85d006e3730b2bc28f613f6910ff842">bc_fifo_irq_read</a>(_bc_uart.channel[1].tx_fifo, &amp;character, 1) != 0)</div>
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;        {</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;            <span class="comment">// Disable TX interrupts</span></div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;            LPUART1-&gt;CR1 &amp;= ~USART_CR1_TXEIE;</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;            <span class="comment">// Load TX buffer</span></div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;            LPUART1-&gt;TDR = character;</div>
 <div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;        }</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    }</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    <span class="comment">// If it is RX interrupt...</span></div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    <span class="keywordflow">if</span> ((LPUART1-&gt;ISR &amp; USART_ISR_RXNE) != 0)</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    {</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;        uint8_t character;</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;        {</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;            <span class="comment">// Disable TX interrupts</span></div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;            LPUART1-&gt;CR1 &amp;= ~USART_CR1_TXEIE;</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;        }</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    }</div>
 <div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;        character = LPUART1-&gt;RDR;</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;        <a class="code" href="group__bc__fifo.html#ga6890a8a644d5e4a1b2e0319197e3015b">bc_fifo_irq_write</a>(_bc_uart.channel[1].rx_fifo, &amp;character, 1);</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    }</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;}</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    <span class="comment">// If it is RX interrupt...</span></div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    <span class="keywordflow">if</span> ((LPUART1-&gt;ISR &amp; USART_ISR_RXNE) != 0)</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    {</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;        uint8_t character;</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;        character = LPUART1-&gt;RDR;</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;        <a class="code" href="group__bc__fifo.html#ga6890a8a644d5e4a1b2e0319197e3015b">bc_fifo_irq_write</a>(_bc_uart.channel[1].rx_fifo, &amp;character, 1);</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    }</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;}</div>
 <div class="ttc" id="group__bc__fifo_html_gaf85d006e3730b2bc28f613f6910ff842"><div class="ttname"><a href="group__bc__fifo.html#gaf85d006e3730b2bc28f613f6910ff842">bc_fifo_irq_read</a></div><div class="ttdeci">size_t bc_fifo_irq_read(bc_fifo_t *fifo, void *buffer, size_t length)</div><div class="ttdoc">Read data from FIFO from interrupt. </div><div class="ttdef"><b>Definition:</b> <a href="bc__fifo_8c_source.html#l00127">bc_fifo.c:127</a></div></div>
 <div class="ttc" id="group__bc__tick_html_gabd224c28866c49d86f5d33cae606bbe0"><div class="ttname"><a href="group__bc__tick.html#gabd224c28866c49d86f5d33cae606bbe0">bc_tick_t</a></div><div class="ttdeci">uint64_t bc_tick_t</div><div class="ttdoc">Timestamp data type. </div><div class="ttdef"><b>Definition:</b> <a href="bc__tick_8h_source.html#l00016">bc_tick.h:16</a></div></div>
 <div class="ttc" id="group__bc__uart_html_gafc2793f7c8bd58556f8344cfb1ff4811"><div class="ttname"><a href="group__bc__uart.html#gafc2793f7c8bd58556f8344cfb1ff4811">bc_uart_channel_t</a></div><div class="ttdeci">bc_uart_channel_t</div><div class="ttdoc">UART channels. </div><div class="ttdef"><b>Definition:</b> <a href="bc__uart_8h_source.html#l00013">bc_uart.h:13</a></div></div>
 <div class="ttc" id="group__bc__irq_html_ga6bd1e6c1589c97558d14e8f3d648e656"><div class="ttname"><a href="group__bc__irq.html#ga6bd1e6c1589c97558d14e8f3d648e656">bc_irq_enable</a></div><div class="ttdeci">void bc_irq_enable(void)</div><div class="ttdoc">Allow all interrupt requests. </div><div class="ttdef"><b>Definition:</b> <a href="bc__irq_8c_source.html#l00009">bc_irq.c:9</a></div></div>
 <div class="ttc" id="structbc__fifo__t_html"><div class="ttname"><a href="structbc__fifo__t.html">bc_fifo_t</a></div><div class="ttdoc">Structure of FIFO instance. </div><div class="ttdef"><b>Definition:</b> <a href="bc__fifo_8h_source.html#l00012">bc_fifo.h:12</a></div></div>
 <div class="ttc" id="group__bc__uart_html_gaacd83e579229cf6cde13228169d55ebf"><div class="ttname"><a href="group__bc__uart.html#gaacd83e579229cf6cde13228169d55ebf">bc_uart_write</a></div><div class="ttdeci">size_t bc_uart_write(bc_uart_channel_t channel, const void *buffer, size_t length, bc_tick_t timeout)</div><div class="ttdoc">Write data to UART channel. </div><div class="ttdef"><b>Definition:</b> <a href="bc__uart_8c_source.html#l00069">bc_uart.c:69</a></div></div>
-<div class="ttc" id="group__bc__tick_html_ga5291d354b48d9599d185969d53f2bf8a"><div class="ttname"><a href="group__bc__tick.html#ga5291d354b48d9599d185969d53f2bf8a">bc_tick_get</a></div><div class="ttdeci">bc_tick_t bc_tick_get(void)</div><div class="ttdoc">Get absolute timestamp since start of program. </div><div class="ttdef"><b>Definition:</b> <a href="bc__tick_8c_source.html#l00004">bc_tick.c:4</a></div></div>
+<div class="ttc" id="group__bc__tick_html_ga5291d354b48d9599d185969d53f2bf8a"><div class="ttname"><a href="group__bc__tick.html#ga5291d354b48d9599d185969d53f2bf8a">bc_tick_get</a></div><div class="ttdeci">bc_tick_t bc_tick_get(void)</div><div class="ttdoc">Get absolute timestamp since start of program. </div><div class="ttdef"><b>Definition:</b> <a href="bc__tick_8c_source.html#l00007">bc_tick.c:7</a></div></div>
 <div class="ttc" id="group__bc__fifo_html_ga6890a8a644d5e4a1b2e0319197e3015b"><div class="ttname"><a href="group__bc__fifo.html#ga6890a8a644d5e4a1b2e0319197e3015b">bc_fifo_irq_write</a></div><div class="ttdeci">size_t bc_fifo_irq_write(bc_fifo_t *fifo, const void *buffer, size_t length)</div><div class="ttdoc">Write data to FIFO from interrupt. </div><div class="ttdef"><b>Definition:</b> <a href="bc__fifo_8c_source.html#l00095">bc_fifo.c:95</a></div></div>
 <div class="ttc" id="group__bc__uart_html_ggafc2793f7c8bd58556f8344cfb1ff4811afa614bde5555b594663b3b7474e9070b"><div class="ttname"><a href="group__bc__uart.html#ggafc2793f7c8bd58556f8344cfb1ff4811afa614bde5555b594663b3b7474e9070b">BC_UART_UART1</a></div><div class="ttdoc">UART channel UART1. </div><div class="ttdef"><b>Definition:</b> <a href="bc__uart_8h_source.html#l00019">bc_uart.h:19</a></div></div>
 <div class="ttc" id="group__bc__uart_html_ga4256fe65e122609345ab0702924ad5a9"><div class="ttname"><a href="group__bc__uart.html#ga4256fe65e122609345ab0702924ad5a9">bc_uart_read</a></div><div class="ttdeci">size_t bc_uart_read(bc_uart_channel_t channel, void *buffer, size_t length, bc_tick_t timeout)</div><div class="ttdoc">Read data from UART channel. </div><div class="ttdef"><b>Definition:</b> <a href="bc__uart_8c_source.html#l00121">bc_uart.c:121</a></div></div>

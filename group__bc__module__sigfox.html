@@ -118,11 +118,17 @@ Enumerations</h2></td></tr>
 <tr class="memdesc:ga8d0ad61d2292b696113e95e0f0441db2"><td class="mdescLeft">&#160;</td><td class="mdescRight">SigFox Module hardware revision.  <a href="group__bc__module__sigfox.html#ga8d0ad61d2292b696113e95e0f0441db2">More...</a><br/></td></tr>
 <tr class="separator:ga8d0ad61d2292b696113e95e0f0441db2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga2df4600a924ed19152325147a97a9ac7"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bc__module__sigfox.html#ga2df4600a924ed19152325147a97a9ac7">bc_module_sigfox_event_t</a> { <br/>
-&#160;&#160;<a class="el" href="group__bc__module__sigfox.html#gga2df4600a924ed19152325147a97a9ac7a3df4cd76d109c009e853723a905ce180">BC_MODULE_SIGFOX_EVENT_ERROR</a> = 0, 
+&#160;&#160;<a class="el" href="group__bc__module__sigfox.html#gga2df4600a924ed19152325147a97a9ac7a0b1f9a2135ef8664106d82a6232732b5">BC_MODULE_SIGFOX_EVENT_READY</a> = 0, 
 <br/>
-&#160;&#160;<a class="el" href="group__bc__module__sigfox.html#gga2df4600a924ed19152325147a97a9ac7ae3f6416df05872588e30002a56e81ac7">BC_MODULE_SIGFOX_EVENT_SEND_RF_FRAME_START</a> = 1, 
+&#160;&#160;<a class="el" href="group__bc__module__sigfox.html#gga2df4600a924ed19152325147a97a9ac7a3df4cd76d109c009e853723a905ce180">BC_MODULE_SIGFOX_EVENT_ERROR</a> = 1, 
 <br/>
-&#160;&#160;<a class="el" href="group__bc__module__sigfox.html#gga2df4600a924ed19152325147a97a9ac7adbf1a2f83e63d823d6adf7b43799fd65">BC_MODULE_SIGFOX_EVENT_SEND_RF_FRAME_DONE</a> = 2
+&#160;&#160;<a class="el" href="group__bc__module__sigfox.html#gga2df4600a924ed19152325147a97a9ac7ae3f6416df05872588e30002a56e81ac7">BC_MODULE_SIGFOX_EVENT_SEND_RF_FRAME_START</a> = 2, 
+<br/>
+&#160;&#160;<a class="el" href="group__bc__module__sigfox.html#gga2df4600a924ed19152325147a97a9ac7adbf1a2f83e63d823d6adf7b43799fd65">BC_MODULE_SIGFOX_EVENT_SEND_RF_FRAME_DONE</a> = 3, 
+<br/>
+&#160;&#160;<a class="el" href="group__bc__module__sigfox.html#gga2df4600a924ed19152325147a97a9ac7ad6410f4c5d03ba69644c71d1fb098469">BC_MODULE_SIGFOX_EVENT_READ_DEVICE_ID</a> = 4, 
+<br/>
+&#160;&#160;<a class="el" href="group__bc__module__sigfox.html#gga2df4600a924ed19152325147a97a9ac7ab9fd763bb2331249163c5ac5f4913c10">BC_MODULE_SIGFOX_EVENT_READ_DEVICE_PAC</a> = 5
 <br/>
  }</td></tr>
 <tr class="memdesc:ga2df4600a924ed19152325147a97a9ac7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback events.  <a href="group__bc__module__sigfox.html#ga2df4600a924ed19152325147a97a9ac7">More...</a><br/></td></tr>
@@ -142,6 +148,15 @@ Functions</h2></td></tr>
 <tr class="memitem:gaff30d9b95f4292f5bf26c0ba02f37160"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bc__module__sigfox.html#gaff30d9b95f4292f5bf26c0ba02f37160">bc_module_sigfox_send_rf_frame</a> (bc_module_sigfox_t *self, const void *buffer, size_t length)</td></tr>
 <tr class="memdesc:gaff30d9b95f4292f5bf26c0ba02f37160"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send RF frame command.  <a href="#gaff30d9b95f4292f5bf26c0ba02f37160">More...</a><br/></td></tr>
 <tr class="separator:gaff30d9b95f4292f5bf26c0ba02f37160"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga36f59af90b257db1807db53082b64215"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bc__module__sigfox.html#ga36f59af90b257db1807db53082b64215">bc_module_sigfox_read_device_id</a> (bc_module_sigfox_t *self)</td></tr>
+<tr class="memdesc:ga36f59af90b257db1807db53082b64215"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read device ID command.  <a href="#ga36f59af90b257db1807db53082b64215">More...</a><br/></td></tr>
+<tr class="separator:ga36f59af90b257db1807db53082b64215"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8698a6efc239cdfd004ccf29d1e68c50"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bc__module__sigfox.html#ga8698a6efc239cdfd004ccf29d1e68c50">bc_module_sigfox_read_device_pac</a> (bc_module_sigfox_t *self)</td></tr>
+<tr class="memdesc:ga8698a6efc239cdfd004ccf29d1e68c50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read device PAC command.  <a href="#ga8698a6efc239cdfd004ccf29d1e68c50">More...</a><br/></td></tr>
+<tr class="separator:ga8698a6efc239cdfd004ccf29d1e68c50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaff0d8da9c6ca148e951442d7ea6d0547"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bc__module__sigfox.html#gaff0d8da9c6ca148e951442d7ea6d0547">bc_module_sigfox_continuous_wave</a> (bc_module_sigfox_t *self)</td></tr>
+<tr class="memdesc:gaff0d8da9c6ca148e951442d7ea6d0547"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate continuous wave command.  <a href="#gaff0d8da9c6ca148e951442d7ea6d0547">More...</a><br/></td></tr>
+<tr class="separator:gaff0d8da9c6ca148e951442d7ea6d0547"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Driver for BigClown SigFox Module. </p>
@@ -158,7 +173,10 @@ Functions</h2></td></tr>
 
 <p>Callback events. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="gga2df4600a924ed19152325147a97a9ac7a3df4cd76d109c009e853723a905ce180"></a>BC_MODULE_SIGFOX_EVENT_ERROR</em>&#160;</td><td class="fielddoc">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="gga2df4600a924ed19152325147a97a9ac7a0b1f9a2135ef8664106d82a6232732b5"></a>BC_MODULE_SIGFOX_EVENT_READY</em>&#160;</td><td class="fielddoc">
+<p>Ready event. </p>
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="gga2df4600a924ed19152325147a97a9ac7a3df4cd76d109c009e853723a905ce180"></a>BC_MODULE_SIGFOX_EVENT_ERROR</em>&#160;</td><td class="fielddoc">
 <p>Error event. </p>
 </td></tr>
 <tr><td class="fieldname"><em><a class="anchor" id="gga2df4600a924ed19152325147a97a9ac7ae3f6416df05872588e30002a56e81ac7"></a>BC_MODULE_SIGFOX_EVENT_SEND_RF_FRAME_START</em>&#160;</td><td class="fielddoc">
@@ -166,6 +184,12 @@ Functions</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><em><a class="anchor" id="gga2df4600a924ed19152325147a97a9ac7adbf1a2f83e63d823d6adf7b43799fd65"></a>BC_MODULE_SIGFOX_EVENT_SEND_RF_FRAME_DONE</em>&#160;</td><td class="fielddoc">
 <p>RF frame transmission finished event. </p>
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="gga2df4600a924ed19152325147a97a9ac7ad6410f4c5d03ba69644c71d1fb098469"></a>BC_MODULE_SIGFOX_EVENT_READ_DEVICE_ID</em>&#160;</td><td class="fielddoc">
+<p>Device ID has been read event. </p>
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="gga2df4600a924ed19152325147a97a9ac7ab9fd763bb2331249163c5ac5f4913c10"></a>BC_MODULE_SIGFOX_EVENT_READ_DEVICE_PAC</em>&#160;</td><td class="fielddoc">
+<p>Device PAC has been read event. </p>
 </td></tr>
 </table>
 
@@ -198,6 +222,44 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="gaff0d8da9c6ca148e951442d7ea6d0547"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool bc_module_sigfox_continuous_wave </td>
+          <td>(</td>
+          <td class="paramtype">bc_module_sigfox_t *&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Generate continuous wave command. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">self</td><td>Instance </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if command was accepted for processing </dd>
+<dd>
+false if command was denied for processing </dd></dl>
+
+<p>Definition at line <a class="el" href="bc__module__sigfox_8c_source.html#l00074">74</a> of file <a class="el" href="bc__module__sigfox_8c_source.html">bc_module_sigfox.c</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="group__bc__module__sigfox_gaff0d8da9c6ca148e951442d7ea6d0547_cgraph.png" border="0" usemap="#group__bc__module__sigfox_gaff0d8da9c6ca148e951442d7ea6d0547_cgraph" alt=""/></div>
+<map name="group__bc__module__sigfox_gaff0d8da9c6ca148e951442d7ea6d0547_cgraph" id="group__bc__module__sigfox_gaff0d8da9c6ca148e951442d7ea6d0547_cgraph">
+<area shape="rect" id="node2" href="group__bc__wssfm10r1at.html#gab8160b0b5849307bc42bb3b243ceca31" title="Generate continuous wave command. " alt="" coords="288,5,515,32"/><area shape="rect" id="node3" href="group__bc__wssfm10r1at.html#ga69416799fb599c42020bd5012857e550" title="Check if modem is ready for commands. " alt="" coords="563,5,738,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
 <a class="anchor" id="ga85ecac7b2744ca0180323c5448eafe0d"></a>
 <div class="memitem">
 <div class="memproto">
@@ -281,6 +343,82 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
+<a class="anchor" id="ga36f59af90b257db1807db53082b64215"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool bc_module_sigfox_read_device_id </td>
+          <td>(</td>
+          <td class="paramtype">bc_module_sigfox_t *&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Read device ID command. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">self</td><td>Instance </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if command was accepted for processing </dd>
+<dd>
+false if command was denied for processing </dd></dl>
+
+<p>Definition at line <a class="el" href="bc__module__sigfox_8c_source.html#l00054">54</a> of file <a class="el" href="bc__module__sigfox_8c_source.html">bc_module_sigfox.c</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="group__bc__module__sigfox_ga36f59af90b257db1807db53082b64215_cgraph.png" border="0" usemap="#group__bc__module__sigfox_ga36f59af90b257db1807db53082b64215_cgraph" alt=""/></div>
+<map name="group__bc__module__sigfox_ga36f59af90b257db1807db53082b64215_cgraph" id="group__bc__module__sigfox_ga36f59af90b257db1807db53082b64215_cgraph">
+<area shape="rect" id="node2" href="group__bc__wssfm10r1at.html#gad6a6e49b5c7e36e06599f2f05d3fe786" title="Read device ID command. " alt="" coords="214,5,365,46"/><area shape="rect" id="node3" href="group__bc__wssfm10r1at.html#ga69416799fb599c42020bd5012857e550" title="Check if modem is ready for commands. " alt="" coords="414,12,589,39"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ga8698a6efc239cdfd004ccf29d1e68c50"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool bc_module_sigfox_read_device_pac </td>
+          <td>(</td>
+          <td class="paramtype">bc_module_sigfox_t *&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Read device PAC command. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">self</td><td>Instance </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if command was accepted for processing </dd>
+<dd>
+false if command was denied for processing </dd></dl>
+
+<p>Definition at line <a class="el" href="bc__module__sigfox_8c_source.html#l00064">64</a> of file <a class="el" href="bc__module__sigfox_8c_source.html">bc_module_sigfox.c</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="group__bc__module__sigfox_ga8698a6efc239cdfd004ccf29d1e68c50_cgraph.png" border="0" usemap="#group__bc__module__sigfox_ga8698a6efc239cdfd004ccf29d1e68c50_cgraph" alt=""/></div>
+<map name="group__bc__module__sigfox_ga8698a6efc239cdfd004ccf29d1e68c50_cgraph" id="group__bc__module__sigfox_ga8698a6efc239cdfd004ccf29d1e68c50_cgraph">
+<area shape="rect" id="node2" href="group__bc__wssfm10r1at.html#gab3f0f3e28e58ec8ad4f48ab27d2621ad" title="Read device PAC command. " alt="" coords="214,5,365,46"/><area shape="rect" id="node3" href="group__bc__wssfm10r1at.html#ga69416799fb599c42020bd5012857e550" title="Check if modem is ready for commands. " alt="" coords="414,12,589,39"/></map>
+</div>
+</p>
+
+</div>
+</div>
 <a class="anchor" id="gaff30d9b95f4292f5bf26c0ba02f37160"></a>
 <div class="memitem">
 <div class="memproto">
@@ -331,7 +469,7 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="group__bc__module__sigfox_gaff30d9b95f4292f5bf26c0ba02f37160_cgraph.png" border="0" usemap="#group__bc__module__sigfox_gaff30d9b95f4292f5bf26c0ba02f37160_cgraph" alt=""/></div>
 <map name="group__bc__module__sigfox_gaff30d9b95f4292f5bf26c0ba02f37160_cgraph" id="group__bc__module__sigfox_gaff30d9b95f4292f5bf26c0ba02f37160_cgraph">
-<area shape="rect" id="node2" href="group__bc__td1207r.html#ga901747d090d799193a17dd46850c2d75" title="Send RF frame command. " alt="" coords="225,17,361,58"/><area shape="rect" id="node5" href="group__bc__wssfm10r1at.html#ga0e8b81886d3958021cd94bcd81581ef2" title="Send RF frame command. " alt="" coords="217,82,370,123"/><area shape="rect" id="node3" href="group__bc__td1207r.html#ga81a3b4a1c3f627e645148197fb9f3cad" title="Check if modem is ready for commands. " alt="" coords="435,5,578,32"/><area shape="rect" id="node4" href="group__bc__scheduler.html#ga46c874e6f1b363cf6851cfa8f837c398" title="Schedule specified task for immediate execution. " alt="" coords="426,56,587,83"/><area shape="rect" id="node6" href="group__bc__wssfm10r1at.html#ga69416799fb599c42020bd5012857e550" title="Check if modem is ready for commands. " alt="" coords="419,107,594,133"/></map>
+<area shape="rect" id="node2" href="group__bc__td1207r.html#ga901747d090d799193a17dd46850c2d75" title="Send RF frame command. " alt="" coords="225,41,361,82"/><area shape="rect" id="node5" href="group__bc__wssfm10r1at.html#ga0e8b81886d3958021cd94bcd81581ef2" title="Send RF frame command. " alt="" coords="217,106,370,147"/><area shape="rect" id="node3" href="group__bc__td1207r.html#ga81a3b4a1c3f627e645148197fb9f3cad" title="Check if modem is ready for commands. " alt="" coords="435,5,578,32"/><area shape="rect" id="node4" href="group__bc__scheduler.html#ga46c874e6f1b363cf6851cfa8f837c398" title="Schedule specified task for immediate execution. " alt="" coords="426,56,587,83"/><area shape="rect" id="node6" href="group__bc__wssfm10r1at.html#ga69416799fb599c42020bd5012857e550" title="Check if modem is ready for commands. " alt="" coords="419,113,594,140"/></map>
 </div>
 </p>
 
