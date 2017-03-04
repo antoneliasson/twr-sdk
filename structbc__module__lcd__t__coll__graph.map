@@ -1,0 +1,6 @@
+<map id="bc_module_lcd_t" name="bc_module_lcd_t">
+<area shape="rect" id="node2" href="$structbc__tca9534a__t.html" title="TCA9534A instance. " alt="" coords="5,187,112,213"/>
+<area shape="rect" id="node3" href="$structtFont.html" title="tFont" alt="" coords="137,187,188,213"/>
+<area shape="rect" id="node4" href="$structtChar.html" title="tChar" alt="" coords="135,96,189,123"/>
+<area shape="rect" id="node5" href="$structtImage.html" title="tImage" alt="" coords="131,5,193,32"/>
+</map>

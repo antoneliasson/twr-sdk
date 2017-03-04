@@ -142,6 +142,7 @@ var searchData=
   ['bc_5fmodule_5fencoder_5fevent_5fpress',['BC_MODULE_ENCODER_EVENT_PRESS',['../group__bc__module__encoder.html#gga05ee7d1261c5601857e9daafa780c322a209f5dd6b5a290c1494b094c70738c8c',1,'bc_module_encoder.h']]],
   ['bc_5fmodule_5fencoder_5fevent_5frelease',['BC_MODULE_ENCODER_EVENT_RELEASE',['../group__bc__module__encoder.html#gga05ee7d1261c5601857e9daafa780c322a53124b5eda56e923e774c5f123560d71',1,'bc_module_encoder.h']]],
   ['bc_5fmodule_5fencoder_5fevent_5frotation',['BC_MODULE_ENCODER_EVENT_ROTATION',['../group__bc__module__encoder.html#gga05ee7d1261c5601857e9daafa780c322a5d5e479c18981607b0a22a9857449896',1,'bc_module_encoder.h']]],
+  ['bc_5fmodule_5flcd_5fevent_5fdone',['BC_MODULE_LCD_EVENT_DONE',['../group__bc__module__lcd.html#gga9f63eacc07e4f37d69b3d3bcd876af15a4803cb94379530cdf4d3aef55418a0a5',1,'bc_module_lcd.h']]],
   ['bc_5fmodule_5fpir_5fsensitivity_5fhigh',['BC_MODULE_PIR_SENSITIVITY_HIGH',['../group__bc__module__pir.html#ggadcfb88944cffccae03f9b599cb292c8fa28445c9f68f0dac1560896e0b31d4284',1,'bc_module_pir.h']]],
   ['bc_5fmodule_5fpir_5fsensitivity_5flow',['BC_MODULE_PIR_SENSITIVITY_LOW',['../group__bc__module__pir.html#ggadcfb88944cffccae03f9b599cb292c8faebac734409e6d88011136140e40493e7',1,'bc_module_pir.h']]],
   ['bc_5fmodule_5fpir_5fsensitivity_5fmedium',['BC_MODULE_PIR_SENSITIVITY_MEDIUM',['../group__bc__module__pir.html#ggadcfb88944cffccae03f9b599cb292c8faa29502979b2fc7f658229f5c1ed243bc',1,'bc_module_pir.h']]],

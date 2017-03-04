@@ -18,6 +18,7 @@ var modules =
     [ "bc_lis2dh12", "group__bc__lis2dh12.html", "group__bc__lis2dh12" ],
     [ "bc_module_climate", "group__bc__module__climate.html", "group__bc__module__climate" ],
     [ "bc_module_encoder", "group__bc__module__encoder.html", "group__bc__module__encoder" ],
+    [ "bc_module_lcd", "group__bc__module__lcd.html", "group__bc__module__lcd" ],
     [ "bc_module_pir", "group__bc__module__pir.html", "group__bc__module__pir" ],
     [ "bc_module_power", "group__bc__module__power.html", null ],
     [ "bc_module_relay", "group__bc__module__relay.html", "group__bc__module__relay" ],
