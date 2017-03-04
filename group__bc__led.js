@@ -11,6 +11,7 @@ var group__bc__led =
       [ "BC_LED_MODE_FLASH", "group__bc__led.html#ggae9ea7763b55ff27ec63b6f9a5069a9c1a98556b0e6dc4939ed6020c45086f3872", null ]
     ] ],
     [ "bc_led_init", "group__bc__led.html#ga822e72175b9bc2557ad7c989f98c7068", null ],
+    [ "bc_led_is_pulse", "group__bc__led.html#ga918151711dbcf0830af653618f8092f9", null ],
     [ "bc_led_pulse", "group__bc__led.html#ga70430d42b18f282381a8c8044c8adf94", null ],
     [ "bc_led_set_mode", "group__bc__led.html#ga6ffe61a0edb14fbf3847203068cf4715", null ],
     [ "bc_led_set_pattern", "group__bc__led.html#ga5599ece47811e27512bad8e7b1670818", null ],

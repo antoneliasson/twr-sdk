@@ -20,8 +20,8 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"group__bc__gpio.html#gga5a8d8aed85b7bb7f5b219fc6a4cd5b8ea4770308d93d663abf98a2485755a1ecc",
-"group__bc__tag__lux__meter.html#gga2ab9d7993074385c79b424e61774e343acfce049f7211a29d241d3861bcbcf1f2"
+"group__bc__gpio.html#gga5a8d8aed85b7bb7f5b219fc6a4cd5b8ea2b073123de716e4c5ce485d0d17f28d3",
+"group__bc__tag__humidity.html#gga932ded504e062237e0fc6e6713334801a2e2c26d68515fcd665e32f9e1ed90cc0"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

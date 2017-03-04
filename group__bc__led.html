@@ -153,6 +153,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga70430d42b18f282381a8c8044c8adf94"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bc__led.html#ga70430d42b18f282381a8c8044c8adf94">bc_led_pulse</a> (<a class="el" href="group__bc__led.html#gad08c12a4324e33141d1ab7cd444024e0">bc_led_t</a> *self, <a class="el" href="group__bc__tick.html#gabd224c28866c49d86f5d33cae606bbe0">bc_tick_t</a> duration)</td></tr>
 <tr class="memdesc:ga70430d42b18f282381a8c8044c8adf94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Turn on LED for the specified duration of time.  <a href="#ga70430d42b18f282381a8c8044c8adf94">More...</a><br/></td></tr>
 <tr class="separator:ga70430d42b18f282381a8c8044c8adf94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga918151711dbcf0830af653618f8092f9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bc__led.html#ga918151711dbcf0830af653618f8092f9">bc_led_is_pulse</a> (<a class="el" href="group__bc__led.html#gad08c12a4324e33141d1ab7cd444024e0">bc_led_t</a> *self)</td></tr>
+<tr class="memdesc:ga918151711dbcf0830af653618f8092f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if there is ongoing LED pulse.  <a href="#ga918151711dbcf0830af653618f8092f9">More...</a><br/></td></tr>
+<tr class="separator:ga918151711dbcf0830af653618f8092f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Driver for generic LED. </p>
@@ -268,6 +271,35 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
+<a class="anchor" id="ga918151711dbcf0830af653618f8092f9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool bc_led_is_pulse </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__bc__led.html#gad08c12a4324e33141d1ab7cd444024e0">bc_led_t</a> *&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check if there is ongoing LED pulse. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">self</td><td>Instance </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if pulse is now active </dd>
+<dd>
+false if pulse is now inactive </dd></dl>
+
+<p>Definition at line <a class="el" href="bc__led_8c_source.html#l00168">168</a> of file <a class="el" href="bc__led_8c_source.html">bc_led.c</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="ga70430d42b18f282381a8c8044c8adf94"></a>
 <div class="memitem">
 <div class="memproto">
@@ -308,7 +340,7 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="group__bc__led_ga70430d42b18f282381a8c8044c8adf94_cgraph.png" border="0" usemap="#group__bc__led_ga70430d42b18f282381a8c8044c8adf94_cgraph" alt=""/></div>
 <map name="group__bc__led_ga70430d42b18f282381a8c8044c8adf94_cgraph" id="group__bc__led_ga70430d42b18f282381a8c8044c8adf94_cgraph">
-<area shape="rect" id="node2" href="group__bc__scheduler.html#gade94244616617574eee859c0fb5df428" title="Schedule specified task to absolute tick. " alt="" coords="152,5,339,32"/><area shape="rect" id="node3" href="group__bc__tick.html#ga5291d354b48d9599d185969d53f2bf8a" title="Get absolute timestamp since start of program. " alt="" coords="201,56,290,83"/><area shape="rect" id="node4" href="group__bc__scheduler.html#gac6e2fa9155567fb1f32a8b8b563e2f30" title="Register task in scheduler. " alt="" coords="171,107,320,133"/></map>
+<area shape="rect" id="node2" href="group__bc__scheduler.html#gae1d865cf578e9994cd50a972af54fc20" title="Unregister specified task. " alt="" coords="164,5,327,32"/><area shape="rect" id="node3" href="group__bc__scheduler.html#gade94244616617574eee859c0fb5df428" title="Schedule specified task to absolute tick. " alt="" coords="152,56,339,83"/><area shape="rect" id="node4" href="group__bc__tick.html#ga5291d354b48d9599d185969d53f2bf8a" title="Get absolute timestamp since start of program. " alt="" coords="201,107,290,133"/><area shape="rect" id="node7" href="group__bc__scheduler.html#gac6e2fa9155567fb1f32a8b8b563e2f30" title="Register task in scheduler. " alt="" coords="171,157,320,184"/><area shape="rect" id="node5" href="group__bc__irq.html#ga83398e8b1c443f7bf1b1980959d3cc63" title="Deny all interrupt requests. " alt="" coords="387,81,493,108"/><area shape="rect" id="node6" href="group__bc__irq.html#ga6bd1e6c1589c97558d14e8f3d648e656" title="Allow all interrupt requests. " alt="" coords="389,132,491,159"/></map>
 </div>
 </p>
 

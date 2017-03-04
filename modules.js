@@ -37,5 +37,6 @@ var modules =
     [ "bc_tick", "group__bc__tick.html", "group__bc__tick" ],
     [ "bc_tmp112", "group__bc__tmp112.html", "group__bc__tmp112" ],
     [ "bc_uart", "group__bc__uart.html", "group__bc__uart" ],
-    [ "bc_ws2812b", "group__bc__ws2812b.html", null ]
+    [ "bc_ws2812b", "group__bc__ws2812b.html", null ],
+    [ "bc_wssfm10r1at", "group__bc__wssfm10r1at.html", "group__bc__wssfm10r1at" ]
 ];
