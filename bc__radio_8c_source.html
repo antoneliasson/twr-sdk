@@ -163,7 +163,7 @@ $(document).ready(function(){initNavTree('bc__radio_8c_source.html','');});
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;__attribute__((weak)) void bc_radio_on_push_button(uint32_t *peer_device_address, uint16_t *event_count) { (void) peer_device_address; (void) event_count; }</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;__attribute__((weak)) void bc_radio_on_thermometer(uint32_t *peer_device_address, uint8_t *i2c, <span class="keywordtype">float</span> *temperature) { (void) peer_device_address; (void) i2c; (void) temperature; }</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;__attribute__((weak)) void bc_radio_on_humidity(uint32_t *peer_device_address, uint8_t *i2c, <span class="keywordtype">float</span> *percentage) { (void) peer_device_address; (void) i2c; (void) percentage; }=======</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;__attribute__((weak)) void bc_radio_on_humidity(uint32_t *peer_device_address, uint8_t *i2c, <span class="keywordtype">float</span> *percentage) { (void) peer_device_address; (void) i2c; (void) percentage; }</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keywordtype">void</span> bc_radio_init(<span class="keywordtype">void</span>)</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;{</div>
@@ -332,7 +332,7 @@ $(document).ready(function(){initNavTree('bc__radio_8c_source.html','');});
 <div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (queue_item_buffer[0] == BC_RADIO_HEADER_PUB_THERMOMETER)</div>
 <div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;        {</div>
 <div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;            <span class="keywordtype">float</span> temperature;</div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;          </div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;</div>
 <div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;            memcpy(&amp;temperature, &amp;queue_item_buffer[2], <span class="keyword">sizeof</span>(temperature));</div>
 <div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;</div>
 <div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;            bc_radio_on_thermometer(&amp;_bc_radio.peer_device_address, &amp;queue_item_buffer[1], &amp;temperature);</div>
