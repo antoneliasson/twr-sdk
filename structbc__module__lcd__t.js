@@ -4,5 +4,6 @@ var structbc__module__lcd__t =
     [ "event_param", "structbc__module__lcd__t.html#acbfaa27870cb82c82272f1e03e30210e", null ],
     [ "font", "structbc__module__lcd__t.html#a0ce63bccbef56e3fd4c7f10f11487971", null ],
     [ "framebuffer", "structbc__module__lcd__t.html#a6feb1707e8cc1d61cb3758942464432c", null ],
+    [ "gpio", "structbc__module__lcd__t.html#a4738d1694900646dd72d607221f4696f", null ],
     [ "tca9534a", "structbc__module__lcd__t.html#a651d5c51e1aa783919c6cfcbb98f36df", null ]
 ];
