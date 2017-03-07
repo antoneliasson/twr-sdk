@@ -114,11 +114,11 @@ $(document).ready(function(){initNavTree('bc__module__lcd_8c_source.html','');})
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;bc_module_lcd.h&gt;</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#define BC_MODULE_LCD_DISP_ON   0x04</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define BC_MODULE_LCD_LED_GREEN 0x10</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define BC_MODULE_LCD_LED_RED   0x20</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define BC_MODULE_LCD_LED_BLUE  0x40</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define BC_MODULE_LCD_DISP_CS   0x80</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#define _BC_MODULE_LCD_DISP_ON   0x04</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define _BC_MODULE_LCD_LED_GREEN 0x10</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define _BC_MODULE_LCD_LED_RED   0x20</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define _BC_MODULE_LCD_LED_BLUE  0x40</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define _BC_MODULE_LCD_DISP_CS   0x80</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="structbc__module__lcd__t.html">   16</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structbc__module__lcd__t.html">bc_module_lcd_t</a></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div>
@@ -143,7 +143,7 @@ $(document).ready(function(){initNavTree('bc__module__lcd_8c_source.html','');})
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <a class="code" href="group__bc__tca9534a.html#gab392a5644d1d4ccab47c95f04b4786cf">bc_tca9534a_init</a>(&amp;_bc_module_lcd.tca9534a, <a class="code" href="group__bc__i2c.html#gga5f7217e6558c54ac6920e5dabb777fefad92d62203a039aac618ffc4ef92d7498">BC_I2C_I2C0</a>, 0x39);</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <a class="code" href="group__bc__tca9534a.html#ga3031df848b97bb621de3a2268af49b4e">bc_tca9534a_set_port_direction</a>(&amp;_bc_module_lcd.tca9534a, 0x00);</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    _bc_module_lcd.gpio = BC_MODULE_LCD_DISP_CS | BC_MODULE_LCD_DISP_ON;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    _bc_module_lcd.gpio = _BC_MODULE_LCD_DISP_CS | _BC_MODULE_LCD_DISP_ON;</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <a class="code" href="group__bc__tca9534a.html#ga4707e216045466f49d56e2fe58f9ec04">bc_tca9534a_write_port</a>(&amp;_bc_module_lcd.tca9534a, _bc_module_lcd.gpio);</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <a class="code" href="group__bc__spi.html#ga00fa848c8a590fbb7ba1d567a749a87c">bc_spi_init</a>(<a class="code" href="group__bc__spi.html#gga15f700524ef3ae920c419f4198a32676a5e54ca1e7fb7dac67707988e2c2b192c">BC_SPI_SPEED_2_MHZ</a>, <a class="code" href="group__bc__spi.html#ggabc91b706ba04834451a2bf5faa178112ad8a14e5b10c8286d10a596940c12414c">BC_SPI_MODE_0</a>);</div>
@@ -159,13 +159,13 @@ $(document).ready(function(){initNavTree('bc__module__lcd_8c_source.html','');})
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keywordtype">void</span> bc_module_lcd_on(<span class="keywordtype">void</span>)</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;{</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    _bc_module_lcd.gpio |= BC_MODULE_LCD_DISP_ON;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    _bc_module_lcd.gpio |= _BC_MODULE_LCD_DISP_ON;</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <a class="code" href="group__bc__tca9534a.html#ga4707e216045466f49d56e2fe58f9ec04">bc_tca9534a_write_port</a>(&amp;_bc_module_lcd.tca9534a, _bc_module_lcd.gpio);</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;}</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keywordtype">void</span> bc_module_lcd_off(<span class="keywordtype">void</span>)</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;{</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    _bc_module_lcd.gpio &amp;= ~BC_MODULE_LCD_DISP_ON;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    _bc_module_lcd.gpio &amp;= ~_BC_MODULE_LCD_DISP_ON;</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <a class="code" href="group__bc__tca9534a.html#ga4707e216045466f49d56e2fe58f9ec04">bc_tca9534a_write_port</a>(&amp;_bc_module_lcd.tca9534a, _bc_module_lcd.gpio);</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;}</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
@@ -183,9 +183,9 @@ $(document).ready(function(){initNavTree('bc__module__lcd_8c_source.html','');})
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    }</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;}</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="keywordtype">void</span> bc_module_lcd_draw_pixel(uint8_t x, uint8_t y, <span class="keywordtype">bool</span> value)</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="keywordtype">void</span> bc_module_lcd_draw_pixel(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, <span class="keywordtype">bool</span> value)</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;{</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordflow">if</span>(x &gt; 127 || y &gt; 127)</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordflow">if</span>(x &gt; 127 || y &gt; 127 || x &lt; 0 || y &lt; 0)</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    {</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    }</div>
@@ -212,13 +212,13 @@ $(document).ready(function(){initNavTree('bc__module__lcd_8c_source.html','');})
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;}</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="comment">// Returns width of the character</span></div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;uint16_t bc_module_lcd_draw_char(uint16_t left, uint16_t top, uint8_t ch)</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="keywordtype">int</span> bc_module_lcd_draw_char(<span class="keywordtype">int</span> left, <span class="keywordtype">int</span> top, uint8_t ch)</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;{</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <a class="code" href="structbc__module__lcd__t.html">bc_module_lcd_t</a> *<span class="keyword">self</span> = &amp;_bc_module_lcd;</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="keyword">const</span> <a class="code" href="structtFont.html">tFont</a> *font = <span class="keyword">self</span>-&gt;font;</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    uint8_t w = 0;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="keywordtype">int</span> w = 0;</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    uint8_t h = 0;</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    uint16_t i;</div>
@@ -272,7 +272,7 @@ $(document).ready(function(){initNavTree('bc__module__lcd_8c_source.html','');})
 <div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    <span class="keywordflow">return</span> w;</div>
 <div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;}</div>
 <div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;uint16_t bc_module_lcd_draw_string(uint16_t left, uint16_t top, <span class="keywordtype">char</span> *str)</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;<span class="keywordtype">int</span> bc_module_lcd_draw_string(<span class="keywordtype">int</span> left, <span class="keywordtype">int</span> top, <span class="keywordtype">char</span> *str)</div>
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;{</div>
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    <span class="keywordflow">while</span>(*str)</div>
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    {</div>
@@ -317,7 +317,7 @@ $(document).ready(function(){initNavTree('bc__module__lcd_8c_source.html','');})
 <div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    spi_data[0] = 0xd0;</div>
 <div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;    spi_data[1] = 0x00;</div>
 <div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;</div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;    _bc_module_lcd.gpio &amp;= ~BC_MODULE_LCD_DISP_CS;</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;    _bc_module_lcd.gpio &amp;= ~_BC_MODULE_LCD_DISP_CS;</div>
 <div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;    <a class="code" href="group__bc__tca9534a.html#ga4707e216045466f49d56e2fe58f9ec04">bc_tca9534a_write_port</a>(&amp;_bc_module_lcd.tca9534a, _bc_module_lcd.gpio);</div>
 <div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;</div>
 <div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;    <a class="code" href="group__bc__spi.html#gad026b6850ffbbc2b538add00f125b822">bc_spi_transfer</a>(spi_data, NULL, 2);</div>
@@ -332,7 +332,7 @@ $(document).ready(function(){initNavTree('bc__module__lcd_8c_source.html','');})
 <div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;</div>
 <div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    <a class="code" href="group__bc__spi.html#gad026b6850ffbbc2b538add00f125b822">bc_spi_transfer</a>(&amp;self-&gt;framebuffer[0], NULL, BC_LCD_FRAMEBUFFER_SIZE);</div>
 <div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;</div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    _bc_module_lcd.gpio |= BC_MODULE_LCD_DISP_CS;</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    _bc_module_lcd.gpio |= _BC_MODULE_LCD_DISP_CS;</div>
 <div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;    <a class="code" href="group__bc__tca9534a.html#ga4707e216045466f49d56e2fe58f9ec04">bc_tca9534a_write_port</a>(&amp;_bc_module_lcd.tca9534a, _bc_module_lcd.gpio);</div>
 <div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;}</div>
 <div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;</div>
