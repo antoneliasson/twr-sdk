@@ -153,6 +153,12 @@ Functions</h2></td></tr>
 <tr class="memitem:gadf6b5e8fea087785e8f54acc680e1e00"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bc__tag__humidity.html#gadf6b5e8fea087785e8f54acc680e1e00">bc_tag_humidity_set_update_interval</a> (<a class="el" href="group__bc__tag__humidity.html#ga5c64d79eb6764ad6b1dec581abbca977">bc_tag_humidity_t</a> *self, <a class="el" href="group__bc__tick.html#gabd224c28866c49d86f5d33cae606bbe0">bc_tick_t</a> interval)</td></tr>
 <tr class="memdesc:gadf6b5e8fea087785e8f54acc680e1e00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set measurement interval.  <a href="#gadf6b5e8fea087785e8f54acc680e1e00">More...</a><br/></td></tr>
 <tr class="separator:gadf6b5e8fea087785e8f54acc680e1e00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gace3f8531c5698eccf2fd968f47a03f80"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bc__tag__humidity.html#gace3f8531c5698eccf2fd968f47a03f80">bc_tag_humidity_get_temperature_raw</a> (<a class="el" href="group__bc__tag__humidity.html#ga5c64d79eb6764ad6b1dec581abbca977">bc_tag_humidity_t</a> *self, uint16_t *raw)</td></tr>
+<tr class="memdesc:gace3f8531c5698eccf2fd968f47a03f80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get measured temperature as raw value.  <a href="#gace3f8531c5698eccf2fd968f47a03f80">More...</a><br/></td></tr>
+<tr class="separator:gace3f8531c5698eccf2fd968f47a03f80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf3e435e1ee18730eebc3b2a2dd699922"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bc__tag__humidity.html#gaf3e435e1ee18730eebc3b2a2dd699922">bc_tag_humidity_get_temperature_celsius</a> (<a class="el" href="group__bc__tag__humidity.html#ga5c64d79eb6764ad6b1dec581abbca977">bc_tag_humidity_t</a> *self, float *celsius)</td></tr>
+<tr class="memdesc:gaf3e435e1ee18730eebc3b2a2dd699922"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get measured temperature in degrees of Celsius.  <a href="#gaf3e435e1ee18730eebc3b2a2dd699922">More...</a><br/></td></tr>
+<tr class="separator:gaf3e435e1ee18730eebc3b2a2dd699922"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga03c136b448a0b082eee32a64d8e7da2d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bc__tag__humidity.html#ga03c136b448a0b082eee32a64d8e7da2d">bc_tag_humidity_get_humidity_raw</a> (<a class="el" href="group__bc__tag__humidity.html#ga5c64d79eb6764ad6b1dec581abbca977">bc_tag_humidity_t</a> *self, uint16_t *raw)</td></tr>
 <tr class="memdesc:ga03c136b448a0b082eee32a64d8e7da2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get measured humidity as raw value.  <a href="#ga03c136b448a0b082eee32a64d8e7da2d">More...</a><br/></td></tr>
 <tr class="separator:ga03c136b448a0b082eee32a64d8e7da2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -272,7 +278,7 @@ Functions</h2></td></tr>
 <dd>
 false When value is invalid </dd></dl>
 
-<p>Definition at line <a class="el" href="bc__tag__humidity_8c_source.html#l00058">58</a> of file <a class="el" href="bc__tag__humidity_8c_source.html">bc_tag_humidity.c</a>.</p>
+<p>Definition at line <a class="el" href="bc__tag__humidity_8c_source.html#l00082">82</a> of file <a class="el" href="bc__tag__humidity_8c_source.html">bc_tag_humidity.c</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -321,7 +327,7 @@ Here is the call graph for this function:</div>
 <dd>
 false When value is invalid </dd></dl>
 
-<p>Definition at line <a class="el" href="bc__tag__humidity_8c_source.html#l00046">46</a> of file <a class="el" href="bc__tag__humidity_8c_source.html">bc_tag_humidity.c</a>.</p>
+<p>Definition at line <a class="el" href="bc__tag__humidity_8c_source.html#l00070">70</a> of file <a class="el" href="bc__tag__humidity_8c_source.html">bc_tag_humidity.c</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -329,6 +335,104 @@ Here is the call graph for this function:</div>
 <div class="center"><img src="group__bc__tag__humidity_ga03c136b448a0b082eee32a64d8e7da2d_cgraph.png" border="0" usemap="#group__bc__tag__humidity_ga03c136b448a0b082eee32a64d8e7da2d_cgraph" alt=""/></div>
 <map name="group__bc__tag__humidity_ga03c136b448a0b082eee32a64d8e7da2d_cgraph" id="group__bc__tag__humidity_ga03c136b448a0b082eee32a64d8e7da2d_cgraph">
 <area shape="rect" id="node2" href="group__bc__hdc2080.html#ga100acae8152159fdce52ce3a33283cb6" title="Get measured humidity as raw value. " alt="" coords="198,12,399,39"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="gaf3e435e1ee18730eebc3b2a2dd699922"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool bc_tag_humidity_get_temperature_celsius </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__bc__tag__humidity.html#ga5c64d79eb6764ad6b1dec581abbca977">bc_tag_humidity_t</a> *&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>celsius</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get measured temperature in degrees of Celsius. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">self</td><td>Instance </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">celsius</td><td>Pointer to variable where result will be stored </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true When value is valid </dd>
+<dd>
+false When value is invalid </dd></dl>
+
+<p>Definition at line <a class="el" href="bc__tag__humidity_8c_source.html#l00058">58</a> of file <a class="el" href="bc__tag__humidity_8c_source.html">bc_tag_humidity.c</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="group__bc__tag__humidity_gaf3e435e1ee18730eebc3b2a2dd699922_cgraph.png" border="0" usemap="#group__bc__tag__humidity_gaf3e435e1ee18730eebc3b2a2dd699922_cgraph" alt=""/></div>
+<map name="group__bc__tag__humidity_gaf3e435e1ee18730eebc3b2a2dd699922_cgraph" id="group__bc__tag__humidity_gaf3e435e1ee18730eebc3b2a2dd699922_cgraph">
+<area shape="rect" id="node2" href="group__bc__hdc2080.html#gadef31a009ffac2133b9e0471865664af" title="Get measured temperature in degrees of Celsius. " alt="" coords="201,5,394,46"/><area shape="rect" id="node3" href="group__bc__hdc2080.html#gac7a2724757eb7f71d7ba32dc180980f1" title="Get measured temperature as raw value. " alt="" coords="443,12,664,39"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="gace3f8531c5698eccf2fd968f47a03f80"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool bc_tag_humidity_get_temperature_raw </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__bc__tag__humidity.html#ga5c64d79eb6764ad6b1dec581abbca977">bc_tag_humidity_t</a> *&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t *&#160;</td>
+          <td class="paramname"><em>raw</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get measured temperature as raw value. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">self</td><td>Instance </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">raw</td><td>Pointer to variable where result will be stored </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true When value is valid </dd>
+<dd>
+false When value is invalid </dd></dl>
+
+<p>Definition at line <a class="el" href="bc__tag__humidity_8c_source.html#l00046">46</a> of file <a class="el" href="bc__tag__humidity_8c_source.html">bc_tag_humidity.c</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="group__bc__tag__humidity_gace3f8531c5698eccf2fd968f47a03f80_cgraph.png" border="0" usemap="#group__bc__tag__humidity_gace3f8531c5698eccf2fd968f47a03f80_cgraph" alt=""/></div>
+<map name="group__bc__tag__humidity_gace3f8531c5698eccf2fd968f47a03f80_cgraph" id="group__bc__tag__humidity_gace3f8531c5698eccf2fd968f47a03f80_cgraph">
+<area shape="rect" id="node2" href="group__bc__hdc2080.html#gac7a2724757eb7f71d7ba32dc180980f1" title="Get measured temperature as raw value. " alt="" coords="197,12,419,39"/></map>
 </div>
 </p>
 

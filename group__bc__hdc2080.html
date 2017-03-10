@@ -137,6 +137,12 @@ Functions</h2></td></tr>
 <tr class="memitem:gaa4cf9c164b7a2dde482968d8b4967ef5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bc__hdc2080.html#gaa4cf9c164b7a2dde482968d8b4967ef5">bc_hdc2080_set_update_interval</a> (<a class="el" href="group__bc__hdc2080.html#ga8750420b1948104b87bb65397bb362a9">bc_hdc2080_t</a> *self, <a class="el" href="group__bc__tick.html#gabd224c28866c49d86f5d33cae606bbe0">bc_tick_t</a> interval)</td></tr>
 <tr class="memdesc:gaa4cf9c164b7a2dde482968d8b4967ef5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set measurement interval.  <a href="#gaa4cf9c164b7a2dde482968d8b4967ef5">More...</a><br/></td></tr>
 <tr class="separator:gaa4cf9c164b7a2dde482968d8b4967ef5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac7a2724757eb7f71d7ba32dc180980f1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bc__hdc2080.html#gac7a2724757eb7f71d7ba32dc180980f1">bc_hdc2080_get_temperature_raw</a> (<a class="el" href="group__bc__hdc2080.html#ga8750420b1948104b87bb65397bb362a9">bc_hdc2080_t</a> *self, uint16_t *raw)</td></tr>
+<tr class="memdesc:gac7a2724757eb7f71d7ba32dc180980f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get measured temperature as raw value.  <a href="#gac7a2724757eb7f71d7ba32dc180980f1">More...</a><br/></td></tr>
+<tr class="separator:gac7a2724757eb7f71d7ba32dc180980f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadef31a009ffac2133b9e0471865664af"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bc__hdc2080.html#gadef31a009ffac2133b9e0471865664af">bc_hdc2080_get_temperature_celsius</a> (<a class="el" href="group__bc__hdc2080.html#ga8750420b1948104b87bb65397bb362a9">bc_hdc2080_t</a> *self, float *celsius)</td></tr>
+<tr class="memdesc:gadef31a009ffac2133b9e0471865664af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get measured temperature in degrees of Celsius.  <a href="#gadef31a009ffac2133b9e0471865664af">More...</a><br/></td></tr>
+<tr class="separator:gadef31a009ffac2133b9e0471865664af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga100acae8152159fdce52ce3a33283cb6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bc__hdc2080.html#ga100acae8152159fdce52ce3a33283cb6">bc_hdc2080_get_humidity_raw</a> (<a class="el" href="group__bc__hdc2080.html#ga8750420b1948104b87bb65397bb362a9">bc_hdc2080_t</a> *self, uint16_t *raw)</td></tr>
 <tr class="memdesc:ga100acae8152159fdce52ce3a33283cb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get measured humidity as raw value.  <a href="#ga100acae8152159fdce52ce3a33283cb6">More...</a><br/></td></tr>
 <tr class="separator:ga100acae8152159fdce52ce3a33283cb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -208,9 +214,9 @@ Functions</h2></td></tr>
 <dd>
 false When value is invalid </dd></dl>
 
-<p>Definition at line <a class="el" href="bc__hdc2080_8c_source.html#l00045">45</a> of file <a class="el" href="bc__hdc2080_8c_source.html">bc_hdc2080.c</a>.</p>
+<p>Definition at line <a class="el" href="bc__hdc2080_8c_source.html#l00071">71</a> of file <a class="el" href="bc__hdc2080_8c_source.html">bc_hdc2080.c</a>.</p>
 
-<p>Referenced by <a class="el" href="bc__module__climate_8c_source.html#l00084">bc_module_climate_get_humidity_percentage()</a>, and <a class="el" href="bc__tag__humidity_8c_source.html#l00058">bc_tag_humidity_get_humidity_percentage()</a>.</p>
+<p>Referenced by <a class="el" href="bc__module__climate_8c_source.html#l00084">bc_module_climate_get_humidity_percentage()</a>, and <a class="el" href="bc__tag__humidity_8c_source.html#l00082">bc_tag_humidity_get_humidity_percentage()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -268,9 +274,9 @@ Here is the caller graph for this function:</div>
 <dd>
 false When value is invalid </dd></dl>
 
-<p>Definition at line <a class="el" href="bc__hdc2080_8c_source.html#l00033">33</a> of file <a class="el" href="bc__hdc2080_8c_source.html">bc_hdc2080.c</a>.</p>
+<p>Definition at line <a class="el" href="bc__hdc2080_8c_source.html#l00045">45</a> of file <a class="el" href="bc__hdc2080_8c_source.html">bc_hdc2080.c</a>.</p>
 
-<p>Referenced by <a class="el" href="bc__hdc2080_8c_source.html#l00045">bc_hdc2080_get_humidity_percentage()</a>, and <a class="el" href="bc__tag__humidity_8c_source.html#l00046">bc_tag_humidity_get_humidity_raw()</a>.</p>
+<p>Referenced by <a class="el" href="bc__hdc2080_8c_source.html#l00071">bc_hdc2080_get_humidity_percentage()</a>, and <a class="el" href="bc__tag__humidity_8c_source.html#l00070">bc_tag_humidity_get_humidity_raw()</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -278,6 +284,117 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="group__bc__hdc2080_ga100acae8152159fdce52ce3a33283cb6_icgraph.png" border="0" usemap="#group__bc__hdc2080_ga100acae8152159fdce52ce3a33283cb6_icgraph" alt=""/></div>
 <map name="group__bc__hdc2080_ga100acae8152159fdce52ce3a33283cb6_icgraph" id="group__bc__hdc2080_ga100acae8152159fdce52ce3a33283cb6_icgraph">
 <area shape="rect" id="node2" href="group__bc__hdc2080.html#ga6666a6020725c61debad22d370860191" title="Get measured humidity as percentage. " alt="" coords="256,37,429,78"/><area shape="rect" id="node5" href="group__bc__tag__humidity.html#ga03c136b448a0b082eee32a64d8e7da2d" title="Get measured humidity as raw value. " alt="" coords="271,102,414,143"/><area shape="rect" id="node3" href="group__bc__module__climate.html#gabd7560f97e3a9b8a46561443dd866821" title="Get measured humidity as percentage. " alt="" coords="478,5,637,46"/><area shape="rect" id="node4" href="group__bc__tag__humidity.html#gad7f456d59973cda64de2e155f321e4db" title="Get measured humidity as percentage. " alt="" coords="483,70,632,111"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="gadef31a009ffac2133b9e0471865664af"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool bc_hdc2080_get_temperature_celsius </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__bc__hdc2080.html#ga8750420b1948104b87bb65397bb362a9">bc_hdc2080_t</a> *&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>celsius</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get measured temperature in degrees of Celsius. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">self</td><td>Instance </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">celsius</td><td>Pointer to variable where result will be stored </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true When value is valid </dd>
+<dd>
+false When value is invalid </dd></dl>
+
+<p>Definition at line <a class="el" href="bc__hdc2080_8c_source.html#l00057">57</a> of file <a class="el" href="bc__hdc2080_8c_source.html">bc_hdc2080.c</a>.</p>
+
+<p>Referenced by <a class="el" href="bc__tag__humidity_8c_source.html#l00058">bc_tag_humidity_get_temperature_celsius()</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="group__bc__hdc2080_gadef31a009ffac2133b9e0471865664af_cgraph.png" border="0" usemap="#group__bc__hdc2080_gadef31a009ffac2133b9e0471865664af_cgraph" alt=""/></div>
+<map name="group__bc__hdc2080_gadef31a009ffac2133b9e0471865664af_cgraph" id="group__bc__hdc2080_gadef31a009ffac2133b9e0471865664af_cgraph">
+<area shape="rect" id="node2" href="group__bc__hdc2080.html#gac7a2724757eb7f71d7ba32dc180980f1" title="Get measured temperature as raw value. " alt="" coords="248,12,469,39"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="group__bc__hdc2080_gadef31a009ffac2133b9e0471865664af_icgraph.png" border="0" usemap="#group__bc__hdc2080_gadef31a009ffac2133b9e0471865664af_icgraph" alt=""/></div>
+<map name="group__bc__hdc2080_gadef31a009ffac2133b9e0471865664af_icgraph" id="group__bc__hdc2080_gadef31a009ffac2133b9e0471865664af_icgraph">
+<area shape="rect" id="node2" href="group__bc__tag__humidity.html#gaf3e435e1ee18730eebc3b2a2dd699922" title="Get measured temperature in degrees of Celsius. " alt="" coords="248,5,395,46"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="gac7a2724757eb7f71d7ba32dc180980f1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool bc_hdc2080_get_temperature_raw </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__bc__hdc2080.html#ga8750420b1948104b87bb65397bb362a9">bc_hdc2080_t</a> *&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t *&#160;</td>
+          <td class="paramname"><em>raw</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get measured temperature as raw value. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">self</td><td>Instance </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">raw</td><td>Pointer to variable where result will be stored </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true When value is valid </dd>
+<dd>
+false When value is invalid </dd></dl>
+
+<p>Definition at line <a class="el" href="bc__hdc2080_8c_source.html#l00033">33</a> of file <a class="el" href="bc__hdc2080_8c_source.html">bc_hdc2080.c</a>.</p>
+
+<p>Referenced by <a class="el" href="bc__hdc2080_8c_source.html#l00057">bc_hdc2080_get_temperature_celsius()</a>, and <a class="el" href="bc__tag__humidity_8c_source.html#l00046">bc_tag_humidity_get_temperature_raw()</a>.</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="group__bc__hdc2080_gac7a2724757eb7f71d7ba32dc180980f1_icgraph.png" border="0" usemap="#group__bc__hdc2080_gac7a2724757eb7f71d7ba32dc180980f1_icgraph" alt=""/></div>
+<map name="group__bc__hdc2080_gac7a2724757eb7f71d7ba32dc180980f1_icgraph" id="group__bc__hdc2080_gac7a2724757eb7f71d7ba32dc180980f1_icgraph">
+<area shape="rect" id="node2" href="group__bc__hdc2080.html#gadef31a009ffac2133b9e0471865664af" title="Get measured temperature in degrees of Celsius. " alt="" coords="275,5,469,46"/><area shape="rect" id="node4" href="group__bc__tag__humidity.html#gace3f8531c5698eccf2fd968f47a03f80" title="Get measured temperature as raw value. " alt="" coords="301,70,443,111"/><area shape="rect" id="node3" href="group__bc__tag__humidity.html#gaf3e435e1ee18730eebc3b2a2dd699922" title="Get measured temperature in degrees of Celsius. " alt="" coords="517,5,664,46"/></map>
 </div>
 </p>
 

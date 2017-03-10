@@ -15,6 +15,8 @@ var group__bc__tag__humidity =
     ] ],
     [ "bc_tag_humidity_get_humidity_percentage", "group__bc__tag__humidity.html#gad7f456d59973cda64de2e155f321e4db", null ],
     [ "bc_tag_humidity_get_humidity_raw", "group__bc__tag__humidity.html#ga03c136b448a0b082eee32a64d8e7da2d", null ],
+    [ "bc_tag_humidity_get_temperature_celsius", "group__bc__tag__humidity.html#gaf3e435e1ee18730eebc3b2a2dd699922", null ],
+    [ "bc_tag_humidity_get_temperature_raw", "group__bc__tag__humidity.html#gace3f8531c5698eccf2fd968f47a03f80", null ],
     [ "bc_tag_humidity_init", "group__bc__tag__humidity.html#ga36ae45e289b8a7d6106089665910d57d", null ],
     [ "bc_tag_humidity_set_event_handler", "group__bc__tag__humidity.html#ga469f78e0a7237993b6df5f41cfde569b", null ],
     [ "bc_tag_humidity_set_update_interval", "group__bc__tag__humidity.html#gadf6b5e8fea087785e8f54acc680e1e00", null ]

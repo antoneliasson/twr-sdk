@@ -1,0 +1,4 @@
+<map id="bc_tag_humidity_get_temperature_celsius" name="bc_tag_humidity_get_temperature_celsius">
+<area shape="rect" id="node2" href="$group__bc__hdc2080.html#gadef31a009ffac2133b9e0471865664af" title="Get measured temperature in degrees of Celsius. " alt="" coords="201,5,394,46"/>
+<area shape="rect" id="node3" href="$group__bc__hdc2080.html#gac7a2724757eb7f71d7ba32dc180980f1" title="Get measured temperature as raw value. " alt="" coords="443,12,664,39"/>
+</map>
