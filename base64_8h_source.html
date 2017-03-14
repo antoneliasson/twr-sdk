@@ -112,8 +112,10 @@ $(document).ready(function(){initNavTree('base64_8h_source.html','');});
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keywordtype">bool</span> base64_encode(<span class="keyword">const</span> uint8_t *input, uint32_t input_length, <span class="keywordtype">char</span> *output, uint32_t *output_length);</div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keywordtype">bool</span> base64_decode(<span class="keyword">const</span> <span class="keywordtype">char</span> *input, uint32_t input_length, uint8_t *output, uint32_t *output_length);</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keywordtype">size_t</span> base64_calculate_encode_length(<span class="keywordtype">size_t</span> length);</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keywordtype">size_t</span> base64_calculate_decode_length(<span class="keyword">const</span> <span class="keywordtype">char</span> *input, <span class="keywordtype">size_t</span> length);</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

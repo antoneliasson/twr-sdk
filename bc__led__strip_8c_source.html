@@ -111,7 +111,7 @@ $(document).ready(function(){initNavTree('bc__led__strip_8c_source.html','');});
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;uint32_t _bc_led_strip_wheel(<span class="keywordtype">int</span> position);</div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keywordtype">void</span> bc_led_strip_init(<a class="code" href="structbc__led__strip__t.html">bc_led_strip_t</a> *<span class="keyword">self</span>, <span class="keyword">const</span> <a class="code" href="structbc__led__strip__driver__t.html">bc_led_strip_driver_t</a> *driver, <span class="keyword">const</span> <a class="code" href="structbc__led__strip__buffer__t.html">bc_led_strip_buffer_t</a> *buffer)</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keywordtype">void</span> bc_led_strip_init(<a class="code" href="structbc__led__strip__t.html">bc_led_strip_t</a> *<span class="keyword">self</span>, <span class="keyword">const</span> <a class="code" href="structbc__led__strip__driver__t.html">bc_led_strip_driver_t</a> *driver, <a class="code" href="structbc__led__strip__buffer__t.html">bc_led_strip_buffer_t</a> *buffer)</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    memset(<span class="keyword">self</span>, 0x00, <span class="keyword">sizeof</span>(<a class="code" href="structbc__led__strip__t.html">bc_led_strip_t</a>));</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="keyword">self</span>-&gt;_buffer = buffer;</div>
@@ -146,7 +146,7 @@ $(document).ready(function(){initNavTree('bc__led__strip_8c_source.html','');});
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keyword">self</span>-&gt;_driver-&gt;set_pixel_rgbw(position, r, g, b, w);</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;}</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keywordtype">bool</span> bc_led_strip_set_rgbw_framebuffer(<a class="code" href="structbc__led__strip__t.html">bc_led_strip_t</a> *<span class="keyword">self</span>, <span class="keyword">const</span> uint8_t *framebuffer, <span class="keywordtype">size_t</span> length)</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keywordtype">bool</span> bc_led_strip_set_rgbw_framebuffer(<a class="code" href="structbc__led__strip__t.html">bc_led_strip_t</a> *<span class="keyword">self</span>, uint8_t *framebuffer, <span class="keywordtype">size_t</span> length)</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;{</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordflow">if</span> (length &gt; (<span class="keywordtype">size_t</span>) (self-&gt;_buffer-&gt;type * self-&gt;_buffer-&gt;count))</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    {</div>

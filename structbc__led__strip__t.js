@@ -1,6 +1,6 @@
 var structbc__led__strip__t =
 [
-    [ "_buffer", "structbc__led__strip__t.html#a08f22dd77d47404918af9a4999615c62", null ],
+    [ "_buffer", "structbc__led__strip__t.html#afe636bcc26189c8a3d2b356a33bf9542", null ],
     [ "_driver", "structbc__led__strip__t.html#a5b4c34c742e6fa9d4adfd45e7ce9f3da", null ],
     [ "_effect", "structbc__led__strip__t.html#a5e19c1b9169c8c7319c665b89871288e", null ],
     [ "_event_handler", "structbc__led__strip__t.html#afc191607a401fc27343073bf3c37d6db", null ],

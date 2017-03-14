@@ -127,7 +127,7 @@ $(document).ready(function(){initNavTree('bc__led__strip_8h_source.html','');});
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
 <div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="structbc__led__strip__driver__t.html">   21</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct</span></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;{</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    bool (*init)(<span class="keyword">const</span> <a class="code" href="structbc__led__strip__buffer__t.html">bc_led_strip_buffer_t</a> *buffer);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    bool (*init)(<a class="code" href="structbc__led__strip__buffer__t.html">bc_led_strip_buffer_t</a> *buffer);</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    void (*set_pixel)(<span class="keywordtype">int</span> position, uint32_t color);</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    void (*set_pixel_rgbw)(<span class="keywordtype">int</span> position, uint8_t r, uint8_t g, uint8_t b, uint8_t w);</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    bool (*write)(void);</div>
@@ -145,7 +145,7 @@ $(document).ready(function(){initNavTree('bc__led__strip_8h_source.html','');});
 <div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="structbc__led__strip__t.html">   38</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structbc__led__strip__t.html">bc_led_strip_t</a></div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;{</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keyword">const</span> <a class="code" href="structbc__led__strip__driver__t.html">bc_led_strip_driver_t</a> *_driver;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keyword">const</span> <a class="code" href="structbc__led__strip__buffer__t.html">bc_led_strip_buffer_t</a> *_buffer;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <a class="code" href="structbc__led__strip__buffer__t.html">bc_led_strip_buffer_t</a> *_buffer;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keyword">struct</span></div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    {</div>
@@ -161,7 +161,7 @@ $(document).ready(function(){initNavTree('bc__led__strip_8h_source.html','');});
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;};</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keywordtype">void</span> bc_led_strip_init(<a class="code" href="structbc__led__strip__t.html">bc_led_strip_t</a> *<span class="keyword">self</span>, <span class="keyword">const</span> <a class="code" href="structbc__led__strip__driver__t.html">bc_led_strip_driver_t</a> *driver, <span class="keyword">const</span> <a class="code" href="structbc__led__strip__buffer__t.html">bc_led_strip_buffer_t</a> *buffer);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keywordtype">void</span> bc_led_strip_init(<a class="code" href="structbc__led__strip__t.html">bc_led_strip_t</a> *<span class="keyword">self</span>, <span class="keyword">const</span> <a class="code" href="structbc__led__strip__driver__t.html">bc_led_strip_driver_t</a> *driver, <a class="code" href="structbc__led__strip__buffer__t.html">bc_led_strip_buffer_t</a> *buffer);</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keywordtype">void</span> bc_led_strip_set_event_handler(<a class="code" href="structbc__led__strip__t.html">bc_led_strip_t</a> *<span class="keyword">self</span>, <span class="keywordtype">void</span> (*event_handler)(<a class="code" href="structbc__led__strip__t.html">bc_led_strip_t</a> *, bc_led_strip_event_t, <span class="keywordtype">void</span> *), <span class="keywordtype">void</span> *event_param);</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
@@ -173,7 +173,7 @@ $(document).ready(function(){initNavTree('bc__led__strip_8h_source.html','');});
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keywordtype">void</span> bc_led_strip_set_pixel_rgbw(<a class="code" href="structbc__led__strip__t.html">bc_led_strip_t</a> *<span class="keyword">self</span>, <span class="keywordtype">int</span> position, uint8_t r, uint8_t g, uint8_t b, uint8_t w);</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="keywordtype">bool</span> bc_led_strip_set_rgbw_framebuffer(<a class="code" href="structbc__led__strip__t.html">bc_led_strip_t</a> *<span class="keyword">self</span>, <span class="keyword">const</span> uint8_t *framebuffer, <span class="keywordtype">size_t</span> length);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="keywordtype">bool</span> bc_led_strip_set_rgbw_framebuffer(<a class="code" href="structbc__led__strip__t.html">bc_led_strip_t</a> *<span class="keyword">self</span>, uint8_t *framebuffer, <span class="keywordtype">size_t</span> length);</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="keywordtype">void</span> bc_led_strip_fill(<a class="code" href="structbc__led__strip__t.html">bc_led_strip_t</a> *<span class="keyword">self</span>, uint32_t color);</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
