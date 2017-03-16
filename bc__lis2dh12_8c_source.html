@@ -156,7 +156,7 @@ $(document).ready(function(){initNavTree('bc__lis2dh12_8c_source.html','');});
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    result_raw-&gt;<a class="code" href="structbc__lis2dh12__result__raw__t.html#adea9be4b53fa6af11ae9c33e6d7e8ff5">x_axis</a> = (int16_t) self-&gt;_out_x_h;</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    result_raw-&gt;<a class="code" href="structbc__lis2dh12__result__raw__t.html#adea9be4b53fa6af11ae9c33e6d7e8ff5">x_axis</a> &lt;&lt;= 8;</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    result_raw-&gt;<a class="code" href="structbc__lis2dh12__result__raw__t.html#adea9be4b53fa6af11ae9c33e6d7e8ff5">x_axis</a> &gt;&gt;= 4;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    result_raw-&gt;<a class="code" href="structbc__lis2dh12__result__raw__t.html#adea9be4b53fa6af11ae9c33e6d7e8ff5">x_axis</a> |= (int16_t) <span class="keyword">self</span>-&gt;_out_x_l &gt;&gt; 4; <span class="comment">// TODO Clarify this</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    result_raw-&gt;<a class="code" href="structbc__lis2dh12__result__raw__t.html#adea9be4b53fa6af11ae9c33e6d7e8ff5">x_axis</a> |= (int16_t) <span class="keyword">self</span>-&gt;_out_x_l &gt;&gt; 4; <span class="comment">// TODO  Clarify this</span></div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    result_raw-&gt;<a class="code" href="structbc__lis2dh12__result__raw__t.html#a9cd627f761b27e6716a3992fccacdf9c">y_axis</a> = (int16_t) self-&gt;_out_y_h;</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    result_raw-&gt;<a class="code" href="structbc__lis2dh12__result__raw__t.html#a9cd627f761b27e6716a3992fccacdf9c">y_axis</a> &lt;&lt;= 8;</div>
@@ -352,153 +352,130 @@ $(document).ready(function(){initNavTree('bc__lis2dh12_8c_source.html','');});
 <div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;</div>
 <div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;<span class="keyword">static</span> <span class="keywordtype">bool</span> _bc_lis2dh12_read_result(<a class="code" href="group__bc__lis2dh12.html#gaf66429f9cca1e29aff1a026976bea96e">bc_lis2dh12_t</a> *<span class="keyword">self</span>)</div>
 <div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;{</div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    <span class="comment">/*</span></div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;<span class="comment">     // Dont work yet, needs I2C repeated start reading</span></div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;<span class="comment">     bc_i2c_tranfer_t transfer;</span></div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;<span class="comment">     transfer.device_address = self-&gt;_i2c_address;</span></div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;<span class="comment">     transfer.memory_address = 0x28;</span></div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;<span class="comment">     transfer.buffer = &amp;self-&gt;_out_x_l;</span></div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;<span class="comment">     transfer.length = 6;</span></div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;<span class="comment">     return bc_i2c_read(self-&gt;_i2c_channel, &amp;transfer);*/</span></div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;</div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="group__bc__i2c.html#gac2eee84f73bb3bbd953be621f21eb0e1">bc_i2c_read_8b</a>(self-&gt;_i2c_channel, self-&gt;_i2c_address, 0x28, &amp;self-&gt;_out_x_l))</div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;    {</div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    }</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;     <a class="code" href="structbc__i2c__tranfer__t.html">bc_i2c_tranfer_t</a> transfer;</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;     uint8_t buffer[6];</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;     transfer.<a class="code" href="structbc__i2c__tranfer__t.html#afa552b8d01f0a38acfa89b44d630fb15">device_address</a> = <span class="keyword">self</span>-&gt;_i2c_address;</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;     transfer.<a class="code" href="structbc__i2c__tranfer__t.html#a8ea2cc0345efb417babe261e171997c4">memory_address</a> = 0x28 | (1 &lt;&lt; 7);     <span class="comment">// Highest bit set enables address auto-increment</span></div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;     transfer.<a class="code" href="structbc__i2c__tranfer__t.html#ae3701a88ed65ab6980fec4717d58fb62">buffer</a> = buffer;</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;     transfer.<a class="code" href="structbc__i2c__tranfer__t.html#a5c96741d235badc07549d1e71452e538">length</a> = 6;</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;     <span class="keywordtype">bool</span> return_value = <a class="code" href="group__bc__i2c.html#ga071d3d85ba25f77685909dd9712b34ea">bc_i2c_read</a>(self-&gt;_i2c_channel, &amp;transfer);</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;     <span class="comment">// Copy bytes to their destination</span></div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;     <span class="keyword">self</span>-&gt;_out_x_l = buffer[0];</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;     <span class="keyword">self</span>-&gt;_out_x_h = buffer[1];</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;     <span class="keyword">self</span>-&gt;_out_y_l = buffer[2];</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;     <span class="keyword">self</span>-&gt;_out_y_h = buffer[3];</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;     <span class="keyword">self</span>-&gt;_out_z_l = buffer[4];</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;     <span class="keyword">self</span>-&gt;_out_z_h = buffer[5];</div>
 <div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;</div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="group__bc__i2c.html#gac2eee84f73bb3bbd953be621f21eb0e1">bc_i2c_read_8b</a>(self-&gt;_i2c_channel, self-&gt;_i2c_address, 0x29, &amp;self-&gt;_out_x_h))</div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;    {</div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    }</div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;</div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="group__bc__i2c.html#gac2eee84f73bb3bbd953be621f21eb0e1">bc_i2c_read_8b</a>(self-&gt;_i2c_channel, self-&gt;_i2c_address, 0x2a, &amp;self-&gt;_out_y_l))</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;     <span class="keywordflow">return</span> return_value;</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;}</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;</div>
+<div class="line"><a name="l00269"></a><span class="lineno"><a class="line" href="group__bc__lis2dh12.html#gabdb52865d27aca4cd3f0ca31133f4187">  269</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="group__bc__lis2dh12.html#gabdb52865d27aca4cd3f0ca31133f4187">bc_lis2dh12_set_alarm</a>(<a class="code" href="group__bc__lis2dh12.html#gaf66429f9cca1e29aff1a026976bea96e">bc_lis2dh12_t</a> *<span class="keyword">self</span>, <a class="code" href="structbc__lis2dh12__alarm__t.html">bc_lis2dh12_alarm_t</a> *alarm)</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;{</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;    <span class="keywordflow">if</span> (alarm != NULL)</div>
 <div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;    {</div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;    }</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;        <span class="comment">// Enable alarm</span></div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;        <span class="keyword">self</span>-&gt;_alarm_active = <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;</div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="group__bc__i2c.html#gac2eee84f73bb3bbd953be621f21eb0e1">bc_i2c_read_8b</a>(self-&gt;_i2c_channel, self-&gt;_i2c_address, 0x2b, &amp;self-&gt;_out_y_h))</div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;    {</div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;    }</div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;</div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="group__bc__i2c.html#gac2eee84f73bb3bbd953be621f21eb0e1">bc_i2c_read_8b</a>(self-&gt;_i2c_channel, self-&gt;_i2c_address, 0x2c, &amp;self-&gt;_out_z_l))</div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;    {</div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;    }</div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;</div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="group__bc__i2c.html#gac2eee84f73bb3bbd953be621f21eb0e1">bc_i2c_read_8b</a>(self-&gt;_i2c_channel, self-&gt;_i2c_address, 0x2d, &amp;self-&gt;_out_z_h))</div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;    {</div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;    }</div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;</div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;}</div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;</div>
-<div class="line"><a name="l00294"></a><span class="lineno"><a class="line" href="group__bc__lis2dh12.html#gabdb52865d27aca4cd3f0ca31133f4187">  294</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="group__bc__lis2dh12.html#gabdb52865d27aca4cd3f0ca31133f4187">bc_lis2dh12_set_alarm</a>(<a class="code" href="group__bc__lis2dh12.html#gaf66429f9cca1e29aff1a026976bea96e">bc_lis2dh12_t</a> *<span class="keyword">self</span>, <a class="code" href="structbc__lis2dh12__alarm__t.html">bc_lis2dh12_alarm_t</a> *alarm)</div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;{</div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;    <span class="keywordflow">if</span> (alarm != NULL)</div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;    {</div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;        <span class="comment">// Enable alarm</span></div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;        <span class="keyword">self</span>-&gt;_alarm_active = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;</div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;        <span class="comment">// Disable IRQ first to change the registers</span></div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;        <span class="keywordflow">if</span> (!<a class="code" href="group__bc__i2c.html#ga67a958f1691787b61dae034f441513a3">bc_i2c_write_8b</a>(self-&gt;_i2c_channel, self-&gt;_i2c_address, 0x30, 0x00))</div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;        {</div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;        }</div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;</div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;        <span class="comment">// Recalculate threshold to the 4g full-scale setting</span></div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;        uint8_t int1_ths = (uint8_t)((alarm-&gt;<a class="code" href="structbc__lis2dh12__alarm__t.html#a6d9f3b1e3c38fdfe8c702605e6b2442e">threshold</a>) / 0.031f);</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;        <span class="comment">// Disable IRQ first to change the registers</span></div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;        <span class="keywordflow">if</span> (!<a class="code" href="group__bc__i2c.html#ga67a958f1691787b61dae034f441513a3">bc_i2c_write_8b</a>(self-&gt;_i2c_channel, self-&gt;_i2c_address, 0x30, 0x00))</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;        {</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;        }</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;        <span class="comment">// Recalculate threshold to the 4g full-scale setting</span></div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;        uint8_t int1_ths = (uint8_t)((alarm-&gt;<a class="code" href="structbc__lis2dh12__alarm__t.html#a6d9f3b1e3c38fdfe8c702605e6b2442e">threshold</a>) / 0.031f);</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;        <span class="keywordflow">if</span> (!<a class="code" href="group__bc__i2c.html#ga67a958f1691787b61dae034f441513a3">bc_i2c_write_8b</a>(self-&gt;_i2c_channel, self-&gt;_i2c_address, 0x32, int1_ths))</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;        {</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;        }</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;        uint8_t int1_duration = (uint8_t)(alarm-&gt;duration / 1); <span class="comment">// /10</span></div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;        <span class="keywordflow">if</span> (!<a class="code" href="group__bc__i2c.html#ga67a958f1691787b61dae034f441513a3">bc_i2c_write_8b</a>(self-&gt;_i2c_channel, self-&gt;_i2c_address, 0x33, int1_duration))</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;        {</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;        }</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;        <span class="comment">// CTRL_REG3</span></div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;        uint8_t ctrl_reg3 = (1 &lt;&lt; 6);</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;        <span class="keywordflow">if</span> (!<a class="code" href="group__bc__i2c.html#ga67a958f1691787b61dae034f441513a3">bc_i2c_write_8b</a>(self-&gt;_i2c_channel, self-&gt;_i2c_address, 0x22, ctrl_reg3))</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;        {</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;        }</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;        <span class="comment">// CTRL_REG6 - invert interrupt</span></div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;        uint8_t ctrl_reg6 = (1 &lt;&lt; 1);</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;        <span class="keywordflow">if</span> (!<a class="code" href="group__bc__i2c.html#ga67a958f1691787b61dae034f441513a3">bc_i2c_write_8b</a>(self-&gt;_i2c_channel, self-&gt;_i2c_address, 0x25, ctrl_reg6))</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;        {</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;        }</div>
 <div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;</div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;        <span class="keywordflow">if</span> (!<a class="code" href="group__bc__i2c.html#ga67a958f1691787b61dae034f441513a3">bc_i2c_write_8b</a>(self-&gt;_i2c_channel, self-&gt;_i2c_address, 0x32, int1_ths))</div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;        {</div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;        }</div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;</div>
-<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;        uint8_t int1_duration = (uint8_t)(alarm-&gt;duration / 1); <span class="comment">// /10</span></div>
-<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;        <span class="keywordflow">if</span> (!<a class="code" href="group__bc__i2c.html#ga67a958f1691787b61dae034f441513a3">bc_i2c_write_8b</a>(self-&gt;_i2c_channel, self-&gt;_i2c_address, 0x33, int1_duration))</div>
-<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;        {</div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;        }</div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;</div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;        <span class="comment">// CTRL_REG3</span></div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;        uint8_t ctrl_reg3 = (1 &lt;&lt; 6);</div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;        <span class="keywordflow">if</span> (!<a class="code" href="group__bc__i2c.html#ga67a958f1691787b61dae034f441513a3">bc_i2c_write_8b</a>(self-&gt;_i2c_channel, self-&gt;_i2c_address, 0x22, ctrl_reg3))</div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;        {</div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;        }</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;        <span class="comment">// ctr_reg5</span></div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;        uint8_t ctrl_reg5 = (0 &lt;&lt; 3); <span class="comment">// latch interrupt request</span></div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;        <span class="keywordflow">if</span> (!<a class="code" href="group__bc__i2c.html#ga67a958f1691787b61dae034f441513a3">bc_i2c_write_8b</a>(self-&gt;_i2c_channel, self-&gt;_i2c_address, 0x24, ctrl_reg5))</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;        {</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;        }</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;        <span class="comment">// INT_CFG1</span></div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;        uint8_t int_cfg1;</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;        int_cfg1 = 0; <span class="comment">//(1 &lt;&lt; 7) | (1 &lt;&lt; 6); // AOI = 0, 6D = 1</span></div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;        int_cfg1 |= (alarm-&gt;z_high) ? (1 &lt;&lt; 5) : 0;</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;        int_cfg1 |= (alarm-&gt;z_low) ? (1 &lt;&lt; 4) : 0;</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;        int_cfg1 |= (alarm-&gt;y_high) ? (1 &lt;&lt; 3) : 0;</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;        int_cfg1 |= (alarm-&gt;y_low) ? (1 &lt;&lt; 2) : 0;</div>
 <div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;</div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;        <span class="comment">// CTRL_REG6 - invert interrupt</span></div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;        uint8_t ctrl_reg6 = (1 &lt;&lt; 1);</div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;        <span class="keywordflow">if</span> (!<a class="code" href="group__bc__i2c.html#ga67a958f1691787b61dae034f441513a3">bc_i2c_write_8b</a>(self-&gt;_i2c_channel, self-&gt;_i2c_address, 0x25, ctrl_reg6))</div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;        {</div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;        }</div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;</div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;        <span class="comment">// ctr_reg5</span></div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;        uint8_t ctrl_reg5 = (0 &lt;&lt; 3); <span class="comment">// latch interrupt request</span></div>
-<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;        <span class="keywordflow">if</span> (!<a class="code" href="group__bc__i2c.html#ga67a958f1691787b61dae034f441513a3">bc_i2c_write_8b</a>(self-&gt;_i2c_channel, self-&gt;_i2c_address, 0x24, ctrl_reg5))</div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;        {</div>
-<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;        }</div>
-<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;</div>
-<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;        <span class="comment">// INT_CFG1</span></div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;        uint8_t int_cfg1;</div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;</div>
-<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;        int_cfg1 = 0; <span class="comment">//(1 &lt;&lt; 7) | (1 &lt;&lt; 6); // AOI = 0, 6D = 1</span></div>
-<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;</div>
-<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;        int_cfg1 |= (alarm-&gt;z_high) ? (1 &lt;&lt; 5) : 0;</div>
-<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;        int_cfg1 |= (alarm-&gt;z_low) ? (1 &lt;&lt; 4) : 0;</div>
-<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;</div>
-<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;        int_cfg1 |= (alarm-&gt;y_high) ? (1 &lt;&lt; 3) : 0;</div>
-<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;        int_cfg1 |= (alarm-&gt;y_low) ? (1 &lt;&lt; 2) : 0;</div>
-<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;</div>
-<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;        int_cfg1 |= (alarm-&gt;x_high) ? (1 &lt;&lt; 1) : 0;</div>
-<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;        int_cfg1 |= (alarm-&gt;x_low) ? (1 &lt;&lt; 0) : 0;</div>
-<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;</div>
-<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;        <span class="keywordflow">if</span> (!<a class="code" href="group__bc__i2c.html#ga67a958f1691787b61dae034f441513a3">bc_i2c_write_8b</a>(self-&gt;_i2c_channel, self-&gt;_i2c_address, 0x30, int_cfg1))</div>
-<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;        {</div>
-<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;        }</div>
-<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;</div>
-<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;        <a class="code" href="group__bc__exti.html#gac41431498863e49ed40aa975e3da7630">bc_exti_register</a>(<a class="code" href="group__bc__exti.html#ggad3665a3da5318105db2c06ba0647eeadac1d277f1ffa663193ea33f0398bbd010">BC_EXTI_LINE_PB6</a>, <a class="code" href="group__bc__exti.html#gga79a5d27d60c847f652dc07ebe8cad8efa5549772527ecde3869ab23d9c9ba9913">BC_EXTI_EDGE_FALLING</a>, _bc_lis2dh12_interrupt, <span class="keyword">self</span>);</div>
-<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;    }</div>
-<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;    <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;    {</div>
-<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;        <span class="comment">// Disable alarm</span></div>
-<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;        <span class="keyword">self</span>-&gt;_alarm_active = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;</div>
-<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;        <span class="keywordflow">if</span> (!<a class="code" href="group__bc__i2c.html#ga67a958f1691787b61dae034f441513a3">bc_i2c_write_8b</a>(self-&gt;_i2c_channel, self-&gt;_i2c_address, 0x30, 0x00))</div>
-<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;        {</div>
-<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;        }</div>
-<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;</div>
-<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;        <a class="code" href="group__bc__exti.html#gadecae09ae5fb15b8ef5eafe5f8ca0ba3">bc_exti_unregister</a>(<a class="code" href="group__bc__exti.html#ggad3665a3da5318105db2c06ba0647eeadac1d277f1ffa663193ea33f0398bbd010">BC_EXTI_LINE_PB6</a>);</div>
-<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;    }</div>
-<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;</div>
-<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;}</div>
-<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;</div>
-<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> _bc_lis2dh12_interrupt(<a class="code" href="group__bc__exti.html#gad3665a3da5318105db2c06ba0647eead">bc_exti_line_t</a> line, <span class="keywordtype">void</span> *param)</div>
-<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;{</div>
-<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;    (void) line;</div>
-<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;</div>
-<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;    <a class="code" href="group__bc__lis2dh12.html#gaf66429f9cca1e29aff1a026976bea96e">bc_lis2dh12_t</a> *<span class="keyword">self</span> = param;</div>
-<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;</div>
-<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;    <span class="keyword">self</span>-&gt;_irq_flag = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;</div>
-<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;    <a class="code" href="group__bc__scheduler.html#ga46c874e6f1b363cf6851cfa8f837c398">bc_scheduler_plan_now</a>(self-&gt;_task_id);</div>
-<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;</div>
-<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;}</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;        int_cfg1 |= (alarm-&gt;x_high) ? (1 &lt;&lt; 1) : 0;</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;        int_cfg1 |= (alarm-&gt;x_low) ? (1 &lt;&lt; 0) : 0;</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;        <span class="keywordflow">if</span> (!<a class="code" href="group__bc__i2c.html#ga67a958f1691787b61dae034f441513a3">bc_i2c_write_8b</a>(self-&gt;_i2c_channel, self-&gt;_i2c_address, 0x30, int_cfg1))</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;        {</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;        }</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;        <a class="code" href="group__bc__exti.html#gac41431498863e49ed40aa975e3da7630">bc_exti_register</a>(<a class="code" href="group__bc__exti.html#ggad3665a3da5318105db2c06ba0647eeadac1d277f1ffa663193ea33f0398bbd010">BC_EXTI_LINE_PB6</a>, <a class="code" href="group__bc__exti.html#gga79a5d27d60c847f652dc07ebe8cad8efa5549772527ecde3869ab23d9c9ba9913">BC_EXTI_EDGE_FALLING</a>, _bc_lis2dh12_interrupt, <span class="keyword">self</span>);</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;    }</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;    {</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;        <span class="comment">// Disable alarm</span></div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;        <span class="keyword">self</span>-&gt;_alarm_active = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;        <span class="keywordflow">if</span> (!<a class="code" href="group__bc__i2c.html#ga67a958f1691787b61dae034f441513a3">bc_i2c_write_8b</a>(self-&gt;_i2c_channel, self-&gt;_i2c_address, 0x30, 0x00))</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;        {</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;        }</div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;        <a class="code" href="group__bc__exti.html#gadecae09ae5fb15b8ef5eafe5f8ca0ba3">bc_exti_unregister</a>(<a class="code" href="group__bc__exti.html#ggad3665a3da5318105db2c06ba0647eeadac1d277f1ffa663193ea33f0398bbd010">BC_EXTI_LINE_PB6</a>);</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;    }</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;}</div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;</div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> _bc_lis2dh12_interrupt(<a class="code" href="group__bc__exti.html#gad3665a3da5318105db2c06ba0647eead">bc_exti_line_t</a> line, <span class="keywordtype">void</span> *param)</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;{</div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;    (void) line;</div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;</div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;    <a class="code" href="group__bc__lis2dh12.html#gaf66429f9cca1e29aff1a026976bea96e">bc_lis2dh12_t</a> *<span class="keyword">self</span> = param;</div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;</div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;    <span class="keyword">self</span>-&gt;_irq_flag = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;</div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;    <a class="code" href="group__bc__scheduler.html#ga46c874e6f1b363cf6851cfa8f837c398">bc_scheduler_plan_now</a>(self-&gt;_task_id);</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;</div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;}</div>
 <div class="ttc" id="group__bc__tick_html_gabd224c28866c49d86f5d33cae606bbe0"><div class="ttname"><a href="group__bc__tick.html#gabd224c28866c49d86f5d33cae606bbe0">bc_tick_t</a></div><div class="ttdeci">uint64_t bc_tick_t</div><div class="ttdoc">Timestamp data type. </div><div class="ttdef"><b>Definition:</b> <a href="bc__tick_8h_source.html#l00016">bc_tick.h:16</a></div></div>
 <div class="ttc" id="group__bc__i2c_html_gga219721504620df6336373d3e827bb517a2e8421fd5ef090369bb40289c476f4ea"><div class="ttname"><a href="group__bc__i2c.html#gga219721504620df6336373d3e827bb517a2e8421fd5ef090369bb40289c476f4ea">BC_I2C_SPEED_400_KHZ</a></div><div class="ttdoc">I2C communication speed is 400 kHz. </div><div class="ttdef"><b>Definition:</b> <a href="bc__i2c_8h_source.html#l00027">bc_i2c.h:27</a></div></div>
 <div class="ttc" id="structbc__lis2dh12__result__g__t_html_a520f97ac86f4bc6a5dada672d8dfcd4e"><div class="ttname"><a href="structbc__lis2dh12__result__g__t.html#a520f97ac86f4bc6a5dada672d8dfcd4e">bc_lis2dh12_result_g_t::z_axis</a></div><div class="ttdeci">float z_axis</div><div class="ttdoc">Z-axis. </div><div class="ttdef"><b>Definition:</b> <a href="bc__lis2dh12_8h_source.html#l00053">bc_lis2dh12.h:53</a></div></div>
+<div class="ttc" id="structbc__i2c__tranfer__t_html_a5c96741d235badc07549d1e71452e538"><div class="ttname"><a href="structbc__i2c__tranfer__t.html#a5c96741d235badc07549d1e71452e538">bc_i2c_tranfer_t::length</a></div><div class="ttdeci">size_t length</div><div class="ttdoc">Length of buffer which is being written or read. </div><div class="ttdef"><b>Definition:</b> <a href="bc__i2c_8h_source.html#l00045">bc_i2c.h:45</a></div></div>
 <div class="ttc" id="group__bc__lis2dh12_html_gga5dc318914a8bce8dc9af065e14cdbb45a99cf60bcf3dde56922255f7c7aa373c0"><div class="ttname"><a href="group__bc__lis2dh12.html#gga5dc318914a8bce8dc9af065e14cdbb45a99cf60bcf3dde56922255f7c7aa373c0">BC_LIS2DH12_EVENT_ERROR</a></div><div class="ttdoc">Error event. </div><div class="ttdef"><b>Definition:</b> <a href="bc__lis2dh12_8h_source.html#l00017">bc_lis2dh12.h:17</a></div></div>
 <div class="ttc" id="group__bc__i2c_html_ga67a958f1691787b61dae034f441513a3"><div class="ttname"><a href="group__bc__i2c.html#ga67a958f1691787b61dae034f441513a3">bc_i2c_write_8b</a></div><div class="ttdeci">bool bc_i2c_write_8b(bc_i2c_channel_t channel, uint8_t device_address, uint32_t memory_address, uint8_t data)</div><div class="ttdoc">Write 1 byte to I2C channel. </div><div class="ttdef"><b>Definition:</b> <a href="bc__i2c_8c_source.html#l00197">bc_i2c.c:197</a></div></div>
+<div class="ttc" id="group__bc__i2c_html_ga071d3d85ba25f77685909dd9712b34ea"><div class="ttname"><a href="group__bc__i2c.html#ga071d3d85ba25f77685909dd9712b34ea">bc_i2c_read</a></div><div class="ttdeci">bool bc_i2c_read(bc_i2c_channel_t channel, const bc_i2c_tranfer_t *transfer)</div><div class="ttdoc">Read from I2C channel. </div><div class="ttdef"><b>Definition:</b> <a href="bc__i2c_8c_source.html#l00165">bc_i2c.c:165</a></div></div>
 <div class="ttc" id="group__bc__scheduler_html_gac6e2fa9155567fb1f32a8b8b563e2f30"><div class="ttname"><a href="group__bc__scheduler.html#gac6e2fa9155567fb1f32a8b8b563e2f30">bc_scheduler_register</a></div><div class="ttdeci">bc_scheduler_task_id_t bc_scheduler_register(void(*task)(void *), void *param, bc_tick_t tick)</div><div class="ttdoc">Register task in scheduler. </div><div class="ttdef"><b>Definition:</b> <a href="bc__scheduler_8c_source.html#l00053">bc_scheduler.c:53</a></div></div>
 <div class="ttc" id="structbc__lis2dh12__result__g__t_html_ab632feb3865e52c04f75a6ef3999ccc9"><div class="ttname"><a href="structbc__lis2dh12__result__g__t.html#ab632feb3865e52c04f75a6ef3999ccc9">bc_lis2dh12_result_g_t::y_axis</a></div><div class="ttdeci">float y_axis</div><div class="ttdoc">Y-axis. </div><div class="ttdef"><b>Definition:</b> <a href="bc__lis2dh12_8h_source.html#l00050">bc_lis2dh12.h:50</a></div></div>
 <div class="ttc" id="group__bc__scheduler_html_ga46c874e6f1b363cf6851cfa8f837c398"><div class="ttname"><a href="group__bc__scheduler.html#ga46c874e6f1b363cf6851cfa8f837c398">bc_scheduler_plan_now</a></div><div class="ttdeci">void bc_scheduler_plan_now(bc_scheduler_task_id_t task_id)</div><div class="ttdoc">Schedule specified task for immediate execution. </div><div class="ttdef"><b>Definition:</b> <a href="bc__scheduler_8c_source.html#l00115">bc_scheduler.c:115</a></div></div>
@@ -506,16 +483,19 @@ $(document).ready(function(){initNavTree('bc__lis2dh12_8c_source.html','');});
 <div class="ttc" id="group__bc__i2c_html_ga8f29242288303f0328c6514068e516fa"><div class="ttname"><a href="group__bc__i2c.html#ga8f29242288303f0328c6514068e516fa">bc_i2c_init</a></div><div class="ttdeci">void bc_i2c_init(bc_i2c_channel_t channel, bc_i2c_speed_t speed)</div><div class="ttdoc">Initialize I2C channel. </div><div class="ttdef"><b>Definition:</b> <a href="bc__i2c_8c_source.html#l00018">bc_i2c.c:18</a></div></div>
 <div class="ttc" id="group__bc__lis2dh12_html_ga5dc318914a8bce8dc9af065e14cdbb45"><div class="ttname"><a href="group__bc__lis2dh12.html#ga5dc318914a8bce8dc9af065e14cdbb45">bc_lis2dh12_event_t</a></div><div class="ttdeci">bc_lis2dh12_event_t</div><div class="ttdoc">Callback events. </div><div class="ttdef"><b>Definition:</b> <a href="bc__lis2dh12_8h_source.html#l00014">bc_lis2dh12.h:14</a></div></div>
 <div class="ttc" id="group__bc__lis2dh12_html_ga523ceef2e9671e6660dbebf966171fdf"><div class="ttname"><a href="group__bc__lis2dh12.html#ga523ceef2e9671e6660dbebf966171fdf">bc_lis2dh12_get_result_raw</a></div><div class="ttdeci">bool bc_lis2dh12_get_result_raw(bc_lis2dh12_t *self, bc_lis2dh12_result_raw_t *result_raw)</div><div class="ttdoc">Get measured acceleration as raw value. </div><div class="ttdef"><b>Definition:</b> <a href="bc__lis2dh12_8c_source.html#l00047">bc_lis2dh12.c:47</a></div></div>
+<div class="ttc" id="structbc__i2c__tranfer__t_html"><div class="ttname"><a href="structbc__i2c__tranfer__t.html">bc_i2c_tranfer_t</a></div><div class="ttdoc">I2C transfer parameters. </div><div class="ttdef"><b>Definition:</b> <a href="bc__i2c_8h_source.html#l00033">bc_i2c.h:33</a></div></div>
 <div class="ttc" id="structbc__lis2dh12__alarm__t_html_a6d9f3b1e3c38fdfe8c702605e6b2442e"><div class="ttname"><a href="structbc__lis2dh12__alarm__t.html#a6d9f3b1e3c38fdfe8c702605e6b2442e">bc_lis2dh12_alarm_t::threshold</a></div><div class="ttdeci">float threshold</div><div class="ttdoc">Alarm threshold in g. </div><div class="ttdef"><b>Definition:</b> <a href="bc__lis2dh12_8h_source.html#l00062">bc_lis2dh12.h:62</a></div></div>
 <div class="ttc" id="group__bc__scheduler_html_gace099e37ceac6a2338ade5ceb13c528c"><div class="ttname"><a href="group__bc__scheduler.html#gace099e37ceac6a2338ade5ceb13c528c">bc_scheduler_plan_current_relative</a></div><div class="ttdeci">void bc_scheduler_plan_current_relative(bc_tick_t tick)</div><div class="ttdoc">Schedule current task to tick relative from current spin. </div><div class="ttdef"><b>Definition:</b> <a href="bc__scheduler_8c_source.html#l00140">bc_scheduler.c:140</a></div></div>
 <div class="ttc" id="structbc__lis2dh12__result__raw__t_html_adea9be4b53fa6af11ae9c33e6d7e8ff5"><div class="ttname"><a href="structbc__lis2dh12__result__raw__t.html#adea9be4b53fa6af11ae9c33e6d7e8ff5">bc_lis2dh12_result_raw_t::x_axis</a></div><div class="ttdeci">int16_t x_axis</div><div class="ttdoc">X-axis. </div><div class="ttdef"><b>Definition:</b> <a href="bc__lis2dh12_8h_source.html#l00032">bc_lis2dh12.h:32</a></div></div>
 <div class="ttc" id="group__bc__lis2dh12_html_gaf66429f9cca1e29aff1a026976bea96e"><div class="ttname"><a href="group__bc__lis2dh12.html#gaf66429f9cca1e29aff1a026976bea96e">bc_lis2dh12_t</a></div><div class="ttdeci">struct bc_lis2dh12_t bc_lis2dh12_t</div><div class="ttdoc">LIS2DH12 instance. </div><div class="ttdef"><b>Definition:</b> <a href="bc__lis2dh12_8h_source.html#l00075">bc_lis2dh12.h:75</a></div></div>
 <div class="ttc" id="structbc__lis2dh12__result__raw__t_html_a9cd627f761b27e6716a3992fccacdf9c"><div class="ttname"><a href="structbc__lis2dh12__result__raw__t.html#a9cd627f761b27e6716a3992fccacdf9c">bc_lis2dh12_result_raw_t::y_axis</a></div><div class="ttdeci">int16_t y_axis</div><div class="ttdoc">Y-axis. </div><div class="ttdef"><b>Definition:</b> <a href="bc__lis2dh12_8h_source.html#l00035">bc_lis2dh12.h:35</a></div></div>
+<div class="ttc" id="structbc__i2c__tranfer__t_html_afa552b8d01f0a38acfa89b44d630fb15"><div class="ttname"><a href="structbc__i2c__tranfer__t.html#afa552b8d01f0a38acfa89b44d630fb15">bc_i2c_tranfer_t::device_address</a></div><div class="ttdeci">uint8_t device_address</div><div class="ttdoc">7-bit I2C device address </div><div class="ttdef"><b>Definition:</b> <a href="bc__i2c_8h_source.html#l00036">bc_i2c.h:36</a></div></div>
 <div class="ttc" id="structbc__lis2dh12__alarm__t_html"><div class="ttname"><a href="structbc__lis2dh12__alarm__t.html">bc_lis2dh12_alarm_t</a></div><div class="ttdoc">LIS2DH12 alarm set structure. </div><div class="ttdef"><b>Definition:</b> <a href="bc__lis2dh12_8h_source.html#l00059">bc_lis2dh12.h:59</a></div></div>
 <div class="ttc" id="group__bc__exti_html_gac41431498863e49ed40aa975e3da7630"><div class="ttname"><a href="group__bc__exti.html#gac41431498863e49ed40aa975e3da7630">bc_exti_register</a></div><div class="ttdeci">void bc_exti_register(bc_exti_line_t line, bc_exti_edge_t edge, void(*callback)(bc_exti_line_t, void *), void *param)</div><div class="ttdoc">Enable EXTI line interrupt and register callback function. </div><div class="ttdef"><b>Definition:</b> <a href="bc__exti_8c_source.html#l00017">bc_exti.c:17</a></div></div>
 <div class="ttc" id="group__bc__exti_html_gadecae09ae5fb15b8ef5eafe5f8ca0ba3"><div class="ttname"><a href="group__bc__exti.html#gadecae09ae5fb15b8ef5eafe5f8ca0ba3">bc_exti_unregister</a></div><div class="ttdeci">void bc_exti_unregister(bc_exti_line_t line)</div><div class="ttdoc">Disable EXTI line interrupt. </div><div class="ttdef"><b>Definition:</b> <a href="bc__exti_8c_source.html#l00090">bc_exti.c:90</a></div></div>
+<div class="ttc" id="structbc__i2c__tranfer__t_html_ae3701a88ed65ab6980fec4717d58fb62"><div class="ttname"><a href="structbc__i2c__tranfer__t.html#ae3701a88ed65ab6980fec4717d58fb62">bc_i2c_tranfer_t::buffer</a></div><div class="ttdeci">void * buffer</div><div class="ttdoc">Pointer to buffer which is being written or read. </div><div class="ttdef"><b>Definition:</b> <a href="bc__i2c_8h_source.html#l00042">bc_i2c.h:42</a></div></div>
 <div class="ttc" id="structbc__lis2dh12__result__raw__t_html"><div class="ttname"><a href="structbc__lis2dh12__result__raw__t.html">bc_lis2dh12_result_raw_t</a></div><div class="ttdoc">LIS2DH12 result in raw values. </div><div class="ttdef"><b>Definition:</b> <a href="bc__lis2dh12_8h_source.html#l00029">bc_lis2dh12.h:29</a></div></div>
-<div class="ttc" id="group__bc__lis2dh12_html_gabdb52865d27aca4cd3f0ca31133f4187"><div class="ttname"><a href="group__bc__lis2dh12.html#gabdb52865d27aca4cd3f0ca31133f4187">bc_lis2dh12_set_alarm</a></div><div class="ttdeci">bool bc_lis2dh12_set_alarm(bc_lis2dh12_t *self, bc_lis2dh12_alarm_t *alarm)</div><div class="ttdoc">Enable or disable accelerometer threshold alarm. </div><div class="ttdef"><b>Definition:</b> <a href="bc__lis2dh12_8c_source.html#l00294">bc_lis2dh12.c:294</a></div></div>
+<div class="ttc" id="group__bc__lis2dh12_html_gabdb52865d27aca4cd3f0ca31133f4187"><div class="ttname"><a href="group__bc__lis2dh12.html#gabdb52865d27aca4cd3f0ca31133f4187">bc_lis2dh12_set_alarm</a></div><div class="ttdeci">bool bc_lis2dh12_set_alarm(bc_lis2dh12_t *self, bc_lis2dh12_alarm_t *alarm)</div><div class="ttdoc">Enable or disable accelerometer threshold alarm. </div><div class="ttdef"><b>Definition:</b> <a href="bc__lis2dh12_8c_source.html#l00269">bc_lis2dh12.c:269</a></div></div>
 <div class="ttc" id="group__bc__lis2dh12_html_gadbd2d03f7d812d178f3b7db2933ebc8c"><div class="ttname"><a href="group__bc__lis2dh12.html#gadbd2d03f7d812d178f3b7db2933ebc8c">bc_lis2dh12_set_update_interval</a></div><div class="ttdeci">void bc_lis2dh12_set_update_interval(bc_lis2dh12_t *self, bc_tick_t interval)</div><div class="ttdoc">Set measurement interval. </div><div class="ttdef"><b>Definition:</b> <a href="bc__lis2dh12_8c_source.html#l00042">bc_lis2dh12.c:42</a></div></div>
 <div class="ttc" id="structbc__lis2dh12__result__raw__t_html_a1a3772c48741748918f03da74236a8ae"><div class="ttname"><a href="structbc__lis2dh12__result__raw__t.html#a1a3772c48741748918f03da74236a8ae">bc_lis2dh12_result_raw_t::z_axis</a></div><div class="ttdeci">int16_t z_axis</div><div class="ttdoc">Z-axis. </div><div class="ttdef"><b>Definition:</b> <a href="bc__lis2dh12_8h_source.html#l00038">bc_lis2dh12.h:38</a></div></div>
 <div class="ttc" id="group__bc__lis2dh12_html_gga5dc318914a8bce8dc9af065e14cdbb45a2f9073f4bcb75a8425d93eb75f7a63d7"><div class="ttname"><a href="group__bc__lis2dh12.html#gga5dc318914a8bce8dc9af065e14cdbb45a2f9073f4bcb75a8425d93eb75f7a63d7">BC_LIS2DH12_EVENT_ALARM</a></div><div class="ttdoc">Alarm event. </div><div class="ttdef"><b>Definition:</b> <a href="bc__lis2dh12_8h_source.html#l00023">bc_lis2dh12.h:23</a></div></div>
@@ -524,6 +504,7 @@ $(document).ready(function(){initNavTree('bc__lis2dh12_8c_source.html','');});
 <div class="ttc" id="group__bc__exti_html_ggad3665a3da5318105db2c06ba0647eeadac1d277f1ffa663193ea33f0398bbd010"><div class="ttname"><a href="group__bc__exti.html#ggad3665a3da5318105db2c06ba0647eeadac1d277f1ffa663193ea33f0398bbd010">BC_EXTI_LINE_PB6</a></div><div class="ttdoc">EXTI line PB6. </div><div class="ttdef"><b>Definition:</b> <a href="bc__exti_8h_source.html#l00090">bc_exti.h:90</a></div></div>
 <div class="ttc" id="group__bc__lis2dh12_html_gga5dc318914a8bce8dc9af065e14cdbb45a3bf470c693907288d7bd3a905b1edcd8"><div class="ttname"><a href="group__bc__lis2dh12.html#gga5dc318914a8bce8dc9af065e14cdbb45a3bf470c693907288d7bd3a905b1edcd8">BC_LIS2DH12_EVENT_UPDATE</a></div><div class="ttdoc">Update event. </div><div class="ttdef"><b>Definition:</b> <a href="bc__lis2dh12_8h_source.html#l00020">bc_lis2dh12.h:20</a></div></div>
 <div class="ttc" id="structbc__lis2dh12__result__g__t_html"><div class="ttname"><a href="structbc__lis2dh12__result__g__t.html">bc_lis2dh12_result_g_t</a></div><div class="ttdoc">LIS2DH12 result in g. </div><div class="ttdef"><b>Definition:</b> <a href="bc__lis2dh12_8h_source.html#l00044">bc_lis2dh12.h:44</a></div></div>
+<div class="ttc" id="structbc__i2c__tranfer__t_html_a8ea2cc0345efb417babe261e171997c4"><div class="ttname"><a href="structbc__i2c__tranfer__t.html#a8ea2cc0345efb417babe261e171997c4">bc_i2c_tranfer_t::memory_address</a></div><div class="ttdeci">uint32_t memory_address</div><div class="ttdoc">8-bit I2C memory address (it can be extended to 16-bit format if OR-ed with BC_I2C_MEMORY_ADDRESS_16_...</div><div class="ttdef"><b>Definition:</b> <a href="bc__i2c_8h_source.html#l00039">bc_i2c.h:39</a></div></div>
 <div class="ttc" id="group__bc__i2c_html_gac2eee84f73bb3bbd953be621f21eb0e1"><div class="ttname"><a href="group__bc__i2c.html#gac2eee84f73bb3bbd953be621f21eb0e1">bc_i2c_read_8b</a></div><div class="ttdeci">bool bc_i2c_read_8b(bc_i2c_channel_t channel, uint8_t device_address, uint32_t memory_address, uint8_t *data)</div><div class="ttdoc">Read 1 byte from I2C channel. </div><div class="ttdef"><b>Definition:</b> <a href="bc__i2c_8c_source.html#l00226">bc_i2c.c:226</a></div></div>
 <div class="ttc" id="group__bc__lis2dh12_html_ga47cce13a72b350cb25efa341423b8d56"><div class="ttname"><a href="group__bc__lis2dh12.html#ga47cce13a72b350cb25efa341423b8d56">bc_lis2dh12_get_result_g</a></div><div class="ttdeci">bool bc_lis2dh12_get_result_g(bc_lis2dh12_t *self, bc_lis2dh12_result_g_t *result_g)</div><div class="ttdoc">Get measured acceleration in g. </div><div class="ttdef"><b>Definition:</b> <a href="bc__lis2dh12_8c_source.html#l00067">bc_lis2dh12.c:67</a></div></div>
 <div class="ttc" id="group__bc__lis2dh12_html_gadd862cd2a33599f416dad74380928084"><div class="ttname"><a href="group__bc__lis2dh12.html#gadd862cd2a33599f416dad74380928084">bc_lis2dh12_set_event_handler</a></div><div class="ttdeci">void bc_lis2dh12_set_event_handler(bc_lis2dh12_t *self, void(*event_handler)(bc_lis2dh12_t *, bc_lis2dh12_event_t, void *), void *event_param)</div><div class="ttdoc">Set callback function. </div><div class="ttdef"><b>Definition:</b> <a href="bc__lis2dh12_8c_source.html#l00036">bc_lis2dh12.c:36</a></div></div>
