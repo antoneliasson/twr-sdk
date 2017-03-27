@@ -10,7 +10,8 @@ var group__bc__spi =
       [ "BC_SPI_SPEED_1_MHZ", "group__bc__spi.html#gga15f700524ef3ae920c419f4198a32676a0fb280b39783af321eebfd27a9447ffe", null ],
       [ "BC_SPI_SPEED_2_MHZ", "group__bc__spi.html#gga15f700524ef3ae920c419f4198a32676a5e54ca1e7fb7dac67707988e2c2b192c", null ],
       [ "BC_SPI_SPEED_4_MHZ", "group__bc__spi.html#gga15f700524ef3ae920c419f4198a32676a382ff1e7700342f6ac59c051dcad65d9", null ],
-      [ "BC_SPI_SPEED_8_MHZ", "group__bc__spi.html#gga15f700524ef3ae920c419f4198a32676a27cd9626c28c24fae45566a33a7864d3", null ]
+      [ "BC_SPI_SPEED_8_MHZ", "group__bc__spi.html#gga15f700524ef3ae920c419f4198a32676a27cd9626c28c24fae45566a33a7864d3", null ],
+      [ "BC_SPI_SPEED_16_MHZ", "group__bc__spi.html#gga15f700524ef3ae920c419f4198a32676af057632e4bf56f6f008d1150f480ad74", null ]
     ] ],
     [ "bc_spi_get_mode", "group__bc__spi.html#ga3e2d1261e10faa0f94b82e63bd0fd27d", null ],
     [ "bc_spi_get_speed", "group__bc__spi.html#ga3bb33463dd1112b5a928a736c9753324", null ],

@@ -4,7 +4,8 @@ var group__bc__uart =
       [ "baudrate", "structbc__uart__param__t.html#ac5961f5337a573bb3e7e6f97f53e35de", null ]
     ] ],
     [ "bc_uart_baudrate_t", "group__bc__uart.html#gabe2f6f464dc94204d147f3f498fbeb85", [
-      [ "BC_UART_BAUDRATE_9600_BD", "group__bc__uart.html#ggabe2f6f464dc94204d147f3f498fbeb85a38128ec5d358e5824a20620ed9b96c2a", null ]
+      [ "BC_UART_BAUDRATE_9600_BD", "group__bc__uart.html#ggabe2f6f464dc94204d147f3f498fbeb85a38128ec5d358e5824a20620ed9b96c2a", null ],
+      [ "BC_UART_BAUDRATE_115200_BD", "group__bc__uart.html#ggabe2f6f464dc94204d147f3f498fbeb85a97bb7327c860b341ba38a8d76b383831", null ]
     ] ],
     [ "bc_uart_channel_t", "group__bc__uart.html#gafc2793f7c8bd58556f8344cfb1ff4811", [
       [ "BC_UART_UART0", "group__bc__uart.html#ggafc2793f7c8bd58556f8344cfb1ff4811a3df15d0f6bdd645435dea972f2edb930", null ],

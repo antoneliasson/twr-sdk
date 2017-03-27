@@ -21,7 +21,7 @@ var NAVTREEINDEX =
 [
 "annotated.html",
 "group__bc__gpio.html#gga5a8d8aed85b7bb7f5b219fc6a4cd5b8ea037f19ad5b25396bf75c6a818c0873d1",
-"group__bc__tag__barometer.html#gga748ff522e8ada749b4d81d781b68a5c0aa96747984e849a83cac42c538c1c256b"
+"group__bc__tag__barometer.html#gga748ff522e8ada749b4d81d781b68a5c0a120e4cc492934849c919c4598a7262e5"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

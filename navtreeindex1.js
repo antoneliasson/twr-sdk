@@ -237,6 +237,7 @@ var NAVTREEINDEX1 =
 "group__bc__spi.html#gga15f700524ef3ae920c419f4198a32676a27cd9626c28c24fae45566a33a7864d3":[1,28,1,3],
 "group__bc__spi.html#gga15f700524ef3ae920c419f4198a32676a382ff1e7700342f6ac59c051dcad65d9":[1,28,1,2],
 "group__bc__spi.html#gga15f700524ef3ae920c419f4198a32676a5e54ca1e7fb7dac67707988e2c2b192c":[1,28,1,1],
+"group__bc__spi.html#gga15f700524ef3ae920c419f4198a32676af057632e4bf56f6f008d1150f480ad74":[1,28,1,4],
 "group__bc__spi.html#ggabc91b706ba04834451a2bf5faa178112a020cdfd9ed1a600b33449ef46d785b4c":[1,28,0,2],
 "group__bc__spi.html#ggabc91b706ba04834451a2bf5faa178112a119741eb3b8af0650f7cc9e9ec9d2d33":[1,28,0,3],
 "group__bc__spi.html#ggabc91b706ba04834451a2bf5faa178112a734f022f618c8e12c2627f6b11715565":[1,28,0,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX1 =
 "group__bc__tag__barometer.html#ga59c6f61ba3dd41b99f98d6a9673f5839":[1,29,5],
 "group__bc__tag__barometer.html#ga748ff522e8ada749b4d81d781b68a5c0":[1,29,1],
 "group__bc__tag__barometer.html#ga9ae5b1f4d56c6d1f4e3e2acc3f0ed0d2":[1,29,4],
-"group__bc__tag__barometer.html#gaa2bc04c1598f956b3b707b31545c0b0d":[1,29,2],
-"group__bc__tag__barometer.html#gga748ff522e8ada749b4d81d781b68a5c0a120e4cc492934849c919c4598a7262e5":[1,29,1,1]
+"group__bc__tag__barometer.html#gaa2bc04c1598f956b3b707b31545c0b0d":[1,29,2]
 };
