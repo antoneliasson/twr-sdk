@@ -1,4 +1,7 @@
 <map id="bc_tca9534a_write_port" name="bc_tca9534a_write_port">
 <area shape="rect" id="node2" href="$group__bc__module__lcd.html#gaf2ab237ad87e874615bcddec5c0e7ca2" title="Initialize lcd. " alt="" coords="224,5,357,32"/>
-<area shape="rect" id="node3" href="$group__bc__tca9534a.html#ga9a611ff498af8f5e0145f2a21a6c662c" title="Write pin state. " alt="" coords="213,56,368,83"/>
+<area shape="rect" id="node3" href="$group__bc__module__lcd.html#ga751ff9742a3016f2c548128d671af78c" title="Lcd off. " alt="" coords="225,56,356,83"/>
+<area shape="rect" id="node4" href="$group__bc__module__lcd.html#ga0f2009d6390236d5486929e5685a7c2b" title="Lcd on. " alt="" coords="225,107,356,133"/>
+<area shape="rect" id="node5" href="$group__bc__module__lcd.html#ga74ecc0d0e324b24fb40ab451f98cd17a" title="Lcd update, send data. " alt="" coords="213,157,368,184"/>
+<area shape="rect" id="node6" href="$group__bc__tca9534a.html#ga9a611ff498af8f5e0145f2a21a6c662c" title="Write pin state. " alt="" coords="213,208,368,235"/>
 </map>

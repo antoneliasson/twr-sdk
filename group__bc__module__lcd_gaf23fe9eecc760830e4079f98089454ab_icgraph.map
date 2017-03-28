@@ -1,0 +1,6 @@
+<map id="bc_module_lcd_draw_pixel" name="bc_module_lcd_draw_pixel">
+<area shape="rect" id="node2" href="$group__bc__module__lcd.html#ga8365f330ecd5c17de94930a4d3745547" title="Lcd clear. " alt="" coords="213,8,357,35"/>
+<area shape="rect" id="node4" href="$group__bc__module__lcd.html#gadab6d9950ed01f33af4288470aa39178" title="Lcd draw char. " alt="" coords="197,60,373,87"/>
+<area shape="rect" id="node3" href="$group__bc__module__lcd.html#gaf2ab237ad87e874615bcddec5c0e7ca2" title="Initialize lcd. " alt="" coords="427,5,560,32"/>
+<area shape="rect" id="node5" href="$group__bc__module__lcd.html#ga845c0a14cb31788e064a45a94aa37595" title="Lcd draw string. " alt="" coords="421,57,565,98"/>
+</map>
