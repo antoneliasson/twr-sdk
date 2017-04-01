@@ -1,5 +1,7 @@
 var NAVTREEINDEX2 =
 {
+"group__bc__spi.html#ggabc91b706ba04834451a2bf5faa178112a020cdfd9ed1a600b33449ef46d785b4c":[1,28,0,2],
+"group__bc__spi.html#ggabc91b706ba04834451a2bf5faa178112a119741eb3b8af0650f7cc9e9ec9d2d33":[1,28,0,3],
 "group__bc__spi.html#ggabc91b706ba04834451a2bf5faa178112a734f022f618c8e12c2627f6b11715565":[1,28,0,1],
 "group__bc__spi.html#ggabc91b706ba04834451a2bf5faa178112ad8a14e5b10c8286d10a596940c12414c":[1,28,0,0],
 "group__bc__tag__barometer.html":[1,29],
@@ -128,8 +130,8 @@ var NAVTREEINDEX2 =
 "group__bc__wssfm10r1at.html#ggabf624504e1545ed64fa55905320dcd65aeabb1c9080409c05966bd70c7d393b4f":[1,39,1,3],
 "index.html":[0],
 "index.html":[],
-"jsmn_8c_source.html":[3,0,0,1,49],
-"jsmn_8h_source.html":[3,0,0,0,50],
+"jsmn_8c_source.html":[3,0,0,1,50],
+"jsmn_8h_source.html":[3,0,0,0,51],
 "modules.html":[1],
 "pages.html":[],
 "structbc__adc__config__t.html":[2,0,0],
@@ -227,7 +229,7 @@ var NAVTREEINDEX2 =
 "structbc__uart__t.html":[2,0,16],
 "structbc__uart__t.html#a22cb64a68efda00c0de074cabd5d655b":[2,0,16,2],
 "structbc__uart__t.html#a6778e4597bcd6e456522e0273bd4a553":[2,0,16,1],
-"structbc__uart__t.html#abe9bf83003fcb24dcd0fe5ab26824ff9":[2,0,16,0],
+"structbc__uart__t.html#a6b8214a96635732395eb5170e96eb331":[2,0,16,0],
 "structjsmn__parser.html":[2,0,17],
 "structjsmn__parser.html#a3d0d6e48d3d5b24262f9e0c2241dc456":[2,0,17,0],
 "structjsmn__parser.html#af11fcec48d9f1298909777a12f1d1e39":[2,0,17,2],
