@@ -16,7 +16,6 @@ var dir_1d7b98041e0ea635e761b4c525e79ea9 =
     [ "bc_hdc2080.h", "bc__hdc2080_8h_source.html", null ],
     [ "bc_hts221.h", "bc__hts221_8h_source.html", null ],
     [ "bc_i2c.h", "bc__i2c_8h_source.html", null ],
-    [ "bc_ir_rx.h", "bc__ir__rx_8h_source.html", null ],
     [ "bc_irq.h", "bc__irq_8h_source.html", null ],
     [ "bc_led.h", "bc__led_8h_source.html", null ],
     [ "bc_led_strip.h", "bc__led__strip_8h_source.html", null ],
