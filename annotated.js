@@ -12,6 +12,7 @@ var annotated =
     [ "bc_module_lcd_framebuffer_t", "structbc__module__lcd__framebuffer__t.html", "structbc__module__lcd__framebuffer__t" ],
     [ "bc_module_lcd_t", "structbc__module__lcd__t.html", "structbc__module__lcd__t" ],
     [ "bc_queue_t", "structbc__queue__t.html", "structbc__queue__t" ],
+    [ "bc_sc16is740_t", "structbc__sc16is740__t.html", "structbc__sc16is740__t" ],
     [ "bc_spirit1_t", "structbc__spirit1__t.html", "structbc__spirit1__t" ],
     [ "bc_tca9534a_t", "structbc__tca9534a__t.html", "structbc__tca9534a__t" ],
     [ "bc_uart_channel_setup_t", "structbc__uart__channel__setup__t.html", "structbc__uart__channel__setup__t" ],

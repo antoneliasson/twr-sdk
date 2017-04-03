@@ -17,6 +17,7 @@ var searchData=
   ['bc_5fled',['bc_led',['../group__bc__led.html',1,'']]],
   ['bc_5flis2dh12',['bc_lis2dh12',['../group__bc__lis2dh12.html',1,'']]],
   ['bc_5fmodule_5fclimate',['bc_module_climate',['../group__bc__module__climate.html',1,'']]],
+  ['bc_5fmodule_5fco2',['bc_module_co2',['../group__bc__module__co2.html',1,'']]],
   ['bc_5fmodule_5fencoder',['bc_module_encoder',['../group__bc__module__encoder.html',1,'']]],
   ['bc_5fmodule_5flcd',['bc_module_lcd',['../group__bc__module__lcd.html',1,'']]],
   ['bc_5fmodule_5fpir',['bc_module_pir',['../group__bc__module__pir.html',1,'']]],

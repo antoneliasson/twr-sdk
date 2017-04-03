@@ -12,6 +12,7 @@ var searchData=
   ['bc_5fmodule_5flcd_5fframebuffer_5ft',['bc_module_lcd_framebuffer_t',['../structbc__module__lcd__framebuffer__t.html',1,'']]],
   ['bc_5fmodule_5flcd_5ft',['bc_module_lcd_t',['../structbc__module__lcd__t.html',1,'']]],
   ['bc_5fqueue_5ft',['bc_queue_t',['../structbc__queue__t.html',1,'']]],
+  ['bc_5fsc16is740_5ft',['bc_sc16is740_t',['../structbc__sc16is740__t.html',1,'']]],
   ['bc_5fspirit1_5ft',['bc_spirit1_t',['../structbc__spirit1__t.html',1,'']]],
   ['bc_5ftca9534a_5ft',['bc_tca9534a_t',['../structbc__tca9534a__t.html',1,'']]],
   ['bc_5fuart_5fchannel_5fsetup_5ft',['bc_uart_channel_setup_t',['../structbc__uart__channel__setup__t.html',1,'']]],

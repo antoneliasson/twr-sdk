@@ -137,6 +137,8 @@ var searchData=
   ['bc_5fmodule_5fclimate_5fevent_5fupdate_5fhygrometer',['BC_MODULE_CLIMATE_EVENT_UPDATE_HYGROMETER',['../group__bc__module__climate.html#ggae08ac3d62bc11211a448fc70ebc5cd3fa843a5a93a4f98164715463a2155f7a32',1,'bc_module_climate.h']]],
   ['bc_5fmodule_5fclimate_5fevent_5fupdate_5flux_5fmeter',['BC_MODULE_CLIMATE_EVENT_UPDATE_LUX_METER',['../group__bc__module__climate.html#ggae08ac3d62bc11211a448fc70ebc5cd3faf7c3ac337966fdce80a952b34aaf857a',1,'bc_module_climate.h']]],
   ['bc_5fmodule_5fclimate_5fevent_5fupdate_5fthermometer',['BC_MODULE_CLIMATE_EVENT_UPDATE_THERMOMETER',['../group__bc__module__climate.html#ggae08ac3d62bc11211a448fc70ebc5cd3fa9a41d4b73df7ed75c5f1e5c954ccf71c',1,'bc_module_climate.h']]],
+  ['bc_5fmodule_5fco2_5fevent_5ferror',['BC_MODULE_CO2_EVENT_ERROR',['../group__bc__module__co2.html#gga1782425e1125137117faff31d6b58106a28d7a546913ef2295eb0d4582a58625e',1,'bc_module_co2.h']]],
+  ['bc_5fmodule_5fco2_5fevent_5fupdate',['BC_MODULE_CO2_EVENT_UPDATE',['../group__bc__module__co2.html#gga1782425e1125137117faff31d6b58106ab7ac9a8006b4370e9b1c22867dc6af53',1,'bc_module_co2.h']]],
   ['bc_5fmodule_5fencoder_5fevent_5fclick',['BC_MODULE_ENCODER_EVENT_CLICK',['../group__bc__module__encoder.html#gga05ee7d1261c5601857e9daafa780c322aabee3efa9ed63a03a98918fd6e00618d',1,'bc_module_encoder.h']]],
   ['bc_5fmodule_5fencoder_5fevent_5fhold',['BC_MODULE_ENCODER_EVENT_HOLD',['../group__bc__module__encoder.html#gga05ee7d1261c5601857e9daafa780c322a1c64a3978383dcd6e4b4954c38b814f4',1,'bc_module_encoder.h']]],
   ['bc_5fmodule_5fencoder_5fevent_5fpress',['BC_MODULE_ENCODER_EVENT_PRESS',['../group__bc__module__encoder.html#gga05ee7d1261c5601857e9daafa780c322a209f5dd6b5a290c1494b094c70738c8c',1,'bc_module_encoder.h']]],

@@ -4,12 +4,13 @@
 <area shape="rect" id="node6" href="$group__bc__lis2dh12.html#ga4e706e214a03b568e43b923931774160" title="Initialize LIS2DH12. " alt="" coords="147,259,261,285"/>
 <area shape="rect" id="node7" href="$group__bc__mpl3115a2.html#ga634445e187612f04ed034c3f95ef006e" title="Initialize MPL3115A2. " alt="" coords="139,5,269,32"/>
 <area shape="rect" id="node9" href="$group__bc__opt3001.html#ga3db4ea45d7c7b4cb5e63fda04802e1ba" title="Initialize OPT3001 driver. " alt="" coords="147,56,261,83"/>
-<area shape="rect" id="node11" href="$group__bc__tca9534a.html#gab392a5644d1d4ccab47c95f04b4786cf" title="Initialize TCA9534A. " alt="" coords="144,309,264,336"/>
-<area shape="rect" id="node13" href="$group__bc__tmp112.html#gafa5c6541860450a84023c16293d977ac" title="Initialize TMP112. " alt="" coords="149,107,259,133"/>
+<area shape="rect" id="node11" href="$group__bc__tca9534a.html#ga088ffb060685d4af0025f5630891bf65" title="Initialize SC16IS740. " alt="" coords="141,309,267,336"/>
+<area shape="rect" id="node12" href="$group__bc__tca9534a.html#gab392a5644d1d4ccab47c95f04b4786cf" title="Initialize TCA9534A. " alt="" coords="144,360,264,387"/>
+<area shape="rect" id="node14" href="$group__bc__tmp112.html#gafa5c6541860450a84023c16293d977ac" title="Initialize TMP112. " alt="" coords="149,107,259,133"/>
 <area shape="rect" id="node3" href="$group__bc__module__climate.html#gaeaa8aa7003f49a1741380c2cdd07e322" title="Initialize BigClown Climate Module. " alt="" coords="319,107,478,133"/>
 <area shape="rect" id="node4" href="$group__bc__tag__humidity.html#ga36ae45e289b8a7d6106089665910d57d" title="Initialize BigClown Humidity Tag. " alt="" coords="328,208,469,235"/>
 <area shape="rect" id="node8" href="$group__bc__tag__barometer.html#ga9ae5b1f4d56c6d1f4e3e2acc3f0ed0d2" title="Initialize BigClown Barometer Tag. " alt="" coords="323,5,474,32"/>
 <area shape="rect" id="node10" href="$group__bc__tag__lux__meter.html#ga0b3fdcc39e460870d8c98e0824002203" title="Initialize BigClown Lux Meter Tag. " alt="" coords="324,56,473,83"/>
-<area shape="rect" id="node12" href="$group__bc__module__lcd.html#gaf2ab237ad87e874615bcddec5c0e7ca2" title="Initialize lcd. " alt="" coords="332,309,465,336"/>
-<area shape="rect" id="node14" href="$group__bc__tag__temperature.html#gad01d8bc1a7320cb8dbb0f1306d333783" title="Initialize BigClown Temperature Tag. " alt="" coords="318,157,479,184"/>
+<area shape="rect" id="node13" href="$group__bc__module__lcd.html#gaf2ab237ad87e874615bcddec5c0e7ca2" title="Initialize lcd. " alt="" coords="332,360,465,387"/>
+<area shape="rect" id="node15" href="$group__bc__tag__temperature.html#gad01d8bc1a7320cb8dbb0f1306d333783" title="Initialize BigClown Temperature Tag. " alt="" coords="318,157,479,184"/>
 </map>

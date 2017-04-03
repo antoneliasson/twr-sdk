@@ -1,0 +1,4 @@
+<map id="bc_sc16is740_reset_fifo" name="bc_sc16is740_reset_fifo">
+<area shape="rect" id="node2" href="$group__bc__i2c.html#ga67a958f1691787b61dae034f441513a3" title="Write 1 byte to I2C channel. " alt="" coords="217,5,333,32"/>
+<area shape="rect" id="node3" href="$group__bc__i2c.html#gaaaf4f051d096dc4469495b710037340f" title="Write to I2C channel. " alt="" coords="382,5,477,32"/>
+</map>
