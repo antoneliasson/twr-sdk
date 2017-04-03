@@ -1,5 +1,6 @@
 var NAVTREEINDEX2 =
 {
+"group__bc__spi.html":[1,30],
 "group__bc__spi.html#ga00fa848c8a590fbb7ba1d567a749a87c":[1,30,4],
 "group__bc__spi.html#ga15f700524ef3ae920c419f4198a32676":[1,30,1],
 "group__bc__spi.html#ga3bb33463dd1112b5a928a736c9753324":[1,30,3],
@@ -151,7 +152,7 @@ var NAVTREEINDEX2 =
 "index.html":[0],
 "index.html":[],
 "jsmn_8c_source.html":[3,0,0,1,52],
-"jsmn_8h_source.html":[3,0,0,0,52],
+"jsmn_8h_source.html":[3,0,0,0,53],
 "modules.html":[1],
 "pages.html":[],
 "structbc__adc__config__t.html":[2,0,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX2 =
 "structbc__uart__channel__setup__t.html#ad3d89c195cbd5c1121b5eaee1161ccce":[2,0,15,7],
 "structbc__uart__channel__setup__t.html#ae242bf742ba619d49a607e3dbc342fc4":[2,0,15,8],
 "structbc__uart__param__t.html":[1,38,0],
-"structbc__uart__param__t.html#ac5961f5337a573bb3e7e6f97f53e35de":[1,38,0,0],
-"structbc__uart__t.html":[2,0,17]
+"structbc__uart__param__t.html#ac5961f5337a573bb3e7e6f97f53e35de":[1,38,0,0]
 };
