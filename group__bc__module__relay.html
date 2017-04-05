@@ -130,9 +130,9 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga0427fb94a68fdcd760443e3cbed4d20c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bc__module__relay.html#ga0427fb94a68fdcd760443e3cbed4d20c">bc_module_relay_init</a> (<a class="el" href="group__bc__module__relay.html#ga4759d667ac9cc15469d15d5dcd3e531b">bc_module_relay_t</a> *self)</td></tr>
-<tr class="memdesc:ga0427fb94a68fdcd760443e3cbed4d20c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize BigClown Relay Module.  <a href="#ga0427fb94a68fdcd760443e3cbed4d20c">More...</a><br/></td></tr>
-<tr class="separator:ga0427fb94a68fdcd760443e3cbed4d20c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1ac61b4de802098884ed00669a044e87"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bc__module__relay.html#ga1ac61b4de802098884ed00669a044e87">bc_module_relay_init</a> (<a class="el" href="group__bc__module__relay.html#ga4759d667ac9cc15469d15d5dcd3e531b">bc_module_relay_t</a> *self, uint8_t i2c_address)</td></tr>
+<tr class="memdesc:ga1ac61b4de802098884ed00669a044e87"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize BigClown Relay Module.  <a href="#ga1ac61b4de802098884ed00669a044e87">More...</a><br/></td></tr>
+<tr class="separator:ga1ac61b4de802098884ed00669a044e87"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5160a03a480acd83defaa000ccdb5228"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bc__module__relay.html#ga5160a03a480acd83defaa000ccdb5228">bc_module_relay_set_state</a> (<a class="el" href="group__bc__module__relay.html#ga4759d667ac9cc15469d15d5dcd3e531b">bc_module_relay_t</a> *self, bool state)</td></tr>
 <tr class="memdesc:ga5160a03a480acd83defaa000ccdb5228"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set relay to specified state.  <a href="#ga5160a03a480acd83defaa000ccdb5228">More...</a><br/></td></tr>
 <tr class="separator:ga5160a03a480acd83defaa000ccdb5228"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -156,7 +156,7 @@ How to use this driver</h1>
 <div class="line"></div>
 <div class="line"><span class="keywordtype">void</span> application_init(<span class="keywordtype">void</span>)</div>
 <div class="line">{</div>
-<div class="line">    <a class="code" href="group__bc__module__relay.html#ga0427fb94a68fdcd760443e3cbed4d20c">bc_module_relay_init</a>(&amp;relay);</div>
+<div class="line">    <a class="code" href="group__bc__module__relay.html#ga1ac61b4de802098884ed00669a044e87">bc_module_relay_init</a>(&amp;relay);</div>
 <div class="line">}</div>
 <div class="line"></div>
 <div class="line"><span class="comment">// If you want to set relay to TRUE state...</span></div>
@@ -191,11 +191,11 @@ How to use this driver</h1>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Relay state </dd></dl>
 
-<p>Definition at line <a class="el" href="bc__module__relay_8c_source.html#l00226">226</a> of file <a class="el" href="bc__module__relay_8c_source.html">bc_module_relay.c</a>.</p>
+<p>Definition at line <a class="el" href="bc__module__relay_8c_source.html#l00224">224</a> of file <a class="el" href="bc__module__relay_8c_source.html">bc_module_relay.c</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ga0427fb94a68fdcd760443e3cbed4d20c"></a>
+<a class="anchor" id="ga1ac61b4de802098884ed00669a044e87"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -203,8 +203,18 @@ How to use this driver</h1>
           <td class="memname">bool bc_module_relay_init </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__bc__module__relay.html#ga4759d667ac9cc15469d15d5dcd3e531b">bc_module_relay_t</a> *&#160;</td>
-          <td class="paramname"><em>self</em></td><td>)</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>i2c_address</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -217,7 +227,7 @@ How to use this driver</h1>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="bc__module__relay_8c_source.html#l00033">33</a> of file <a class="el" href="bc__module__relay_8c_source.html">bc_module_relay.c</a>.</p>
+<p>Definition at line <a class="el" href="bc__module__relay_8c_source.html#l00030">30</a> of file <a class="el" href="bc__module__relay_8c_source.html">bc_module_relay.c</a>.</p>
 
 </div>
 </div>
@@ -261,7 +271,7 @@ How to use this driver</h1>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="bc__module__relay_8c_source.html#l00216">216</a> of file <a class="el" href="bc__module__relay_8c_source.html">bc_module_relay.c</a>.</p>
+<p>Definition at line <a class="el" href="bc__module__relay_8c_source.html#l00214">214</a> of file <a class="el" href="bc__module__relay_8c_source.html">bc_module_relay.c</a>.</p>
 
 </div>
 </div>
@@ -298,9 +308,9 @@ How to use this driver</h1>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="bc__module__relay_8c_source.html#l00195">195</a> of file <a class="el" href="bc__module__relay_8c_source.html">bc_module_relay.c</a>.</p>
+<p>Definition at line <a class="el" href="bc__module__relay_8c_source.html#l00193">193</a> of file <a class="el" href="bc__module__relay_8c_source.html">bc_module_relay.c</a>.</p>
 
-<p>Referenced by <a class="el" href="bc__module__relay_8c_source.html#l00204">bc_module_relay_toggle()</a>.</p>
+<p>Referenced by <a class="el" href="bc__module__relay_8c_source.html#l00202">bc_module_relay_toggle()</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -335,7 +345,7 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="bc__module__relay_8c_source.html#l00204">204</a> of file <a class="el" href="bc__module__relay_8c_source.html">bc_module_relay.c</a>.</p>
+<p>Definition at line <a class="el" href="bc__module__relay_8c_source.html#l00202">202</a> of file <a class="el" href="bc__module__relay_8c_source.html">bc_module_relay.c</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
