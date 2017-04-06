@@ -210,6 +210,7 @@ var NAVTREEINDEX2 =
 "structbc__module__lcd__framebuffer__t.html#aef82da3aed286467deeb379c510fbd6a":[1,19,0,0],
 "structbc__module__lcd__t.html":[2,0,10],
 "structbc__module__lcd__t.html#a0ce63bccbef56e3fd4c7f10f11487971":[2,0,10,2],
+"structbc__module__lcd__t.html#a3dcab677c3575d019a9e419865d6a28c":[2,0,10,7],
 "structbc__module__lcd__t.html#a4738d1694900646dd72d607221f4696f":[2,0,10,4],
 "structbc__module__lcd__t.html#a4b70270a0321a71dcf0481734eefbe0d":[2,0,10,5],
 "structbc__module__lcd__t.html#a651d5c51e1aa783919c6cfcbb98f36df":[2,0,10,6],
@@ -248,6 +249,5 @@ var NAVTREEINDEX2 =
 "structbc__uart__channel__setup__t.html#ab6545b14efafeb7ede323d61611ff76c":[2,0,15,4],
 "structbc__uart__channel__setup__t.html#ad3d89c195cbd5c1121b5eaee1161ccce":[2,0,15,7],
 "structbc__uart__channel__setup__t.html#ae242bf742ba619d49a607e3dbc342fc4":[2,0,15,8],
-"structbc__uart__param__t.html":[1,38,0],
-"structbc__uart__param__t.html#ac5961f5337a573bb3e7e6f97f53e35de":[1,38,0,0]
+"structbc__uart__param__t.html":[1,38,0]
 };

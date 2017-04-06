@@ -22,7 +22,7 @@ var NAVTREEINDEX =
 "annotated.html",
 "group__bc__gpio.html#gac3726d1184678159614d9c5296579534",
 "group__bc__spi.html",
-"structbc__uart__t.html"
+"structbc__uart__param__t.html#ac5961f5337a573bb3e7e6f97f53e35de"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
