@@ -380,14 +380,16 @@ $(document).ready(function(){initNavTree('bc__module__lcd_8c_source.html','');})
 <div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;</div>
 <div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> _bc_module_lcd_task(<span class="keywordtype">void</span> *param)</div>
 <div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;{</div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;    uint8_t spi_data[2] = {_bc_module_lcd.vcom, 0x00};</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;    (void) param;</div>
 <div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;</div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;    _bc_module_lcd_spi_transfer(spi_data, <span class="keyword">sizeof</span>(spi_data));</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;    uint8_t spi_data[2] = {_bc_module_lcd.vcom, 0x00};</div>
 <div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;</div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;    _bc_module_lcd.vcom ^= 0x40;</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;    _bc_module_lcd_spi_transfer(spi_data, <span class="keyword">sizeof</span>(spi_data));</div>
 <div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;</div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;    <a class="code" href="group__bc__scheduler.html#gace099e37ceac6a2338ade5ceb13c528c">bc_scheduler_plan_current_relative</a>(_BC_MODULE_LCD_VCOM_PERIOD);</div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;}</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;    _bc_module_lcd.vcom ^= 0x40;</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;    <a class="code" href="group__bc__scheduler.html#gace099e37ceac6a2338ade5ceb13c528c">bc_scheduler_plan_current_relative</a>(_BC_MODULE_LCD_VCOM_PERIOD);</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;}</div>
 <div class="ttc" id="group__bc__module__lcd_html_ga74ecc0d0e324b24fb40ab451f98cd17a"><div class="ttname"><a href="group__bc__module__lcd.html#ga74ecc0d0e324b24fb40ab451f98cd17a">bc_module_lcd_update</a></div><div class="ttdeci">void bc_module_lcd_update(void)</div><div class="ttdoc">Lcd update, send data. </div><div class="ttdef"><b>Definition:</b> <a href="bc__module__lcd_8c_source.html#l00228">bc_module_lcd.c:228</a></div></div>
 <div class="ttc" id="structbc__module__lcd__framebuffer__t_html"><div class="ttname"><a href="structbc__module__lcd__framebuffer__t.html">bc_module_lcd_framebuffer_t</a></div><div class="ttdef"><b>Definition:</b> <a href="bc__module__lcd_8h_source.html#l00028">bc_module_lcd.h:28</a></div></div>
 <div class="ttc" id="group__bc__spi_html_gad026b6850ffbbc2b538add00f125b822"><div class="ttname"><a href="group__bc__spi.html#gad026b6850ffbbc2b538add00f125b822">bc_spi_transfer</a></div><div class="ttdeci">void bc_spi_transfer(const void *source, void *destination, size_t length)</div><div class="ttdoc">Execute SPI transfer. </div><div class="ttdef"><b>Definition:</b> <a href="bc__spi_8c_source.html#l00122">bc_spi.c:122</a></div></div>
