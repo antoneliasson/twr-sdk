@@ -6,6 +6,7 @@ var structbc__module__lcd__t =
     [ "framebuffer", "structbc__module__lcd__t.html#a6feb1707e8cc1d61cb3758942464432c", null ],
     [ "gpio", "structbc__module__lcd__t.html#a4738d1694900646dd72d607221f4696f", null ],
     [ "rotation", "structbc__module__lcd__t.html#a4b70270a0321a71dcf0481734eefbe0d", null ],
+    [ "task_id", "structbc__module__lcd__t.html#a72d4b3bf0a4909be9fb5bf0fce8cf244", null ],
     [ "tca9534a", "structbc__module__lcd__t.html#a651d5c51e1aa783919c6cfcbb98f36df", null ],
     [ "vcom", "structbc__module__lcd__t.html#a3dcab677c3575d019a9e419865d6a28c", null ]
 ];

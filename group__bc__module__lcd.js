@@ -7,6 +7,7 @@ var group__bc__module__lcd =
       [ "BC_MODULE_LCD_EVENT_DONE", "group__bc__module__lcd.html#gga9f63eacc07e4f37d69b3d3bcd876af15a4803cb94379530cdf4d3aef55418a0a5", null ]
     ] ],
     [ "bc_module_lcd_clear", "group__bc__module__lcd.html#ga8365f330ecd5c17de94930a4d3745547", null ],
+    [ "bc_module_lcd_clear_memory_command", "group__bc__module__lcd.html#gadd5053d28e096ed3dc6f09ecf7cb39a2", null ],
     [ "bc_module_lcd_draw_char", "group__bc__module__lcd.html#gadab6d9950ed01f33af4288470aa39178", null ],
     [ "bc_module_lcd_draw_pixel", "group__bc__module__lcd.html#gaf23fe9eecc760830e4079f98089454ab", null ],
     [ "bc_module_lcd_draw_string", "group__bc__module__lcd.html#ga845c0a14cb31788e064a45a94aa37595", null ],

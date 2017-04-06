@@ -1,5 +1,7 @@
 var NAVTREEINDEX3 =
 {
+"structbc__uart__channel__setup__t.html#ae242bf742ba619d49a607e3dbc342fc4":[2,0,15,8],
+"structbc__uart__param__t.html":[1,38,0],
 "structbc__uart__param__t.html#ac5961f5337a573bb3e7e6f97f53e35de":[1,38,0,0],
 "structbc__uart__t.html":[2,0,17],
 "structbc__uart__t.html#a22cb64a68efda00c0de074cabd5d655b":[2,0,17,2],
