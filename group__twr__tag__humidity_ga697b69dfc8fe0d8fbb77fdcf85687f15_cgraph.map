@@ -1,0 +1,9 @@
+<map id="twr_tag_humidity_get_temperature_celsius" name="twr_tag_humidity_get_temperature_celsius">
+<area shape="rect" id="node1" title="Get measured temperature in degrees of Celsius." alt="" coords="5,71,169,112"/>
+<area shape="rect" id="node2" href="$group__twr__hdc2080.html#ga664149b182a36deca7f52811124518d4" title="Get measured temperature in degrees of Celsius." alt="" coords="217,5,439,47"/>
+<area shape="rect" id="node4" href="$group__twr__sht20.html#ga0a07c6a7c8c35e1b1c97be19731829ac" title="Get measured temperature in degrees of Celsius." alt="" coords="227,71,429,112"/>
+<area shape="rect" id="node6" href="$group__twr__sht30.html#ga135e1d3f98d6536b518faaf949b57cbe" title="Get measured temperature in degrees of Celsius." alt="" coords="227,136,429,177"/>
+<area shape="rect" id="node3" href="$group__twr__hdc2080.html#ga6b44777c6053b3532814297ef292556c" title="Get measured temperature as raw value." alt="" coords="487,13,739,39"/>
+<area shape="rect" id="node5" href="$group__twr__sht20.html#ga3a3a624088c96171349e7554c96d5ec0" title="Get measured temperature as raw value." alt="" coords="496,78,729,105"/>
+<area shape="rect" id="node7" href="$group__twr__sht30.html#gaf4d574738946d64e0f5dac43bf22e0b1" title="Get measured temperature as raw value." alt="" coords="496,143,729,170"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="twr_cy8cmbr3102_is_touch" name="twr_cy8cmbr3102_is_touch">
+<area shape="rect" id="node1" title="Is touch." alt="" coords="5,5,161,47"/>
+<area shape="rect" id="node2" href="$group__twr__i2c.html#gaedddada7a7d84f001b34bb42c731cf1f" title="Memory read 1 byte from I2C channel." alt="" coords="209,13,400,39"/>
+<area shape="rect" id="node3" href="$group__twr__i2c.html#ga95b02a5c1d0636f36d58b7fc212d9174" title="Memory read from I2C channel." alt="" coords="448,13,615,39"/>
+<area shape="rect" id="node4" href="$group__twr__ds28e17.html#ga5778c65f5dd6eb1b541f2350422ca015" title="Memory read from I2C." alt="" coords="663,13,865,39"/>
+</map>

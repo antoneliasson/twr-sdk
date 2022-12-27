@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['jsmn_5fparser',['jsmn_parser',['../structjsmn__parser.html',1,'']]],
-  ['jsmntok_5ft',['jsmntok_t',['../structjsmntok__t.html',1,'']]]
+  ['config_5fheader_5ft_1737',['config_header_t',['../structconfig__header__t.html',1,'']]]
 ];

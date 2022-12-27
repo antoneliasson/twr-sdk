@@ -1,0 +1,6 @@
+<map id="twr_sgp30_measure" name="twr_sgp30_measure">
+<area shape="rect" id="node1" title="Start measurement manually." alt="" coords="449,42,603,69"/>
+<area shape="rect" id="node2" href="$group__twr__sgp30.html#ga88c82a88e3e745f0bd652b6433f69f3c" title="Set measurement interval." alt="" coords="233,5,401,47"/>
+<area shape="rect" id="node4" href="$group__twr__tag__voc.html#ga81efc3db2d64f9075c3f65e05e9d350a" title="Start measurement manually." alt="" coords="235,71,400,98"/>
+<area shape="rect" id="node3" href="$group__twr__tag__voc.html#ga2654afd1d008d7ce4a614250637e7c24" title="Set measurement interval." alt="" coords="5,5,185,47"/>
+</map>

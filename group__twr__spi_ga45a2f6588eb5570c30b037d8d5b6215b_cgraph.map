@@ -1,0 +1,7 @@
+<map id="twr_spi_async_transfer" name="twr_spi_async_transfer">
+<area shape="rect" id="node1" title="Execute async SPI transfer." alt="" coords="5,56,177,83"/>
+<area shape="rect" id="node2" href="$group__twr__dma.html#ga0a3b3a12d52c011c18fc5eba31e4cf2a" title="Configure DMA channel." alt="" coords="225,31,408,57"/>
+<area shape="rect" id="node5" href="$group__twr__dma.html#ga14113380c3f8e4f0e4d478d6775e0dd4" title="Start DMA channel." alt="" coords="234,81,399,108"/>
+<area shape="rect" id="node3" href="$group__twr__irq.html#ga4bf4bcae31426886c47fd4dc9b81ce99" title="Disable interrupt requests globally (call can be nested)" alt="" coords="456,5,577,32"/>
+<area shape="rect" id="node4" href="$group__twr__irq.html#gaf133f90ab90bb3cb13750b0e8d02792f" title="Enable interrupt requests globally (call can be nested)" alt="" coords="457,56,576,83"/>
+</map>

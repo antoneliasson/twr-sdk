@@ -1,0 +1,5 @@
+<map id="twr_ds28e17_read" name="twr_ds28e17_read">
+<area shape="rect" id="node1" title="Read from I2C." alt="" coords="409,5,551,32"/>
+<area shape="rect" id="node2" href="$group__twr__i2c.html#gab21971b0e27ae85a568aa4cf21c0b9df" title="Read from I2C channel." alt="" coords="256,5,361,32"/>
+<area shape="rect" id="node3" href="$group__twr__zssc3123.html#ga43b4449d8101b0ee2b6cd1f5b46cfd04" title="Write to eeprom, work only with command mode." alt="" coords="5,5,208,32"/>
+</map>

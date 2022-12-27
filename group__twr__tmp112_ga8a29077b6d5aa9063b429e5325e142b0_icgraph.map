@@ -1,0 +1,5 @@
+<map id="twr_tmp112_set_event_handler" name="twr_tmp112_set_event_handler">
+<area shape="rect" id="node1" title="Set callback function." alt="" coords="236,27,407,69"/>
+<area shape="rect" id="node2" href="$group__twr__module__climate.html#gac0193120827c4b27167e0bdfba926b64" title="Initialize HARDWARIO Climate Module." alt="" coords="5,5,188,32"/>
+<area shape="rect" id="node3" href="$group__twr__tag__temperature.html#ga1174d5ac56881fb238272932a9d9232b" title="Set callback function." alt="" coords="17,57,176,98"/>
+</map>

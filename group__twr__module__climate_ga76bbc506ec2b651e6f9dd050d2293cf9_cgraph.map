@@ -1,0 +1,4 @@
+<map id="twr_module_climate_get_pressure_pascal" name="twr_module_climate_get_pressure_pascal">
+<area shape="rect" id="node1" title="Get measured pressure in Pascal." alt="" coords="5,5,168,47"/>
+<area shape="rect" id="node2" href="$group__twr__mpl3115a2.html#ga81e732c3d6e9606bbeb09c6c792a88b7" title="Get measured pressured in Pascal." alt="" coords="216,5,431,47"/>
+</map>

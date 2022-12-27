@@ -1,0 +1,9 @@
+<map id="twr_sc16is740_write" name="twr_sc16is740_write">
+<area shape="rect" id="node1" title="Write." alt="" coords="5,42,160,69"/>
+<area shape="rect" id="node2" href="$group__twr__i2c.html#ga8144e77db86d0a54a6a50c7e7c9140b6" title="Memory write to I2C channel." alt="" coords="220,13,391,39"/>
+<area shape="rect" id="node4" href="$group__twr__sc16is740.html#gafe35864dab6df601fdd74d5a8af899cf" title="Get TX FIXO space available." alt="" coords="208,64,403,105"/>
+<area shape="rect" id="node3" href="$group__twr__ds28e17.html#gaa2a316779ca759c63f351179ef9bfc5a" title="Memory write to I2C." alt="" coords="463,5,629,47"/>
+<area shape="rect" id="node5" href="$group__twr__i2c.html#gaedddada7a7d84f001b34bb42c731cf1f" title="Memory read 1 byte from I2C channel." alt="" coords="451,71,641,98"/>
+<area shape="rect" id="node6" href="$group__twr__i2c.html#ga95b02a5c1d0636f36d58b7fc212d9174" title="Memory read from I2C channel." alt="" coords="689,71,856,98"/>
+<area shape="rect" id="node7" href="$group__twr__ds28e17.html#ga5778c65f5dd6eb1b541f2350422ca015" title="Memory read from I2C." alt="" coords="904,71,1107,98"/>
+</map>

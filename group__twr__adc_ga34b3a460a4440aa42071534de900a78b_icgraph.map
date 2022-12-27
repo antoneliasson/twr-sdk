@@ -1,0 +1,5 @@
+<map id="twr_adc_calibration" name="twr_adc_calibration">
+<area shape="rect" id="node1" title="Calibration." alt="" coords="375,5,524,32"/>
+<area shape="rect" id="node2" href="$group__twr__adc.html#gaf3f471573f748780f775aa40f7ef4d99" title="Initialize ADC converter." alt="" coords="225,5,327,32"/>
+<area shape="rect" id="node3" href="$group__twr__analog__sensor.html#ga8d54c4b9dd4a4c2873dba319fe85763d" title="Initialize generic analog sensor." alt="" coords="5,5,177,32"/>
+</map>

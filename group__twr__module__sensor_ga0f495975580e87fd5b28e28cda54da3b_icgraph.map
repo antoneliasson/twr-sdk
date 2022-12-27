@@ -1,0 +1,4 @@
+<map id="twr_module_sensor_set_mode" name="twr_module_sensor_set_mode">
+<area shape="rect" id="node1" title="Set output mode of Sensor Module channel." alt="" coords="223,5,443,32"/>
+<area shape="rect" id="node2" href="$group__twr__pulse__counter.html#ga0d8120cc233f7a2a2a515b5dac93610b" title="Initialize pulse counter." alt="" coords="5,5,175,32"/>
+</map>

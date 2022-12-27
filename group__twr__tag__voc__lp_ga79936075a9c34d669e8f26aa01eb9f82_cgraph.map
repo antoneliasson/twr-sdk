@@ -1,0 +1,4 @@
+<map id="twr_tag_voc_lp_set_compensation" name="twr_tag_voc_lp_set_compensation">
+<area shape="rect" id="node1" title="Set sensor compensation (absolute humidity is calculated from temperature and relative humidity)" alt="" coords="5,5,152,47"/>
+<area shape="rect" id="node2" href="$group__twr__sgpc3.html#ga342896f1abc29b9c1b4eb439fa141acf" title="Set sensor compensation (absolute humidity is calculated from temperature and relative humidity)" alt="" coords="200,13,415,39"/>
+</map>

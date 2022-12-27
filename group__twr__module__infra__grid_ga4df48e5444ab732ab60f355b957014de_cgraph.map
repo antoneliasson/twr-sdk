@@ -1,0 +1,6 @@
+<map id="twr_module_infra_grid_read_thermistor" name="twr_module_infra_grid_read_thermistor">
+<area shape="rect" id="node1" title="Read and return thermistor temperature sensor value." alt="" coords="5,5,173,47"/>
+<area shape="rect" id="node2" href="$group__twr__i2c.html#gaedddada7a7d84f001b34bb42c731cf1f" title="Memory read 1 byte from I2C channel." alt="" coords="221,13,412,39"/>
+<area shape="rect" id="node3" href="$group__twr__i2c.html#ga95b02a5c1d0636f36d58b7fc212d9174" title="Memory read from I2C channel." alt="" coords="460,13,627,39"/>
+<area shape="rect" id="node4" href="$group__twr__ds28e17.html#ga5778c65f5dd6eb1b541f2350422ca015" title="Memory read from I2C." alt="" coords="675,13,877,39"/>
+</map>

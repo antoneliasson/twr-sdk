@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['size',['size',['../structbc__fifo__t.html#ae6e019745a8003dda87347011b72ac8a',1,'bc_fifo_t']]]
+  ['enable_2641',['enable',['../structtwr__analog__sensor__driver__t.html#a8f1c5937a35cd5bf47c29cf71dc115fe',1,'twr_analog_sensor_driver_t']]]
 ];

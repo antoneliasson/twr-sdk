@@ -1,4 +1,0 @@
-<map id="bc_tag_lux_meter_get_luminosity_lux" name="bc_tag_lux_meter_get_luminosity_lux">
-<area shape="rect" id="node2" href="$group__bc__opt3001.html#gafba93b22c9d067ecaa5ea8d7462fe4b5" title="Get measured luminosity in lux. " alt="" coords="206,12,410,39"/>
-<area shape="rect" id="node3" href="$group__bc__opt3001.html#gacf21436b58d187c8e5d95571a74e623f" title="Get measured luminosity as raw value. " alt="" coords="459,12,667,39"/>
-</map>

@@ -1,0 +1,10 @@
+<map id="twr_tag_humidity_get_humidity_percentage" name="twr_tag_humidity_get_humidity_percentage">
+<area shape="rect" id="node1" title="Get measured humidity as percentage." alt="" coords="5,104,172,145"/>
+<area shape="rect" id="node2" href="$group__twr__hdc2080.html#ga9cd03de810f829e8400c97e690632c8b" title="Get measured humidity as percentage." alt="" coords="220,5,419,47"/>
+<area shape="rect" id="node4" href="$group__twr__hts221.html#gaa29a35ef0cd7781c8442ec23baa31e2a" title="Get measured humidity as percentage." alt="" coords="226,71,413,112"/>
+<area shape="rect" id="node5" href="$group__twr__sht20.html#ga910fa43544abc1a221e38ffab8e34fb8" title="Get measured humidity as percentage." alt="" coords="230,136,409,177"/>
+<area shape="rect" id="node7" href="$group__twr__sht30.html#gab605eac250c0ea05fdff27ecaee3b3fa" title="Get measured humidity as percentage." alt="" coords="230,201,409,243"/>
+<area shape="rect" id="node3" href="$group__twr__hdc2080.html#gae7097a9ba494f1e61b16a221284ecaad" title="Get measured humidity as raw value." alt="" coords="467,13,696,39"/>
+<area shape="rect" id="node6" href="$group__twr__sht20.html#ga5eec89523420b90f8aef2834b02d84aa" title="Get measured humidity as raw value." alt="" coords="476,143,687,170"/>
+<area shape="rect" id="node8" href="$group__twr__sht30.html#gafab63a72b008888efa24a57600fe6d3b" title="Get measured humidity as raw value." alt="" coords="476,209,687,235"/>
+</map>

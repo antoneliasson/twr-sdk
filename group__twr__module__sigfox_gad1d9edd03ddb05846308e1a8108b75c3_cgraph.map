@@ -1,0 +1,5 @@
+<map id="twr_module_sigfox_continuous_wave" name="twr_module_sigfox_continuous_wave">
+<area shape="rect" id="node1" title="Generate continuous wave command." alt="" coords="5,13,272,39"/>
+<area shape="rect" id="node2" href="$group__twr__wssfm10r1at.html#gaffcd9ea4dfd89fee06ca56150a419a8a" title="Generate continuous wave command." alt="" coords="320,13,575,39"/>
+<area shape="rect" id="node3" href="$group__twr__wssfm10r1at.html#ga1de71358c973e64cf0d4eb147e1c7aea" title="Check if modem is ready for commands." alt="" coords="623,5,776,47"/>
+</map>

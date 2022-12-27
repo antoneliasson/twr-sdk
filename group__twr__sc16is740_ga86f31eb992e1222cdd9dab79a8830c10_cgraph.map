@@ -1,0 +1,10 @@
+<map id="twr_sc16is740_read" name="twr_sc16is740_read">
+<area shape="rect" id="node1" title="Read." alt="" coords="5,31,156,57"/>
+<area shape="rect" id="node2" href="$group__twr__i2c.html#ga95b02a5c1d0636f36d58b7fc212d9174" title="Memory read from I2C channel." alt="" coords="673,5,840,32"/>
+<area shape="rect" id="node4" href="$group__twr__sc16is740.html#gacf4cd9e7237019023d396ad55a27513c" title="Get RX FIXO available data." alt="" coords="204,31,387,57"/>
+<area shape="rect" id="node6" href="$group__twr__tick.html#ga707c04751cedb90e01df66ba3f8b1a13" title="Get absolute timestamp since start of program." alt="" coords="244,81,347,108"/>
+<area shape="rect" id="node3" href="$group__twr__ds28e17.html#ga5778c65f5dd6eb1b541f2350422ca015" title="Memory read from I2C." alt="" coords="888,5,1091,32"/>
+<area shape="rect" id="node5" href="$group__twr__i2c.html#gaedddada7a7d84f001b34bb42c731cf1f" title="Memory read 1 byte from I2C channel." alt="" coords="435,31,625,57"/>
+<area shape="rect" id="node7" href="$group__twr__irq.html#ga4bf4bcae31426886c47fd4dc9b81ce99" title="Disable interrupt requests globally (call can be nested)" alt="" coords="469,81,591,108"/>
+<area shape="rect" id="node8" href="$group__twr__irq.html#gaf133f90ab90bb3cb13750b0e8d02792f" title="Enable interrupt requests globally (call can be nested)" alt="" coords="471,132,589,159"/>
+</map>

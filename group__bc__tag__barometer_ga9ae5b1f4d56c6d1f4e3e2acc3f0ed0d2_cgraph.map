@@ -1,5 +1,0 @@
-<map id="bc_tag_barometer_init" name="bc_tag_barometer_init">
-<area shape="rect" id="node2" href="$group__bc__mpl3115a2.html#ga634445e187612f04ed034c3f95ef006e" title="Initialize MPL3115A2. " alt="" coords="205,31,336,57"/>
-<area shape="rect" id="node3" href="$group__bc__i2c.html#ga8f29242288303f0328c6514068e516fa" title="Initialize I2C channel. " alt="" coords="417,5,501,32"/>
-<area shape="rect" id="node4" href="$group__bc__scheduler.html#gac6e2fa9155567fb1f32a8b8b563e2f30" title="Register task in scheduler. " alt="" coords="384,56,533,83"/>
-</map>

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['memory_5faddress',['memory_address',['../structbc__i2c__tranfer__t.html#a8ea2cc0345efb417babe261e171997c4',1,'bc_i2c_tranfer_t']]]
+  ['enable_19',['enable',['../structtwr__analog__sensor__driver__t.html#a8f1c5937a35cd5bf47c29cf71dc115fe',1,'twr_analog_sensor_driver_t']]]
 ];

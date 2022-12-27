@@ -1,0 +1,5 @@
+<map id="twr_ds2484_busy_wait" name="twr_ds2484_busy_wait">
+<area shape="rect" id="node1" title="Wait until not busy." alt="" coords="204,31,375,57"/>
+<area shape="rect" id="node2" href="$group__twr__ds2484.html#gaceb83a2f35ca8f7b979efcd3b69ba947" title="Disable DS2484." alt="" coords="5,5,156,32"/>
+<area shape="rect" id="node3" href="$group__twr__ds2484.html#ga760e2bdd2cf5f11c5f2a4a0128244402" title="Reset the 1&#45;Wire bus and return the presence of any device." alt="" coords="12,56,149,83"/>
+</map>

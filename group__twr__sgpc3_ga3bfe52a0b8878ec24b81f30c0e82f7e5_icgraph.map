@@ -1,0 +1,6 @@
+<map id="twr_sgpc3_measure" name="twr_sgpc3_measure">
+<area shape="rect" id="node1" title="Start measurement manually." alt="" coords="432,42,584,69"/>
+<area shape="rect" id="node2" href="$group__twr__sgpc3.html#ga33b9a2231e044403f00eb95b84d9be22" title="Set measurement interval." alt="" coords="209,5,375,47"/>
+<area shape="rect" id="node4" href="$group__twr__tag__voc__lp.html#ga6c9e47d4075243bfab11cec67c12969a" title="Start measurement manually." alt="" coords="200,71,384,98"/>
+<area shape="rect" id="node3" href="$group__twr__tag__voc__lp.html#ga612b9a8b8139deab9262419a1c362277" title="Set measurement interval." alt="" coords="5,5,152,47"/>
+</map>

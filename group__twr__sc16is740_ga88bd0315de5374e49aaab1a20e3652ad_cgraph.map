@@ -1,0 +1,9 @@
+<map id="twr_sc16is740_set_baudrate" name="twr_sc16is740_set_baudrate">
+<area shape="rect" id="node1" title="Set baudrate." alt="" coords="5,33,212,60"/>
+<area shape="rect" id="node2" href="$group__twr__i2c.html#gaedddada7a7d84f001b34bb42c731cf1f" title="Memory read 1 byte from I2C channel." alt="" coords="262,7,453,33"/>
+<area shape="rect" id="node5" href="$group__twr__i2c.html#gac5797baa23c0e587f693855349bc8990" title="Memory write 1 byte to I2C channel." alt="" coords="260,59,455,85"/>
+<area shape="rect" id="node3" href="$group__twr__i2c.html#ga95b02a5c1d0636f36d58b7fc212d9174" title="Memory read from I2C channel." alt="" coords="505,7,671,33"/>
+<area shape="rect" id="node4" href="$group__twr__ds28e17.html#ga5778c65f5dd6eb1b541f2350422ca015" title="Memory read from I2C." alt="" coords="721,5,924,32"/>
+<area shape="rect" id="node6" href="$group__twr__i2c.html#ga8144e77db86d0a54a6a50c7e7c9140b6" title="Memory write to I2C channel." alt="" coords="503,60,673,87"/>
+<area shape="rect" id="node7" href="$group__twr__ds28e17.html#gaa2a316779ca759c63f351179ef9bfc5a" title="Memory write to I2C." alt="" coords="739,57,906,98"/>
+</map>

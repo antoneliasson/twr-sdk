@@ -1,0 +1,4 @@
+<map id="twr_sc16is740_write" name="twr_sc16is740_write">
+<area shape="rect" id="node1" title="Write." alt="" coords="236,5,391,32"/>
+<area shape="rect" id="node2" href="$group__twr__module__rs485.html#ga2e76a424127992b43b10e1a9de848d86" title="Write data to RS&#45;485 bus." alt="" coords="5,5,188,32"/>
+</map>

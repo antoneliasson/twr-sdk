@@ -1,0 +1,6 @@
+<map id="twr_hdc2080_measure" name="twr_hdc2080_measure">
+<area shape="rect" id="node1" title="Start measurement manually." alt="" coords="464,42,633,69"/>
+<area shape="rect" id="node2" href="$group__twr__hdc2080.html#gaed3d22c20ed6787c3f8a688b5dd5c4f2" title="Set measurement interval." alt="" coords="224,5,408,47"/>
+<area shape="rect" id="node4" href="$group__twr__tag__humidity.html#ga2291449e497d1ea758f652f9ed60f16b" title="Start measurement manually." alt="" coords="216,71,416,98"/>
+<area shape="rect" id="node3" href="$group__twr__tag__humidity.html#ga379580ba5d37cee41665a2cf14a788eb" title="Set measurement interval." alt="" coords="5,5,168,47"/>
+</map>

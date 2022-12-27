@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['z_5faxis',['z_axis',['../structbc__lis2dh12__result__raw__t.html#a1a3772c48741748918f03da74236a8ae',1,'bc_lis2dh12_result_raw_t::z_axis()'],['../structbc__lis2dh12__result__g__t.html#a520f97ac86f4bc6a5dada672d8dfcd4e',1,'bc_lis2dh12_result_g_t::z_axis()']]]
+  ['init_2650',['init',['../structtwr__analog__sensor__driver__t.html#a980d3d7cbc5a434285a863d590ad6381',1,'twr_analog_sensor_driver_t::init()'],['../structtwr__button__driver__t.html#aaac4f6adea6a8c99e4b600ea1d3b9390',1,'twr_button_driver_t::init()'],['../structtwr__led__driver__t.html#ac9d6eb73efa9f2801f71f1a09ccc2056',1,'twr_led_driver_t::init()'],['../structtwr__lp8__driver__t.html#ac42c325acd03aa76f5983de85e393207',1,'twr_lp8_driver_t::init()']]],
+  ['is_5fready_2651',['is_ready',['../structtwr__gfx__driver__t.html#a03784bc2601f88f91c4fda9eff4dd856',1,'twr_gfx_driver_t']]]
 ];

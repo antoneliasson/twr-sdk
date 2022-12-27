@@ -1,0 +1,6 @@
+<map id="twr_sc16is740_available" name="twr_sc16is740_available">
+<area shape="rect" id="node1" title="Get RX FIXO available data." alt="" coords="5,5,188,32"/>
+<area shape="rect" id="node2" href="$group__twr__i2c.html#gaedddada7a7d84f001b34bb42c731cf1f" title="Memory read 1 byte from I2C channel." alt="" coords="236,5,427,32"/>
+<area shape="rect" id="node3" href="$group__twr__i2c.html#ga95b02a5c1d0636f36d58b7fc212d9174" title="Memory read from I2C channel." alt="" coords="475,5,641,32"/>
+<area shape="rect" id="node4" href="$group__twr__ds28e17.html#ga5778c65f5dd6eb1b541f2350422ca015" title="Memory read from I2C." alt="" coords="689,5,892,32"/>
+</map>

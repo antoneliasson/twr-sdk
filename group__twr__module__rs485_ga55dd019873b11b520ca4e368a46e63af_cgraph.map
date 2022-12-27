@@ -1,0 +1,7 @@
+<map id="twr_module_rs485_available" name="twr_module_rs485_available">
+<area shape="rect" id="node1" title="Get number of received bytes." alt="" coords="5,5,215,32"/>
+<area shape="rect" id="node2" href="$group__twr__sc16is740.html#gacf4cd9e7237019023d396ad55a27513c" title="Get RX FIXO available data." alt="" coords="263,5,445,32"/>
+<area shape="rect" id="node3" href="$group__twr__i2c.html#gaedddada7a7d84f001b34bb42c731cf1f" title="Memory read 1 byte from I2C channel." alt="" coords="493,5,684,32"/>
+<area shape="rect" id="node4" href="$group__twr__i2c.html#ga95b02a5c1d0636f36d58b7fc212d9174" title="Memory read from I2C channel." alt="" coords="732,5,899,32"/>
+<area shape="rect" id="node5" href="$group__twr__ds28e17.html#ga5778c65f5dd6eb1b541f2350422ca015" title="Memory read from I2C." alt="" coords="947,5,1149,32"/>
+</map>

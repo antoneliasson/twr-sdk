@@ -1,0 +1,5 @@
+<map id="twr_exti_register" name="twr_exti_register">
+<area shape="rect" id="node1" title="Enable EXTI line interrupt and register callback function." alt="" coords="231,31,363,57"/>
+<area shape="rect" id="node2" href="$group__twr__lis2dh12.html#gaf7e9161364c7e7835cb5d10d7917b1ac" title="Enable or disable accelerometer threshold alarm." alt="" coords="5,5,183,32"/>
+<area shape="rect" id="node3" href="$group__twr__pulse__counter.html#ga0d8120cc233f7a2a2a515b5dac93610b" title="Initialize pulse counter." alt="" coords="9,56,179,83"/>
+</map>

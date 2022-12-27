@@ -1,0 +1,6 @@
+<map id="twr_tca9534a_read_port" name="twr_tca9534a_read_port">
+<area shape="rect" id="node1" title="Read state of all pins." alt="" coords="5,5,184,32"/>
+<area shape="rect" id="node2" href="$group__twr__i2c.html#gaedddada7a7d84f001b34bb42c731cf1f" title="Memory read 1 byte from I2C channel." alt="" coords="232,5,423,32"/>
+<area shape="rect" id="node3" href="$group__twr__i2c.html#ga95b02a5c1d0636f36d58b7fc212d9174" title="Memory read from I2C channel." alt="" coords="471,5,637,32"/>
+<area shape="rect" id="node4" href="$group__twr__ds28e17.html#ga5778c65f5dd6eb1b541f2350422ca015" title="Memory read from I2C." alt="" coords="685,5,888,32"/>
+</map>

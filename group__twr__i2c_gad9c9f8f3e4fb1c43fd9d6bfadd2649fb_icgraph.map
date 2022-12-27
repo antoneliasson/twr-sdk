@@ -1,0 +1,4 @@
+<map id="twr_i2c_memory_read_16b" name="twr_i2c_memory_read_16b">
+<area shape="rect" id="node1" title="Memory read 2 bytes from I2C channel." alt="" coords="220,13,419,39"/>
+<area shape="rect" id="node2" href="$group__twr__cy8cmbr3102.html#ga6dd865f4d7d5f861e14efced33c71833" title="Get proximity (Capacitive sensor difference count signal.)" alt="" coords="5,5,172,47"/>
+</map>

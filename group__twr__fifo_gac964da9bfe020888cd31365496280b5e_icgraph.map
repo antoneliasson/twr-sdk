@@ -1,0 +1,6 @@
+<map id="twr_fifo_read" name="twr_fifo_read">
+<area shape="rect" id="node1" title="Read data from FIFO." alt="" coords="276,56,383,83"/>
+<area shape="rect" id="node2" href="$group__twr__module__rs485.html#ga854843bc36c721f2ecf75ca2b64cc1fd" title="Get data that has been received in async mode." alt="" coords="5,5,228,32"/>
+<area shape="rect" id="node3" href="$group__twr__uart.html#gabe1881a63579335adf4aa6d726164c8d" title="Get data that has been received in async mode." alt="" coords="38,56,195,83"/>
+<area shape="rect" id="node4" href="$group__twr__usb__cdc.html#ga4f24bddf89828b15f1af1aad71e44ae0" title="Read buffer from USB CDC (non&#45;blocking call)" alt="" coords="47,107,186,133"/>
+</map>

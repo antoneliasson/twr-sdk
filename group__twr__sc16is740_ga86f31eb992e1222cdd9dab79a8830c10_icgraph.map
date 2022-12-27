@@ -1,0 +1,4 @@
+<map id="twr_sc16is740_read" name="twr_sc16is740_read">
+<area shape="rect" id="node1" title="Read." alt="" coords="232,5,383,32"/>
+<area shape="rect" id="node2" href="$group__twr__module__rs485.html#ga09a686370ab538c780afa53ce69cd104" title="Read the received data." alt="" coords="5,5,184,32"/>
+</map>

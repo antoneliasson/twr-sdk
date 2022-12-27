@@ -1,0 +1,4 @@
+<map id="twr_onewire_read_byte" name="twr_onewire_read_byte">
+<area shape="rect" id="node1" title="Select device." alt="" coords="223,13,397,39"/>
+<area shape="rect" id="node2" href="$group__twr__onewire__relay.html#ga03ca246ddadb45024d6bd4c7fbc4b2e0" title="Set relay to specified state." alt="" coords="5,5,175,47"/>
+</map>

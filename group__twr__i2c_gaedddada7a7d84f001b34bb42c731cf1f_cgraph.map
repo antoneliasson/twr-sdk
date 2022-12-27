@@ -1,0 +1,5 @@
+<map id="twr_i2c_memory_read_8b" name="twr_i2c_memory_read_8b">
+<area shape="rect" id="node1" title="Memory read 1 byte from I2C channel." alt="" coords="5,5,196,32"/>
+<area shape="rect" id="node2" href="$group__twr__i2c.html#ga95b02a5c1d0636f36d58b7fc212d9174" title="Memory read from I2C channel." alt="" coords="244,5,411,32"/>
+<area shape="rect" id="node3" href="$group__twr__ds28e17.html#ga5778c65f5dd6eb1b541f2350422ca015" title="Memory read from I2C." alt="" coords="459,5,661,32"/>
+</map>

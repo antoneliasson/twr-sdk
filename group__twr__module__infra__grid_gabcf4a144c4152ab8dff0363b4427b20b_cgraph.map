@@ -1,0 +1,5 @@
+<map id="twr_module_infra_grid_read_values" name="twr_module_infra_grid_read_values">
+<area shape="rect" id="node1" title="Read measured data from sensor to the buffer." alt="" coords="5,5,173,47"/>
+<area shape="rect" id="node2" href="$group__twr__i2c.html#ga95b02a5c1d0636f36d58b7fc212d9174" title="Memory read from I2C channel." alt="" coords="221,13,388,39"/>
+<area shape="rect" id="node3" href="$group__twr__ds28e17.html#ga5778c65f5dd6eb1b541f2350422ca015" title="Memory read from I2C." alt="" coords="436,13,639,39"/>
+</map>

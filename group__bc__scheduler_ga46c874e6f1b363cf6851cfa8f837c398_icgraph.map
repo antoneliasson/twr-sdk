@@ -1,8 +1,0 @@
-<map id="bc_scheduler_plan_now" name="bc_scheduler_plan_now">
-<area shape="rect" id="node2" href="$group__bc__module__co2.html#ga0136bbb9d299c51432b9349fe0aeb760" title="Start measurement manually. " alt="" coords="223,5,393,32"/>
-<area shape="rect" id="node4" href="$group__bc__pyq1648.html#ga85f892884862b1ab2b090984da978f66" title="Set PYQ1648 sensitivity. " alt="" coords="217,56,399,83"/>
-<area shape="rect" id="node6" href="$group__bc__td1207r.html#ga901747d090d799193a17dd46850c2d75" title="Send RF frame command. " alt="" coords="240,107,376,149"/>
-<area shape="rect" id="node3" href="$group__bc__module__co2.html#gaf87e8256e1789f32625350957f682c33" title="Set co2 ABC calibration request. " alt="" coords="457,5,636,32"/>
-<area shape="rect" id="node5" href="$group__bc__module__pir.html#gabd1d816178965ae60ee52bfad36217b1" title="Set sensor sensitivity. " alt="" coords="448,56,645,83"/>
-<area shape="rect" id="node7" href="$group__bc__module__sigfox.html#gaff30d9b95f4292f5bf26c0ba02f37160" title="Send RF frame command. " alt="" coords="465,107,628,149"/>
-</map>

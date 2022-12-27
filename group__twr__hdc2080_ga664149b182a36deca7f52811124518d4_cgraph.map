@@ -1,0 +1,4 @@
+<map id="twr_hdc2080_get_temperature_celsius" name="twr_hdc2080_get_temperature_celsius">
+<area shape="rect" id="node1" title="Get measured temperature in degrees of Celsius." alt="" coords="5,5,227,47"/>
+<area shape="rect" id="node2" href="$group__twr__hdc2080.html#ga6b44777c6053b3532814297ef292556c" title="Get measured temperature as raw value." alt="" coords="275,13,527,39"/>
+</map>

@@ -1,0 +1,10 @@
+<map id="twr_hts221_deinit" name="twr_hts221_deinit">
+<area shape="rect" id="node1" title="Deinitialize HTS221." alt="" coords="5,59,144,85"/>
+<area shape="rect" id="node2" href="$group__twr__i2c.html#gaedddada7a7d84f001b34bb42c731cf1f" title="Memory read 1 byte from I2C channel." alt="" coords="194,8,385,35"/>
+<area shape="rect" id="node5" href="$group__twr__i2c.html#gac5797baa23c0e587f693855349bc8990" title="Memory write 1 byte to I2C channel." alt="" coords="192,59,387,85"/>
+<area shape="rect" id="node8" href="$group__twr__scheduler.html#ga77cc7533dc20ee696fb73ae8798b052a" title="Unregister specified task." alt="" coords="196,109,383,136"/>
+<area shape="rect" id="node3" href="$group__twr__i2c.html#ga95b02a5c1d0636f36d58b7fc212d9174" title="Memory read from I2C channel." alt="" coords="437,8,603,35"/>
+<area shape="rect" id="node4" href="$group__twr__ds28e17.html#ga5778c65f5dd6eb1b541f2350422ca015" title="Memory read from I2C." alt="" coords="653,5,856,32"/>
+<area shape="rect" id="node6" href="$group__twr__i2c.html#ga8144e77db86d0a54a6a50c7e7c9140b6" title="Memory write to I2C channel." alt="" coords="435,60,605,87"/>
+<area shape="rect" id="node7" href="$group__twr__ds28e17.html#gaa2a316779ca759c63f351179ef9bfc5a" title="Memory write to I2C." alt="" coords="671,57,838,98"/>
+</map>

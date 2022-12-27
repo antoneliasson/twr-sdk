@@ -1,0 +1,4 @@
+<map id="twr_ds18b20_get_temperature_celsius" name="twr_ds18b20_get_temperature_celsius">
+<area shape="rect" id="node1" title="Get measured temperature in degrees of Celsius." alt="" coords="5,5,227,47"/>
+<area shape="rect" id="node2" href="$group__twr__ds18b20.html#ga8514854b8f6e4b4b54157a8454d8cae0" title="Get device index by its device address." alt="" coords="275,5,451,47"/>
+</map>

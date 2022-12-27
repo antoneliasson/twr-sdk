@@ -1,0 +1,12 @@
+<map id="twr_timer_get_microseconds" name="twr_timer_get_microseconds">
+<area shape="rect" id="node1" title="Get actual tick of timer." alt="" coords="849,132,1060,159"/>
+<area shape="rect" id="node2" href="$group__twr__timer.html#gaa059ce422d0c0c67a3cd5c9d90c0877f" title="Relative delay." alt="" coords="673,132,801,159"/>
+<area shape="rect" id="node3" href="$group__twr__delay.html#gaea9f6b178fdc76da84fb36446d05e01c" title="Delay us." alt="" coords="470,31,578,57"/>
+<area shape="rect" id="node7" href="$group__twr__spi.html#ga7fd3d80fd3f1b8d5503fa88cca95a46e" title="Execute SPI transfer." alt="" coords="461,81,587,108"/>
+<area shape="rect" id="node8" href="$group__twr__tag__nfc.html#ga47b20be5c3cb5180970f22eba447160d" title="Initialize NFC Tag." alt="" coords="461,132,587,159"/>
+<area shape="rect" id="node9" href="$group__twr__zssc3123.html#ga43b4449d8101b0ee2b6cd1f5b46cfd04" title="Write to eeprom, work only with command mode." alt="" coords="423,183,625,209"/>
+<area shape="rect" id="node10" href="$group__twr__zssc3123.html#gafd822369f4f332ba47761b4838ee6ae8" title="Read from eeprm, work only with command mode." alt="" coords="441,234,607,275"/>
+<area shape="rect" id="node4" href="$group__twr__ds2484.html#gaa20cb3832869300dbeac84af0cca985e" title="Wait until not busy." alt="" coords="204,31,375,57"/>
+<area shape="rect" id="node5" href="$group__twr__ds2484.html#gaceb83a2f35ca8f7b979efcd3b69ba947" title="Disable DS2484." alt="" coords="5,5,156,32"/>
+<area shape="rect" id="node6" href="$group__twr__ds2484.html#ga760e2bdd2cf5f11c5f2a4a0128244402" title="Reset the 1&#45;Wire bus and return the presence of any device." alt="" coords="12,56,149,83"/>
+</map>

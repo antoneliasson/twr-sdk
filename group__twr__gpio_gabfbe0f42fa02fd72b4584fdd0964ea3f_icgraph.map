@@ -1,0 +1,4 @@
+<map id="twr_gpio_get_input" name="twr_gpio_get_input">
+<area shape="rect" id="node1" title="Get input state for GPIO channel." alt="" coords="231,13,377,39"/>
+<area shape="rect" id="node2" href="$group__twr__module__sensor.html#ga42852452c31879ce4ae32a747b70d50b" title="Get input of Sensor Module channel." alt="" coords="5,5,183,47"/>
+</map>

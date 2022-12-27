@@ -1,4 +1,0 @@
-<map id="bc_opt3001_init" name="bc_opt3001_init">
-<area shape="rect" id="node2" href="$group__bc__i2c.html#ga8f29242288303f0328c6514068e516fa" title="Initialize I2C channel. " alt="" coords="201,5,285,32"/>
-<area shape="rect" id="node3" href="$group__bc__scheduler.html#gac6e2fa9155567fb1f32a8b8b563e2f30" title="Register task in scheduler. " alt="" coords="168,56,317,83"/>
-</map>

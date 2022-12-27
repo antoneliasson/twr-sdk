@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['size',['size',['../structbc__fifo__t.html#ae6e019745a8003dda87347011b72ac8a',1,'bc_fifo_t']]]
+  ['fix_5fquality_20',['fix_quality',['../group__twr__sam__m8q.html#gac749f2fa04335a358ee5bd481cddb903',1,'twr_sam_m8q_quality_t']]]
 ];

@@ -1,5 +1,0 @@
-<map id="bc_scheduler_plan_absolute" name="bc_scheduler_plan_absolute">
-<area shape="rect" id="node2" href="$group__bc__hc__sr04.html#gae3474f228cb54344795860617db1dc66" title="Set measurement interval. " alt="" coords="252,5,412,46"/>
-<area shape="rect" id="node3" href="$group__bc__led.html#ga70430d42b18f282381a8c8044c8adf94" title="Turn on LED for the specified duration of time. " alt="" coords="283,71,381,97"/>
-<area shape="rect" id="node4" href="$group__bc__module__co2.html#ga9619f5f2db2d1463584a433c959694b1" title="Set measurement interval. " alt="" coords="240,122,424,163"/>
-</map>

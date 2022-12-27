@@ -1,4 +1,7 @@
 var searchData=
 [
-  ['x_5faxis',['x_axis',['../structbc__lis2dh12__result__raw__t.html#adea9be4b53fa6af11ae9c33e6d7e8ff5',1,'bc_lis2dh12_result_raw_t::x_axis()'],['../structbc__lis2dh12__result__g__t.html#add00c49c646171c22c57731b0e38cc44',1,'bc_lis2dh12_result_g_t::x_axis()']]]
+  ['get_5fcaps_2643',['get_caps',['../structtwr__gfx__driver__t.html#ad083e746a501560370e2b62f22e11f13',1,'twr_gfx_driver_t']]],
+  ['get_5finput_2644',['get_input',['../structtwr__button__driver__t.html#aeff35976b460082236137dbf781a1486',1,'twr_button_driver_t']]],
+  ['get_5fpixel_2645',['get_pixel',['../structtwr__gfx__driver__t.html#a0239f96a550b9d06776a963790219294',1,'twr_gfx_driver_t']]],
+  ['get_5fsettling_5finterval_2646',['get_settling_interval',['../structtwr__analog__sensor__driver__t.html#af339c33df23a5e2fa82acd3ef2fa0fd4',1,'twr_analog_sensor_driver_t']]]
 ];

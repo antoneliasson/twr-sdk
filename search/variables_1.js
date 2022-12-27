@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['device_5faddress',['device_address',['../structbc__i2c__tranfer__t.html#afa552b8d01f0a38acfa89b44d630fb15',1,'bc_i2c_tranfer_t']]]
+  ['address_5fmemory_2625',['address_memory',['../structtwr__dma__channel__config__t.html#ae1cbcba25732120df85c17b64ebf42bf',1,'twr_dma_channel_config_t']]],
+  ['address_5fperipheral_2626',['address_peripheral',['../structtwr__dma__channel__config__t.html#a7e79dcac1ca3494f512f5e5e7feb805a',1,'twr_dma_channel_config_t']]],
+  ['altitude_2627',['altitude',['../group__twr__sam__m8q.html#ga338814c803e5b541b2fc8eaae392d3c4',1,'twr_sam_m8q_altitude_t']]]
 ];

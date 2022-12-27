@@ -1,8 +1,0 @@
-<map id="bc_tca9534a_write_pin" name="bc_tca9534a_write_pin">
-<area shape="rect" id="node2" href="$group__bc__tca9534a.html#gafae0e31f827bddb3e47958a3656ea32b" title="Read state of all pins. " alt="" coords="209,5,367,32"/>
-<area shape="rect" id="node5" href="$group__bc__tca9534a.html#ga4707e216045466f49d56e2fe58f9ec04" title="Write state to all pins. " alt="" coords="208,56,368,83"/>
-<area shape="rect" id="node3" href="$group__bc__i2c.html#gac2eee84f73bb3bbd953be621f21eb0e1" title="Read 1 byte from I2C channel. " alt="" coords="418,5,531,32"/>
-<area shape="rect" id="node4" href="$group__bc__i2c.html#ga071d3d85ba25f77685909dd9712b34ea" title="Read from I2C channel. " alt="" coords="583,5,675,32"/>
-<area shape="rect" id="node6" href="$group__bc__i2c.html#ga67a958f1691787b61dae034f441513a3" title="Write 1 byte to I2C channel. " alt="" coords="417,56,533,83"/>
-<area shape="rect" id="node7" href="$group__bc__i2c.html#gaaaf4f051d096dc4469495b710037340f" title="Write to I2C channel. " alt="" coords="582,56,677,83"/>
-</map>
