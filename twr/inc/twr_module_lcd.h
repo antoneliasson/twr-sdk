@@ -125,7 +125,7 @@ void twr_module_lcd_draw_pixel(int left, int top, bool color);
 //! @param[in] color Pixels state
 //! @return Width of printed character
 
-int twr_module_lcd_draw_char(int left, int top, uint8_t ch, bool color);
+int twr_module_lcd_draw_char(int left, int top, uint16_t ch, bool color);
 
 //! @brief Lcd draw string
 //! @param[in] left Pixels from left edge

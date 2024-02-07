@@ -143,7 +143,7 @@ void twr_gfx_draw_pixel(twr_gfx_t *self, int x, int y, uint32_t color);
 //! @param[in] color
 //! @return Width of printed character
 
-int twr_gfx_draw_char(twr_gfx_t *self, int left, int top, uint8_t ch, uint32_t color);
+int twr_gfx_draw_char(twr_gfx_t *self, int left, int top, uint16_t ch, uint32_t color);
 
 //! @brief Calc width character
 //! @param[in] self Instance

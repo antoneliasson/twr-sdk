@@ -107,7 +107,7 @@ void twr_module_lcd_draw_pixel(int x, int y, bool value)
     twr_gfx_draw_pixel(&_twr_module_lcd.gfx, x, y, value);
 }
 
-int twr_module_lcd_draw_char(int left, int top, uint8_t ch, bool color)
+int twr_module_lcd_draw_char(int left, int top, uint16_t ch, bool color)
 {
     return twr_gfx_draw_char(&_twr_module_lcd.gfx, left, top, ch, color);
 }

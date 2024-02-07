@@ -83,7 +83,7 @@ void twr_gfx_draw_pixel(twr_gfx_t *self, int x, int y, uint32_t color)
     self->_driver->draw_pixel(self->_display, x, y, color);
 }
 
-int twr_gfx_draw_char(twr_gfx_t *self, int left, int top, uint8_t ch, uint32_t color)
+int twr_gfx_draw_char(twr_gfx_t *self, int left, int top, uint16_t ch, uint32_t color)
 {
     if (!self->_font)
     {
