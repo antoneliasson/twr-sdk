@@ -1,6 +1,6 @@
 <map id="twr_gfx_draw_pixel" name="twr_gfx_draw_pixel">
 <area shape="rect" id="node1" title="Draw pixel." alt="" coords="713,315,861,341"/>
-<area shape="rect" id="node2" href="$group__twr__gfx.html#ga3e6280b1f870c48c751681b778a30077" title="Display draw char." alt="" coords="492,85,637,112"/>
+<area shape="rect" id="node2" href="$group__twr__gfx.html#ga49607a8bb8985e76d74f15ac69ef221e" title="Display draw char." alt="" coords="492,85,637,112"/>
 <area shape="rect" id="node7" href="$group__twr__gfx.html#ga98421792337c0187cbcf6376d8f46a6b" title="Lcd draw circle, using Midpoint circle algorithm." alt="" coords="489,140,641,167"/>
 <area shape="rect" id="node9" href="$group__twr__gfx.html#ga0bd4e930b630fe0c3ffade8110283b0a" title="Display draw fill rectangle." alt="" coords="464,191,665,217"/>
 <area shape="rect" id="node10" href="$group__twr__gfx.html#ga92386f089805366534bf5fd5cc7e2d8b" title="Display draw fill rectangle with a dithering pattern defined in the color parameter." alt="" coords="464,242,665,283"/>
@@ -10,7 +10,7 @@
 <area shape="rect" id="node19" href="$group__twr__module__lcd.html#ga28eea6169b4770f92da34405918bd6f8" title="Lcd draw image." alt="" coords="483,490,647,531"/>
 <area shape="rect" id="node20" href="$group__twr__module__lcd.html#gaf3c18adc7d81fdcc981ac1185939634f" title="Lcd draw pixel." alt="" coords="483,555,647,597"/>
 <area shape="rect" id="node3" href="$group__twr__gfx.html#gac2f0e0a27ef49d34ded0a0342a114d4b" title="Display draw string." alt="" coords="239,35,394,61"/>
-<area shape="rect" id="node6" href="$group__twr__module__lcd.html#ga1c5d5339e5c024146b24264316e2bb3b" title="Lcd draw char." alt="" coords="217,85,416,112"/>
+<area shape="rect" id="node6" href="$group__twr__module__lcd.html#ga7a5cf646f6499f362ce44660c1989302" title="Lcd draw char." alt="" coords="217,85,416,112"/>
 <area shape="rect" id="node4" href="$group__twr__gfx.html#gae8cdb46e8f575d3974ff9d91d2432a87" title="Display string." alt="" coords="31,5,144,32"/>
 <area shape="rect" id="node5" href="$group__twr__module__lcd.html#ga66de7eab1c999f28087ffd22e3e0445c" title="Lcd draw string." alt="" coords="5,57,169,98"/>
 <area shape="rect" id="node8" href="$group__twr__module__lcd.html#ga3ad138b27e441d880815b72707c1bf63" title="Lcd draw circle." alt="" coords="235,137,399,178"/>

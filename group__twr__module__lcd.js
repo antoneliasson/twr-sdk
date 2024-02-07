@@ -17,7 +17,7 @@ var group__twr__module__lcd =
       [ "TWR_MODULE_LCD_ROTATION_270", "group__twr__module__lcd.html#gga5840e8184e2a705d7f06889c082ada8ba99804203badd281de8c638976ab9017e", null ]
     ] ],
     [ "twr_module_lcd_clear", "group__twr__module__lcd.html#ga0cbee9c081dfaac062dd221074f23e49", null ],
-    [ "twr_module_lcd_draw_char", "group__twr__module__lcd.html#ga1c5d5339e5c024146b24264316e2bb3b", null ],
+    [ "twr_module_lcd_draw_char", "group__twr__module__lcd.html#ga7a5cf646f6499f362ce44660c1989302", null ],
     [ "twr_module_lcd_draw_circle", "group__twr__module__lcd.html#ga3ad138b27e441d880815b72707c1bf63", null ],
     [ "twr_module_lcd_draw_image", "group__twr__module__lcd.html#ga28eea6169b4770f92da34405918bd6f8", null ],
     [ "twr_module_lcd_draw_line", "group__twr__module__lcd.html#ga18f794ed4b1fcf30325435633e7c5cf1", null ],

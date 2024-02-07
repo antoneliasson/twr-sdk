@@ -35,7 +35,7 @@ var group__twr__gfx =
     [ "twr_gfx_calc_string_width", "group__twr__gfx.html#ga7b48d4c462ea49b5a8645a307cc99706", null ],
     [ "twr_gfx_clear", "group__twr__gfx.html#gab09bf59a53a79f46a8d89653ca0e0074", null ],
     [ "twr_gfx_display_is_ready", "group__twr__gfx.html#ga5f10c1c59007d8923b18cb49f4bdc0c6", null ],
-    [ "twr_gfx_draw_char", "group__twr__gfx.html#ga3e6280b1f870c48c751681b778a30077", null ],
+    [ "twr_gfx_draw_char", "group__twr__gfx.html#ga49607a8bb8985e76d74f15ac69ef221e", null ],
     [ "twr_gfx_draw_circle", "group__twr__gfx.html#ga98421792337c0187cbcf6376d8f46a6b", null ],
     [ "twr_gfx_draw_fill_circle", "group__twr__gfx.html#gae4a631bb7f42a19efc63f243ae8ba76c", null ],
     [ "twr_gfx_draw_fill_rectangle", "group__twr__gfx.html#ga0bd4e930b630fe0c3ffade8110283b0a", null ],
